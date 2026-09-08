@@ -1,0 +1,3403 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPEN Business World — Périphériques</title>
+  <!-- CSS : on remonte d'un dossier avec ../ -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../images/android-chrome-512x512.png" />
+
+  <!-- Icônes Tabler -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+    1. BARRE D'ANNONCE DYNAMIQUE
+  ============================================================ -->
+  <div class="promo-bar"
+     data-product="OPEN Business World — Votre partenaire tech de confiance à Abidjan"
+     data-link="../boutique.html"
+     data-cta="Découvrir la boutique">
+  </div>
+
+  <!-- ============================================================
+    2. HEADER
+  ============================================================ -->
+  <header class="header">
+
+    <a href="../index.html" class="logo">
+      <img src="../images/logo.webp" alt="OPEN Business World" class="logo-img" />
+    </a>
+
+    <div class="search">
+      <input type="text" placeholder="Rechercher un PC, smartphone, GPU..." aria-label="Recherche" />
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <i class="ti ti-search" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Mes favoris">
+        <i class="ti ti-heart" aria-hidden="true"></i>
+        <span>Favoris</span>
+        <span class="dot-badge"></span>
+      </button>
+      <button class="icon-btn" aria-label="Mon panier">
+        <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+        <span>Panier</span>
+        <span class="dot-badge"></span>
+      </button>
+      <div class="divider-v"></div>
+      <a href="https://wa.me/2252720286555"
+         class="icon-btn"
+         target="_blank"
+         rel="noopener"
+         aria-label="WhatsApp">
+        <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:+2252720286555" class="cta-header">
+        <i class="ti ti-phone-call" aria-hidden="true"></i>
+        <span>+225 27 20 28 65 55</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+
+  </header>
+
+
+  <!-- ============================================================
+    3. NAVIGATION
+    → Même bloc que sur toutes les pages, "Périphériques" est actif ("on")
+  ============================================================ -->
+  <nav class="nav" id="mainNav">
+    <button class="nav-close" id="navCloseBtn" aria-label="Fermer le menu">
+      <i class="ti ti-x" aria-hidden="true"></i>
+    </button>
+    <a href="../index.html" class="nav-link">Accueil</a>
+    <a href="../boutique.html" class="nav-link">Boutique</a>
+
+    <div class="nav-item">
+      <a href="ordinateurs.html" class="nav-link">
+        Ordinateurs & Tablettes <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="ordinateurs.html#pc-bureau" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-desktop" aria-hidden="true"></i></div>
+          <span>PC de bureau</span>
+        </a>
+        <a href="ordinateurs.html#pc-portables" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-laptop" aria-hidden="true"></i></div>
+          <span>PC portables</span>
+        </a>
+        <a href="ordinateurs.html#mac" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-brand-apple" aria-hidden="true"></i></div>
+          <span>Mac</span>
+        </a>
+        <a href="ordinateurs.html#tablettes" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-tablet" aria-hidden="true"></i></div>
+          <span>Tablettes</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="moniteurs.html" class="nav-link">Moniteurs</a>
+
+    <div class="nav-item">
+      <a href="peripheriques.html" class="nav-link on">
+        Périphériques <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="peripheriques.html#accessoires" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-keyboard" aria-hidden="true"></i></div>
+          <span>Accessoires PC</span>
+        </a>
+        <a href="peripheriques.html#audio" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <span>Audio</span>
+        </a>
+        <a href="peripheriques.html#consommables" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-droplet" aria-hidden="true"></i></div>
+          <span>Consommables & logiciels</span>
+        </a>
+        <a href="peripheriques.html#bureau-electromenager" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-building-store" aria-hidden="true"></i></div>
+          <span>Équipements bureau</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="pc-gamer.html" class="nav-link">PC Gamer </a>
+
+    <div class="nav-item">
+      <a href="imprimantes.html" class="nav-link">
+        Imprimantes <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="photocopieuses.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Photocopieuses</span>
+        </a>
+        <a href="imprimantes.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Imprimantes</span>
+        </a>
+        <a href="imprimantes-hp-laser.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Imprimantes HP Laser</span>
+        </a>
+        <a href="scanneurs-lecteurs.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-scan" aria-hidden="true"></i></div>
+          <span>Scanneurs & lecteurs</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="smartphones.html" class="nav-link">Smartphones </a>
+  </nav>
+
+
+  <!-- ============================================================
+    4. CORPS DE PAGE
+  ============================================================ -->
+  <main class="page-body">
+
+    <!-- TITRE -->
+    <div class="page-hero">
+      <h1 class="page-hero-title">Périphériques</h1>
+      <p class="page-hero-text">
+        Accessoires, audio, consommables et équipements de bureau — tout pour équiper votre poste de travail.
+      </p>
+    </div>
+
+
+    <!-- ============================================================
+      SECTION 1 : ACCESSOIRES PC
+      → id="accessoires" = l'ancre visée par le méga-menu
+      → Regroupe : clé USB, clavier, souris, câble HDMI, webcam, RAM,
+        câble d'alimentation, lecteur DVD externe
+    ============================================================ -->
+    <div class="section-row" id="accessoires" style="margin-top: 24px;">
+      <h2 class="section-title-cat">Accessoires PC</h2>
+    </div>
+
+   <div class="products-grid">
+
+  <!-- Clavier + Souris HP K1600 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hp-k1600.jpg" alt="Clavier filaire AZERTY HP K1600" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hp-k1600.jpg" alt="Clavier filaire AZERTY HP K1600" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Clavier filaire AZERTY HP K1600</div>
+      <div class="product-spec">Clavier filaire · USB · AZERTY</div>
+      <div class="product-footer">
+        <span class="product-price">5 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clavier Dell KB216 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/dell-kb216.jpg" alt="Clavier filaire multimédia Dell KB216" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/dell-kb216-2.jpg" alt="Clavier filaire multimédia Dell KB216" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Clavier filaire multimédia Dell KB216</div>
+      <div class="product-spec">Clavier filaire · USB · Touches multimédia</div>
+      <div class="product-footer">
+        <span class="product-price">5 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M187 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m187.jpg" alt="Souris sans fil Logitech M187" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m187.jpg" alt="Souris sans fil Logitech M187" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Logitech M187</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">7 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris HP M10 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hp-m10.jpg" alt="Souris filaire HP M10" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hp-m10-2.jpg" alt="Souris filaire HP M10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris filaire HP M10</div>
+      <div class="product-spec">Souris filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">5 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris HP X500 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hp-x500.jpg" alt="Souris filaire HP X500" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hp-x500-2.webp" alt="Souris filaire HP X500" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris filaire HP X500</div>
+      <div class="product-spec">Souris filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">3 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris HP S9000 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hp-s9000.jpg" alt="Souris sans fil HP S9000" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hp-s9000-2.jpg" alt="Souris sans fil HP S9000" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil HP S9000</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">6 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris HP W10 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hp-w10.jpg" alt="Souris sans fil HP W10" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hp-w10.jpg" alt="Souris sans fil HP W10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil HP W10</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">6 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Dell MS116 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/dell-ms116.jpg" alt="Souris filaire Dell MS116" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/dell-ms116-2.jpg" alt="Souris filaire Dell MS116" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris filaire Dell MS116</div>
+      <div class="product-spec">Souris filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">3 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Dell WM126 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/dell-wm126.webp" alt="Souris sans fil Dell WM126" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/dell-wm126-2.webp" alt="Souris sans fil Dell WM126" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Dell WM126</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">6 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M90 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m90.jpg" alt="Souris filaire Logitech M90" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m90.jpg" alt="Souris filaire Logitech M90" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris filaire Logitech M90</div>
+      <div class="product-spec">Souris filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">4 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M100 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m100.jpg" alt="Souris filaire Logitech M100" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m100-2.jpg" alt="Souris filaire Logitech M100" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris filaire Logitech M100</div>
+      <div class="product-spec">Souris filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">6 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M170 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m170.jpg" alt="Souris sans fil Logitech M170" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m170-2.jpg" alt="Souris sans fil Logitech M170" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Logitech M170</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">7 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M171 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m171.webp" alt="Souris sans fil Logitech M171" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m171.webp" alt="Souris sans fil Logitech M171" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Logitech M171</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">7 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M185 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m185.jpg" alt="Souris sans fil Logitech M185" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m185-2.png" alt="Souris sans fil Logitech M185" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Logitech M185</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">8 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M190 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m190.jpg" alt="Souris sans fil Logitech M190" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m190-2.jpg" alt="Souris sans fil Logitech M190" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Logitech M190</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">8 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M196 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m196.jpg" alt="Souris Bluetooth Logitech M196" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m196-2.jpg" alt="Souris Bluetooth Logitech M196" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris Bluetooth Logitech M196</div>
+      <div class="product-spec">Souris sans fil · Bluetooth</div>
+      <div class="product-footer">
+        <span class="product-price">9 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Logitech M350 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-m350.jpg" alt="Souris sans fil Logitech M350" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-m350-2.jpg" alt="Souris sans fil Logitech M350" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Logitech M350</div>
+      <div class="product-spec">Souris sans fil · Silencieuse</div>
+      <div class="product-footer">
+        <span class="product-price">15 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Apple Magic Mouse -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/apple-magic-mouse.jpg" alt="Souris Apple Magic Mouse" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/apple-magic-mouse-2.jpg" alt="Souris Apple Magic Mouse" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris Apple Magic Mouse</div>
+      <div class="product-spec">Souris sans fil · Bluetooth · Rechargeable</div>
+      <div class="product-footer">
+        <span class="product-price">75 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Premax M4 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/premax-m4.jpg" alt="Souris sans fil Premax M4" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/premax-m4.jpg" alt="Souris sans fil Premax M4" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Premax M4</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">2 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Souris Premax MW8 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/premax-mw8.jpg" alt="Souris sans fil Premax MW8" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/premax-mw8.jpg" alt="Souris sans fil Premax MW8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Premax MW8</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">2 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pack clavier+ souri Mk235 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-h390.webp" alt="Pack clavier + souris sans fil Logitech H390" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-h390-2.webp" alt="Pack clavier + souris sans fil Logitech H390" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack clavier + souris sans fil Logitech Mk235</div>
+      <div class="product-spec">Sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">21 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pack Dell KM3322W -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/dell-km3322w.avif" alt="Pack clavier + souris sans fil Dell KM3322W" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/dell-km3322w-2.avif" alt="Pack clavier + souris sans fil Dell KM3322W" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack clavier + souris sans fil Dell KM3322W</div>
+      <div class="product-spec">Sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">17 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pack Logitech MK270 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/logitech-mk270.webp" alt="Pack clavier + souris sans fil Logitech MK270" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/logitech-mk270-2.webp" alt="Pack clavier + souris sans fil Logitech MK270" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack clavier + souris sans fil Logitech MK270</div>
+      <div class="product-spec">Sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">22 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pack HP CS10 Noir -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hp-cs10-noir.jpg" alt="Pack clavier + souris sans fil HP CS10 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hp-cs10-noir-2.jpg" alt="Pack clavier + souris sans fil HP CS10 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack clavier + souris sans fil HP CS10 (Noir)</div>
+      <div class="product-spec">Sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">19 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pack HP CS10 Blanc -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hp-cs10-blanc.jpg" alt="Pack clavier + souris sans fil HP CS10 Blanc" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hp-cs10-blanc.jpg" alt="Pack clavier + souris sans fil HP CS10 Blanc" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack clavier + souris sans fil HP CS10 (Blanc)</div>
+      <div class="product-spec">Sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">23 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+<!-- ===== MÉMOIRE RAM ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-ddr4-3200-4go-portable.jpg" alt="Barrette RAM DDR4 4 Go 3200 MHz Portable" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-ddr4-3200-4go-portable.jpg" alt="Barrette RAM DDR4 4 Go 3200 MHz Portable" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM DDR4 4 Go — 3200 MHz (Portable)</div>
+      <div class="product-spec">DDR4 · 4 Go · 3200 MHz · SODIMM</div>
+      <div class="product-footer">
+        <span class="product-price">25 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-ddr4-3200-16go.jpg" alt="Barrette RAM DDR4 16 Go 3200 MHz" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-ddr4-3200-16go.jpg" alt="Barrette RAM DDR4 16 Go 3200 MHz" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM DDR4 16 Go — 3200 MHz</div>
+      <div class="product-spec">DDR4 · 16 Go · 3200 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">55 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-ddr4-3200-32go.webp" alt="Barrette RAM DDR4 32 Go 3200 MHz" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-ddr4-3200-32go.webp" alt="Barrette RAM DDR4 32 Go 3200 MHz" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM DDR4 32 Go — 3200 MHz</div>
+      <div class="product-spec">DDR4 · 32 Go · 3200 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">130 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-ddr3l-1600-4go-bureau.webp" alt="Barrette RAM DDR3L 4 Go 1600 MHz Bureau" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-ddr3l-1600-4go-bureau.webp" alt="Barrette RAM DDR3L 4 Go 1600 MHz Bureau" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM DDR3L 4 Go — 1600 MHz (Bureau)</div>
+      <div class="product-spec">DDR3L · 4 Go · 1600 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">18 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-2133-8go-sodimm.jpg" alt="Barrette RAM Crucial DDR4 8 Go 2133 MHz SODIMM" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-2133-8go-sodimm.jpg" alt="Barrette RAM Crucial DDR4 8 Go 2133 MHz SODIMM" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Crucial DDR4 8 Go — 2133 MHz SODIMM</div>
+      <div class="product-spec">DDR4 · 8 Go · 2133 MHz · SODIMM</div>
+      <div class="product-footer">
+        <span class="product-price">22 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-ddr5-4800-sodimm.webp" alt="Barrette RAM DDR5 4800 MHz SODIMM" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-ddr5-4800-sodimm.webp" alt="Barrette RAM DDR5 4800 MHz SODIMM" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM DDR5 4800 MHz SODIMM</div>
+      <div class="product-spec">DDR5 · 4800 MHz · SODIMM</div>
+      <div class="product-footer">
+        <span class="product-price">140 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-16go-ecc-serveur.webp" alt="Barrette RAM Crucial DDR4 16 Go ECC Serveur HP ProLiant DL380" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-16go-ecc-serveur.webp" alt="Barrette RAM Crucial DDR4 16 Go ECC Serveur HP ProLiant DL380" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Crucial DDR4 16 Go ECC — Serveur HP ProLiant DL380</div>
+      <div class="product-spec">DDR4 · 16 Go · ECC · Serveur</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-2400-16go.webp" alt="Barrette RAM Crucial DDR4 16 Go 2400 MHz" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-2400-16go.webp" alt="Barrette RAM Crucial DDR4 16 Go 2400 MHz" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Crucial DDR4 16 Go — 2400 MHz</div>
+      <div class="product-spec">DDR4 · 16 Go · 2400 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">51 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-3200-4go-bureau.jpg" alt="Barrette RAM Crucial DDR4 4 Go 3200 MHz Bureau" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-3200-4go-bureau.jpg" alt="Barrette RAM Crucial DDR4 4 Go 3200 MHz Bureau" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Crucial DDR4 4 Go — 3200 MHz (Bureau)</div>
+      <div class="product-spec">DDR4 · 4 Go · 3200 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">18 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-2666-8go-bureau.jpg" alt="Barrette RAM Crucial DDR4 8 Go 2666 MHz Bureau" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-2666-8go-bureau.jpg" alt="Barrette RAM Crucial DDR4 8 Go 2666 MHz Bureau" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Crucial DDR4 8 Go — 2666 MHz (Bureau)</div>
+      <div class="product-spec">DDR4 · 8 Go · 2666 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">26 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-3200-32go-bureau.jpg" alt="Barrette RAM Crucial DDR4 32 Go 3200 MHz Bureau" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-3200-32go-bureau.jpg" alt="Barrette RAM Crucial DDR4 32 Go 3200 MHz Bureau" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Crucial DDR4 32 Go — 3200 MHz (Bureau)</div>
+      <div class="product-spec">DDR4 · 32 Go · 3200 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">137 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-3200-32go-portable.jpg" alt="Barrette RAM Crucial DDR4 32 Go 3200 MHz Portable" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-crucial-ddr4-3200-32go-portable.jpg" alt="Barrette RAM Crucial DDR4 32 Go 3200 MHz Portable" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Crucial DDR4 32 Go — 3200 MHz (Portable)</div>
+      <div class="product-spec">DDR4 · 32 Go · 3200 MHz · SODIMM</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-crucial-ddr3l-1600-8go-bureau.jpg" alt="Barrette RAM Crucial DDR3L 8 Go 1600 Bureau" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-crucial-ddr3l-1600-8go-bureau.jpg" alt="Barrette RAM Crucial DDR3L 8 Go 1600 Bureau" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Crucial DDR3L 8 Go — 1600 MHz (Bureau)</div>
+      <div class="product-spec">DDR3L · 8 Go · 1600 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">21 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-lexar-ddr4-3200-16go-bureau.jpg" alt="Barrette RAM Lexar DDR4 16 Go 3200 MHz Bureau" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-lexar-ddr4-3200-16go-bureau.jpg" alt="Barrette RAM Lexar DDR4 16 Go 3200 MHz Bureau" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Lexar DDR4 16 Go — 3200 MHz (Bureau)</div>
+      <div class="product-spec">DDR4 · 16 Go · 3200 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">88 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-kingston-fury-ddr5-4800-8go.webp" alt="Barrette RAM Kingston FURY DDR5 8 Go 4800 MHz" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-kingston-fury-ddr5-4800-8go.webp" alt="Barrette RAM Kingston FURY DDR5 8 Go 4800 MHz" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Kingston FURY DDR5 8 Go — 4800 MHz</div>
+      <div class="product-spec">DDR5 · 8 Go · 4800 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-kingston-fury-ddr5-4800-16go.webp" alt="Barrette RAM Kingston FURY DDR5 16 Go 4800 MHz" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-kingston-fury-ddr5-4800-16go.webp" alt="Barrette RAM Kingston FURY DDR5 16 Go 4800 MHz" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Kingston FURY DDR5 16 Go — 4800 MHz</div>
+      <div class="product-spec">DDR5 · 16 Go · 4800 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-kingston-fury-ddr5-5600-32go.jpg" alt="Barrette RAM Kingston FURY DDR5 32 Go 5600 MHz" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-kingston-fury-ddr5-5600-32go-2.jpg" alt="Barrette RAM Kingston FURY DDR5 32 Go 5600 MHz" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Barrette RAM Kingston FURY DDR5 32 Go — 5600 MHz</div>
+      <div class="product-spec">DDR5 · 32 Go · 5600 MHz</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ram-hp-serveur-32go-pc4-2933y.jpg" alt="RAM Serveur HP 32 Go PC4-2933Y" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ram-hp-serveur-32go-pc4-2933y.jpg" alt="RAM Serveur HP 32 Go PC4-2933Y" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">RAM Serveur HP 32 Go — PC4-2933Y</div>
+      <div class="product-spec">DDR4 · 32 Go · PC4-2933Y · Serveur</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ADAPTATEURS / HUBS / STATIONS D'ACCUEIL ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/adaptateur-otg-android.jpg" alt="Adaptateur OTG intelligent pour Android" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/adaptateur-otg-android.jpg" alt="Adaptateur OTG intelligent pour Android" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Adaptateur OTG intelligent pour Android</div>
+      <div class="product-spec">Micro USB vers USB</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hub-antho-usb-c-11en1.jpg" alt="Hub ANTHO USB-C 11 en 1" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hub-antho-usb-c-11en1.jpg" alt="Hub ANTHO USB-C 11 en 1" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Hub ANTHO USB-C 11 en 1</div>
+      <div class="product-spec">HDMI 4K · VGA · LAN RJ45 · 4x USB</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hub-usb-c-6en1.jpg" alt="Hub USB-C Multiport 6 en 1" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hub-usb-c-6en1.jpg" alt="Hub USB-C Multiport 6 en 1" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Hub USB-C Multiport 6 en 1</div>
+      <div class="product-spec">HDMI · USB 3.0 · USB 2.0 · Rallonge USB-C</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/hub-usb-3-tsupy.jpg" alt="Hub USB 3.0 TSUPY" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/hub-usb-3-tsupy-2.jpg" alt="Hub USB 3.0 TSUPY" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Hub USB 3.0 TSUPY</div>
+      <div class="product-spec">Câble 1,2 m · Aluminium ultra-fin</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/station-accueil-hp-usb-c.jpg" alt="Mini station d'accueil HP USB-C" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/station-accueil-hp-usb-c-2.jpg" alt="Mini station d'accueil HP USB-C" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Mini station d'accueil HP USB-C</div>
+      <div class="product-spec">Station d'accueil USB-C</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/adaptateur-dock-hp-hub-8-en-1.avif" alt="Adaptateur mini dock station HP Hub Type C vers 8 sorties" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/adaptateur-dock-hp-hub-8-en-1.avif" alt="Adaptateur mini dock station HP Hub Type C vers 8 sorties" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Adaptateur mini dock station HP Hub Type C — 8 sorties</div>
+      <div class="product-spec">USB · HDMI · VGA · Multiport</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/station-accueil-surface-pro.jpg" alt="Station d'accueil Surface Pro" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/station-accueil-surface-pro-2.jpg" alt="Station d'accueil Surface Pro" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Station d'accueil Surface Pro</div>
+      <div class="product-spec">Station d'accueil</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== WEBCAMS ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/webcam-logitech-group.jpg" alt="Logitech Group Système de Webcam" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/webcam-logitech-group-2.jpg" alt="Logitech Group Système de Webcam" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Logitech Group — Système de Webcam</div>
+      <div class="product-spec">Webcam salle de réunion</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/webcam-logitech-c920pro.jpg" alt="Logitech HD Webcam C920 Pro" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/webcam-logitech-c920pro-2.jpg" alt="Logitech HD Webcam C920 Pro" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Logitech HD Webcam C920 Pro</div>
+      <div class="product-spec">Full HD 1080p</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/webcam-logitech-c270.jpg" alt="Logitech Webcam C270" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/webcam-logitech-c270.jpg" alt="Logitech Webcam C270" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Logitech Webcam C270</div>
+      <div class="product-spec">HD 720p</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/webcam-gf-1200.jpg" alt="Webcam GF 1200" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/webcam-gf-1200.jpg" alt="Webcam GF 1200" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Webcam GF 1200</div>
+      <div class="product-spec">Webcam USB</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/webcam-hikvision.jpg" alt="Webcam Hikvision" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/webcam-hikvision-2.jpg" alt="Webcam Hikvision" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Webcam Hikvision</div>
+      <div class="product-spec">Webcam USB</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== GRAVEUR DVD ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/graveur-dvd-hp-externe.jpg" alt="Graveur - Lecteur DVD Externe HP USB" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/graveur-dvd-hp-externe-2.jpg" alt="Graveur - Lecteur DVD Externe HP USB" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Graveur — Lecteur DVD Externe HP USB</div>
+      <div class="product-spec">Pour ordinateur portable · USB</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CÂBLES ===== -->
+
+  <!-- Câble HDMI 4K Hdtv — 6 longueurs -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-4k.jpg" alt="Câble HDMI 4K — 3 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-4k-2.jpg" alt="Câble HDMI 4K — 3 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI 4K — 3 mètres</div>
+      <div class="product-spec">HDMI · 4K · 3 m</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-4k.jpg" alt="Câble HDMI 4K — 5 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-4k-2.jpg" alt="Câble HDMI 4K — 5 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI 4K — 5 mètres</div>
+      <div class="product-spec">HDMI · 4K · 5 m</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-4k.jpg" alt="Câble HDMI 4K — 10 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-4k-2.jpg" alt="Câble HDMI 4K — 10 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI 4K — 10 mètres</div>
+      <div class="product-spec">HDMI · 4K · 10 m</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-4k.jpg" alt="Câble HDMI 4K — 15 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-4k-2.jpg" alt="Câble HDMI 4K — 15 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI 4K — 15 mètres</div>
+      <div class="product-spec">HDMI · 4K · 15 m</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-4k.jpg" alt="Câble HDMI 4K — 20 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-4k-2.jpg" alt="Câble HDMI 4K — 20 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI 4K — 20 mètres</div>
+      <div class="product-spec">HDMI · 4K · 20 m</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-4k.jpg" alt="Câble HDMI 4K — 30 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-4k-2.jpg" alt="Câble HDMI 4K — 30 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI 4K — 30 mètres</div>
+      <div class="product-spec">HDMI · 4K · 30 m</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Câble HDMI 30M 4K (produit distinct) -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-30m-4k.jpg" alt="Câble HDMI 30 m 4K" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-30m-4k-2.jpg" alt="Câble HDMI 30 m 4K" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI 4K — 30 mètres (Pro)</div>
+      <div class="product-spec">HDMI · 4K · 30 m</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Câble Display Port vers HDMI -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-dp-hdmi-1-8m.jpg" alt="Câble Display Port vers HDMI — 1.8 mètre" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-dp-hdmi-1-8m-2.jpg" alt="Câble Display Port vers HDMI — 1.8 mètre" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble Display Port vers HDMI — 1.8 m</div>
+      <div class="product-spec">DisplayPort → HDMI · 4K</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Câble USB Imprimante TOPLINK — 3 longueurs -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-usb-imprimante-toplink.jpg" alt="Câble USB Imprimante TOPLINK — 1.5 mètre" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-usb-imprimante-toplink-2.jpg" alt="Câble USB Imprimante TOPLINK — 1.5 mètre" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble USB Imprimante TOPLINK — 1.5 m</div>
+      <div class="product-spec">USB · Imprimante</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-usb-imprimante-toplink.jpg" alt="Câble USB Imprimante TOPLINK — 3 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-usb-imprimante-toplink-2.jpg" alt="Câble USB Imprimante TOPLINK — 3 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble USB Imprimante TOPLINK — 3 m</div>
+      <div class="product-spec">USB · Imprimante</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-usb-imprimante-toplink.jpg" alt="Câble USB Imprimante TOPLINK — 5 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-usb-imprimante-toplink-2.jpg" alt="Câble USB Imprimante TOPLINK — 5 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble USB Imprimante TOPLINK — 5 m</div>
+      <div class="product-spec">USB · Imprimante</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Câble HDMI TOPLINK M-M 1080p 3D — 8 longueurs -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 1 mètre" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 1 mètre" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI TOPLINK — 1 m</div>
+      <div class="product-spec">HDMI · 1080p 3D · M-M</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 1.5 mètre" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 1.5 mètre" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI TOPLINK — 1.5 m</div>
+      <div class="product-spec">HDMI · 1080p 3D · M-M</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 2 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 2 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI TOPLINK — 2 m</div>
+      <div class="product-spec">HDMI · 1080p 3D · M-M</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 3 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 3 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI TOPLINK — 3 m</div>
+      <div class="product-spec">HDMI · 1080p 3D · M-M</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 5 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink.jpg" alt="Câble HDMI TOPLINK — 5 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI TOPLINK — 5 m</div>
+      <div class="product-spec">HDMI · 1080p 3D · M-M</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink-2.jpg" alt="Câble HDMI TOPLINK — 10 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink-2.jpg" alt="Câble HDMI TOPLINK — 10 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI TOPLINK — 10 m</div>
+      <div class="product-spec">HDMI · 1080p 3D · M-M</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink-2.jpg" alt="Câble HDMI TOPLINK — 15 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink-2.jpg" alt="Câble HDMI TOPLINK — 15 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI TOPLINK — 15 m</div>
+      <div class="product-spec">HDMI · 1080p 3D · M-M</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink-2.jpg" alt="Câble HDMI TOPLINK — 20 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-hdmi-toplink-2.jpg" alt="Câble HDMI TOPLINK — 20 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI TOPLINK — 20 m</div>
+      <div class="product-spec">HDMI · 1080p 3D · M-M</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Câble VGA — 4 longueurs -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-vga.jpg" alt="Câble VGA — 1.5 mètre" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-vga.jpg" alt="Câble VGA — 1.5 mètre" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble VGA — 1.5 m</div>
+      <div class="product-spec">VGA</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-vga.jpg" alt="Câble VGA — 2 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-vga.jpg" alt="Câble VGA — 2 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble VGA — 2 m</div>
+      <div class="product-spec">VGA</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-vga.jpg" alt="Câble VGA — 3 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-vga.jpg" alt="Câble VGA — 3 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble VGA — 3 m</div>
+      <div class="product-spec">VGA</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-vga.jpg" alt="Câble VGA — 5 mètres" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-vga.jpg" alt="Câble VGA — 5 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble VGA — 5 m</div>
+      <div class="product-spec">VGA</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Câbles d'alimentation -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-alim-pc-bureau.jpg" alt="Câble d'alimentation PC Bureau / Moniteur" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-alim-pc-bureau-2.jpg" alt="Câble d'alimentation PC Bureau / Moniteur" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble d'alimentation PC Bureau / Moniteur</div>
+      <div class="product-spec">Noir · Standard</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cable-alim-chargeur-portable.jpg" alt="Câble d'alimentation pour chargeur PC portable" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cable-alim-chargeur-portable.jpg" alt="Câble d'alimentation pour chargeur PC portable" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble d'alimentation pour chargeur PC portable</div>
+      <div class="product-spec">Standard</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <!-- FIN ACCESSOIRES PC -->
+
+
+    <!-- ============================================================
+      SECTION 2 : AUDIO
+      → id="audio"
+      → Regroupe : casque, haut-parleur, enceinte
+    ============================================================ -->
+      <div class="section-row" id="audio" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Audio</h2>
+    </div>
+          <div class="products-grid">
+
+
+    <!-- ===== CASQUES ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-hp-h100.jpg" alt="Casque HP USB H100" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-hp-h100.jpg" alt="Casque HP USB H100" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque HP USB H100</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">17 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-hp-h120g.webp" alt="Casque HP USB H120 G" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-hp-h120g-2.jpg" alt="Casque HP USB H120 G" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque HP USB H120 G</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">18 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-hp-h200.jpg" alt="Casque HP USB H200" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-hp-h200-2.jpg" alt="Casque HP USB H200" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque HP USB H200</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">25 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-hp-h220.jpg" alt="Casque HP USB H220" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-hp-h220-2.jpg" alt="Casque HP USB H220" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque HP USB H220</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">26 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-logitech-h540.png" alt="Casque Logitech H540" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-logitech-h540-2.png" alt="Casque Logitech H540" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H540</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">27 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-logitech-h390.jpg" alt="Casque Logitech H390" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-logitech-h390-2.jpg" alt="Casque Logitech H390" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H390</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">21 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-logitech-h340.jpg" alt="Casque Logitech H340" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-logitech-h340-2.jpg" alt="Casque Logitech H340" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H340</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">18 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-logitech-h960.webp" alt="Casque Logitech H960" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-logitech-h960-2.webp" alt="Casque Logitech H960" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H960</div>
+      <div class="product-spec">Casque sans fil</div>
+      <div class="product-footer">
+        <span class="product-price">19 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-logitech-h111.jpg" alt="Casque Logitech H111 Filaire" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-logitech-h111-2.jpg" alt="Casque Logitech H111 Filaire" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H111 Filaire</div>
+      <div class="product-spec">Casque filaire · Jack 3.5mm</div>
+      <div class="product-footer">
+        <span class="product-price">9 500 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-logitech-h110.webp" alt="Casque Logitech H110 Filaire" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-logitech-h110-2.webp" alt="Casque Logitech H110 Filaire" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H110 Filaire</div>
+      <div class="product-spec">Casque filaire · Jack 3.5mm</div>
+      <div class="product-footer">
+        <span class="product-price">12 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/casque-logitech-h151.jpg" alt="Casque Logitech H151" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/casque-logitech-h151-2.jpg" alt="Casque Logitech H151" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H151</div>
+      <div class="product-spec">Casque filaire · Jack 3.5mm</div>
+      <div class="product-footer">
+        <span class="product-price">14 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HAUT-PARLEURS / ENCEINTES ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/enceinte-fd-y5.jpg" alt="Haut-parleur Music FD-Y5" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/enceinte-fd-y5-2.jpg" alt="Haut-parleur Music FD-Y5" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Haut-parleur Music FD-Y5</div>
+      <div class="product-spec">Enceinte portable</div>
+      <div class="product-footer">
+        <span class="product-price">15 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/enceinte-fd-y3.png" alt="Haut-parleur Musique FD-Y3" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/enceinte-fd-y3-2.png" alt="Haut-parleur Musique FD-Y3" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Haut-parleur Musique FD-Y3</div>
+      <div class="product-spec">Enceinte portable</div>
+      <div class="product-footer">
+        <span class="product-price">12 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/enceinte-s33-giga-360.webp" alt="Haut-parleur S33 Giga 360" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/enceinte-s33-giga-360-2.png" alt="Haut-parleur S33 Giga 360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Haut-parleur S33 Giga 360</div>
+      <div class="product-spec">Enceinte Bluetooth 360°</div>
+      <div class="product-footer">
+        <span class="product-price">8 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/enceinte-hifuture-ripple.jpg" alt="Enceinte Bluetooth HiFuture Ripple" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/enceinte-hifuture-ripple-2.jpg" alt="Enceinte Bluetooth HiFuture Ripple" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Enceinte Bluetooth HiFuture Ripple</div>
+      <div class="product-spec">Bluetooth · Portable</div>
+      <div class="product-footer">
+        <span class="product-price">28 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/enceinte-jabra-speak-510.jpg" alt="Jabra Speak 510 — Haut-parleur" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/enceinte-jabra-speak-510-2.jpg" alt="Jabra Speak 510 — Haut-parleur" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Jabra Speak 510 — Haut-parleur</div>
+      <div class="product-spec">Enceinte conférence · USB/Bluetooth</div>
+      <div class="product-footer">
+        <span class="product-price">95 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/enceinte-jabra-speak-710.jpg" alt="Jabra Speak 710 — Enceinte" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/enceinte-jabra-speak-710-2.jpg" alt="Jabra Speak 710 — Enceinte" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Jabra Speak 710 — Enceinte</div>
+      <div class="product-spec">Enceinte conférence · USB/Bluetooth</div>
+      <div class="product-footer">
+        <span class="product-price">185 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/enceinte-jabra-speak-810.jpg" alt="Jabra Speak 810 — Haut-parleur" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/enceinte-jabra-speak-810-2.jpg" alt="Jabra Speak 810 — Haut-parleur" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Jabra Speak 810 — Haut-parleur</div>
+      <div class="product-spec">Enceinte conférence · USB/Bluetooth</div>
+      <div class="product-footer">
+        <span class="product-price">330 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+            </div>
+    </div>
+  </div>
+
+</div>
+
+
+    <!-- FIN AUDIO -->
+
+
+    <!-- ============================================================
+      SECTION 3 : CONSOMMABLES & LOGICIELS
+      → id="consommables"
+      → Regroupe : cartouches, encre, antivirus/licences Microsoft
+    ============================================================ -->
+    <div class="section-row" id="consommables" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Consommables & logiciels</h2>
+    </div>
+    <div class="products-grid">
+      <!-- ===== TONERS LASER ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-canon-725-noir.webp" alt="Toner Canon 725 noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-canon-725-noir.webp" alt="Toner Canon 725 noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner Canon 725 — Noir (1600 pages)</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-59a.png" alt="Toner HP 59A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-59a.png" alt="Toner HP 59A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 59A</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-59x-cf259x.webp" alt="Toner HP 59X (CF259X)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-59x-cf259x.webp" alt="Toner HP 59X (CF259X)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 59X (CF259X) — 10 000 pages</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-107a.png" alt="Toner HP 107A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-107a.png" alt="Toner HP 107A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 107A</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-207a-noir.png" alt="Toner HP 207A — Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-207a-noir-2.png" alt="Toner HP 207A — Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 207A — Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-17a-cf217a.webp" alt="Toner HP 17A (CF217A) compatible" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-17a-cf217a.webp" alt="Toner HP 17A (CF217A) compatible" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 17A (CF217A) — Compatible</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-207x-jaune-w2212x.png" alt="Toner HP 207X Jaune (W2212X)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-207x-jaune-w2212x.png" alt="Toner HP 207X Jaune (W2212X)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 207X — Jaune (W2212X) Haute capacité</div>
+      <div class="product-spec">Toner laser · Original</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-205a-pack4.jpg" alt="Ensemble Toner HP 205A compatible (CF530-533A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-205a-pack4.jpg" alt="Ensemble Toner HP 205A compatible (CF530-533A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Ensemble Toner HP 205A — 4 couleurs (CF530-533A)</div>
+      <div class="product-spec">Toner laser · Compatible</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-117a.jpg" alt="Toner HP 117A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-117a.jpg" alt="Toner HP 117A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 117A</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-307a-ce740a.webp" alt="Toner HP 307A Noir (CE740A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-307a-ce740a.webp" alt="Toner HP 307A Noir (CE740A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 307A — Noir (CE740A)</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-410a-cf410a.png" alt="Toner HP 410A Noir Original (CF410A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-410a-cf410a.png" alt="Toner HP 410A Noir Original (CF410A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 410A — Noir Original (CF410A)</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-216a-w2413a-magenta.jpg" alt="Toner HP 216A Magenta (W2413A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-216a-w2413a-magenta.jpg" alt="Toner HP 216A Magenta (W2413A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 216A — Magenta (W2413A) — 850 pages</div>
+      <div class="product-spec">Toner laser · Magenta</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-106a-w1106a.jpg" alt="Toner HP 106A Black (W1106A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-106a-w1106a-2.jpg" alt="Toner HP 106A Black (W1106A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 106A — Black (W1106A) — 1000 pages</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-130a-magenta.jpg" alt="Toner HP LaserJet 130A Magenta" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-130a-magenta-2.jpg" alt="Toner HP LaserJet 130A Magenta" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP LaserJet 130A — Magenta</div>
+      <div class="product-spec">Toner laser · Magenta</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-130a-kit4.jpg" alt="Kit Toner HP 130A Noir-Bleu-Jaune-Rouge" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-130a-kit4.jpg" alt="Kit Toner HP 130A Noir-Bleu-Jaune-Rouge" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kit Toner HP 130A — 4 couleurs</div>
+      <div class="product-spec">Toner laser · Pack 4 couleurs</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-207a-pack4.jpg" alt="Pack 4 Cartouches Toner HP 207A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-207a-pack4.jpg" alt="Pack 4 Cartouches Toner HP 207A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack 4 Cartouches Toner HP 207A — BCYM</div>
+      <div class="product-spec">Toner laser · Pack 4 couleurs</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-216a-pack4.webp" alt="Pack 4 Cartouches Toner HP 216A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-216a-pack4.webp" alt="Pack 4 Cartouches Toner HP 216A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack 4 Cartouches Toner HP 216A — BCYM</div>
+      <div class="product-spec">Toner laser · Pack 4 couleurs</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-premax-83a.webp" alt="Toner Premax 83A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-premax-83a.webp" alt="Toner Premax 83A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner Premax 83A</div>
+      <div class="product-spec">Toner laser · Compatible</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-canon-cexv66.jpg" alt="Toner Canon CEXV 66 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-canon-cexv66.jpg" alt="Toner Canon CEXV 66 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner Canon C-EXV 66 — Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-canon-cexv54.jpg" alt="Toner Canon C-EXV 54" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-canon-cexv54.jpg" alt="Toner Canon C-EXV 54" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack Toner Canon C-EXV 54</div>
+      <div class="product-spec">Toner laser</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-85a-ce285a.jpg" alt="Toner HP 85A Compatible (CE285A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-85a-ce285a.jpg" alt="Toner HP 85A Compatible (CE285A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 85A — Compatible (CE285A)</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-canon-cexv49-pack-couleurs.webp" alt="Toner Canon C-EXV 49 — Pack 4 couleurs" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-canon-cexv49-pack-couleurs.webp" alt="Toner Canon C-EXV 49 — Pack 4 couleurs" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner Canon C-EXV 49 — Pack 4 couleurs</div>
+      <div class="product-spec">Toner laser · Pack 4 couleurs</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-415a-w2030a.jpg" alt="Toner HP 415A Noir (W2030A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-415a-w2030a-2.jpg" alt="Toner HP 415A Noir (W2030A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 415A — Noir (W2030A) — 2400 pages</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-79a-cf279a.webp" alt="Toner HP 79A Original Noir (CF279A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-79a-cf279a.webp" alt="Toner HP 79A Original Noir (CF279A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 79A — Original Noir (CF279A)</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-206a.webp" alt="Toner HP 206A Original Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-206a.webp" alt="Toner HP 206A Original Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 206A — Original Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-26a-cf226a.jpg" alt="Toner HP 26A Compatible Noir (CF226A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-26a-cf226a-2.jpg" alt="Toner HP 26A Compatible Noir (CF226A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 26A — Compatible Noir (CF226A)</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-106a-original.png" alt="Toner HP 106A Original Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-106a-original.png" alt="Toner HP 106A Original Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 106A — Original Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-hp-410a-original-couleur.png" alt="Toner HP 410A Original Couleur" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-hp-410a-original-couleur.png" alt="Toner HP 410A Original Couleur" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 410A — Original Couleur</div>
+      <div class="product-spec">Toner laser · Couleur</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-premax-17a.png" alt="Cartouche Laser Premax 17A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-premax-17a.png" alt="Cartouche Laser Premax 17A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche Laser Premax 17A — Compatible</div>
+      <div class="product-spec">Toner laser · Compatible</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-premax-30a.jpg" alt="Cartouche Laser Premax 30A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-premax-30a-2.jpg" alt="Cartouche Laser Premax 30A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche Laser Premax 30A — Compatible</div>
+      <div class="product-spec">Toner laser · Compatible</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-premax-59a.webp" alt="Cartouche Laser Premax 59A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-premax-59a.webp" alt="Cartouche Laser Premax 59A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche Laser Premax 59A</div>
+      <div class="product-spec">Toner laser · Compatible</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-premax-230a.jpg" alt="Cartouche Laser Premax 230A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-premax-230a.jpg" alt="Cartouche Laser Premax 230A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche Laser Premax 230A</div>
+      <div class="product-spec">Toner laser · Compatible</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-premax-305a-pack4.jpg" alt="Cartouche Laser Premax CF410-413 (305A)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-premax-305a-pack4.jpg" alt="Cartouche Laser Premax CF410-413 (305A)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche Laser Premax 305A — Pack 4 (CF410-413)</div>
+      <div class="product-spec">Toner laser · Pack 4 couleurs</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-canon-069.jpg" alt="Toner Canon 069 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-canon-069.jpg" alt="Toner Canon 069 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner Canon 069 — Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-canon-cexv49-noir.jpg" alt="Toner Canon C-EXV 49 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-canon-cexv49-noir.jpg" alt="Toner Canon C-EXV 49 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner Canon C-EXV 49 — Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-canon-cexv65.jpg" alt="Toner Canon C-EXV 65 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-canon-cexv65.jpg" alt="Toner Canon C-EXV 65 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner Canon C-EXV 65 — Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/toner-canon-cexv67.jpg" alt="Toner Canon C-EXV 67 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/toner-canon-cexv67.jpg" alt="Toner Canon C-EXV 67 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner Canon C-EXV 67 — Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <!-- ===== CARTOUCHES D'ENCRE (JET D'ENCRE) ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-650-noir.jpg" alt="Cartouche encre HP 650 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-650-noir.jpg" alt="Cartouche encre HP 650 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche d'encre HP 650 — Noir</div>
+      <div class="product-spec">Cartouche jet d'encre · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-650-couleur.webp" alt="Cartouche encre HP 650 Couleur" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-650-couleur.webp" alt="Cartouche encre HP 650 Couleur" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche d'encre HP 650 — Couleur</div>
+      <div class="product-spec">Cartouche jet d'encre · Couleur</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-epson-108-noir.jpg" alt="Bouteille d'encre Epson 108 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-epson-108-noir.jpg" alt="Bouteille d'encre Epson 108 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Bouteille d'encre Epson 108 — Noir</div>
+      <div class="product-spec">Encre EcoTank · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-21-22-pack.webp" alt="HP 21-22 Pack de 2 (SD367AE)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-21-22-pack.webp" alt="HP 21-22 Pack de 2 (SD367AE)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP 21-22 — Pack de 2 (Noir + Couleurs, SD367AE)</div>
+      <div class="product-spec">Cartouche jet d'encre originale</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-564-jaune.jpg" alt="HP 564 Jaune (CB320WN)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-564-jaune.jpg" alt="HP 564 Jaune (CB320WN)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 564 — Jaune (CB320WN)</div>
+      <div class="product-spec">Cartouche jet d'encre originale</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-652-couleur.jpg" alt="HP 652 Cartouche Couleur Advantage" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-652-couleur-2.jpg" alt="HP 652 Cartouche Couleur Advantage" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 652 — Couleur (Advantage)</div>
+      <div class="product-spec">Cartouche jet d'encre · Couleur</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-953xl-pack4.jpg" alt="HP 953XL Pack de 4 Cartouches" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-953xl-pack4.jpg" alt="HP 953XL Pack de 4 Cartouches" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP 953XL — Pack de 4 Cartouches</div>
+      <div class="product-spec">Cartouche jet d'encre · Pack 4</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-953xl-jaune.jpg" alt="HP 953XL Jaune" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-953xl-jaune.jpg" alt="HP 953XL Jaune" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 953XL — Jaune</div>
+      <div class="product-spec">Cartouche jet d'encre · Jaune</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-653.webp" alt="Cartouche HP 653 Ink Advantage Noire" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-653.webp" alt="Cartouche HP 653 Ink Advantage Noire" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 653 — Ink Advantage Noire</div>
+      <div class="product-spec">Cartouche jet d'encre · Noir · Authentique</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-953xl-noir.jpg" alt="Cartouche HP 953XL Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-953xl-noir.jpg" alt="Cartouche HP 953XL Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 953XL — Noir</div>
+      <div class="product-spec">Cartouche jet d'encre · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-63-pack.jpg" alt="Cartouche HP 63 Pack Noir et Couleur" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-63-pack.jpg" alt="Cartouche HP 63 Pack Noir et Couleur" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack Cartouche HP 63 — Noir + Couleur</div>
+      <div class="product-spec">Cartouche jet d'encre · Pack 2</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-305-noir.webp" alt="Cartouche HP 305 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-305-noir.webp" alt="Cartouche HP 305 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 305 — Noir</div>
+      <div class="product-spec">Cartouche jet d'encre · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-epson-ecotank-103.jpg" alt="Bouteille d'encre Epson EcoTank 103 Noire" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-epson-ecotank-103-2.jpg" alt="Bouteille d'encre Epson EcoTank 103 Noire" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Bouteille d'encre Epson EcoTank 103 — Noire</div>
+      <div class="product-spec">Encre EcoTank · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-177-magenta.jpg" alt="Cartouche 177 Magenta Couleur" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-177-magenta.jpg" alt="Cartouche 177 Magenta Couleur" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 177 — Magenta</div>
+      <div class="product-spec">Cartouche jet d'encre · Magenta</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-liquide-dye-ink-1l.webp" alt="Cartouche d'encre liquide Dye Ink 1 litre" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-liquide-dye-ink-1l.webp" alt="Cartouche d'encre liquide Dye Ink 1 litre" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Encre liquide Dye Ink — 1 litre</div>
+      <div class="product-spec">Encre liquide · 1L</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-21-noir.jpg" alt="Cartouche HP 21 Noir (C9351AE)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-21-noir.jpg" alt="Cartouche HP 21 Noir (C9351AE)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 21 — Noir (C9351AE)</div>
+      <div class="product-spec">Cartouche jet d'encre · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-63-tricolore.webp" alt="Cartouche HP 63 Tricolore" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-63-tricolore.webp" alt="Cartouche HP 63 Tricolore" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 63 — Tricolore</div>
+      <div class="product-spec">Cartouche jet d'encre · Tricolore</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-305-couleur.webp" alt="Cartouche HP 305 Couleur (3YM60AE)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-305-couleur.webp" alt="Cartouche HP 305 Couleur (3YM60AE)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 305 — Couleur (3YM60AE)</div>
+      <div class="product-spec">Cartouche jet d'encre · Couleur</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-123-tricolor.jpg" alt="Cartouche HP 123 Tricolor" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-123-tricolor-2.jpg" alt="Cartouche HP 123 Tricolor" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 123 — Tricolor</div>
+      <div class="product-spec">Cartouche jet d'encre · Tricolore</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-177-noir.jpg" alt="Cartouche HP 177 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-177-noir.jpg" alt="Cartouche HP 177 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 177 — Noir</div>
+      <div class="product-spec">Cartouche jet d'encre · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-61-noir.webp" alt="Cartouche HP 61 Noir" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-61-noir.webp" alt="Cartouche HP 61 Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 61 — Noir</div>
+      <div class="product-spec">Cartouche jet d'encre · Noir</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/encre-hp-61-couleur.jpg" alt="Cartouche HP 61 Couleur (CH562WM)" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/encre-hp-61-couleur.jpg" alt="Cartouche HP 61 Couleur (CH562WM)" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 61 — Couleur (CH562WM)</div>
+      <div class="product-spec">Cartouche jet d'encre · Couleur</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+    <!-- ===== LICENCES / LOGICIELS ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/windows-10-pro-dvd.webp" alt="Windows 10 Pro 64 bits DVD avec licence" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/windows-10-pro-dvd-2.webp" alt="Windows 10 Pro 64 bits DVD avec licence" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Windows 10 Pro 64 bits — DVD avec licence</div>
+      <div class="product-spec">Licence logicielle</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/windows-server-2019.jpg" alt="Windows Server Standard 2019 Licence & Clé" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/windows-server-2019-2.jpg" alt="Windows Server Standard 2019 Licence & Clé" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Windows Server Standard 2019 — Licence & Clé</div>
+      <div class="product-spec">Licence logicielle · Serveur</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/office-2021-pro-plus.jpg" alt="Clé d'activation Office 2021 Professionnel Plus Globale" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/office-2021-pro-plus.jpg" alt="Clé d'activation Office 2021 Professionnel Plus Globale" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Office 2021 Professionnel Plus — Clé d'activation Globale</div>
+      <div class="product-spec">Licence logicielle</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/cle-usb-windows-10-pro.jpg" alt="Clé USB Bootable + Licence Windows 10 Professionnel" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/cle-usb-windows-10-pro.jpg" alt="Clé USB Bootable + Licence Windows 10 Professionnel" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Clé USB Bootable + Licence Windows 10 Professionnel</div>
+      <div class="product-spec">Licence logicielle · Support USB</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/kaspersky-internet-security-3postes.webp" alt="Kaspersky Internet Security 3 Postes + 1 Offert" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/kaspersky-internet-security-3postes.webp" alt="Kaspersky Internet Security 3 Postes + 1 Offert" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kaspersky Internet Security — 3 Postes + 1 Offert (1 an)</div>
+      <div class="product-spec">Licence antivirus</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/kaspersky-small-office.jpg" alt="Licence Kaspersky Small Office Security" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/kaspersky-small-office.jpg" alt="Licence Kaspersky Small Office Security" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kaspersky Small Office Security — 1 Serveur + 10 PC</div>
+      <div class="product-spec">Licence antivirus</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/office-2019-pro-plus-coffret.webp" alt="Licence Microsoft Office Professionnelle Plus 2019 Coffret + USB" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/office-2019-pro-plus-coffret.webp" alt="Licence Microsoft Office Professionnelle Plus 2019 Coffret + USB" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Office Professionnel Plus 2019 — Coffret + USB (1 PC)</div>
+      <div class="product-spec">Licence logicielle</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/visio-2021-pro-coffret.webp" alt="Licence Microsoft Visio Professionnelle 2021 Coffret" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/visio-2021-pro-coffret.webp" alt="Licence Microsoft Visio Professionnelle 2021 Coffret" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Visio Professionnel 2021 — Coffret (1 PC)</div>
+      <div class="product-spec">Licence logicielle</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/office-2019-pro-plus.jpg" alt="Office 2019 Professionnel Plus" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/office-2019-pro-plus.jpg" alt="Office 2019 Professionnel Plus" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Office 2019 Professionnel Plus</div>
+      <div class="product-spec">Licence logicielle</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/windows-11-sticker.jpg" alt="Licence Windows 11 Sticker" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/windows-11-sticker.jpg" alt="Licence Windows 11 Sticker" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Licence Windows 11 — Sticker</div>
+      <div class="product-spec">Licence logicielle</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/microsoft-365-pro-plus-5pc.jpg" alt="Microsoft 365 Professional Plus 5 PC" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/microsoft-365-pro-plus-5pc-2.webp" alt="Microsoft 365 Professional Plus 5 PC" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Microsoft 365 Professional Plus — Licence 5 PC</div>
+      <div class="product-spec">Licence logicielle</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/windows-11-coffret-usb.jpg" alt="Coffret Windows 11 USB + Clé" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/windows-11-coffret-usb.jpg" alt="Coffret Windows 11 USB + Clé" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Coffret Windows 11 — USB + Clé</div>
+      <div class="product-spec">Licence logicielle · Support USB</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <!-- ===== AUTRES : CARTES PVC / RUBANS ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/carte-pvc-clemsys.jpg" alt="Carte PVC Clemsys" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/carte-pvc-clemsys.jpg" alt="Carte PVC Clemsys" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Carte PVC Clemsys</div>
+      <div class="product-spec">Carte vierge · Impression badge</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ruban-pvc-evolis-primacy2.jpg" alt="Cartouche Ruban PVC Evolis Primacy 2 YMCKO" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ruban-pvc-evolis-primacy2-2.jpg" alt="Cartouche Ruban PVC Evolis Primacy 2 YMCKO" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Ruban PVC Evolis Primacy 2 — YMCKO (r5f208m100)</div>
+      <div class="product-spec">Ruban couleur · Imprimante badge</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/ruban-pvc-evolis-primacy.png" alt="Cartouche Ruban PVC Evolis Primacy YMCKO" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/ruban-pvc-evolis-primacy-2.png" alt="Cartouche Ruban PVC Evolis Primacy YMCKO" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Ruban PVC Evolis Primacy — YMCKO</div>
+      <div class="product-spec">Ruban couleur · Imprimante badge</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  </div>
+
+
+    
+    <!-- FIN CONSOMMABLES & LOGICIELS -->
+
+
+    <!-- ============================================================
+      SECTION 4 : ÉQUIPEMENTS BUREAU
+      → id="bureau-electromenager"
+      → Regroupe : machine à compter l'argent, caisse enregistreuse,
+        onduleur, télévision, climatiseur, kit outillage
+    ============================================================ -->
+    <div class="section-row" id="bureau-electromenager" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Équipements bureau</h2>
+    </div>
+    <div class="products-grid">
+
+        <!-- ===== ONDULEURS / UPS ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/batterie-onduleur-premax-12v-7ah.jpg" alt="Batterie onduleur UPS Premax 12V 7Ah" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/batterie-onduleur-premax-12v-7ah.jpg" alt="Batterie onduleur UPS Premax 12V 7Ah" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Batterie onduleur UPS Premax — 12V 7Ah</div>
+      <div class="product-spec">Batterie de remplacement</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-apc-800va.jpg" alt="Onduleur Back-UPS APC 800 VA" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-apc-800va.jpg" alt="Onduleur Back-UPS APC 800 VA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur Back-UPS APC 800 VA — 230V, AVR, prises CEI</div>
+      <div class="product-spec">Onduleur · 800 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-apc-750va-bx750mi.jpg" alt="Onduleur APC 750VA Line-Interactive BX750MI" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-apc-750va-bx750mi.jpg" alt="Onduleur APC 750VA Line-Interactive BX750MI" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur APC 750VA Line-Interactive — BX750MI</div>
+      <div class="product-spec">Onduleur · 750 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-1500va.jpg" alt="Onduleur 1500 VA" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-1500va-2.jpg" alt="Onduleur 1500 VA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur 1500 VA</div>
+      <div class="product-spec">Onduleur · 1500 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-apc-easy-ups-650va.jpg" alt="Onduleur APC Easy UPS 650VA" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-apc-easy-ups-650va-2.jpg" alt="Onduleur APC Easy UPS 650VA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur APC Easy UPS — 650VA, Prises Universelles</div>
+      <div class="product-spec">Onduleur · 650 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-apc-back-ups-pro-br1600mi.webp" alt="Onduleur APC Back-UPS Pro BR1600MI" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-apc-back-ups-pro-br1600mi-2.webp" alt="Onduleur APC Back-UPS Pro BR1600MI" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur APC Back-UPS Pro — BR1600MI, 960W/1600VA</div>
+      <div class="product-spec">Onduleur Line-interactive · 1600 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-premax-10kva.jpg" alt="Onduleur Premax 10kVA Monophasé" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-premax-10kva.jpg" alt="Onduleur Premax 10kVA Monophasé" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur Premax 10kVA — Monophasé (PM-UPS10KVA)</div>
+      <div class="product-spec">Onduleur · 10 kVA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-premax-900va.jpg" alt="Onduleur Premax 900VA" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-premax-900va.jpg" alt="Onduleur Premax 900VA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur Premax 900VA — PM-UPS900</div>
+      <div class="product-spec">Onduleur · 900 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-premax-2250va.jpg" alt="Onduleur Premax 2250VA" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-premax-2250va.jpg" alt="Onduleur Premax 2250VA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur Premax 2250VA</div>
+      <div class="product-spec">Onduleur · 2250 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-apc-1000va-smc1000ic.gif" alt="Onduleur APC 1000VA SMC1000ic Online" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-apc-1000va-smc1000ic-2.gif" alt="Onduleur APC 1000VA SMC1000ic Online" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur APC 1000VA — SMC1000ic Online</div>
+      <div class="product-spec">Onduleur Online · 1000 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-apc-6000va-srtg6kxli.jpg" alt="Onduleur APC 6000VA SRTG6KXLI" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-apc-6000va-srtg6kxli.jpg" alt="Onduleur APC 6000VA SRTG6KXLI" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur APC 6000VA — SRTG6KXLI (6 kVA)</div>
+      <div class="product-spec">Onduleur · 6 kVA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-lightwave-3kva.webp" alt="Onduleur Lightwave 3KVA Online" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-lightwave-3kva.webp" alt="Onduleur Lightwave 3KVA Online" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur Lightwave 3KVA — Online</div>
+      <div class="product-spec">Onduleur Online · 3 kVA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-premax-3kva-ecran.webp" alt="Onduleur Premax 3KVA avec écran Input/Output" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-premax-3kva-ecran-2.webp" alt="Onduleur Premax 3KVA avec écran Input/Output" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur Premax 3KVA — Écran Input/Output</div>
+      <div class="product-spec">Onduleur · 3 kVA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-premax-6kva.jpg" alt="Onduleur Premax 6KVA Monophasé Online" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-premax-6kva-2.jpg" alt="Onduleur Premax 6KVA Monophasé Online" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur Premax 6KVA — Monophasé Online (PM-UPS6KVA)</div>
+      <div class="product-spec">Onduleur Online · 6 kVA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/onduleur-eaton-5s-1500i.jpg" alt="Onduleur Eaton 5S 1500i" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/onduleur-eaton-5s-1500i-2.jpg" alt="Onduleur Eaton 5S 1500i" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Onduleur Eaton 5S 1500i — 900W / 1500VA</div>
+      <div class="product-spec">Onduleur · 1500 VA</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/regulateur-tension-premax-1000va.jpg" alt="Régulateur de tension Premax 1000VA" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/regulateur-tension-premax-1000va-2.jpg" alt="Régulateur de tension Premax 1000VA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Régulateur de tension Premax 1000VA — PM-SDG1000</div>
+      <div class="product-spec">Régulateur de tension</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <!-- ===== GROUPES ÉLECTROGÈNES ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/groupe-electrogene-diesel-6-5kva.webp" alt="Groupe électrogène diesel silencieux 6,5 KVA HDG5500SE" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/groupe-electrogene-diesel-6-5kva-2.webp" alt="Groupe électrogène diesel silencieux 6,5 KVA HDG5500SE" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Groupe électrogène diesel silencieux 6,5 KVA — HDG5500SE Industrie</div>
+      <div class="product-spec">Démarrage électrique · Diesel</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/groupe-electrogene-kisan-k2.jpg" alt="Groupe électrogène Kisan K2" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/groupe-electrogene-kisan-k2-2.jpg" alt="Groupe électrogène Kisan K2" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Groupe électrogène Kisan K2</div>
+      <div class="product-spec">Groupe électrogène</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <!-- ===== CLIMATISEURS ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/clim-premax-18000btu.webp" alt="Climatiseur Split Premax 18000 BTU 2CV" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/clim-premax-18000btu-2.webp" alt="Climatiseur Split Premax 18000 BTU 2CV" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Climatiseur Split Premax 18000 BTU — 2CV (PM-SAC18T1)</div>
+      <div class="product-spec">Climatiseur split · 18000 BTU</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/clim-premax-12000btu.webp" alt="Climatiseur Premax Split 12000 BTU 1,5CH" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/clim-premax-12000btu-2.png" alt="Climatiseur Premax Split 12000 BTU 1,5CH" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Climatiseur Premax Split 12000 BTU — 1,5CH (PM-SAC12T1)</div>
+      <div class="product-spec">Climatiseur split · 12000 BTU</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/clim-premax-9000btu.jpg" alt="Climatiseur Split Premax 9000 BTU 1CH" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/clim-premax-9000btu-2.jpg" alt="Climatiseur Split Premax 9000 BTU 1CH" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Climatiseur Split Premax 9000 BTU — 1CH (PM-SAC09T1)</div>
+      <div class="product-spec">Climatiseur split · 9000 BTU</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <!-- ===== CAISSES / COMPTEUSES DE BILLETS ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/caisse-pos-golden-side.jpg" alt="Caisse enregistreuse POS Golden Side" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/caisse-pos-golden-side-2.jpg" alt="Caisse enregistreuse POS Golden Side" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Caisse enregistreuse POS Golden Side</div>
+      <div class="product-spec">Caisse enregistreuse</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/caisse-pos-tactile-double-ecran.jpg" alt="Caisse Tactile POS Double écran + Tiroir de caisse" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/caisse-pos-tactile-double-ecran-2.jpg" alt="Caisse Tactile POS Double écran + Tiroir de caisse" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Caisse Tactile POS — Double écran + Tiroir de caisse</div>
+      <div class="product-spec">Caisse tactile POS</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/tiroir-caisse-premax.jpg" alt="Tiroir-Caisse Premax" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/tiroir-caisse-premax-2.jpg" alt="Tiroir-Caisse Premax" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Tiroir-Caisse Premax</div>
+      <div class="product-spec">Tiroir-caisse</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-vc110t.webp" alt="Compteuse de billets Premax PM-VC110T" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-vc110t-2.webp" alt="Compteuse de billets Premax PM-VC110T" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets Premax — PM-VC110T</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-detecteur-faux.jpg" alt="Compteuse de billets avec détecteur de faux billets" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-detecteur-faux-2.jpg" alt="Compteuse de billets avec détecteur de faux billets" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets — Avec détecteur de faux billets</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-electronique.jpg" alt="Compteuse de Billets Électronique" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-electronique-2.jpg" alt="Compteuse de Billets Électronique" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de Billets Électronique</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-golden-gate-apollo.jpg" alt="Compteuse de billets Golden Gate Apollo" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-golden-gate-apollo-2.jpg" alt="Compteuse de billets Golden Gate Apollo" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets Golden Gate — Apollo</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-golden-gate-bc900.jpg" alt="Compteuse de billets Golden Gate BC-900" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-golden-gate-bc900-2.jpg" alt="Compteuse de billets Golden Gate BC-900" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets Golden Gate — BC-900</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-manuelle-golden-gate-bc1000.jpg" alt="Compteuse de billets manuelle Golden Gate BC1000" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-manuelle-golden-gate-bc1000-2.jpg" alt="Compteuse de billets manuelle Golden Gate BC1000" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets manuelle Golden Gate — BC1000</div>
+      <div class="product-spec">Compteuse manuelle</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-cc90d.jpg" alt="Compteuse de billets Premax PM CC90D" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-cc90d.jpg" alt="Compteuse de billets Premax PM CC90D" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets Premax — PM CC90D</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-cc85a.jpg" alt="Machine à compter Premax CC85A" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-cc85a-2.jpg" alt="Machine à compter Premax CC85A" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Machine à compter Premax — CC85A</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-cc100.webp" alt="Machine à compter Premax CC100" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-cc100-2.webp" alt="Machine à compter Premax CC100" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Machine à compter Premax — CC100</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-cc35.jpg" alt="Compteuse de billets Premax CC35" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-cc35-2.jpg" alt="Compteuse de billets Premax CC35" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets Premax — CC35</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-vc210.jpg" alt="Compteuse de billets Premax PM VC210" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/compteuse-billets-premax-vc210-2.jpg" alt="Compteuse de billets Premax PM VC210" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets Premax — PM VC210</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <!-- ===== KITS OUTILLAGE ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/kit-outils-s-tek-145pcs.jpg" alt="Kit d'outils de réparation informatique S-Tek 145 pièces" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/kit-outils-s-tek-145pcs.jpg" alt="Kit d'outils de réparation informatique S-Tek 145 pièces" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kit d'outils de réparation informatique S-Tek — 145 pièces</div>
+      <div class="product-spec">Kit outillage · 145 pièces</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/kit-outillage-jakemy-jm8146-47pcs.webp" alt="Kit outillage Jakemy JM-8146 47 pièces" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/kit-outillage-jakemy-jm8146-47pcs.webp" alt="Kit outillage Jakemy JM-8146 47 pièces" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kit outillage Jakemy — JM-8146, 47 pièces</div>
+      <div class="product-spec">Kit outillage · 47 pièces</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/kit-pince-sertir-testeur-accessoires.jpg" alt="Kit Outillage Pince à sertir + Testeur + Accessoires" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/kit-pince-sertir-testeur-accessoires.jpg" alt="Kit Outillage Pince à sertir + Testeur + Accessoires" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kit Outillage Pince à sertir + Testeur + Accessoires</div>
+      <div class="product-spec">Kit outillage réseau</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/kit-outillage-reseau-jakemy-jm8183.jpg" alt="Kit Outillage Réseau Jakemy JM-8183" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/kit-outillage-reseau-jakemy-jm8183-2.jpg" alt="Kit Outillage Réseau Jakemy JM-8183" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kit Outillage Réseau Jakemy — JM-8183</div>
+      <div class="product-spec">Kit outillage réseau</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/kit-outillage-s-tek-18pcs.jpg" alt="Kit Outillage S-Tek 18 pièces" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/kit-outillage-s-tek-18pcs-2.jpg" alt="Kit Outillage S-Tek 18 pièces" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kit Outillage S-Tek — 18 pièces</div>
+      <div class="product-spec">Kit outillage · 18 pièces</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/trousse-outils-precision-56pcs.webp" alt="Trousse d'outils de précision 56 pièces" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/trousse-outils-precision-56pcs-2.webp" alt="Trousse d'outils de précision 56 pièces" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Trousse d'outils de précision — 56 pièces</div>
+      <div class="product-spec">Pour ordinateurs, téléphones portables</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/pince-sertir-8embouts-sacoche.jpg" alt="Pince à Sertir 0.25-35mm² avec 8 Embouts et Sacoche" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/pince-sertir-8embouts-sacoche-2.jpg" alt="Pince à Sertir 0.25-35mm² avec 8 Embouts et Sacoche" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pince à Sertir 0.25-35mm² — 8 Embouts et Sacoche</div>
+      <div class="product-spec">Outillage électrique</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/pince-sertir-pro-rj45.jpg" alt="Pince à Sertir Professionnelle RJ45" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/pince-sertir-pro-rj45-2.jpg" alt="Pince à Sertir Professionnelle RJ45" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pince à Sertir Professionnelle — RJ45</div>
+      <div class="product-spec">Outillage réseau</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/visseuse-electrique-36v-60pcs.jpg" alt="Visseuse Électrique Puissante 36V 60 pièces" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/visseuse-electrique-36v-60pcs.jpg" alt="Visseuse Électrique Puissante 36V 60 pièces" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Visseuse Électrique Puissante 36V — 60 pièces + 2 batteries</div>
+      <div class="product-spec">Outillage électrique</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/outil-menager-multifonctionnel.jpg" alt="Outil ménager multifonctionnel" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/outil-menager-multifonctionnel-2.jpg" alt="Outil ménager multifonctionnel" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Outil ménager multifonctionnel</div>
+      <div class="product-spec">Outillage ménager</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/souffleur-aspirateur-electrique.jpg" alt="Souffleur, Aspirateur Électrique" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/souffleur-aspirateur-electrique-2.jpg" alt="Souffleur, Aspirateur Électrique" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souffleur / Aspirateur Électrique</div>
+      <div class="product-spec">Outillage électrique</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+
+
+    <!-- ===== TÉLÉVISIONS ===== -->
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/tv-mart-technology-75pouces.jpg" alt="Smart TV LED Mart Technology 75 pouces UHD 4K" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/tv-mart-technology-75pouces.jpg" alt="Smart TV LED Mart Technology 75 pouces UHD 4K" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Smart TV LED Mart Technology — 75" UHD 4K, Wi-Fi</div>
+      <div class="product-spec">75 pouces · UHD 4K · Wi-Fi</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/tv-lg-smart-86-ut801.jpg" alt="Télévision LED LG Smart 86 UT801 4K" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/tv-lg-smart-86-ut801-2.jpg" alt="Télévision LED LG Smart 86 UT801 4K" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Télévision LED LG Smart — 86" UT801, 4K</div>
+      <div class="product-spec">86 pouces · 4K</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/tv-premax-65-pm65uhd4kbt.webp" alt="Télévision LED Premax Smart Android UHD 4K 65 pouces" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/tv-premax-65-pm65uhd4kbt-2.webp" alt="Télévision LED Premax Smart Android UHD 4K 65 pouces" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Télévision LED Premax Smart Android — 65" UHD 4K (PM65UHD4KBT)</div>
+      <div class="product-spec">65 pouces · UHD 4K · Android</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/tv-premax-43-pm43sm9000bt.webp" alt="TV Smart Premax 43 pouces Full HD" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/tv-premax-43-pm43sm9000bt-2.webp" alt="TV Smart Premax 43 pouces Full HD" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">TV Smart Premax — 43" Full HD (PM43SM9000BT)</div>
+      <div class="product-spec">43 pouces · Full HD</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/tv-premax-55-pm55uhd4kbt.jpg" alt="TV Smart Premax 55 pouces Ultra HD 4K" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/tv-premax-55-pm55uhd4kbt-2.jpg" alt="TV Smart Premax 55 pouces Ultra HD 4K" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">TV Smart Premax — 55" Ultra HD 4K, Android 14, Wi-Fi, Bluetooth, Sans Bord (PM55UHD4KBT)</div>
+      <div class="product-spec">55 pouces · Ultra HD 4K · Android 14</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/peripheriques/tv-premax-32-pm32sm9000bt.jpg" alt="Smart TV LED Premax 32 pouces HD" class="product-photo img-main" />
+      <img src="../images/produits/peripheriques/tv-premax-32-pm32sm9000bt.jpg" alt="Smart TV LED Premax 32 pouces HD" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Smart TV LED Premax — 32" HD, Android 14, Sans Bord, 1 Go RAM/68 Go, DVB T2/S2 (PM32SM9000BT)</div>
+      <div class="product-spec">32 pouces · HD · Android 14</div>
+      <div class="product-footer"><span class="product-price">XXX XXX F CFA</span><button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FIN ÉQUIPEMENTS BUREAU  possibilité d ajouter-->
+   
+    <!-- FIN ÉQUIPEMENTS BUREAU -->
+
+  </main>
+
+
+  <!-- ============================================================
+    5. FOOTER
+  ============================================================ -->
+  <footer class="footer">
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/logos.webp" alt="OPEN Business World" class="footer-logo-img" />
+        </div>
+        <p class="footer-desc">
+          OPEN Business World est un magasin informatique spécialisé dans
+          l'achat et la vente de matériel informatique. Nous proposons des
+          PC de bureau, des ordinateurs portables, des configurations gamer
+          sur mesure, ainsi qu'un large choix de composants et de périphériques.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/OBWINFORMATIQUE" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/open-business-world" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@obw.informatique" target="_blank" rel="noopener" aria-label="TikTok"><i class="ti ti-brand-tiktok" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Liens rapides</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="entreprise.html">À propos</a></li>
+          <li><a href="../boutique.html">Boutique</a></li>
+          <li><a href="prestations.html">Prestations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Catégories</h4>
+                <ul class="footer-links">
+          <li><a href="ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="pc-gamer.html">PC Gamer</a></li>
+          <li><a href="smartphones.html">Smartphones</a></li>
+          <li><a href="moniteurs.html">Moniteurs</a></li>
+          <li><a href="peripheriques.html">Périphériques</a></li>
+          <li><a href="imprimantes.html">Imprimantes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Nous contacter</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            Plateau, Immeuble Mali, Abidjan
+          </li>
+          <li>
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            <a href="tel:+2252720286555">+225 27 20 28 65 55</a>
+          </li>
+          <li>
+            <i class="ti ti-mail" aria-hidden="true"></i>
+            <a href="mailto:contact@openbusiness.ci">contact@openbusiness.ci</a>
+          </li>
+          <li>
+            <i class="ti ti-clock" aria-hidden="true"></i>
+            Lun – Sam : 8h00 – 18h00
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 OPEN Business World. Tous droits réservés.</span>
+      <span>Site réalisé par Paul Tanon 🇨🇮</span>
+    </div>
+
+  </footer>
+
+  <!-- JS : on remonte d'un dossier avec ../ -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

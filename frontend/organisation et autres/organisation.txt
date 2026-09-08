@@ -1,0 +1,25 @@
+ÉTAPE 1 — Logo
+  → Intégrer ton vrai logo dans le header et footer
+
+ÉTAPE 2 — Header complet
+  → Vérifier que tout est bon
+
+ÉTAPE 3 — Slider
+  → Remplacer les emojis par tes vraies images
+
+ÉTAPE 4 — Produits
+  → Ajouter les vraies photos articles
+
+ÉTAPE 5 — Partenaires
+  → Intégrer tes logos partenaires
+
+ÉTAPE 6 — Footer
+  → Vérifier et ajuster
+
+ÉTAPE 7 — Autres pages
+  → Créer ordinateurs.html, gaming.html...
+
+ÉTAPE 8 — Backend & Base de données
+  → On choisit la techno ensemble
+     (PHP/MySQL ou Node.js/MongoDB)
+     selon ton niveau et ce que tu veux apprendre

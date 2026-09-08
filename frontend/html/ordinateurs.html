@@ -1,0 +1,2891 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPEN Business World — Ordinateurs & Tablettes</title>
+  <!-- CSS : on remonte d'un dossier avec ../ -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../images/android-chrome-512x512.png" />
+
+  <!-- Icônes Tabler -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+    1. BARRE D'ANNONCE DYNAMIQUE
+  ============================================================ -->
+  <div class="promo-bar"
+     data-product="OPEN Business World — Votre partenaire tech de confiance à Abidjan"
+     data-link="../boutique.html"
+     data-cta="Découvrir la boutique">
+  </div>
+
+  <!-- ============================================================
+    2. HEADER
+  ============================================================ -->
+  <header class="header">
+
+    <a href="../index.html" class="logo">
+      <img src="../images/logo.webp" alt="OPEN Business World" class="logo-img" />
+    </a>
+
+    <div class="search">
+      <input type="text" placeholder="Rechercher un PC, smartphone, GPU..." aria-label="Recherche" />
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <i class="ti ti-search" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Mes favoris">
+        <i class="ti ti-heart" aria-hidden="true"></i>
+        <span>Favoris</span>
+        <span class="dot-badge"></span>
+      </button>
+      <button class="icon-btn" aria-label="Mon panier">
+        <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+        <span>Panier</span>
+        <span class="dot-badge"></span>
+      </button>
+      <div class="divider-v"></div>
+      <a href="https://wa.me/2252720286555"
+         class="icon-btn"
+         target="_blank"
+         rel="noopener"
+         aria-label="WhatsApp">
+        <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:+2252720286555" class="cta-header">
+        <i class="ti ti-phone-call" aria-hidden="true"></i>
+        <span>+225 27 20 28 65 55</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+
+  </header>
+
+
+  <!-- ============================================================
+    3. NAVIGATION
+    → Même bloc que sur toutes les pages, "Ordinateurs & Tablettes" est actif ("on")
+  ============================================================ -->
+  <nav class="nav" id="mainNav">
+    <button class="nav-close" id="navCloseBtn" aria-label="Fermer le menu">
+      <i class="ti ti-x" aria-hidden="true"></i>
+    </button>
+    <a href="../index.html" class="nav-link">Accueil</a>
+    <a href="../boutique.html" class="nav-link">Boutique</a>
+
+    <div class="nav-item">
+      <a href="ordinateurs.html" class="nav-link on">
+        Ordinateurs & Tablettes <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="ordinateurs.html#pc-bureau" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-desktop" aria-hidden="true"></i></div>
+          <span>PC de bureau</span>
+        </a>
+        <a href="ordinateurs.html#pc-portables" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-laptop" aria-hidden="true"></i></div>
+          <span>PC portables</span>
+        </a>
+        <a href="ordinateurs.html#mac" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-brand-apple" aria-hidden="true"></i></div>
+          <span>Mac</span>
+        </a>
+        <a href="ordinateurs.html#tablettes" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-tablet" aria-hidden="true"></i></div>
+          <span>Tablettes</span>
+        </a>
+      </div>
+    </div>
+
+     <a href="moniteurs.html" class="nav-link">Moniteurs</a>
+
+    <div class="nav-item">
+      <a href="peripheriques.html" class="nav-link">
+        Périphériques <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="peripheriques.html#accessoires" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-keyboard" aria-hidden="true"></i></div>
+          <span>Accessoires PC</span>
+        </a>
+        <a href="peripheriques.html#audio" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <span>Audio</span>
+        </a>
+        <a href="peripheriques.html#consommables" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-droplet" aria-hidden="true"></i></div>
+          <span>Consommables & logiciels</span>
+        </a>
+        <a href="peripheriques.html#bureau-electromenager" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-building-store" aria-hidden="true"></i></div>
+          <span>Équipements bureau</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="pc-gamer.html" class="nav-link">PC Gamer</a>
+
+    <div class="nav-item">
+      <a href="imprimantes.html" class="nav-link">
+        Imprimantes <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="photocopieuses.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Photocopieuses</span>
+        </a>
+        <a href="imprimantes.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Imprimantes</span>
+        </a>
+        <a href="imprimantes-hp-laser.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Imprimantes HP Laser</span>
+        </a>
+        <a href="scanneurs-lecteurs.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-scan" aria-hidden="true"></i></div>
+          <span>Scanneurs & lecteurs</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="smartphones.html" class="nav-link">Smartphones</a>
+  </nav>
+
+
+  <!-- ============================================================
+    4. CORPS DE PAGE
+  ============================================================ -->
+  <main class="page-body">
+
+    <!-- TITRE -->
+    <div class="page-hero">
+      <h1 class="page-hero-title">Ordinateurs & Tablettes</h1>
+      <p class="page-hero-text">
+        PC de bureau, portables, Mac et tablettes — pour un usage bureautique, familial ou professionnel.
+      </p>
+    </div>
+
+
+    <!-- ============================================================
+      SECTION 1 : PC DE BUREAU
+      → id="pc-bureau"
+      → Regroupe : desktop, unité centrale, bureau all-in-one, serveur
+    ============================================================ -->
+    <div class="section-row" id="pc-bureau" style="margin-top: 24px;">
+      <h2 class="section-title-cat">PC de bureau</h2>
+    </div>
+
+   <!--
+  RÈGLE APPLIQUÉE :
+  - Modèles entrée de gamme : variante 8 Go/256 Go + variante 16 Go/512 Go
+  - Modèles gamme supérieure/récente (pas de version 8 Go réaliste) :
+    variante 16 Go/512 Go + variante 16 Go/1 To
+  Ajuste le classement toi-même si un modèle est mal catégorisé.
+  (modifie le prix je vais voir sinon c'est B des)
+-->
+
+<div class="products-grid">
+
+  <!-- Dell Inspiron 5430 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-inspiron-5430.webp" alt="Dell Inspiron 5430" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-inspiron-5430-2.webp" alt="Dell Inspiron 5430" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Inspiron 24 5415 — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">650 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-inspiron-5430.webp" alt="Dell Inspiron 5430" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-inspiron-5430-2.webp" alt="Dell Inspiron 5430" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Inspiron 5415 — 16 Go / 1 To</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">780 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP 200 G4 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-200-g4.webp" alt="HP 200 G4" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-200-g4-2.webp" alt="HP 200 G4" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP 200 G4 — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">550 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-200-g4.webp" alt="HP 200 G4" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-200-g4-2.webp" alt="HP 200 G4" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP 200 G4 — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">595 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP CR0008i -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0008i.webp" alt="HP CR0008i" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0008i-2.webp" alt="HP CR0008i" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0008i — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">570 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0008i.webp" alt="HP CR0008i" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0008i-2.webp" alt="HP CR0008i" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0008i — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">650 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP CR0029 NH -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0029-nh.webp" alt="HP CR0029 NH" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0029-nh-2.webp" alt="HP CR0029 NH" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0029 NH — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">570 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0029-nh.webp" alt="HP CR0029 NH" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0029-nh-2.webp" alt="HP CR0029 NH" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0029 NH — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">650 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP CR0307 NH -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0307-nh.webp" alt="HP CR0307 NH" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0307-nh-2.webp" alt="HP CR0307 NH" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0307 NH — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">750 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0307-nh.webp" alt="HP CR0307 NH" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0307-nh-2.webp" alt="HP CR0307 NH" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0307 NH — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">850 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP CR0321 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0321.webp" alt="HP CR0321" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0321-2.webp" alt="HP CR0321" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0321 — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">550 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0321.webp" alt="HP CR0321" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0321-2.webp" alt="HP CR0321" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0321 — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">650 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP CR0342 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0342.webp" alt="HP CR0342" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0342-2.webp" alt="HP CR0342" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0342 — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">710 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-cr0342.webp" alt="HP CR0342" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-cr0342-2.webp" alt="HP CR0342" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP CR0342 — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">795 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP dg0012 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-dg0012.webp" alt="HP dg0012" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-dg0012-2.webp" alt="HP dg0012" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP dg0012 — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">670 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-dg0012.webp" alt="HP dg0012" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-dg0012-2.webp" alt="HP dg0012" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP dg0012 — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">780 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Pavilion CA2023NY -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-pavilion-ca2023ny.webp" alt="HP Pavilion CA2023NY" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-pavilion-ca2023ny-2.webp" alt="HP Pavilion CA2023NY" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Pavilion CA2023NY — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">950 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-pavilion-ca2023ny.webp" alt="HP Pavilion CA2023NY" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-pavilion-ca2023ny-2.webp" alt="HP Pavilion CA2023NY" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Pavilion CA2023NY — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 100 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo Center 27HB — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-center-27hb.webp" alt="Lenovo Center 27HB" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-center-27hb-2.webp" alt="Lenovo Center 27HB" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo Center 27HB — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 27" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">880 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-center-27hb.webp" alt="Lenovo Center 27HB" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-center-27hb-2.webp" alt="Lenovo Center 27HB" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo Center 27HB — 16 Go / 1 To</div>
+      <div class="product-spec">All-in-one · 27" · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">980 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo ThinkCentre Neo (AIO) — une seule photo -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkcentre-neo-aio.webp" alt="Lenovo ThinkCentre Neo All-in-one" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkcentre-neo-aio.webp" alt="Lenovo ThinkCentre Neo All-in-one" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkCentre Neo AIO — 8 Go / 256 Go</div>
+      <div class="product-spec">All-in-one · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">750 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkcentre-neo-aio.webp" alt="Lenovo ThinkCentre Neo All-in-one" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkcentre-neo-aio.webp" alt="Lenovo ThinkCentre Neo All-in-one" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkCentre Neo AIO — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">950 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell OptiPlex 3910 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-optiplex-3910.webp" alt="Dell OptiPlex 3910" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-optiplex-3910-2.webp" alt="Dell OptiPlex 3910" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell OptiPlex 3910 — 8 Go / 256 Go</div>
+      <div class="product-spec">PC de bureau · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">650 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-optiplex-3910.webp" alt="Dell OptiPlex 3910" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-optiplex-3910-2.webp" alt="Dell OptiPlex 3910" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell OptiPlex 3910 — 16 Go / 512 Go</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">750 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell OptiPlex 7020 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-optiplex-7020.webp" alt="Dell OptiPlex 7020" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-optiplex-7020-2.webp" alt="Dell OptiPlex 7020" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell OptiPlex 7020 — 16 Go / 512 Go</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">580 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-optiplex-7020.webp" alt="Dell OptiPlex 7020" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-optiplex-7020-2.webp" alt="Dell OptiPlex 7020" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell OptiPlex 7020 — 16 Go / 1 To</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">680 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell Vostro 3030MT -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-vostro-3030mt.webp" alt="Dell Vostro 3030MT" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-vostro-3030mt-2.webp" alt="Dell Vostro 3030MT" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Vostro 3030MT — 8 Go / 256 Go</div>
+      <div class="product-spec">PC de bureau · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">595 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-vostro-3030mt.webp" alt="Dell Vostro 3030MT" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-vostro-3030mt-2.webp" alt="Dell Vostro 3030MT" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Vostro 3030MT — 16 Go / 512 Go</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">695 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo ThinkCentre Neo 50t Gen5 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkcentre-neo-50t.webp" alt="Lenovo ThinkCentre Neo 50t Gen5" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkcentre-neo-50t-2.webp" alt="Lenovo ThinkCentre Neo 50t Gen5" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkCentre Neo 50t Gen5 — 8 Go / 256 Go</div>
+      <div class="product-spec">PC de bureau · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">750 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkcentre-neo-50t.webp" alt="Lenovo ThinkCentre Neo 50t Gen5" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkcentre-neo-50t-2.webp" alt="Lenovo ThinkCentre Neo 50t Gen5" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkCentre Neo 50t Gen5 — 16 Go / 512 Go</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">950 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ProDesk 290 G9 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-prodesk-290-g9.webp" alt="HP ProDesk 290 G9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-prodesk-290-g9-2.webp" alt="HP ProDesk 290 G9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProDesk 290 G9 — 8 Go / 256 Go</div>
+      <div class="product-spec">PC de bureau · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">450 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-prodesk-290-g9.webp" alt="HP ProDesk 290 G9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-prodesk-290-g9-2.webp" alt="HP ProDesk 290 G9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProDesk 290 G9 — 16 Go / 512 Go</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">550 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ProDesk 400 G4 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-prodesk-400-g4.webp" alt="HP ProDesk 400 G4" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-prodesk-400-g4-2.webp" alt="HP ProDesk 400 G4" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProDesk 400 G4 — 8 Go / 256 Go</div>
+      <div class="product-spec">PC de bureau · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">350 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-prodesk-400-g4.webp" alt="HP ProDesk 400 G4" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-prodesk-400-g4-2.webp" alt="HP ProDesk 400 G4" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProDesk 400 G4 — 16 Go / 512 Go</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">450 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ProDesk 400 G7 — gamme supérieure (génération plus récente que le G4) -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-prodesk-400-g7.webp" alt="HP ProDesk 400 G7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-prodesk-400-g7-2.webp" alt="HP ProDesk 400 G7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProDesk 400 G7 — 16 Go / 512 Go</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">595 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-prodesk-400-g7.webp" alt="HP ProDesk 400 G7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-prodesk-400-g7-2.webp" alt="HP ProDesk 400 G7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProDesk 400 G7 — 16 Go / 1 To</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">695 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <!-- FIN PC DE BUREAU -->
+
+
+    <!-- ============================================================
+      SECTION 2 : PC PORTABLES
+      → id="pc-portables"
+      → Regroupe : pc portable (hors gamer)
+    ============================================================ -->
+    <div class="section-row" id="pc-portables" style="margin-top: 48px;">
+      <h2 class="section-title-cat">PC portables</h2>
+    </div>
+
+    <!-- ============================================================
+     LOT 1 — HP (30 modèles, 60 cartes)
+     À coller dans le products-grid sous id="pc-portables"
+============================================================ -->
+<div class="products-grid">
+
+  <!-- HP EliteBook 840 G10 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g10.webp" alt="HP EliteBook 840 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g10-2.webp" alt="HP EliteBook 840 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G10 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">725 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g10.webp" alt="HP EliteBook 840 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g10-2.webp" alt="HP EliteBook 840 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G10 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">960 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP EliteBook 840 G11 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g11.webp" alt="HP EliteBook 840 G11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g11-2.webp" alt="HP EliteBook 840 G11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G11 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">950 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g11.webp" alt="HP EliteBook 840 G11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g11-2.webp" alt="HP EliteBook 840 G11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G11 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 150 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP EliteBook 840 G7 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g7.webp" alt="HP EliteBook 840 G7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g7-2.webp" alt="HP EliteBook 840 G7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G7 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">875 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g7.webp" alt="HP EliteBook 840 G7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g7-3.webp" alt="HP EliteBook 840 G7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G7 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">975 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP EliteBook 840 G8 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g8.webp" alt="HP EliteBook 840 G8" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g8-2.webp" alt="HP EliteBook 840 G8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G8 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">950 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g8.webp" alt="HP EliteBook 840 G8" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-elitebook-840-g8-3.webp" alt="HP EliteBook 840 G8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G8 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 100 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP OmniBook 16 AS0043 Ultra7 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0043-ultra7.webp" alt="HP OmniBook 16 AS0043 Ultra7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0043-ultra7-2.webp" alt="HP OmniBook 16 AS0043 Ultra7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 16 AS0043 Ultra7 — 16 Go / 512 Go</div>
+      <div class="product-spec">16" · Intel Core Ultra7 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">995 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0043-ultra7.webp" alt="HP OmniBook 16 AS0043 Ultra7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0043-ultra7-2.webp" alt="HP OmniBook 16 AS0043 Ultra7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 16 AS0043 Ultra7 — 16 Go / 1 To</div>
+      <div class="product-spec">16" · Intel Core Ultra7 · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 200 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP OmniBook 16 AS0043 Ultra9 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0043-ultra9.webp" alt="HP OmniBook 16 AS0043 Ultra9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0043-ultra9-2.webp" alt="HP OmniBook 16 AS0043 Ultra9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 16 AS0043 Ultra9 — 16 Go / 512 Go</div>
+      <div class="product-spec">16" · Intel Core Ultra9 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 450 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0043-ultra9.webp" alt="HP OmniBook 16 AS0043 Ultra9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0043-ultra9-2.webp" alt="HP OmniBook 16 AS0043 Ultra9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 16 AS0043 Ultra9 — 16 Go / 1 To</div>
+      <div class="product-spec">16" · Intel Core Ultra9 · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 650 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ZBook Firefly 14 G10 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-zbook-firefly-14-g10.webp" alt="HP ZBook Firefly 14 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-zbook-firefly-14-g10-2.webp" alt="HP ZBook Firefly 14 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ZBook Firefly 14 G10 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Station de travail · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 350 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-zbook-firefly-14-g10.webp" alt="HP ZBook Firefly 14 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-zbook-firefly-14-g10-3.webp" alt="HP ZBook Firefly 14 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ZBook Firefly 14 G10 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · Station de travail · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 700 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ZBook Firefly 14 G11 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-zbook-firefly-14-g11.webp" alt="HP ZBook Firefly 14 G11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-zbook-firefly-14-g11-2.webp" alt="HP ZBook Firefly 14 G11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ZBook Firefly 14 G11 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Station de travail · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 350 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-zbook-firefly-14-g11.webp" alt="HP ZBook Firefly 14 G11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-zbook-firefly-14-g11-2.webp" alt="HP ZBook Firefly 14 G11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ZBook Firefly 14 G11 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · Station de travail · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 700 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Laptop 15-FD0460 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-15-fd0460.webp" alt="HP Laptop 15-FD0460" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-15-fd0460-2.webp" alt="HP Laptop 15-FD0460" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 15-FD0460 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">465 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-15-fd0460.webp" alt="HP Laptop 15-FD0460" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-15-fd0460-3.webp" alt="HP Laptop 15-FD0460" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 15-FD0460 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">530 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Envy x360 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-envy-x360.webp" alt="HP Envy x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-envy-x360-2.webp" alt="HP Envy x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Envy x360 — 8 Go / 256 Go</div>
+      <div class="product-spec">Convertible tactile · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-envy-x360.webp" alt="HP Envy x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-envy-x360-2.webp" alt="HP Envy x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Envy x360 — 16 Go / 512 Go</div>
+      <div class="product-spec">Convertible tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP OmniBook 14 FH0039 Ultra7 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fh0039-ultra7.webp" alt="HP OmniBook 14 FH0039 Ultra7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fh0039-ultra7-2.webp" alt="HP OmniBook 14 FH0039 Ultra7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 14 FH0039 Ultra7 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Intel Core Ultra7 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">950 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fh0039-ultra7.webp" alt="HP OmniBook 14 FH0039 Ultra7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fh0039-ultra7-3.webp" alt="HP OmniBook 14 FH0039 Ultra7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 14 FH0039 Ultra7 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · Intel Core Ultra7 · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 150 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP OmniBook 14 FH0039 Ultra9 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fh0039-ultra9.webp" alt="HP OmniBook 14 FH0039 Ultra9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fh0039-ultra9-2.webp" alt="HP OmniBook 14 FH0039 Ultra9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 14 FH0039 Ultra9 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Intel Core Ultra9 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 350 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fh0039-ultra9.webp" alt="HP OmniBook 14 FH0039 Ultra9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fh0039-ultra9-3.webp" alt="HP OmniBook 14 FH0039 Ultra9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 14 FH0039 Ultra9 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · Intel Core Ultra9 · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 750 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP OmniBook 14 FM0023 x360 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fm0023-x360-3.webp" alt="HP OmniBook 14 FM0023 x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fm0023-x360-2.webp" alt="HP OmniBook 14 FM0023 x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 14 FM0023 x360 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">850 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fm0023-x360-3.webp" alt="HP OmniBook 14 FM0023 x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fm0023-x360.webp" alt="HP OmniBook 14 FM0023 x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 14 FM0023 x360 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">950 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Pavilion 14 x360 EK1010 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-pavilion-14-x360-ek1010.webp" alt="HP Pavilion 14 x360 EK1010" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-pavilion-14-x360-ek1010-2.webp" alt="HP Pavilion 14 x360 EK1010" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Pavilion 14 x360 EK1010 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-pavilion-14-x360-ek1010.webp" alt="HP Pavilion 14 x360 EK1010" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-pavilion-14-x360-ek1010-3.webp" alt="HP Pavilion 14 x360 EK1010" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Pavilion 14 x360 EK1010 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Pavilion 16 AF0063 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-pavilion-16-af0063.webp" alt="HP Pavilion 16 AF0063" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-pavilion-16-af0063-2.webp" alt="HP Pavilion 16 AF0063" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Pavilion 16 AF0063 — 8 Go / 256 Go</div>
+      <div class="product-spec">16" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-pavilion-16-af0063.webp" alt="HP Pavilion 16 AF0063" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-pavilion-16-af0063-2.webp" alt="HP Pavilion 16 AF0063" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Pavilion 16 AF0063 — 16 Go / 512 Go</div>
+      <div class="product-spec">16" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Pavilion 14 x360 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-pavilion-14-x360.webp" alt="HP Pavilion 14 x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-pavilion-14-x360-3.webp" alt="HP Pavilion 14 x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Pavilion 14 x360 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-pavilion-14-x360.webp" alt="HP Pavilion 14 x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-pavilion-14-x360-3.webp" alt="HP Pavilion 14 x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Pavilion 14 x360 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ProBook 440 G10 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-probook-440-g10.webp" alt="HP ProBook 440 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-probook-440-g10-2.webp" alt="HP ProBook 440 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 440 G10 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">470 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-probook-440-g10.webp" alt="HP ProBook 440 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-probook-440-g10-3.webp" alt="HP ProBook 440 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 440 G10 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">570 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ProBook 440 G11 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-probook-440-g11.webp" alt="HP ProBook 440 G11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-probook-440-g11-2.webp" alt="HP ProBook 440 G11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 440 G11 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">650 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-probook-440-g11.webp" alt="HP ProBook 440 G11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-probook-440-g11-2.webp" alt="HP ProBook 440 G11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 440 G11 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">730 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Spectre 14 EU0008 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-spectre-14-eu0008.webp" alt="HP Spectre 14 EU0008" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-spectre-14-eu0008-2.webp" alt="HP Spectre 14 EU0008" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Spectre 14 EU0008 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Premium · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">995 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-spectre-14-eu0008.webp" alt="HP Spectre 14 EU0008" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-spectre-14-eu0008-3.webp" alt="HP Spectre 14 EU0008" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Spectre 14 EU0008 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · Premium · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 095 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ZBook Power 16 G11 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-zbook-power16-g11.webp" alt="HP ZBook Power 16 G11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-zbook-power16-g11-2.webp" alt="HP ZBook Power 16 G11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ZBook Power 16 G11 — 16 Go / 512 Go</div>
+      <div class="product-spec">16" · Station de travail · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">855 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-zbook-power16-g11.webp" alt="HP ZBook Power 16 G11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-zbook-power16-g11-2.webp" alt="HP ZBook Power 16 G11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ZBook Power 16 G11 — 16 Go / 1 To</div>
+      <div class="product-spec">16" · Station de travail · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">995 000F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP 14s EP0063CL -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-14s-ep0063cl-2.webp" alt="HP 14s EP0063CL" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-14s-ep0063cl-2.webp" alt="HP 14s EP0063CL" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP 14s EP0063CL — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">375 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-14s-ep0063cl-2.webp" alt="HP 14s EP0063CL" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-14s-ep0063cl-2.webp" alt="HP 14s EP0063CL" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP 14s EP0063CL — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">485 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Laptop 15 FD0447 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-15-fd0447.webp" alt="HP Laptop 15 FD0447" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-15-fd0447-2.webp" alt="HP Laptop 15 FD0447" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 15 FD0447 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">470 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-15-fd0447.webp" alt="HP Laptop 15 FD0447" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-15-fd0447-3.webp" alt="HP Laptop 15 FD0447" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 15 FD0447 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">570 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP OmniBook 14 FP0023 x360 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fp0023-x360.webp" alt="HP OmniBook 14 FP0023 x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fp0023-x360-2.webp" alt="HP OmniBook 14 FP0023 x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 14 FP0023 x360 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">750 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fp0023-x360.webp" alt="HP OmniBook 14 FP0023 x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-14-fp0023-x360-4.webp" alt="HP OmniBook 14 FP0023 x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 14 FP0023 x360 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">850 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Envy 14 1013DX x360 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-envy-14-1013dx-x360-2.webp" alt="HP Envy 14 1013DX x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-envy-14-1013dx-x360.webp" alt="HP Envy 14 1013DX x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Envy 14 1013DX x360 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-envy-14-1013dx-x360-2.webp" alt="HP Envy 14 1013DX x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-envy-14-1013dx-x360-3.webp" alt="HP Envy 14 1013DX x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Envy 14 1013DX x360 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Convertible tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Laptop 15 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-15.webp" alt="HP Laptop 15" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-15-2.webp" alt="HP Laptop 15" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 15 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">470 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-15.webp" alt="HP Laptop 15" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-15-3.webp" alt="HP Laptop 15" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 15 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">570 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Laptop 250 G9 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-250-g9.webp" alt="HP Laptop 250 G9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-250-g9-2.webp" alt="HP Laptop 250 G9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 250 G9 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">385 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-250-g9.webp" alt="HP Laptop 250 G9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-250-g9-2.webp" alt="HP Laptop 250 G9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 250 G9 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">485 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP Laptop 250 G10 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-250-g10.webp" alt="HP Laptop 250 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-250-g10-2.webp" alt="HP Laptop 250 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 250 G10 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">470 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-laptop-250-g10.webp" alt="HP Laptop 250 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-laptop-250-g10-3.webp" alt="HP Laptop 250 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP Laptop 250 G10 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">550 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP OmniBook 16-as0023 x360 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0023-x360.webp" alt="HP OmniBook 16-as0023 x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0023-x360-2.webp" alt="HP OmniBook 16-as0023 x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 16-as0023 x360 — 8 Go / 256 Go</div>
+      <div class="product-spec">16" · Convertible tactile · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">880 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0023-x360.webp" alt="HP OmniBook 16-as0023 x360" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-omnibook-16-as0023-x360-3.webp" alt="HP OmniBook 16-as0023 x360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OmniBook 16-as0023 x360 — 16 Go / 512 Go</div>
+      <div class="product-spec">16" · Convertible tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">995 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ProBook 430 G8 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-probook-430-g8.webp" alt="HP ProBook 430 G8" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-probook-430-g8-2.webp" alt="HP ProBook 430 G8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 430 G8 — 8 Go / 256 Go</div>
+      <div class="product-spec">13.3" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">485 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-probook-430-g8.webp" alt="HP ProBook 430 G8" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-probook-430-g8-4.webp" alt="HP ProBook 430 G8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 430 G8 — 16 Go / 512 Go</div>
+      <div class="product-spec">13.3" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">570 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HP ProBook 450 G10 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-probook-450-g10.webp" alt="HP ProBook 450 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-probook-450-g10-2.webp" alt="HP ProBook 450 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 450 G10 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">570 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/hp-probook-450-g10.webp" alt="HP ProBook 450 G10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/hp-probook-450-g10-3.webp" alt="HP ProBook 450 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 450 G10 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">620 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <!-- ============================================================
+    FIN DE LOT 1? SA SE FERA EN 4 LOTS
+============================================================ -->
+
+<!-- ============================================================
+     LOT 2 — DELL + ASUS (9 modèles, 18 cartes)
+     À ajouter à la suite du Lot 1, dans le même products-grid
+============================================================ -->
+
+  <!-- ASUS 14 X1404V -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/asus-14-x1404v.webp" alt="ASUS 14 X1404V" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/asus-14-x1404v-2.webp" alt="ASUS 14 X1404V" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">ASUS 14 X1404V — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">470 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/asus-14-x1404v.webp" alt="ASUS 14 X1404V" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/asus-14-x1404v-3.webp" alt="ASUS 14 X1404V" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">ASUS 14 X1404V — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">570 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ASUS Vivobook -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/asus-vivobook.webp" alt="ASUS Vivobook" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/asus-vivobook-2.webp" alt="ASUS Vivobook" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">ASUS Vivobook — 8 Go / 256 Go</div>
+      <div class="product-spec">8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">480 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/asus-vivobook.webp" alt="ASUS Vivobook" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/asus-vivobook-2.webp" alt="ASUS Vivobook" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">ASUS Vivobook — 16 Go / 512 Go</div>
+      <div class="product-spec">16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">580 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell Latitude 3440 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-latitude-3440.webp" alt="Dell Latitude 3440" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-latitude-3440-2.webp" alt="Dell Latitude 3440" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Latitude 3440 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-latitude-3440.webp" alt="Dell Latitude 3440" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-latitude-3440-4.webp" alt="Dell Latitude 3440" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Latitude 3440 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell Pro 14 PC14250 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-pro-14-pc14250.webp" alt="Dell Pro 14 PC14250" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-pro-14-pc14250-2.webp" alt="Dell Pro 14 PC14250" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Pro 14 PC14250 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">550 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-pro-14-pc14250.webp" alt="Dell Pro 14 PC14250" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-pro-14-pc14250-3.webp" alt="Dell Pro 14 PC14250" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Pro 14 PC14250 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">650 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell Latitude 7320 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-latitude-7320.webp" alt="Dell Latitude 7320" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-latitude-7320-2.webp" alt="Dell Latitude 7320" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Latitude 7320 — 16 Go / 512 Go</div>
+      <div class="product-spec">13.3" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-latitude-7320.webp" alt="Dell Latitude 7320" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-latitude-7320-4.webp" alt="Dell Latitude 7320" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Latitude 7320 — 16 Go / 1 To</div>
+      <div class="product-spec">13.3" · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell XPS 13 model 9315 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-xps-13-9315.webp" alt="Dell XPS 13 model 9315" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-xps-13-9315-3.webp" alt="Dell XPS 13 model 9315" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell XPS 13 (9315) — 16 Go / 512 Go</div>
+      <div class="product-spec">13.4" · Premium · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">995 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-xps-13-9315.webp" alt="Dell XPS 13 model 9315" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-xps-13-9315-3.webp" alt="Dell XPS 13 model 9315" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell XPS 13 (9315) — 16 Go / 1 To</div>
+      <div class="product-spec">13.4" · Premium · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 100 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell XPS 13 model 9320 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-xps-13-9320-3.webp" alt="Dell XPS 13 model 9320" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-xps-13-9320.webp" alt="Dell XPS 13 model 9320" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell XPS 13 (9320) — 16 Go / 512 Go</div>
+      <div class="product-spec">13.4" · Premium · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">995 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-xps-13-9320-3.webp" alt="Dell XPS 13 model 9320" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-xps-13-9320.webp" alt="Dell XPS 13 model 9320" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell XPS 13 (9320) — 16 Go / 1 To</div>
+      <div class="product-spec">13.4" · Premium · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 100 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell Vostro 3520 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-vostro-3520.webp" alt="Dell Vostro 3520" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-vostro-3520.webp" alt="Dell Vostro 3520" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Vostro 3520 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">465 000F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-vostro-3520.webp" alt="Dell Vostro 3520" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-vostro-3520.webp" alt="Dell Vostro 3520" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Vostro 3520 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">565 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dell Vostro 3530 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-vostro-3530.webp" alt="Dell Vostro 3530" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-vostro-3530-2.webp" alt="Dell Vostro 3530" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Vostro 3530 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">565 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/dell-vostro-3530.webp" alt="Dell Vostro 3530" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/dell-vostro-3530-3.webp" alt="Dell Vostro 3530" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Vostro 3530 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">665 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+    FIN DE LOT2 DELL 
+============================================================ -->
+
+<!-- ============================================================
+     DEBUT LOT 3 — LENOVO + MICROSOFT SURFACE (14 modèles, 28 cartes)
+     À ajouter à la suite du Lot 2, dans le même products-grid
+============================================================ -->
+
+  <!-- Lenovo IdeaPad Slim3 N305 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-ideapad-slim3-n305.webp" alt="Lenovo IdeaPad Slim3 N305" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-ideapad-slim3-n305-2.webp" alt="Lenovo IdeaPad Slim3 N305" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo IdeaPad Slim3 N305 — 8 Go / 256 Go</div>
+      <div class="product-spec">Intel N305 · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">320 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-ideapad-slim3-n305.webp" alt="Lenovo IdeaPad Slim3 N305" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-ideapad-slim3-n305-3.webp" alt="Lenovo IdeaPad Slim3 N305" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo IdeaPad Slim3 N305 — 16 Go / 512 Go</div>
+      <div class="product-spec">Intel N305 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">390 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo IdeaPad 5 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-ideapad-5.webp" alt="Lenovo IdeaPad 5" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-ideapad-5-2.webp" alt="Lenovo IdeaPad 5" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo IdeaPad 5 — 8 Go / 256 Go</div>
+      <div class="product-spec">8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">435 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-ideapad-5.webp" alt="Lenovo IdeaPad 5" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-ideapad-5-4.webp" alt="Lenovo IdeaPad 5" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo IdeaPad 5 — 16 Go / 512 Go</div>
+      <div class="product-spec">16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">505 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo ThinkPad X1 Carbon Gen 12 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-x1-carbon-gen12.webp" alt="Lenovo ThinkPad X1 Carbon Gen 12" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-x1-carbon-gen12-2.webp" alt="Lenovo ThinkPad X1 Carbon Gen 12" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad X1 Carbon Gen 12 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Premium · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">950 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-x1-carbon-gen12.webp" alt="Lenovo ThinkPad X1 Carbon Gen 12" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-x1-carbon-gen12-3.webp" alt="Lenovo ThinkPad X1 Carbon Gen 12" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad X1 Carbon Gen 12 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · Premium · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 150 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo ThinkPad E14 G6 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-e14-g6.webp" alt="Lenovo ThinkPad E14 G6" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-e14-g6-2.webp" alt="Lenovo ThinkPad E14 G6" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad E14 G6 — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">710 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-e14-g6.webp" alt="Lenovo ThinkPad E14 G6" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-e14-g6-3.webp" alt="Lenovo ThinkPad E14 G6" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad E14 G6 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">810 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo ThinkPad T14 G5 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-t14-g5.webp" alt="Lenovo ThinkPad T14 G5" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-t14-g5-3.webp" alt="Lenovo ThinkPad T14 G5" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad T14 G5 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">670 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-t14-g5.webp" alt="Lenovo ThinkPad T14 G5" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-t14-g5-2.webp" alt="Lenovo ThinkPad T14 G5" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad T14 G5 — 16 Go / 1 To</div>
+      <div class="product-spec">14" · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">770 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo V15 ADA -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-v15-ada.webp" alt="Lenovo V15 ADA" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-v15-ada-2.webp" alt="Lenovo V15 ADA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo V15 ADA — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">265 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-v15-ada.webp" alt="Lenovo V15 ADA" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-v15-ada-4.webp" alt="Lenovo V15 ADA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo V15 ADA — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">345 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo V15 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-v15.webp" alt="Lenovo V15" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-v15-2.webp" alt="Lenovo V15" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo V15 — 8 Go / 256 Go</div>
+      <div class="product-spec">15.6" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">255 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-v15.webp" alt="Lenovo V15" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-v15-3.webp" alt="Lenovo V15" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo V15 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">355 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo ThinkPad E16 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-e16.webp" alt="Lenovo ThinkPad E16" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-e16-3.webp" alt="Lenovo ThinkPad E16" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad E16 — 8 Go / 256 Go</div>
+      <div class="product-spec">16" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-e16.webp" alt="Lenovo ThinkPad E16" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-e16-4.webp" alt="Lenovo ThinkPad E16" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad E16 — 16 Go / 512 Go</div>
+      <div class="product-spec">16" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">610 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo V14 IGL -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-v14-igl-2.webp" alt="Lenovo V14 IGL" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-v14-igl-3.webp" alt="Lenovo V14 IGL" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo V14 IGL — 8 Go / 256 Go</div>
+      <div class="product-spec">14" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">710 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-v14-igl.webp" alt="Lenovo V14 IGL" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-v14-igl-3.webp" alt="Lenovo V14 IGL" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo V14 IGL — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo ThinkPad P16v G2 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-p16v-g2.webp" alt="Lenovo ThinkPad P16v G2" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-p16v-g2-2.webp" alt="Lenovo ThinkPad P16v G2" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad P16v G2 — 16 Go / 512 Go</div>
+      <div class="product-spec">16" · Station de travail · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-p16v-g2.webp" alt="Lenovo ThinkPad P16v G2" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-thinkpad-p16v-g2-3.webp" alt="Lenovo ThinkPad P16v G2" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad P16v G2 — 16 Go / 1 To</div>
+      <div class="product-spec">16" · Station de travail · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenovo Yoga 7 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-yoga-7.webp" alt="Lenovo Yoga 7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-yoga-7-2.webp" alt="Lenovo Yoga 7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo Yoga 7 — 16 Go / 512 Go</div>
+      <div class="product-spec">Convertible tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/lenovo-yoga-7.webp" alt="Lenovo Yoga 7" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/lenovo-yoga-7-4.webp" alt="Lenovo Yoga 7" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo Yoga 7 — 16 Go / 1 To</div>
+      <div class="product-spec">Convertible tactile · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Microsoft Surface Pro 9 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-9.webp" alt="Microsoft Surface Pro 9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-9-2.webp" alt="Microsoft Surface Pro 9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Microsoft Surface Pro 9 — 16 Go / 512 Go</div>
+      <div class="product-spec">13" · 2-en-1 tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">810 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-9.webp" alt="Microsoft Surface Pro 9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-9-3.webp" alt="Microsoft Surface Pro 9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Microsoft Surface Pro 9 — 16 Go / 1 To</div>
+      <div class="product-spec">13" · 2-en-1 tactile · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">880 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Microsoft Surface Pro 10 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-10.webp" alt="Microsoft Surface Pro 10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-10-2.webp" alt="Microsoft Surface Pro 10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Microsoft Surface Pro 10 — 16 Go / 512 Go</div>
+      <div class="product-spec">13" · 2-en-1 tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">865 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-10.webp" alt="Microsoft Surface Pro 10" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-10-2.webp" alt="Microsoft Surface Pro 10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Microsoft Surface Pro 10 — 16 Go / 1 To</div>
+      <div class="product-spec">13" · 2-en-1 tactile · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">930 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Microsoft Surface Pro 11 — gamme supérieure -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-11.webp" alt="Microsoft Surface Pro 11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-11-2.webp" alt="Microsoft Surface Pro 11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Microsoft Surface Pro 11 — 16 Go / 512 Go</div>
+      <div class="product-spec">13" · 2-en-1 tactile · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 160 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-11.webp" alt="Microsoft Surface Pro 11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/microsoft-surface-pro-11-4.webp" alt="Microsoft Surface Pro 11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Microsoft Surface Pro 11 — 16 Go / 1 To</div>
+      <div class="product-spec">13" · 2-en-1 tactile · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 260 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+     LOT 3 — LENOVO + MICROSOFT SURFACE (14 modèles, 28 cartes)
+     FIN DE GRILLE 3 IL YA POSSIBLIT2 D'JOUTER D'AUTRES PC 
+============================================================ -->
+
+<!-- ============================================================
+     LOT 4 — AVITA (1 modèle, 2 cartes) — dernier lot des PC portables
+  ON VA AJOUTER DES PRODUITS AVEC LE TEMPS 
+============================================================ -->
+  <!-- Avita Essentiel Celeron -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/avita-essentiel-celeron.webp" alt="Avita Essentiel Celeron" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/avita-essentiel-celeron-2.webp" alt="Avita Essentiel Celeron" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Avita Essentiel Celeron — 4 Go / 128 Go</div>
+      <div class="product-spec">Intel Celeron · 4 Go RAM · 128 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">175 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/avita-essentiel-celeron.webp" alt="Avita Essentiel Celeron" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/avita-essentiel-celeron-3.webp" alt="Avita Essentiel Celeron" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Avita Essentiel Celeron — 8 Go / 256 Go</div>
+      <div class="product-spec">Intel Celeron · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">240 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+     FIN DU LOT 4 AVEC UN PRODUIT ET L'AJOUT DES FUTUR 
+     PC 
+============================================================ -->
+
+
+
+
+
+</div>
+
+    
+    <!-- FIN PC PORTABLES -->
+
+
+    <!-- ============================================================
+      SECTION 3 : MAC
+      → id="mac"
+      → Regroupe : Apple iMac (et futurs MacBook si besoin)
+    ============================================================ -->
+    <div class="section-row" id="mac" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Mac</h2>
+    </div>
+
+    <div class="products-grid">
+
+  <!-- Apple iMac 27" 2020 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-imac-27-2020.webp" alt="Apple iMac 27 pouces 2020" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-imac-27-2020-2.webp" alt="Apple iMac 27 pouces 2020" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple iMac 27" (2020) — 8 Go / 256 Go</div>
+      <div class="product-spec">27" · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 690 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-imac-27-2020.webp" alt="Apple iMac 27 pouces 2020" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-imac-27-2020-2.webp" alt="Apple iMac 27 pouces 2020" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple iMac 27" (2020) — 16 Go / 512 Go</div>
+      <div class="product-spec">27" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">2 540 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple MacBook Air M1 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m1.webp" alt="Apple MacBook Air M1" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m1-2.webp" alt="Apple MacBook Air M1" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Air M1 — 8 Go / 256 Go</div>
+      <div class="product-spec">Puce M1 · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 050 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m1.webp" alt="Apple MacBook Air M1" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m1-2.webp" alt="Apple MacBook Air M1" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Air M1 — 16 Go / 512 Go</div>
+      <div class="product-spec">Puce M1 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">1 350 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple MacBook Air M2 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m2.webp" alt="Apple MacBook Air M2" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m2-2.webp" alt="Apple MacBook Air M2" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Air M2 — 8 Go / 256 Go</div>
+      <div class="product-spec">Puce M2 · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m2.webp" alt="Apple MacBook Air M2" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m2-2.webp" alt="Apple MacBook Air M2" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Air M2 — 16 Go / 512 Go</div>
+      <div class="product-spec">Puce M2 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple MacBook Air M3 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m3.webp" alt="Apple MacBook Air M3" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m3-2.webp" alt="Apple MacBook Air M3" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Air M3 — 8 Go / 256 Go</div>
+      <div class="product-spec">Puce M3 · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m3.webp" alt="Apple MacBook Air M3" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-macbook-air-m3-2.webp" alt="Apple MacBook Air M3" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Air M3 — 16 Go / 512 Go</div>
+      <div class="product-spec">Puce M3 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple MacBook NEO -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-neo.webp" alt="Apple MacBook Neo" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-neo-2.webp" alt="Apple MacBook Neo" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Neo — 8 Go / 256 Go</div>
+      <div class="product-spec">Puce A18 Pro · 8 Go RAM · 256 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-neo.webp" alt="Apple MacBook Neo" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-neo-2.webp" alt="Apple MacBook Neo" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Neo — 8 Go / 512 Go</div>
+      <div class="product-spec">Puce A18 Pro · 8 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple MacBook Pro -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-macbook-pro.webp" alt="Apple MacBook Pro" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-macbook-pro-2.webp" alt="Apple MacBook Pro" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Pro — 8 Go / 512 Go</div>
+      <div class="product-spec">MacBook Pro · 8 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/apple-macbook-pro.webp" alt="Apple MacBook Pro" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/apple-macbook-pro-2.webp" alt="Apple MacBook Pro" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Pro — 16 Go / 1 To</div>
+      <div class="product-spec">MacBook Pro · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+ 
+    <!-- FIN MAC -->
+
+
+    <!-- ============================================================
+      SECTION 4 : TABLETTES
+      → id="tablettes"
+      → Regroupe : tablette Samsung (et futures autres marques)
+    ============================================================ -->
+    <div class="section-row" id="tablettes" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Tablettes</h2>
+    </div>
+
+    <div class="products-grid">
+
+  <!-- Samsung Galaxy Tab A8 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-a8.webp" alt="Samsung Galaxy Tab A8" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-a8-2.webp" alt="Samsung Galaxy Tab A8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab A8 — 64 Go</div>
+      <div class="product-spec">64 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-a8.webp" alt="Samsung Galaxy Tab A8" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-a8-2.webp" alt="Samsung Galaxy Tab A8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab A8 — 128 Go</div>
+      <div class="product-spec">128 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Samsung Galaxy Tab A9 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-a9.webp" alt="Samsung Galaxy Tab A9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-a9-2.webp" alt="Samsung Galaxy Tab A9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab A9 — 64 Go</div>
+      <div class="product-spec">64 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-a9.webp" alt="Samsung Galaxy Tab A9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-a9-2.webp" alt="Samsung Galaxy Tab A9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab A9 — 128 Go</div>
+      <div class="product-spec">128 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Samsung Galaxy Tab S8 — config fixe connue -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-s8.webp" alt="Samsung Galaxy Tab S8" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-s8-2.webp" alt="Samsung Galaxy Tab S8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab S8</div>
+      <div class="product-spec">8 Go RAM · 128 Go · Batterie 10 900 mAh</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Samsung Galaxy Tab S9 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-s9.webp" alt="Samsung Galaxy Tab S9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-s9-2.webp" alt="Samsung Galaxy Tab S9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab S9 — 128 Go</div>
+      <div class="product-spec">128 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-s9.webp" alt="Samsung Galaxy Tab S9" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-s9-2.webp" alt="Samsung Galaxy Tab S9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab S9 — 256 Go</div>
+      <div class="product-spec">256 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Samsung Galaxy Tab S10 FE -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-s10fe.webp" alt="Samsung Galaxy Tab S10 FE" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-s10fe-2.webp" alt="Samsung Galaxy Tab S10 FE" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab S10 FE — 128 Go</div>
+      <div class="product-spec">128 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">510 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-s10fe.webp" alt="Samsung Galaxy Tab S10 FE" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-s10fe-2.webp" alt="Samsung Galaxy Tab S10 FE" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab S10 FE — 256 Go</div>
+      <div class="product-spec">256 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">560 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Samsung Galaxy Tab S11 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-s11.webp" alt="Samsung Galaxy Tab S11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-s11-2.webp" alt="Samsung Galaxy Tab S11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab S11 — 128 Go</div>
+      <div class="product-spec">128 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">530 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="../images/produits/ordinateurs/samsung-tab-s11.webp" alt="Samsung Galaxy Tab S11" class="product-photo img-main" />
+      <img src="../images/produits/ordinateurs/samsung-tab-s11-2.webp" alt="Samsung Galaxy Tab S11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab S11 — 256 Go</div>
+      <div class="product-spec">256 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">580 000 F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <!-- FIN TABLETTES -->
+
+  </main>
+
+
+  <!-- ============================================================
+    5. FOOTER
+  ============================================================ -->
+  <footer class="footer">
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/logos.webp" alt="OPEN Business World" class="footer-logo-img" />
+        </div>
+        <p class="footer-desc">
+          OPEN Business World est un magasin informatique spécialisé dans
+          l'achat et la vente de matériel informatique. Nous proposons des
+          PC de bureau, des ordinateurs portables, des configurations gamer
+          sur mesure, ainsi qu'un large choix de composants et de périphériques.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/OBWINFORMATIQUE" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/open-business-world" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@obw.informatique" target="_blank" rel="noopener" aria-label="TikTok"><i class="ti ti-brand-tiktok" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Liens rapides</h4>
+       <ul class="footer-links">
+          <li><a href="html/ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="html/pc-gamer.html">PC Gamer</a></li>
+          <li><a href="html/smartphones.html">Smartphones</a></li>
+          <li><a href="html/moniteurs.html">Moniteurs</a></li>
+          <li><a href="html/peripheriques.html">Périphériques</a></li>
+          <li><a href="html/imprimantes.html">Imprimantes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Catégories</h4>
+        <ul class="footer-links">
+          <li><a href="ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="pc-gamer.html">PC Gamer</a></li>
+          <li><a href="smartphones.html">Smartphones</a></li>
+          <li><a href="moniteurs.html">Moniteurs</a></li>
+          <li><a href="imprimantes.html">Imprimantes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Nous contacter</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            Plateau, Immeuble Mali, Abidjan
+          </li>
+          <li>
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            <a href="tel:+2252720286555">+225 27 20 28 65 55</a>
+          </li>
+          <li>
+            <i class="ti ti-mail" aria-hidden="true"></i>
+            <a href="mailto:contact@openbusiness.ci">contact@openbusiness.ci</a>
+          </li>
+          <li>
+            <i class="ti ti-clock" aria-hidden="true"></i>
+            Lun – Sam : 8h00 – 18h00
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 OPEN Business World. Tous droits réservés.</span>
+      <span>Site réalisé par Paul Tanon 🇨🇮</span>
+    </div>
+
+  </footer>
+
+  <!-- JS : on remonte d'un dossier avec ../ -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

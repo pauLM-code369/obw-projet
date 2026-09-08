@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPEN Business World — Moniteurs</title>
+  <!-- CSS : on remonte d'un dossier avec ../ -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../images/android-chrome-512x512.png" />
+
+  <!-- Icônes Tabler -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+    1. BARRE D'ANNONCE DYNAMIQUE
+  ============================================================ -->
+  <div class="promo-bar"
+     data-product="OPEN Business World — Votre partenaire tech de confiance à Abidjan"
+     data-link="../boutique.html"
+     data-cta="Découvrir la boutique">
+  </div>
+
+  <!-- ============================================================
+    2. HEADER
+  ============================================================ -->
+  <header class="header">
+
+    <a href="../index.html" class="logo">
+      <img src="../images/logo.webp" alt="OPEN Business World" class="logo-img" />
+    </a>
+
+    <div class="search">
+      <input type="text" placeholder="Rechercher un PC, smartphone, GPU..." aria-label="Recherche" />
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <i class="ti ti-search" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Mes favoris">
+        <i class="ti ti-heart" aria-hidden="true"></i>
+        <span>Favoris</span>
+        <span class="dot-badge"></span>
+      </button>
+      <button class="icon-btn" aria-label="Mon panier">
+        <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+        <span>Panier</span>
+        <span class="dot-badge"></span>
+      </button>
+      <div class="divider-v"></div>
+      <a href="https://wa.me/2252720286555"
+         class="icon-btn"
+         target="_blank"
+         rel="noopener"
+         aria-label="WhatsApp">
+        <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:+2252720286555" class="cta-header">
+        <i class="ti ti-phone-call" aria-hidden="true"></i>
+        <span>+225 27 20 28 65 55</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+
+  </header>
+
+
+  <!-- ============================================================
+    3. NAVIGATION
+    → Même bloc que sur toutes les pages, "Moniteurs" est actif ("on")
+  ============================================================ -->
+  <nav class="nav" id="mainNav">
+    <button class="nav-close" id="navCloseBtn" aria-label="Fermer le menu">
+      <i class="ti ti-x" aria-hidden="true"></i>
+    </button>
+    <a href="../index.html" class="nav-link">Accueil</a>
+    <a href="../boutique.html" class="nav-link">Boutique</a>
+
+    <div class="nav-item">
+      <a href="ordinateurs.html" class="nav-link">
+        Ordinateurs & Tablettes <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="ordinateurs.html#pc-bureau" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-desktop" aria-hidden="true"></i></div>
+          <span>PC de bureau</span>
+        </a>
+        <a href="ordinateurs.html#pc-portables" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-laptop" aria-hidden="true"></i></div>
+          <span>PC portables</span>
+        </a>
+        <a href="ordinateurs.html#mac" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-brand-apple" aria-hidden="true"></i></div>
+          <span>Mac</span>
+        </a>
+        <a href="ordinateurs.html#tablettes" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-device-tablet" aria-hidden="true"></i></div>
+          <span>Tablettes</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="moniteurs.html" class="nav-link on">Moniteurs</a>
+
+    <div class="nav-item">
+      <a href="peripheriques.html" class="nav-link">
+        Périphériques <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="peripheriques.html#accessoires" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-keyboard" aria-hidden="true"></i></div>
+          <span>Accessoires PC</span>
+        </a>
+        <a href="peripheriques.html#audio" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+          <span>Audio</span>
+        </a>
+        <a href="peripheriques.html#consommables" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-droplet" aria-hidden="true"></i></div>
+          <span>Consommables & logiciels</span>
+        </a>
+        <a href="peripheriques.html#bureau-electromenager" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-building-store" aria-hidden="true"></i></div>
+          <span>Équipements bureau</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="pc-gamer.html" class="nav-link"> PC Gamer </a>
+
+    <div class="nav-item">
+      <a href="imprimantes.html" class="nav-link">
+        Imprimantes <i class="ti ti-chevron-down" aria-hidden="true"></i>
+      </a>
+      <div class="mega-menu">
+        <a href="photocopieuses.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Photocopieuses</span>
+        </a>
+        <a href="imprimantes.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Imprimantes</span>
+        </a>
+        <a href="imprimantes-hp-laser.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+          <span>Imprimantes HP Laser</span>
+        </a>
+        <a href="scanneurs-lecteurs.html" class="mega-menu-item">
+          <div class="mega-menu-icon"><i class="ti ti-scan" aria-hidden="true"></i></div>
+          <span>Scanneurs & lecteurs</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="smartphones.html" class="nav-link">Smartphones</a>
+  </nav>
+
+
+  <!-- ============================================================
+    4. CORPS DE PAGE
+  ============================================================ -->
+  <main class="page-body">
+
+    <!-- TITRE -->
+    <div class="page-hero">
+      <h1 class="page-hero-title">Moniteurs</h1>
+      <p class="page-hero-text">
+        Écrans PC pour le bureau, la création et le gaming.
+      </p>
+    </div>
+
+    <!-- ============================================================
+      PRODUITS — une seule grille, pas de sous-catégories ici
+    ============================================================ -->
+   <div class="coming-soon-block">
+  <div class="coming-soon-icon">
+    <i class="ti ti-device-desktop-analytics" aria-hidden="true"></i>
+  </div>
+  <div class="coming-soon-title">Bientôt disponible</div>
+  <p class="coming-soon-text">
+    Notre sélection de moniteurs arrive très prochainement. Contactez-nous dès maintenant pour connaître nos disponibilités.
+  </p>
+  <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" class="coming-soon-btn">
+    <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Nous contacter sur WhatsApp
+  </a>
+</div>
+    <!-- FIN PRODUITS -->
+
+  </main>
+
+
+  <!-- ============================================================
+    5. FOOTER
+  ============================================================ -->
+  <footer class="footer">
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/logos.webp" alt="OPEN Business World" class="footer-logo-img" />
+        </div>
+        <p class="footer-desc">
+          OPEN Business World est un magasin informatique spécialisé dans
+          l'achat et la vente de matériel informatique. Nous proposons des
+          PC de bureau, des ordinateurs portables, des configurations gamer
+          sur mesure, ainsi qu'un large choix de composants et de périphériques.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/OBWINFORMATIQUE" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/open-business-world" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@obw.informatique" target="_blank" rel="noopener" aria-label="TikTok"><i class="ti ti-brand-tiktok" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Liens rapides</h4>
+       <ul class="footer-links">
+          <li><a href="html/ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="html/pc-gamer.html">PC Gamer</a></li>
+          <li><a href="html/smartphones.html">Smartphones</a></li>
+          <li><a href="html/moniteurs.html">Moniteurs</a></li>
+          <li><a href="html/peripheriques.html">Périphériques</a></li>
+          <li><a href="html/imprimantes.html">Imprimantes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Catégories</h4>
+        <ul class="footer-links">
+          <li><a href="ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="pc-gamer.html">PC Gamer</a></li>
+          <li><a href="smartphones.html">Smartphones</a></li>
+          <li><a href="moniteurs.html">Moniteurs</a></li>
+          <li><a href="imprimantes.html">Imprimantes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Nous contacter</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            Plateau, Immeuble Mali, Abidjan
+          </li>
+          <li>
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            <a href="tel:+2252720286555">+225 27 20 28 65 55</a>
+          </li>
+          <li>
+            <i class="ti ti-mail" aria-hidden="true"></i>
+            <a href="mailto:contact@openbusiness.ci">contact@openbusiness.ci</a>
+          </li>
+          <li>
+            <i class="ti ti-clock" aria-hidden="true"></i>
+            Lun – Sam : 8h00 – 18h00
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 OPEN Business World. Tous droits réservés.</span>
+      <span>Site réalisé par Paul Tanon 🇨🇮</span>
+    </div>
+
+  </footer>
+
+  <!-- JS : on remonte d'un dossier avec ../ -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

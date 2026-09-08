@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPEN Business World — PC, Smartphones & Électronique à Abidjan</title>
+  <!-- CSS dans le dossier css/ -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png" />
+
+  <!-- Icônes Tabler -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+    1. BARRE D'ANNONCE DYNAMIQUE
+    Pour modifier : change les valeurs data-* ici uniquement
+  ============================================================ -->
+  <div class="promo-bar"
+       data-product="HP ENVY 14 ES 1023"
+       data-price="730 000 F CFA"
+       data-date="5 juin"
+       data-link="#">
+  </div>
+
+
+  <!-- ============================================================
+    2. HEADER
+  ============================================================ -->
+  <header class="header">
+
+    <a href="index.html" class="logo">
+      <img src="images/logo.webp" alt="OPEN Business World" class="logo-img" />
+    </a>
+
+    <div class="search">
+      <input type="text" placeholder="Rechercher un PC, smartphone, GPU..." aria-label="Recherche" />
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <i class="ti ti-search" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Mes favoris">
+        <i class="ti ti-heart" aria-hidden="true"></i>
+        <span>Favoris</span>
+        <span class="dot-badge"></span>
+      </button>
+      <button class="icon-btn" aria-label="Mon panier">
+        <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+        <span>Panier</span>
+        <span class="dot-badge"></span>
+      </button>
+      <div class="divider-v"></div>
+      <a href="https://wa.me/2252720286555"
+         class="icon-btn"
+         target="_blank"
+         rel="noopener"
+         aria-label="WhatsApp">
+        <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:+2252720286555" class="cta-header">
+        <i class="ti ti-phone-call" aria-hidden="true"></i>
+        <span>+225 27 20 28 65 55</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+
+  </header>
+
+
+  <!-- ============================================================
+    3. NAVIGATION — sticky + responsive
+  ============================================================ -->
+
+  <nav class="nav" id="mainNav">
+  <button class="nav-close" id="navCloseBtn" aria-label="Fermer le menu">
+    <i class="ti ti-x" aria-hidden="true"></i>
+  </button>
+  <a href="index.html" class="nav-link">Accueil</a>
+  <a href="boutique.html" class="nav-link on">Boutique</a>
+
+  <div class="nav-item">
+    <a href="html/ordinateurs.html" class="nav-link">
+
+      Ordinateurs & Tablettes <i class="ti ti-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mega-menu">
+      <a href="html/ordinateurs.html#pc-bureau" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-device-desktop" aria-hidden="true"></i></div>
+        <span>PC de bureau</span>
+      </a>
+      <a href="html/ordinateurs.html#pc-portables" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-device-laptop" aria-hidden="true"></i></div>
+        <span>PC portables</span>
+      </a>
+      <a href="html/ordinateurs.html#mac" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-brand-apple" aria-hidden="true"></i></div>
+        <span>Mac</span>
+      </a>
+      <a href="html/ordinateurs.html#tablettes" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-device-tablet" aria-hidden="true"></i></div>
+        <span>Tablettes</span>
+      </a>
+    </div>
+  </div>
+
+ <a href="html/moniteurs.html" class="nav-link">Moniteurs</a>
+ 
+  <div class="nav-item">
+    <a href="html/peripheriques.html" class="nav-link">
+      Périphériques <i class="ti ti-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mega-menu">
+      <a href="html/peripheriques.html#accessoires" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-keyboard" aria-hidden="true"></i></div>
+        <span>Accessoires PC</span>
+      </a>
+      <a href="html/peripheriques.html#audio" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-headphones" aria-hidden="true"></i></div>
+        <span>Audio</span>
+      </a>
+      <a href="html/peripheriques.html#consommables" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-droplet" aria-hidden="true"></i></div>
+        <span>Consommables & logiciels</span>
+      </a>
+      <a href="html/peripheriques.html#bureau-electromenager" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-building-store" aria-hidden="true"></i></div>
+        <span>Équipements bureau</span>
+      </a>
+    </div>
+  </div>
+
+  <a href="html/pc-gamer.html" class="nav-link"> PC Gamer </a>
+
+  <div class="nav-item">
+    <a href="html/imprimantes.html" class="nav-link">
+      Imprimantes <i class="ti ti-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mega-menu">
+      <a href="html/photocopieuses.html" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+        <span>Photocopieuses</span>
+      </a>
+      <a href="html/imprimantes.html" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+        <span>Imprimantes</span>
+      </a>
+      <a href="html/imprimantes-hp-laser.html" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-printer" aria-hidden="true"></i></div>
+        <span>Imprimantes HP Laser</span>
+      </a>
+      <a href="html/scanneurs-lecteurs.html" class="mega-menu-item">
+        <div class="mega-menu-icon"><i class="ti ti-scan" aria-hidden="true"></i></div>
+        <span>Scanneurs & lecteurs</span>
+      </a>
+    </div>
+  </div>
+
+  <a href="html/smartphones.html" class="nav-link"> Smartphones </a>
+
+
+</nav>
+
+  <!-- ============================================================
+    4. SLIDER HERO — 4 slides
+    Pour modifier un slide :
+      data-theme = blue | violet | coral | teal
+      Image      = change le src de <img class="slide-img">
+  ============================================================ -->
+  <section class="slider-wrap" aria-label="Carrousel de promotions">
+
+    <div class="slider-track" id="sliderTrack">
+
+      <!-- SLIDE 1 -->
+      <div class="slide" data-theme="blue">
+        <div class="slide-content">
+          <div class="slide-left">
+            <span class="slide-tag tag-blue">
+              <i class="ti ti-sparkles" aria-hidden="true"></i> Nouveauté 2026
+            </span>
+            <h1 class="slide-title">
+              Façonnez vos mondes.<br><em>Dominez vos objectifs.</em>
+            </h1>
+            <p class="slide-desc">
+              Le PC ultra-fin Copilot+ conçu pour les créatifs et les professionnels exigeants — livraison 24h à Abidjan.
+            </p>
+            <div class="slide-specs">
+              <span class="spec-tag"><i class="ti ti-brain" aria-hidden="true"></i> Copilot+ PC</span>
+              <span class="spec-tag"><i class="ti ti-cpu" aria-hidden="true"></i> NPU intégré</span>
+              <span class="spec-tag"><i class="ti ti-feather" aria-hidden="true"></i> Ultra-léger</span>
+            </div>
+            <div class="slide-bottom">
+              <div class="slide-price-block">
+                <div class="slide-price-label">À partir de</div>
+                <div class="slide-price">200 000 F CFA</div>
+              </div>
+               <div class="slide-actions">
+                <a href="html/ordinateurs.html#pc-portables" class="btn-primary"><i class="ti ti-device-laptop" aria-hidden="true"></i> Voir les PC portables</a>
+                <a href="boutique.html#populaires" class="btn-ghost">Voir les produits populaires</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <img src="images/slider/pcs.webp" alt="PC Slim Copilot+" class="slide-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="slide" data-theme="violet">
+        <div class="slide-content">
+          <div class="slide-left">
+            <span class="slide-tag tag-violet">
+              <i class="ti ti-brain" aria-hidden="true"></i> Intelligence Artificielle
+            </span>
+            <h1 class="slide-title">
+              Copilot IA & NPU :<br><em>la créativité</em><br>sans limites.
+            </h1>
+            <p class="slide-desc">
+              ASUS ROG double écran — puissance extrême et design avant-gardiste pour dominer chaque tâche.
+            </p>
+            <div class="slide-specs">
+              <span class="spec-tag"><i class="ti ti-cpu" aria-hidden="true"></i> Core i9</span>
+              <span class="spec-tag"><i class="ti ti-device-tv" aria-hidden="true"></i> RTX 4090</span>
+              <span class="spec-tag"><i class="ti ti-layout-2" aria-hidden="true"></i> Dual Screen</span>
+            </div>
+            <div class="slide-bottom">
+              <div class="slide-price-block">
+                <div class="slide-price-label">À partir de</div>
+                <div class="slide-price">600 000 F CFA</div>
+              </div>
+              <div class="slide-actions">
+                <a href="html/pc-gamer.html" class="btn-primary"><i class="ti ti-device-gamepad" aria-hidden="true"></i> Voir les PC Gamer</a>
+                <a href="boutique.html#nouveaux-arrivages" class="btn-ghost">Voir toute la boutique</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <img src="images/slider/pcasus.webp" alt="ASUS ROG Double Écran" class="slide-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="slide" data-theme="coral">
+        <div class="slide-content">
+          <div class="slide-left">
+            <span class="slide-tag tag-coral">
+              <i class="ti ti-device-gamepad" aria-hidden="true"></i> PC Gamer Nouvelle Génération
+            </span>
+            <h1 class="slide-title">
+              Slim. Sharp.<br><em>Stylish.</em> Redoutable.
+            </h1>
+            <p class="slide-desc">
+              Le MSI Stealth A16 AI+ repousse les limites du gaming ultra-fin avec l'intelligence artificielle intégrée.
+            </p>
+            <div class="slide-specs">
+              <span class="spec-tag"><i class="ti ti-brain" aria-hidden="true"></i> Copilot+ PC</span>
+              <span class="spec-tag"><i class="ti ti-device-laptop" aria-hidden="true"></i> 16 pouces</span>
+              <span class="spec-tag"><i class="ti ti-robot" aria-hidden="true"></i> IA intégrée</span>
+            </div>
+            <div class="slide-bottom">
+              <div class="slide-price-block">
+                <div class="slide-price-label">À partir de</div>
+                <div class="slide-price">450 000 F CFA</div>
+              </div>
+               <div class="slide-actions">
+                <a href="html/pc-gamer.html" class="btn-primary"><i class="ti ti-device-gamepad" aria-hidden="true"></i> Voir les PC Gamer</a>
+                <a href="boutique.html#nouveaux-arrivages" class="btn-ghost">Voir toute la boutique</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <img src="images/slider/pcmsi.webp" alt="MSI Stealth A16 AI+" class="slide-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4 -->
+      <div class="slide" data-theme="teal">
+        <div class="slide-content">
+          <div class="slide-left">
+            <span class="slide-tag tag-teal">
+              <i class="ti ti-device-gamepad" aria-hidden="true"></i> Consoles & Gaming
+            </span>
+            <h1 class="slide-title">
+              La puissance<br>next-gen sans<br><em>compromis.</em>
+            </h1>
+            <p class="slide-desc">
+              Xbox Series X — 1TB SSD, 4K 120fps. Consoles & Smartphones disponibles maintenant à Abidjan.
+            </p>
+            <div class="slide-specs">
+              <span class="spec-tag"><i class="ti ti-device-floppy" aria-hidden="true"></i> 1TB SSD</span>
+              <span class="spec-tag"><i class="ti ti-4k" aria-hidden="true"></i> 4K 120fps</span>
+              <span class="spec-tag"><i class="ti ti-bolt" aria-hidden="true"></i> Next-Gen</span>
+            </div>
+            <div class="slide-bottom">
+              <div class="slide-price-block">
+                <div class="slide-price-label">Dès</div>
+                <div class="slide-price">85 000 F CFA</div>
+              </div>
+                <div class="slide-actions">
+                <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" class="btn-primary"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Nous contacter</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide-right">
+            <img src="images/slider/xbox.webp" alt="Xbox Series X" class="slide-img" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="slider-arrow arrow-prev" id="sliderPrev" aria-label="Slide précédente">
+      <i class="ti ti-chevron-left" aria-hidden="true"></i>
+    </button>
+    <button class="slider-arrow arrow-next" id="sliderNext" aria-label="Slide suivante">
+      <i class="ti ti-chevron-right" aria-hidden="true"></i>
+    </button>
+    <div class="slider-dots" id="sliderDots">
+      <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="slider-progress" id="sliderProgress"></div>
+
+  </section>
+
+
+  <!-- ============================================================
+    5. CORPS DE PAGE
+  ============================================================ -->
+  <main class="page-body">
+
+    <!-- 5a. RÉASSURANCE -->
+    <div class="stats-strip">
+      <div class="stat-card">
+        <div class="stat-icon icon-blue">
+          <i class="ti ti-truck-delivery" aria-hidden="true"></i>
+        </div>
+        <div class="stat-label">LIVRAISON RAPIDE</div>
+        <div class="stat-value">24h à Abidjan</div>
+        <div class="stat-desc">Livraison rapide et sécurisée directement chez vous à Abidjan.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon icon-blue">
+          <i class="ti ti-shield-check" aria-hidden="true"></i>
+        </div>
+        <div class="stat-label">GARANTIE OFFICIELLE</div>
+        <div class="stat-value">Incluse sur tout</div>
+        <div class="stat-desc">Tous nos produits sont garantis officiellement par les constructeurs.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon icon-blue">
+          <i class="ti ti-receipt" aria-hidden="true"></i>
+        </div>
+        <div class="stat-label">FACTURE ASSURÉE</div>
+        <div class="stat-value">Fournie à chaque achat</div>
+        <div class="stat-desc">Une facture officielle vous est remise à chaque commande passée.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon icon-blue">
+          <i class="ti ti-headset" aria-hidden="true"></i>
+        </div>
+        <div class="stat-label">SUPPORT CLIENT</div>
+        <div class="stat-value">WhatsApp 7j/7</div>
+        <div class="stat-desc">Notre équipe est disponible 7j/7 pour répondre à toutes vos questions.</div>
+      </div>
+    </div>
+
+
+  <!-- 5a-bis. NOUVEAUX ARRIVAGES -->
+    <div class="main-grid">
+
+      <!-- Colonne gauche : produits -->
+      <div class="products-col">
+
+        <div class="section-row" id="nouveaux-arrivages">
+          <h2 class="section-title-cat">Nouveaux arrivages</h2>
+        </div>
+
+        <div class="products-grid">
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/ordinateurs/apple-macbook-air-m2.webp" alt="Apple MacBook Air M2" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/apple-macbook-air-m2-2.webp" alt="Apple MacBook Air M2" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple MacBook Air M2 — 16 Go / 512 Go</div>
+      <div class="product-spec">Puce M2 · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/photocopieuses/canon-3830i.webp" alt="Photocopieuse Canon 3830i" class="product-photo img-main" />
+      <img src="images/produits/photocopieuses/canon-3830i-2.webp" alt="Photocopieuse Canon 3830i" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Photocopieuse Canon 3830i</div>
+      <div class="product-spec">Multifonction Canon</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/ordinateurs/lenovo-thinkpad-x1-carbon-gen12.webp" alt="Lenovo ThinkPad X1 Carbon Gen 12" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/lenovo-thinkpad-x1-carbon-gen12.webp" alt="Lenovo ThinkPad X1 Carbon Gen 12" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad X1 Carbon Gen 12 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · Premium · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/scanneurs-lecteurs/hp-scanjet-pro-3600-fn1.webp" alt="Scanner HP ScanJet Pro 3600 fn1" class="product-photo img-main" />
+      <img src="images/produits/scanneurs-lecteurs/hp-scanjet-pro-3600-fn1-2.webp" alt="Scanner HP ScanJet Pro 3600 fn1" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Scanner HP ScanJet Pro 3600 fn1</div>
+      <div class="product-spec">Scanner professionnel</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/ordinateurs/samsung-tab-s11.webp" alt="Samsung Galaxy Tab S11" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/samsung-tab-s11-2.webp" alt="Samsung Galaxy Tab S11" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab S11 — 256 Go</div>
+      <div class="product-spec">256 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/imprimantes/canon-pixma-g3410.webp" alt="Canon PIXMA G3410 Wi-Fi" class="product-photo img-main" />
+      <img src="images/produits/imprimantes/canon-pixma-g3410.webp" alt="Canon PIXMA G3410 Wi-Fi" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Canon PIXMA G3410 — Wi-Fi</div>
+      <div class="product-spec">Réservoir d'encre</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/ordinateurs/dell-optiplex-7020.webp" alt="Dell OptiPlex 7020" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/dell-optiplex-7020-2.webp" alt="Dell OptiPlex 7020" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell OptiPlex 7020 — 16 Go / 1 To</div>
+      <div class="product-spec">PC de bureau · 16 Go RAM · 1 To SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/imprimantes/hp-laserjet-mfp-141.webp" alt="HP LaserJet MFP 141 Wi-Fi" class="product-photo img-main" />
+      <img src="images/produits/imprimantes/hp-laserjet-mfp-141-2.webp" alt="HP LaserJet MFP 141 Wi-Fi" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP LaserJet MFP 141 — Wi-Fi</div>
+      <div class="product-spec">Multifonction · Imprime, scanne, copie</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/ordinateurs/lenovo-center-27hb.webp" alt="Lenovo Center 27HB" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/lenovo-center-27hb-2.webp" alt="Lenovo Center 27HB" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo Center 27HB — 16 Go / 512 Go</div>
+      <div class="product-spec">All-in-one · 27" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/imprimantes/epson-ecotank-l18050.webp" alt="Epson EcoTank L18050" class="product-photo img-main" />
+      <img src="images/produits/imprimantes/epson-ecotank-l18050-2.webp" alt="Epson EcoTank L18050" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Epson EcoTank L18050</div>
+      <div class="product-spec">Réservoir d'encre</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/ordinateurs/hp-elitebook-840-g8.webp" alt="HP EliteBook 840 G8" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/hp-elitebook-840-g8-2.webp" alt="HP EliteBook 840 G8" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP EliteBook 840 G8 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <span class="product-badge badge-new">Nouveau</span>
+      <img src="images/produits/peripheriques/casque-logitech-h960.webp" alt="Casque Logitech H960" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/casque-logitech-h960-2.webp" alt="Casque Logitech H960" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H960</div>
+      <div class="product-spec">Casque sans fil</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+        </div>
+        <!-- FIN products-grid -->
+
+      </div>
+      <!-- FIN products-col -->
+
+
+      <!-- Colonne droite : sidebar -->
+      <aside class="sidebar">
+
+        <!-- Sélection Premium -->
+        <div class="side-card">
+          <h3 class="side-card-title">
+            <i class="ti ti-diamond" aria-hidden="true"></i> Sélection Premium
+          </h3>
+          <span class="flash-discount">Configurations Gamer</span>
+
+          <div class="flash-item">
+            <div class="flash-img">
+              <img src="images/produits/premium/pc-r7-5800x-rtx5070.webp" alt="PC Gamer AMD Ryzen 7 5800X RTX 5070" />
+            </div>
+            <div>
+              <div class="flash-name">PC Gamer Ryzen 7 5800X RTX 5070</div>
+              <div class="flash-price">1 450 000 F CFA</div>
+            </div>
+          </div>
+
+          <div class="flash-item">
+            <div class="flash-img">
+              <img src="images/produits/premium/pc-r5-5600-rtx5060.webp" alt="PC Gamer AMD Ryzen 5 5600 RTX 5060" />
+            </div>
+            <div>
+              <div class="flash-name">PC Gamer Ryzen 5 5600 RTX 5060</div>
+              <div class="flash-price">950 000 F CFA</div>
+            </div>
+          </div>
+
+          <div class="flash-item">
+            <div class="flash-img">
+              <img src="images/produits/premium/pc-r7-5700x-rtx5060ti.webp" alt="PC Gamer AMD Ryzen 7 5700X RTX 5060 Ti" />
+            </div>
+            <div>
+              <div class="flash-name">PC Gamer Ryzen 7 5700X RTX 5060 Ti</div>
+              <div class="flash-price">1 150 000 F CFA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Premium -->
+        <div class="side-card">
+          <h3 class="side-card-title">
+            <i class="ti ti-shield-star" aria-hidden="true"></i> Service Premium
+          </h3>
+          <div class="trust-list">
+            <div class="trust-row">
+              <i class="ti ti-truck-delivery" aria-hidden="true"></i>
+              Livraison prioritaire à domicile
+            </div>
+            <div class="trust-row">
+              <i class="ti ti-tool" aria-hidden="true"></i>
+              Installation & configuration offertes
+            </div>
+            <div class="trust-row">
+              <i class="ti ti-shield-check" aria-hidden="true"></i>
+              Garantie étendue sur les produits sélectionnés
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+    <!-- FIN NOUVEAUX ARRIVAGES -->
+
+
+
+    <!-- 5b. CATÉGORIES -->
+    <div class="section-row">
+      <h2 class="section-title-cat">Nos catégories</h2>
+    </div>
+
+    <div class="categories-wrap">
+      <button class="cat-arrow cat-prev" id="catPrev" aria-label="Précédent">
+        <i class="ti ti-chevron-left" aria-hidden="true"></i>
+      </button>
+      <div class="categories-track" id="categoriesTrack">
+        <a href="html/pc-gamer.html" class="cat-item">
+          <div class="cat-img-wrap">
+            <img src="images/categories/pc-gamer-ultra.webp" alt="PC Gamer" />
+          </div>
+          <span>PC Gamer</span>
+        </a>
+        <a href="html/pc-gamer.html" class="cat-item">
+          <div class="cat-img-wrap">
+            <img src="images/categories/pc-portable-gamer.webp" alt="PC Portable" />
+          </div>
+          <span>PC Portable</span>
+        </a>
+        <a href="html/moniteurs.html" class="cat-item">
+          <div class="cat-img-wrap">
+            <img src="images/categories/ecran-pc-gamer.webp" alt="Écrans PC" />
+          </div>
+          <span>Écrans PC</span>
+        </a>
+        <a href="html/peripheriques.html" class="cat-item">
+          <div class="cat-img-wrap">
+            <img src="images/categories/peripheriques-pc-gamer.webp" alt="Périphériques" />
+          </div>
+          <span>Périphériques</span>
+        </a>
+        <a href="html/peripheriques.html#accessoires" class="cat-item">
+          <div class="cat-img-wrap">
+            <img src="images/categories/clavier-gamer.webp" alt="Claviers" />
+          </div>
+          <span>Claviers</span>
+        </a>
+        <a href="html/peripheriques.html#accessoires" class="cat-item">
+          <div class="cat-img-wrap">
+            <img src="images/categories/souris-gamer.webp" alt="Souris" />
+          </div>
+          <span>Souris</span>
+        </a>
+        <a href="html/peripheriques.html#audio" class="cat-item">
+          <div class="cat-img-wrap">
+            <img src="images/categories/casque-gamer.webp" alt="Casques" />
+          </div>
+          <span>Casques</span>
+        </a>
+        <a href="html/imprimantes.html" class="cat-item">
+          <div class="cat-img-wrap">
+            <img src="images/categories/processeur-pc-gamer.webp" alt="Processeurs" />
+          </div>
+          <span>Imprimantes</span>
+        </a>
+      </div>
+      <button class="cat-arrow cat-next" id="catNext" aria-label="Suivant">
+        <i class="ti ti-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+
+
+    <!-- 5c. BANNIÈRES -->
+    <!-- Pour modifier : change src + banner-title + banner-price -->
+    <div class="banners-wrap">
+      <div class="banner-card">
+        <img src="images/bannieres/banniere-console.webp" alt="Console Portable ROG" class="banner-img" />
+        <div class="banner-overlay">
+          <span class="banner-title">Console Portable</span>
+          <span class="banner-price">350 000 F CFA</span>
+        </div>
+      </div>
+      <div class="banner-card">
+        <img src="images/bannieres/banniere-manettes.webp" alt="Manettes Xbox" class="banner-img" />
+        <div class="banner-overlay banner-overlay-green">
+          <span class="banner-title">Jeux Vidéo</span>
+          <span class="banner-price">110 000 F CFA</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 5d. GRILLE PRINCIPALE : PRODUITS + SIDEBAR -->
+    <div class="main-grid">
+
+      <!-- Colonne gauche : produits -->
+      <div class="products-col">
+
+                <div class="section-row" id="populaires">
+          <h2 class="section-title">
+            <i class="ti ti-flame" aria-hidden="true"></i> Produits populaires
+          </h2>
+        </div>
+
+        <!-- ============================================================
+          GRILLE PRODUITS
+          - product-photo : image du produit
+          - product-badge : badge (badge-sale / badge-new / badge-hot)
+          Pour ajouter un produit : copie un .product-card complet
+        ============================================================ -->
+        
+        <div class="products-grid">
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/hp-k1600.jpg" alt="Clavier filaire AZERTY HP K1600" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/hp-k1600.jpg" alt="Clavier filaire AZERTY HP K1600" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Clavier filaire AZERTY HP K1600</div>
+      <div class="product-spec">Clavier filaire · USB · AZERTY</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/hub-usb-3-tsupy.jpg" alt="Hub USB 3.0 TSUPY" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/hub-usb-3-tsupy-2.jpg" alt="Hub USB 3.0 TSUPY" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Hub USB 3.0 TSUPY</div>
+      <div class="product-spec">Câble 1,2 m · Aluminium ultra-fin</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/photocopieuses/canon-5860i.webp" alt="Photocopieuse Canon 5860i" class="product-photo img-main" />
+      <img src="images/produits/photocopieuses/canon-5860i-2.webp" alt="Photocopieuse Canon 5860i" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Photocopieuse Canon 5860i</div>
+      <div class="product-spec">Multifonction Canon</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/ordinateurs/dell-vostro-3530.webp" alt="Dell Vostro 3530" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/dell-vostro-3530.webp" alt="Dell Vostro 3530" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Dell Vostro 3530 — 16 Go / 512 Go</div>
+      <div class="product-spec">15.6" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/scanneurs-lecteurs/canon-lide-300.webp" alt="Scanner Canon LiDE 300" class="product-photo img-main" />
+      <img src="images/produits/scanneurs-lecteurs/canon-lide-300-2.webp" alt="Scanner Canon LiDE 300" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Scanner Canon LiDE 300</div>
+      <div class="product-spec">Scanner à plat</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/imprimantes/hp-laserjet-pro-m179fnw.webp" alt="HP LaserJet Pro M179fnw" class="product-photo img-main" />
+      <img src="images/produits/imprimantes/hp-laserjet-pro-m179fnw-2.webp" alt="HP LaserJet Pro M179fnw" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP LaserJet Pro M179fnw</div>
+      <div class="product-spec">Multifonction laser couleur · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/enceinte-s33-giga-360.webp" alt="Haut-parleur S33 Giga 360" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/enceinte-s33-giga-360-2.png" alt="Haut-parleur S33 Giga 360" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Haut-parleur S33 Giga 360</div>
+      <div class="product-spec">Enceinte Bluetooth 360°</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/toner-hp-106a-original.png" alt="Toner HP 106A Original Noir" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/toner-hp-106a-original.png" alt="Toner HP 106A Original Noir" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Toner HP 106A — Original Noir</div>
+      <div class="product-spec">Toner laser · Noir</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/ordinateurs/apple-imac-27-2020.webp" alt="Apple iMac 27 pouces 2020" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/apple-imac-27-2020-2.webp" alt="Apple iMac 27 pouces 2020" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Apple iMac 27" (2020) — 16 Go / 512 Go</div>
+      <div class="product-spec">27" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/pc-gamer/hp-omen-15.webp" alt="HP OMEN 15" class="product-photo img-main" />
+      <img src="images/produits/pc-gamer/hp-omen-15.webp" alt="HP OMEN 15" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP OMEN 15 — 16 Go / 512 Go</div>
+      <div class="product-spec">15" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/ordinateurs/samsung-tab-a9.webp" alt="Samsung Galaxy Tab A9" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/samsung-tab-a9-2.webp" alt="Samsung Galaxy Tab A9" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Samsung Galaxy Tab A9 — 128 Go</div>
+      <div class="product-spec">128 Go · Wi-Fi</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+<div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/premax-m4.jpg" alt="Souris sans fil Premax M4" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/premax-m4.jpg" alt="Souris sans fil Premax M4" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Premax M4</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/ordinateurs/lenovo-thinkpad-t14-g5.webp" alt="Lenovo ThinkPad T14 G5" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/lenovo-thinkpad-t14-g5.webp" alt="Lenovo ThinkPad T14 G5" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Lenovo ThinkPad T14 G5 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/ordinateurs/hp-probook-440-g10.webp" alt="HP ProBook 440 G10" class="product-photo img-main" />
+      <img src="images/produits/ordinateurs/hp-probook-440-g10.webp" alt="HP ProBook 440 G10" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">HP ProBook 440 G10 — 16 Go / 512 Go</div>
+      <div class="product-spec">14" · 16 Go RAM · 512 Go SSD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/casque-logitech-h390.jpg" alt="Casque Logitech H390" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/casque-logitech-h390-2.jpg" alt="Casque Logitech H390" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H390</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/kit-outillage-s-tek-18pcs.jpg" alt="Kit Outillage S-Tek 18 pièces" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/kit-outillage-s-tek-18pcs-2.jpg" alt="Kit Outillage S-Tek 18 pièces" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Kit Outillage S-Tek — 18 pièces</div>
+      <div class="product-spec">Kit outillage · 18 pièces</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/compteuse-billets-golden-gate-bc900.jpg" alt="Compteuse de billets Golden Gate BC-900" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/compteuse-billets-golden-gate-bc900-2.jpg" alt="Compteuse de billets Golden Gate BC-900" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Compteuse de billets Golden Gate — BC-900</div>
+      <div class="product-spec">Compteuse de billets</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/tv-premax-43-pm43sm9000bt.webp" alt="TV Smart Premax 43 pouces" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/tv-premax-43-pm43sm9000bt-2.webp" alt="TV Smart Premax 43 pouces" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">TV Smart Premax — 43" Full HD</div>
+      <div class="product-spec">43 pouces · Full HD</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/encre-hp-305-couleur.webp" alt="Cartouche HP 305 Couleur" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/encre-hp-305-couleur.webp" alt="Cartouche HP 305 Couleur" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Cartouche HP 305 — Couleur</div>
+      <div class="product-spec">Cartouche jet d'encre · Couleur</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/regulateur-tension-premax-1000va.jpg" alt="Régulateur de tension Premax 1000VA" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/regulateur-tension-premax-1000va-2.jpg" alt="Régulateur de tension Premax 1000VA" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Régulateur de tension Premax 1000VA</div>
+      <div class="product-spec">Régulateur de tension</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/dell-wm126.webp" alt="Souris sans fil Dell WM126" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/dell-wm126-2.webp" alt="Souris sans fil Dell WM126" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Souris sans fil Dell WM126</div>
+      <div class="product-spec">Souris sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/logitech-mk270.webp" alt="Pack clavier + souris Logitech MK270" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/logitech-mk270-2.webp" alt="Pack clavier + souris Logitech MK270" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Pack clavier + souris sans fil Logitech MK270</div>
+      <div class="product-spec">Sans fil · USB nano-récepteur</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/casque-logitech-h340.jpg" alt="Casque Logitech H340" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/casque-logitech-h340-2.jpg" alt="Casque Logitech H340" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Casque Logitech H340</div>
+      <div class="product-spec">Casque filaire · USB</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/produits/peripheriques/cable-hdmi-4k.jpg" alt="Câble HDMI 4K — 5 mètres" class="product-photo img-main" />
+      <img src="images/produits/peripheriques/cable-hdmi-4k-2.jpg" alt="Câble HDMI 4K — 5 mètres" class="product-photo img-hover" />
+    </div>
+    <div class="product-info">
+      <div class="product-name">Câble HDMI 4K — 5 mètres</div>
+      <div class="product-spec">HDMI · 4K · 5 m</div>
+      <div class="product-footer">
+        <span class="product-price">XXX XXX F CFA</span>
+        <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+      </div>
+      <!-- FIN products-col -->
+
+
+      <!-- Colonne droite : sidebar -->
+      <aside class="sidebar">
+
+        <!-- Ventes flash -->
+        <div class="side-card">
+          <h3 class="side-card-title">
+            <i class="ti ti-bolt" aria-hidden="true"></i> Ventes flash
+          </h3>
+          <span class="flash-discount">Offres limitées</span>
+
+          <div class="flash-item">
+            <div class="flash-img">
+              <img src="images/produits/flash/flash-carte-gpu.webp" alt="Gigabyte RTX 3050" />
+            </div>
+            <div>
+              <div class="flash-name">Gigabyte RTX 3050 8Go</div>
+              <div class="flash-old">220 000 F</div>
+              <div class="flash-price">170 000 F CFA</div>
+            </div>
+          </div>
+
+          <div class="flash-item">
+            <div class="flash-img">
+              <img src="images/produits/flash/flash-ram-corsair.webp" alt="Corsair RAM DDR4 16Go" />
+            </div>
+            <div>
+              <div class="flash-name">Corsair Vengeance RGB 16Go DDR4</div>
+              <div class="flash-old">105 000 F</div>
+              <div class="flash-price">80 000 F CFA</div>
+            </div>
+          </div>
+
+          <div class="flash-item">
+            <div class="flash-img">
+              <img src="images/produits/flash/flash-ssd-msi.webp" alt="MSI SSD NVMe 1TB" />
+            </div>
+            <div>
+              <div class="flash-name">MSI Spatium M461 NVMe 1TB</div>
+              <div class="flash-old">140 000 F</div>
+              <div class="flash-price">110 000 F CFA</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="side-card">
+          <h3 class="side-card-title">
+            <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Besoin d'aide ?
+          </h3>
+          <p class="side-card-desc">Notre équipe est disponible pour vous conseiller sur votre achat.</p>
+          <a href="https://wa.me/2252720286555" class="whatsapp-btn" target="_blank" rel="noopener">
+            <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Contacter sur WhatsApp
+          </a>
+        </div>
+
+        <!-- Réassurance -->
+        <div class="side-card">
+          <div class="trust-list">
+            <div class="trust-row">
+              <i class="ti ti-truck-delivery" aria-hidden="true"></i>
+              Livraison rapide en 24h à Abidjan
+            </div>
+            <div class="trust-row">
+              <i class="ti ti-shield-check" aria-hidden="true"></i>
+              Garantie officielle sur tous les produits
+            </div>
+            <div class="trust-row">
+              <i class="ti ti-receipt" aria-hidden="true"></i>
+              Facture fournie à chaque achat
+            </div>
+            <div class="trust-row">
+              <i class="ti ti-rotate" aria-hidden="true"></i>
+              Échange possible sous 7 jours
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+    <!-- FIN main-grid -->
+
+
+     <!-- 5e. PARTENAIRES -->
+    <div class="section-row" style="margin-top: 32px;">
+      <h2 class="section-title-cat">Nos partenaires</h2>
+    </div>
+
+    <div class="partners-wrap">
+      <div class="partners-track">
+        <!-- COPIE 1 -->
+        <div class="partner-item"><img src="images/partenaires/sony.png" alt="Sony" /></div>
+        <div class="partner-item"><img src="images/partenaires/asus.jpg" alt="Asus" /></div>
+        <div class="partner-item"><img src="images/partenaires/razer.jpg" alt="Razer" /></div>
+        <div class="partner-item"><img src="images/partenaires/msi.jpg" alt="MSI" /></div>
+        <div class="partner-item"><img src="images/partenaires/nvidia.jpg" alt="Nvidia" /></div>
+        <div class="partner-item"><img src="images/partenaires/lenovo.jpg" alt="Lenovo" /></div>
+        <!-- COPIE 2 — identique pour boucle infinie -->
+        <div class="partner-item"><img src="images/partenaires/sony.png" alt="Sony" /></div>
+        <div class="partner-item"><img src="images/partenaires/asus.jpg" alt="Asus" /></div>
+        <div class="partner-item"><img src="images/partenaires/razer.jpg" alt="Razer" /></div>
+        <div class="partner-item"><img src="images/partenaires/msi.jpg" alt="MSI" /></div>
+        <div class="partner-item"><img src="images/partenaires/nvidia.jpg" alt="Nvidia" /></div>
+        <div class="partner-item"><img src="images/partenaires/lenovo.jpg" alt="Lenovo" /></div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <!-- FIN CORPS DE PAGE -->
+  
+
+
+  <!-- ============================================================
+    6. FOOTER
+  ============================================================ -->
+  <footer class="footer">
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/logos.webp" alt="OPEN Business World" class="footer-logo-img" />
+        </div>
+        <p class="footer-desc">
+          OPEN Business World est un magasin informatique spécialisé dans
+          l'achat et la vente de matériel informatique. Nous proposons des
+          PC de bureau, des ordinateurs portables, des configurations gamer
+          sur mesure, ainsi qu'un large choix de composants et de périphériques.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/OBWINFORMATIQUE" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+         <a href="https://www.linkedin.com/company/open-business-world" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@obw.informatique" target="_blank" rel="noopener" aria-label="TikTok"><i class="ti ti-brand-tiktok" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Liens rapides</h4>
+     <ul class="footer-links">
+          <li><a href="html/ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="html/pc-gamer.html">PC Gamer</a></li>
+          <li><a href="html/smartphones.html">Smartphones</a></li>
+          <li><a href="html/moniteurs.html">Moniteurs</a></li>
+          <li><a href="html/peripheriques.html">Périphériques</a></li>
+          <li><a href="html/imprimantes.html">Imprimantes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Catégories</h4>
+        <ul class="footer-links">
+          <li><a href="html/ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="html/pc-gamer.html">PC Gamer</a></li>
+          <li><a href="html/smartphones.html">Smartphones</a></li>
+          <li><a href="html/moniteurs.html">Moniteurs</a></li>
+          <li><a href="html/peripheriques.html">Périphériques</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Nous contacter</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            Plateau, Immeuble Mali, Abidjan
+          </li>
+          <li>
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            <a href="tel:+2252720286555">+225 27 20 28 65 55</a>
+          </li>
+          <li>
+            <i class="ti ti-mail" aria-hidden="true"></i>
+            <a href="mailto:contact@openbusiness.ci">contact@openbusiness.ci</a>
+          </li>
+          <li>
+            <i class="ti ti-clock" aria-hidden="true"></i>
+            Lun – Sam : 8h00 – 18h00
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 OPEN Business World. Tous droits réservés.</span>
+      <span>Site réalisé par Paul Tanon 🇨🇮</span>
+    </div>
+
+  </footer>
+  
+  <!-- JS en bas du body -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

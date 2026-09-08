@@ -1,0 +1,30 @@
+open-business/
+│
+├── index.html              ← seul fichier à la racine
+│                             (obligatoire, c'est la page d'accueil)
+│
+├── html/                   ← tous les autres HTML ici
+│   ├── ordinateurs.html
+│   ├── composants.html
+│   ├── consommable.html
+│   ├── gaming.html
+│   ├── image-son.html
+│   ├── smartphones.html
+│   ├── produit.html
+│   ├── contact.html
+│   └── a-propos.html
+│
+├── css/                    ← tous les CSS ici
+│   ├── style.css           ← CSS principal (global)
+│   └── produit.css         ← CSS spécifique à une page
+│                             (seulement si vraiment nécessaire)
+│
+├── js/                     ← tous les JS ici
+│   ├── main.js             ← JS principal (global)
+│   └── panier.js           ← JS spécifique (plus tard)
+│
+└── images/
+    ├── logo.png
+    ├── slider/
+    ├── produits/
+    └── partenaires/

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPEN Business World — Votre partenaire tech à Abidjan</title>
+  <!-- CSS dans le dossier css/ -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png" />
+
+  <!-- Icônes Tabler -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+    1. BARRE D'ANNONCE DYNAMIQUE
+    Pour modifier : change les valeurs data-* ici uniquement
+  ============================================================ -->
+  <div class="promo-bar"
+     data-product="OPEN Business World — Votre partenaire tech de confiance à Abidjan"
+     data-link="boutique.html"
+     data-cta="Découvrir la boutique">
+  </div>
+
+  <!-- ============================================================
+    2. HEADER
+  ============================================================ -->
+  <header class="header">
+
+    <a href="index.html" class="logo">
+      <img src="images/logo.webp" alt="OPEN Business World" class="logo-img" />
+    </a>
+
+    <div class="search">
+      <input type="text" placeholder="Rechercher un PC, smartphone, GPU..." aria-label="Recherche" />
+
+     <button class="search-btn" aria-label="Lancer la recherche">
+  <i class="ti ti-search" aria-hidden="true"></i>
+</button>
+
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Mes favoris">
+        <i class="ti ti-heart" aria-hidden="true"></i>
+        <span>Favoris</span>
+        <span class="dot-badge"></span>
+      </button>
+      <button class="icon-btn" aria-label="Mon panier">
+        <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+        <span>Panier</span>
+        <span class="dot-badge"></span>
+      </button>
+      <div class="divider-v"></div>
+      <a href="https://wa.me/2252720286555"
+         class="icon-btn"
+         target="_blank"
+         rel="noopener"
+         aria-label="WhatsApp">
+        <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="tel:+2252720286555" class="cta-header">
+        <i class="ti ti-phone-call" aria-hidden="true"></i>
+        <span>+225 27 20 28 65 55</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+
+  </header>
+
+
+  <!-- ============================================================
+    3. NAVIGATION — sticky + responsive
+  ============================================================ -->
+  <nav class="nav" id="mainNav">
+    <button class="nav-close" id="navCloseBtn" aria-label="Fermer le menu">
+      <i class="ti ti-x" aria-hidden="true"></i>
+    </button>
+    <a href="index.html" class="nav-link on">Accueil</a>
+    <a href="boutique.html" class="nav-link">Boutique</a>
+    <a href="html/prestations.html" class="nav-link">Prestations</a>
+    <a href="html/entreprise.html" class="nav-link">Entreprise</a>
+    <a href="html/contact.html" class="nav-link">Contact</a>
+  </nav>
+
+
+  <!-- ============================================================
+    4. CORPS DE PAGE — page vitrine
+  ============================================================ -->
+  <main class="page-body">
+
+
+  <!-- HERO VITRINE — SLIDER -->
+<section class="vitrine-hero">
+  <div class="vitrine-hero-track" id="vitrineHeroTrack">
+
+    <!-- Slide 1 : Vitrine / Boutique -->
+    <div class="vitrine-slide active" data-index="0">
+      <img src="images/bannieres/hero-boutique.webp" alt="OPEN Business World — notre enseigne" class="vitrine-hero-img hero-img-1" />
+      <div class="vitrine-hero-overlay"></div>
+      <div class="vitrine-hero-content">
+        <span class="vitrine-hero-tag">
+          <i class="ti ti-map-pin" aria-hidden="true"></i> Abidjan, Plateau
+        </span>
+        <h1 class="vitrine-hero-title">
+          Votre partenaire tech<br />de confiance à Abidjan
+        </h1>
+        <p class="vitrine-hero-text">
+          Vente de matériel informatique, installation et maintenance — au service des particuliers et des entreprises depuis notre boutique du Plateau.
+        </p>
+        <a href="boutique.html" class="vitrine-hero-btn">
+          <i class="ti ti-shopping-bag" aria-hidden="true"></i> Découvrir la boutique
+        </a>
+      </div>
+    </div>
+
+    <!-- Slide 2 : Partenariat MSI -->
+    <div class="vitrine-slide" data-index="1">
+      <img src="images/bannieres/msi-partenariat.webp" alt="OPEN Business World — partenariat MSI" class="vitrine-hero-img hero-img-2" />
+      <div class="vitrine-hero-overlay"></div>
+      <div class="vitrine-hero-content">
+        <span class="vitrine-hero-tag">
+          <i class="ti ti-award" aria-hidden="true"></i> Partenariat international
+        </span>
+        <h1 class="vitrine-hero-title">
+          Partenaire officiel MSI<br />en Côte d'Ivoire
+        </h1>
+        <p class="vitrine-hero-text">
+          Nous renforçons notre collaboration avec MSI, référence mondiale du gaming et de la haute performance, pour proposer le meilleur à nos clients en Côte d'Ivoire et sur le marché ouest-africain.
+        </p>
+        <a href="boutique.html#marques-pc" class="vitrine-hero-btn">
+          <i class="ti ti-device-desktop" aria-hidden="true"></i> Voir nos marques
+        </a>
+      </div>
+    </div>
+
+    <!-- Slide 3 : Notre équipe -->
+    <div class="vitrine-slide" data-index="2">
+      <img src="images/bannieres/equipe-boutique.webp" alt="OPEN Business World — notre équipe" class="vitrine-hero-img hero-img-3" />
+      <div class="vitrine-hero-overlay"></div>
+      <div class="vitrine-hero-content">
+        <span class="vitrine-hero-tag">
+          <i class="ti ti-users" aria-hidden="true"></i> Notre équipe
+        </span>
+        <h1 class="vitrine-hero-title">
+          Une équipe passionnée<br />à votre service
+        </h1>
+        <p class="vitrine-hero-text">
+          Des experts dédiés à la vente, l'installation et la maintenance de votre matériel informatique, chaque jour à vos côtés.
+        </p>
+        <a href="html/entreprise.html" class="vitrine-hero-btn">
+          <i class="ti ti-users" aria-hidden="true"></i> Découvrir l'équipe
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="slider-arrow arrow-prev" id="vitrineHeroPrev" aria-label="Slide précédent">
+    <i class="ti ti-chevron-left" aria-hidden="true"></i>
+  </button>
+  <button class="slider-arrow arrow-next" id="vitrineHeroNext" aria-label="Slide suivant">
+    <i class="ti ti-chevron-right" aria-hidden="true"></i>
+  </button>
+
+  <div class="slider-progress" id="vitrineHeroProgress"></div>
+  
+  <div class="slider-dots" id="vitrineHeroDots">
+    <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+    <button class="dot" data-index="1" aria-label="Slide 2"></button>
+    <button class="dot" data-index="2" aria-label="Slide 3"></button>
+  </div>
+</section>
+<!-- FIN HERO VITRINE -->
+
+
+    <!-- NOS PRESTATIONS -->
+    <div class="section-row" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Nos prestations</h2>
+    </div>
+
+    <div class="prestations-grid">
+
+      <div class="prestation-card">
+        <div class="prestation-icon">
+          <i class="ti ti-building-store" aria-hidden="true"></i>
+        </div>
+        <div class="prestation-title">Distribution officielle</div>
+        <div class="prestation-desc">
+          Vente de matériel informatique et électronique neuf, garanti et importé directement auprès de nos marques partenaires.
+        </div>
+        <a href="boutique.html" class="prestation-link">
+          Découvrir la boutique <i class="ti ti-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="prestation-card">
+        <div class="prestation-icon">
+          <i class="ti ti-tools" aria-hidden="true"></i>
+        </div>
+        <div class="prestation-title">Installation</div>
+        <div class="prestation-desc">
+          Mise en place et configuration de vos équipements informatiques et électroniques, chez vous ou en entreprise.
+        </div>
+        <a href="html/prestations.html" class="prestation-link">
+          En savoir plus <i class="ti ti-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="prestation-card">
+        <div class="prestation-icon">
+          <i class="ti ti-device-laptop" aria-hidden="true"></i>
+        </div>
+        <div class="prestation-title">Maintenance</div>
+        <div class="prestation-desc">
+          Diagnostic, réparation et suivi technique pour garantir la longévité et la performance de votre matériel.
+        </div>
+        <a href="html/prestations.html" class="prestation-link">
+          En savoir plus <i class="ti ti-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div>
+    <!-- FIN NOS PRESTATIONS -->
+
+
+    <!-- QUI SOMMES-NOUS -->
+    <div class="section-row" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Qui sommes-nous</h2>
+    </div>
+
+    <div class="apropos-block">
+      <div class="apropos-img-wrap">
+        <img src="images/produits/premium/pc-gamer-photo-obw.webp" alt="OPEN Business World — distribution de matériel" class="apropos-img" />
+        <div class="apropos-badge">
+          <i class="ti ti-certificate" aria-hidden="true"></i> Distributeur officiel
+        </div>
+      </div>
+      <div class="apropos-content">
+        <p class="apropos-text">
+          <strong>Open Business World (OBW)</strong> est une entreprise ivoirienne spécialisée dans la distribution de matériel informatique et de solutions technologiques professionnelles. Basée à Abidjan, notre mission est de rendre les technologies modernes accessibles, fiables et performantes pour les entreprises, les institutions et les particuliers.
+        </p>
+        <p class="apropos-text">
+          En tant que distributeur officiel de grandes marques internationales, OBW propose une large gamme de produits — ordinateurs portables, équipements gaming, imprimantes thermiques, accessoires informatiques et solutions sur mesure adaptées au marché africain.
+        </p>
+        <a href="html/entreprise.html" class="apropos-link">
+          En savoir plus sur OBW <i class="ti ti-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!-- FIN QUI SOMMES-NOUS -->
+
+
+    <!-- CE QUI NOUS DIFFÉRENCIE -->
+    <div class="section-row" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Ce qui nous différencie</h2>
+    </div>
+
+    <div class="differencie-grid">
+      <div class="differencie-item">
+        <div class="differencie-icon"><i class="ti ti-award" aria-hidden="true"></i></div>
+        <div class="differencie-text">
+          <div class="differencie-title">Qualité & authenticité</div>
+          <div class="differencie-desc">Des produits garantis authentiques, à chaque commande.</div>
+        </div>
+      </div>
+      <div class="differencie-item">
+        <div class="differencie-icon"><i class="ti ti-truck-delivery" aria-hidden="true"></i></div>
+        <div class="differencie-text">
+          <div class="differencie-title">Disponibilité & rapidité</div>
+          <div class="differencie-desc">Un stock disponible et une livraison rapide à Abidjan.</div>
+        </div>
+      </div>
+      <div class="differencie-item">
+        <div class="differencie-icon"><i class="ti ti-headset" aria-hidden="true"></i></div>
+        <div class="differencie-text">
+          <div class="differencie-title">Service client réactif</div>
+          <div class="differencie-desc">Une équipe disponible et professionnelle à votre écoute.</div>
+        </div>
+      </div>
+      <div class="differencie-item">
+        <div class="differencie-icon"><i class="ti ti-building-bank" aria-hidden="true"></i></div>
+        <div class="differencie-text">
+          <div class="differencie-title">Partenariats solides</div>
+          <div class="differencie-desc">Des accords directs avec les plus grandes marques.</div>
+        </div>
+      </div>
+    </div>
+    <!-- FIN CE QUI NOUS DIFFÉRENCIE -->
+
+
+    <!-- 5d-bis. NOTRE ÉQUIPE -->
+    <div class="section-row" style="margin-top: 32px;">
+      <h2 class="section-title-cat">Notre équipe</h2>
+    </div>
+
+    <div class="team-highlight">
+      <div class="team-photo-wrap">
+        <div class="team-photo">
+          <img src="images/equipe/team-partenariat.webp" alt="Un partenariat de confiance" />
+        </div>
+        <div class="team-avatar">
+          <img src="images/equipe/patron-portrait.webp" alt="Le fondateur d'OPEN Business World" />
+        </div>
+      </div>
+      <div class="team-content">
+        <h3 class="team-title">Une équipe engagée, des partenariats solides</h3>
+        <p class="team-text">
+          Basée au Plateau, à Abidjan, OPEN Business World est spécialisée dans la vente
+          d'appareils électroniques et la réalisation de travaux informatiques, électriques
+          et télécommunications. Nous travaillons directement avec les plus grandes marques —
+          HP, Dell, MSI, Asus, Gigabyte, Lenovo et bien d'autres — pour vous garantir des
+          produits 100% authentiques et un accompagnement de confiance à chaque achat.
+        </p>
+        <div class="team-tags">
+          <span class="team-tag"><i class="ti ti-users" aria-hidden="true"></i> Équipe qualifiée</span>
+          <span class="team-tag"><i class="ti ti-award" aria-hidden="true"></i> Partenaires officiels</span>
+          <span class="team-tag"><i class="ti ti-certificate" aria-hidden="true"></i> Produits 100% authentiques</span>
+        </div>
+        <a href="html/entreprise.html" class="team-link">
+          Découvrir notre équipe <i class="ti ti-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!-- FIN NOTRE ÉQUIPE -->
+
+    <!-- PRÉSENCE INTERNATIONALE -->
+    <div class="section-row" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Présence internationale</h2>
+    </div>
+
+    <div class="presence-grid">
+
+      <div class="presence-card">
+        <div class="presence-card-inner">
+        <img src="images/evenements/gigabyte-40ans.webp" alt="Salon Gigabyte Taiwan" class="presence-img" />
+        <div class="presence-overlay">
+          <span class="presence-caption">Salon Gigabyte — Taiwan</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="presence-card">
+        <div class="presence-card-inner">
+        <img src="images/evenements/computex-taipei.webp" alt="Computex Taipei" class="presence-img" />
+        <div class="presence-overlay">
+          <span class="presence-caption">Computex Taipei</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="presence-card">
+        <div class="presence-card-inner">
+        <img src="images/evenements/nvidia-gtc26.webp" alt="NVIDIA GTC26" class="presence-img" />
+        <div class="presence-overlay">
+          <span class="presence-caption">NVIDIA GTC26</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="presence-card">
+        <div class="presence-card-inner">
+        <img src="images/evenements/xprinter-20ans.webp" alt="Xprinter 20e anniversaire" class="presence-img" />
+        <div class="presence-overlay">
+          <span class="presence-caption">Xprinter — 20 ans</span>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <!-- FIN PRÉSENCE INTERNATIONALE -->
+
+      <!-- 5e. PARTENAIRES -->
+    <div class="section-row" style="margin-top: 32px;">
+      <h2 class="section-title-cat">Nos partenaires</h2>
+    </div>
+
+    <div class="partners-wrap">
+      <div class="partners-track">
+        <!-- COPIE 1 -->
+        <div class="partner-item"><img src="images/partenaires/sony.png" alt="Sony" /></div>
+        <div class="partner-item"><img src="images/partenaires/asus.jpg" alt="Asus" /></div>
+        <div class="partner-item"><img src="images/partenaires/razer.jpg" alt="Razer" /></div>
+        <div class="partner-item"><img src="images/partenaires/msi.jpg" alt="MSI" /></div>
+        <div class="partner-item"><img src="images/partenaires/nvidia.jpg" alt="Nvidia" /></div>
+        <div class="partner-item"><img src="images/partenaires/lenovo.jpg" alt="Lenovo" /></div>
+        <!-- COPIE 2 — identique pour boucle infinie -->
+        <div class="partner-item"><img src="images/partenaires/sony.png" alt="Sony" /></div>
+        <div class="partner-item"><img src="images/partenaires/asus.jpg" alt="Asus" /></div>
+        <div class="partner-item"><img src="images/partenaires/razer.jpg" alt="Razer" /></div>
+        <div class="partner-item"><img src="images/partenaires/msi.jpg" alt="MSI" /></div>
+        <div class="partner-item"><img src="images/partenaires/nvidia.jpg" alt="Nvidia" /></div>
+        <div class="partner-item"><img src="images/partenaires/lenovo.jpg" alt="Lenovo" /></div>
+      </div>
+    </div>
+
+
+
+
+
+<!-- 5f. BANNIÈRE FLOTTANTE -->
+    <div class="floating-banner-wrap">
+      <img src="images/bannieres/banniere-marques-pc.webp" alt="Nos marques de PC gaming" class="floating-banner-img" />
+    </div>
+
+    <!-- 5g. NOS MARQUES DE PC -->
+    <div class="section-row" style="margin-top: 32px;">
+      <h2 class="section-title-cat">Nos marques de PC</h2>
+    </div>
+
+    <div class="partners-wrap">
+      <div class="partners-track brands-track">
+
+        <div class="partner-item"><img src="images/marques-pc/legion.webp" alt="Legion" /></div>
+        <div class="partner-item"><img src="images/marques-pc/msi.webp" alt="MSI" /></div>
+        <div class="partner-item"><img src="images/marques-pc/rog.webp" alt="ROG" /></div>
+        <div class="partner-item"><img src="images/marques-pc/omen.webp" alt="OMEN" /></div>
+        <div class="partner-item"><img src="images/marques-pc/lenovo.webp" alt="Lenovo" /></div>
+
+        <div class="partner-item"><img src="images/marques-pc/legion.webp" alt="Legion" /></div>
+        <div class="partner-item"><img src="images/marques-pc/msi.webp" alt="MSI" /></div>
+        <div class="partner-item"><img src="images/marques-pc/rog.webp" alt="ROG" /></div>
+        <div class="partner-item"><img src="images/marques-pc/omen.webp" alt="OMEN" /></div>
+        <div class="partner-item"><img src="images/marques-pc/lenovo.webp" alt="Lenovo" /></div>
+
+      </div>
+    </div>
+    
+<!-- CTA FINAL -->
+    <div class="cta-final">
+      <div class="cta-final-content">
+        <h2 class="cta-final-title">Prêt à équiper vos projets ?</h2>
+        <p class="cta-final-text">
+          Découvrez notre catalogue complet : PC, smartphones, périphériques et bien plus, disponibles dès maintenant.
+        </p>
+        <a href="boutique.html" class="cta-final-btn">
+          <i class="ti ti-shopping-bag" aria-hidden="true"></i> Découvrir la boutique
+        </a>
+      </div>
+    </div>
+    <!-- FIN CTA FINAL -->
+
+
+    <!-- CONTACT -->
+    <div class="section-row" style="margin-top: 48px;">
+      <h2 class="section-title-cat">Restons en contact</h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
+        <div class="contact-title">Notre adresse</div>
+        <div class="contact-value">Plateau, Immeuble Mali, Abidjan</div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="ti ti-phone" aria-hidden="true"></i></div>
+        <div class="contact-title">Téléphone</div>
+        <a href="tel:+2252720286555" class="contact-value contact-link">+225 27 20 28 65 55</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
+        <div class="contact-title">Email</div>
+        <a href="mailto:contact@openbusiness.ci" class="contact-value contact-link">contact@openbusiness.ci</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
+        <div class="contact-title">Horaires</div>
+        <div class="contact-value">Lun – Sam : 8h00 – 18h00</div>
+      </div>
+
+    </div>
+
+    <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" class="whatsapp-btn contact-whatsapp">
+      <i class="ti ti-brand-whatsapp" aria-hidden="true"></i> Contacter sur WhatsApp
+    </a>
+    <!-- FIN CONTACT -->
+
+
+  </main>
+  <!-- FIN CORPS DE PAGE -->
+
+
+
+  <!-- ============================================================
+    5. FOOTER
+  ============================================================ -->
+  <footer class="footer">
+
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/logos.webp" alt="OPEN Business World" class="footer-logo-img" />
+        </div>
+        <p class="footer-desc">
+          OPEN Business World est un magasin informatique spécialisé dans
+          l'achat et la vente de matériel informatique. Nous proposons des
+          PC de bureau, des ordinateurs portables, des configurations gamer
+          sur mesure, ainsi qu'un large choix de composants et de périphériques.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/OBWINFORMATIQUE" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/open-business-world" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@obw.informatique" target="_blank" rel="noopener" aria-label="TikTok"><i class="ti ti-brand-tiktok" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Liens rapides</h4>
+        <ul class="footer-links">
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="boutique.html">Boutique</a></li>
+  <li><a href="html/prestations.html">Prestations</a></li>
+  <li><a href="html/entreprise.html">Entreprise</a></li>
+  <li><a href="html/contact.html">Contact</a></li>
+</ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Catégories</h4>
+                <ul class="footer-links">
+          <li><a href="html/ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="html/pc-gamer.html">PC Gamer</a></li>
+          <li><a href="html/smartphones.html">Smartphones</a></li>
+          <li><a href="html/moniteurs.html">Moniteurs</a></li>
+          <li><a href="html/peripheriques.html">Périphériques</a></li>
+          <li><a href="html/imprimantes.html">Imprimantes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Nous contacter</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            Plateau, Immeuble Mali, Abidjan
+          </li>
+          <li>
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            <a href="tel:+2252720286555">+225 27 20 28 65 55</a>
+          </li>
+          <li>
+            <i class="ti ti-mail" aria-hidden="true"></i>
+            <a href="mailto:contact@openbusiness.ci">contact@openbusiness.ci</a>
+          </li>
+          <li>
+            <i class="ti ti-clock" aria-hidden="true"></i>
+            Lun – Sam : 8h00 – 18h00
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 OPEN Business World. Tous droits réservés.</span>
+      <span>Site réalisé par Paul Tanon 🇨🇮</span>
+    </div>
+
+  </footer>
+
+  <!-- JS en bas du body -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
