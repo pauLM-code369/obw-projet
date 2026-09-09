@@ -394,8 +394,13 @@ document.addEventListener('DOMContentLoaded', function () {
   initVitrineHero();  /* 6. Hero vitrine (fondu)      */
   initContactForm();  /* 7. Formulaire contact */
   initMegaMenu();  /* 8. Méga-menu mobile */
-   initSubcatTabs();  /* 9. Onglets sous-catégories actifs au clic */
+  initSubcatTabs();  /* 9. Onglets sous-catégories actifs au clic */
   initProductDetail();  /* 10. Page produit détaillée */
+  chargerProduitsImprimantes();/* pour cahrger dynamiquement */
+  chargerProduitsImprimantes();
+  chargerProduitsPhotocopieuses();
+  chargerProduitsImprimantesHpLaser();
+  chargerProduitsScanneurs();
 
 });
 
@@ -466,5 +471,159 @@ function initProductDetail() {
       qty++;
       qtyValue.textContent = qty;
     });
+  }
+}
+
+/* ================================================================
+   11. CHARGEMENT DYNAMIQUE DES PRODUITS DEPUIS L'API
+================================================================ */
+
+async function chargerProduitsImprimantes() {
+
+  const grille = document.getElementById('grilleImprimantes');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Imprimantes');
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/imprimantes/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/imprimantes/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des produits :', erreur);
+  }
+}
+
+//PARTIE CHARGER PHOTOCOPIEUSES
+
+async function chargerProduitsPhotocopieuses() {
+
+  const grille = document.getElementById('grillePhotocopieuses');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Photocopieuses');
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/photocopieuses/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/photocopieuses/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des produits :', erreur);
+  }
+}
+
+// chargerProduitsImprimantesHpLaser
+
+async function chargerProduitsImprimantesHpLaser() {
+
+  const grille = document.getElementById('grilleImprimantesHpLaser');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Imprimantes HP Laser');
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/imprimantes/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/imprimantes/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des produits :', erreur);
+  }
+}
+
+// chargerProduitsScanneurs
+
+async function chargerProduitsScanneurs() {
+
+  const grille = document.getElementById('grilleScanneurs');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('Scanneurs & lecteurs'));
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/scanneurs-lecteurs/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/scanneurs-lecteurs/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des produits :', erreur);
   }
 }
