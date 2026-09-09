@@ -295,30 +295,69 @@ function initMobileMenu() {
    4. BOUTONS "AJOUTER AU PANIER"
 ================================================================ */
 
-function initCartButtons() {
+function ajouterAuPanier(produitId, nom, prix, image) {
+  let panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
 
-  const cartBtns = document.querySelectorAll('.add-to-cart');
+  const existant = panier.find(item => item.produitId === produitId);
 
-  cartBtns.forEach(btn => {
-    btn.addEventListener('click', function () {
+  if (existant) {
+    existant.quantite += 1;
+  } else {
+    panier.push({ produitId, nom, prix, image, quantite: 1 });
+  }
 
-      const original = this.innerHTML;
+  localStorage.setItem('panierOBW', JSON.stringify(panier));
+  mettreAJourBadgePanier();
+}
 
-      this.innerHTML         = '<i class="ti ti-check" aria-hidden="true"></i> Ajouté !';
-      this.style.background  = '#22C55E';
-      this.style.color       = '#FFF';
-      this.style.borderColor = '#22C55E';
+function mettreAJourBadgePanier() {
+  const panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
+  const totalArticles = panier.reduce((somme, item) => somme + item.quantite, 0);
 
-      setTimeout(() => {
-        this.innerHTML         = original;
-        this.style.background  = '';
-        this.style.color       = '';
-        this.style.borderColor = '';
-      }, 1500);
-    });
+  document.querySelectorAll('.icon-btn[aria-label="Mon panier"] .dot-badge').forEach(badge => {
+    badge.style.display = totalArticles > 0 ? 'block' : 'none';
   });
 }
 
+function initCartButtons() {
+
+  document.addEventListener('click', function (e) {
+    const btn = e.target.closest('.add-to-cart');
+    if (!btn) return;
+
+    e.stopPropagation();
+
+    const card = btn.closest('.product-card') || btn.closest('.product-detail-info');
+    if (!card) return;
+
+    const nomEl = card.querySelector('.product-name, .product-detail-name');
+    const prixEl = card.querySelector('.product-price, .product-detail-price');
+    const imgEl = card.querySelector('.product-photo') || document.getElementById('galleryMainImg');
+
+    const nom = nomEl ? nomEl.textContent.trim() : 'Produit';
+    const prixTexte = prixEl ? prixEl.textContent.replace(/[^\d]/g, '') : '0';
+    const prix = parseInt(prixTexte) || 0;
+    const image = imgEl ? imgEl.src : '';
+    const produitId = btn.dataset.produitId || null;
+
+    ajouterAuPanier(produitId, nom, prix, image);
+
+    const original = btn.innerHTML;
+    btn.innerHTML         = '<i class="ti ti-check" aria-hidden="true"></i> Ajouté !';
+    btn.style.background  = '#22C55E';
+    btn.style.color       = '#FFF';
+    btn.style.borderColor = '#22C55E';
+
+    setTimeout(() => {
+      btn.innerHTML         = original;
+      btn.style.background  = '';
+      btn.style.color       = '';
+      btn.style.borderColor = '';
+    }, 1500);
+  });
+
+  mettreAJourBadgePanier();
+}
 
 /* ================================================================
    5. BARRE CATÉGORIES — flèches gauche/droite
@@ -397,10 +436,10 @@ document.addEventListener('DOMContentLoaded', function () {
   initSubcatTabs();  /* 9. Onglets sous-catégories actifs au clic */
   initProductDetail();  /* 10. Page produit détaillée */
   chargerProduitsImprimantes();/* pour cahrger dynamiquement */
-  chargerProduitsImprimantes();
   chargerProduitsPhotocopieuses();
   chargerProduitsImprimantesHpLaser();
   chargerProduitsScanneurs();
+    chargerFicheProduit();
 
 });
 
@@ -491,6 +530,13 @@ async function chargerProduitsImprimantes() {
       const carte = document.createElement('div');
       carte.className = 'product-card';
 
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+      
       carte.innerHTML = `
         <div class="product-img">
           <img src="../images/produits/imprimantes/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
@@ -501,7 +547,7 @@ async function chargerProduitsImprimantes() {
           <div class="product-spec">${produit.description || ''}</div>
           <div class="product-footer">
             <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
-            <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+           <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
           </div>
         </div>
       `;
@@ -529,6 +575,13 @@ async function chargerProduitsPhotocopieuses() {
       const carte = document.createElement('div');
       carte.className = 'product-card';
 
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
       carte.innerHTML = `
         <div class="product-img">
           <img src="../images/produits/photocopieuses/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
@@ -539,7 +592,7 @@ async function chargerProduitsPhotocopieuses() {
           <div class="product-spec">${produit.description || ''}</div>
           <div class="product-footer">
             <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
-            <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
           </div>
         </div>
       `;
@@ -567,6 +620,13 @@ async function chargerProduitsImprimantesHpLaser() {
       const carte = document.createElement('div');
       carte.className = 'product-card';
 
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
       carte.innerHTML = `
         <div class="product-img">
           <img src="../images/produits/imprimantes/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
@@ -577,7 +637,7 @@ async function chargerProduitsImprimantesHpLaser() {
           <div class="product-spec">${produit.description || ''}</div>
           <div class="product-footer">
             <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
-            <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+         <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
           </div>
         </div>
       `;
@@ -605,6 +665,13 @@ async function chargerProduitsScanneurs() {
       const carte = document.createElement('div');
       carte.className = 'product-card';
 
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
       carte.innerHTML = `
         <div class="product-img">
           <img src="../images/produits/scanneurs-lecteurs/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
@@ -615,7 +682,7 @@ async function chargerProduitsScanneurs() {
           <div class="product-spec">${produit.description || ''}</div>
           <div class="product-footer">
             <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
-            <button class="add-to-cart"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
           </div>
         </div>
       `;
@@ -625,5 +692,65 @@ async function chargerProduitsScanneurs() {
 
   } catch (erreur) {
     console.error('Erreur lors du chargement des produits :', erreur);
+  }
+}
+
+/* ================================================================
+   12. FICHE PRODUIT DYNAMIQUE (product.html?id=X)
+================================================================ */
+
+// Table de correspondance : nom de catégorie → nom de dossier images
+const dossiersImages = {
+  'Imprimantes': 'imprimantes',
+  'Imprimantes HP Laser': 'imprimantes',
+  'Photocopieuses': 'photocopieuses',
+  'Scanneurs & lecteurs': 'scanneurs-lecteurs',
+};
+
+async function chargerFicheProduit() {
+
+  const nomEl = document.getElementById('productName');
+  if (!nomEl) return; // on n'est pas sur product.html, on arrête tout de suite
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+
+  if (!id) {
+    nomEl.textContent = 'Produit introuvable';
+    return;
+  }
+
+  try {
+    const reponse = await fetch(`http://localhost:3000/api/produits/${id}`);
+
+    if (!reponse.ok) {
+      nomEl.textContent = 'Produit introuvable';
+      return;
+    }
+
+    const produit = await reponse.json();
+    const dossier = dossiersImages[produit.categorie.nom] || 'imprimantes';
+
+    document.title = `OPEN Business World — ${produit.nom}`;
+    document.getElementById('breadcrumbProduit').textContent = produit.nom;
+    document.getElementById('productName').textContent = produit.nom;
+    document.getElementById('productSpec').textContent = produit.description || '';
+    document.getElementById('productDescription').textContent = produit.description || '';
+    document.getElementById('productPrice').textContent = `${produit.prix.toLocaleString('fr-FR')} F CFA`;
+    document.querySelector('.product-detail-cta').dataset.produitId = produit.id;
+
+    const imgPrincipale = `../images/produits/${dossier}/${produit.imagePrincipale}`;
+    const imgHover = `../images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}`;
+
+    document.getElementById('galleryMainImg').src = imgPrincipale;
+    document.getElementById('galleryMainImg').alt = produit.nom;
+    document.getElementById('thumbImg1').src = imgPrincipale;
+    document.getElementById('thumbImg1').alt = produit.nom;
+    document.getElementById('thumbImg2').src = imgHover;
+    document.getElementById('thumbImg2').alt = produit.nom;
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement du produit :', erreur);
+    nomEl.textContent = 'Erreur de chargement';
   }
 }

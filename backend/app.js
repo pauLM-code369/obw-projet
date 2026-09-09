@@ -22,6 +22,7 @@ app.get('/api/produits', async (req, res) => {
 app.get('/api/produits/:id', async (req, res) => {
   const produit = await prisma.produit.findUnique({
     where: { id: parseInt(req.params.id) },
+    include: { categorie: true },
   });
 
   if (!produit) {
@@ -41,6 +42,46 @@ app.get('/api/produits/categorie/:nomCategorie', async (req, res) => {
     },
   });
   res.json(produits);
+});
+
+app.use(express.json());
+
+app.post('/api/commandes', async (req, res) => {
+  const { nom, email, telephone, adresse, ville, modePaiement, articles } = req.body;
+
+  if (!nom || !telephone || !adresse || !articles || articles.length === 0) {
+    return res.status(400).json({ erreur: 'Informations manquantes' });
+  }
+
+  try {
+    const total = articles.reduce((somme, a) => somme + (a.prix * a.quantite), 0);
+
+    const commande = await prisma.commande.create({
+      data: {
+        nom,
+        email,
+        telephone,
+        adresse,
+        ville,
+        modePaiement,
+        total,
+        lignes: {
+          create: articles.map(a => ({
+            produitId: a.produitId,
+            quantite: a.quantite,
+            prixUnitaire: a.prix,
+          })),
+        },
+      },
+      include: { lignes: true },
+    });
+
+    res.status(201).json(commande);
+
+  } catch (erreur) {
+    console.error(erreur);
+    res.status(500).json({ erreur: 'Erreur lors de la création de la commande' });
+  }
 });
 
 module.exports = app;
