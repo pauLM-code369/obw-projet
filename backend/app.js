@@ -105,4 +105,24 @@ app.post('/api/commandes', async (req, res) => {
   }
 });
 
+app.post('/api/contact', async (req, res) => {
+  const { nom, email, telephone, message } = req.body;
+
+  if (!nom || !email || !telephone || !message) {
+    return res.status(400).json({ erreur: 'Tous les champs sont requis' });
+  }
+
+  try {
+    const messageContact = await prisma.messageContact.create({
+      data: { nom, email, telephone, message },
+    });
+
+    res.status(201).json({ succes: true, id: messageContact.id });
+
+  } catch (erreur) {
+    console.error(erreur);
+    res.status(500).json({ erreur: 'Erreur lors de l\'envoi du message' });
+  }
+});
+
 module.exports = app;

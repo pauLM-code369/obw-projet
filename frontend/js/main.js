@@ -418,21 +418,69 @@ function initContactForm() {
 
   const btn = form.querySelector('.contact-submit-btn');
 
-  form.addEventListener('submit', function (e) {
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
+    effacerErreurChamp('cf-name');
+    effacerErreurChamp('cf-phone');
+
+    const nom = document.getElementById('cf-name').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const telephone = document.getElementById('cf-phone').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+
+    const mots = nom.split(/\s+/).filter(mot => mot.length > 0);
+    const regexMot = /^[a-zA-ZÀ-ÿ'-]{2,}$/;
+    const nomValide = mots.length >= 2 && mots.every(mot => regexMot.test(mot));
+
+    if (!nomValide) {
+      afficherErreurChamp('cf-name', 'Merci de saisir votre prénom et nom complets (ex: Marc dupont).');
+      return;
+    }
+
+    const regexTelephone = /^(\+225[0-9]{10}|0[0-9]{9})$/;
+
+    if (!regexTelephone.test(telephone)) {
+      afficherErreurChamp('cf-phone', 'Numéro invalide. Exemple : 0101020304 ou +2250101020304');
+      return;
+    }
+
     const original = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = 'Envoi en cours...';
 
-    btn.innerHTML = '<i class="ti ti-check" aria-hidden="true"></i> Message envoyé !';
-    btn.style.background = '#22C55E';
+    try {
+      const reponse = await fetch('http://localhost:3000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nom, email, telephone, message }),
+      });
 
-    setTimeout(() => {
+      if (!reponse.ok) throw new Error('Erreur serveur');
+
+      btn.innerHTML = '<i class="ti ti-check" aria-hidden="true"></i> Message envoyé !';
+      btn.style.background = '#22C55E';
+
+      setTimeout(() => {
+        btn.innerHTML = original;
+        btn.style.background = '';
+        btn.disabled = false;
+        form.reset();
+      }, 2200);
+
+    } catch (erreur) {
+      console.error(erreur);
       btn.innerHTML = original;
-      btn.style.background = '';
-      form.reset();
-    }, 2200);
+      btn.disabled = false;
+            const erreurGeneraleEl = document.getElementById('contactFormError');
+      if (erreurGeneraleEl) {
+        erreurGeneraleEl.textContent = 'Une erreur est survenue. Merci de réessayer ou de nous contacter sur WhatsApp.';
+        erreurGeneraleEl.style.display = 'block';
+      }
+    }
   });
 }
+
 
 function selectPayment(element) {
   document.querySelectorAll('.payment-box').forEach(box => {

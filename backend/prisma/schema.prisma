@@ -55,3 +55,20 @@ model LigneCommande {
   quantite    Int
   prixUnitaire Int
 }
+
+model MessageContact {
+  id        Int      @id @default(autoincrement())
+  nom       String
+  email     String
+  telephone String
+  message   String
+  lu        Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Admin {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  motDePasse String
+  nom      String
+}
