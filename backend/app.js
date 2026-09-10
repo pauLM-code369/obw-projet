@@ -1,3 +1,5 @@
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 const cors = require('cors');
 require('dotenv').config();
 const express = require('express');
@@ -122,6 +124,42 @@ app.post('/api/contact', async (req, res) => {
   } catch (erreur) {
     console.error(erreur);
     res.status(500).json({ erreur: 'Erreur lors de l\'envoi du message' });
+  }
+});
+
+app.post('/api/admin/login', async (req, res) => {
+  const { email, motDePasse } = req.body;
+
+  if (!email || !motDePasse) {
+    return res.status(400).json({ erreur: 'Email et mot de passe requis' });
+  }
+
+  try {
+    const admin = await prisma.admin.findUnique({
+      where: { email },
+    });
+
+    if (!admin) {
+      return res.status(401).json({ erreur: 'Identifiants incorrects' });
+    }
+
+    const motDePasseValide = await bcrypt.compare(motDePasse, admin.motDePasse);
+
+    if (!motDePasseValide) {
+      return res.status(401).json({ erreur: 'Identifiants incorrects' });
+    }
+
+    const token = jwt.sign(
+      { adminId: admin.id, email: admin.email },
+      process.env.JWT_SECRET,
+      { expiresIn: '24h' }
+    );
+
+    res.json({ token, nom: admin.nom, email: admin.email });
+
+  } catch (erreur) {
+    console.error(erreur);
+    res.status(500).json({ erreur: 'Erreur lors de la connexion' });
   }
 });
 
