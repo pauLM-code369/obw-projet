@@ -47,10 +47,14 @@ app.get('/api/produits/categorie/:nomCategorie', async (req, res) => {
 app.use(express.json());
 
 app.post('/api/commandes', async (req, res) => {
-  const { nom, email, telephone, adresse, ville, modePaiement, articles } = req.body;
+  const { nom, email, telephone, adresse, ville, modePaiement, typeLivraison, articles } = req.body;
 
-  if (!nom || !telephone || !adresse || !articles || articles.length === 0) {
+  if (!nom || !telephone || !articles || articles.length === 0) {
     return res.status(400).json({ erreur: 'Informations manquantes' });
+  }
+
+  if (typeLivraison === 'Expédier' && !adresse) {
+    return res.status(400).json({ erreur: 'Adresse requise pour l\'expédition' });
   }
 
   try {
@@ -61,6 +65,7 @@ app.post('/api/commandes', async (req, res) => {
         nom,
         email,
         telephone,
+        typeLivraison,
         adresse,
         ville,
         modePaiement,

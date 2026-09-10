@@ -35,7 +35,8 @@ model Commande {
   nom            String
   email          String?
   telephone      String
-  adresse        String
+  typeLivraison  String          @default("Expédier")
+  adresse        String?
   ville          String?
   modePaiement   String
   total          Int

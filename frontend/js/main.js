@@ -315,9 +315,28 @@ function mettreAJourBadgePanier() {
   const totalArticles = panier.reduce((somme, item) => somme + item.quantite, 0);
 
   document.querySelectorAll('.icon-btn[aria-label="Mon panier"] .dot-badge').forEach(badge => {
-    badge.style.display = totalArticles > 0 ? 'block' : 'none';
+    if (totalArticles > 0) {
+      badge.textContent = totalArticles;
+      badge.style.display = 'flex';
+    } else {
+      badge.textContent = '';
+      badge.style.display = 'none';
+    }
   });
 }
+
+function initCartIconLink() {
+  const enSousDossier = window.location.pathname.includes('/html/');
+  const lienPanier = enSousDossier ? 'panier.html' : 'html/panier.html';
+
+  document.querySelectorAll('.icon-btn[aria-label="Mon panier"]').forEach(btn => {
+    btn.style.cursor = 'pointer';
+    btn.addEventListener('click', () => {
+      window.location.href = lienPanier;
+    });
+  });
+}
+
 
 function initCartButtons() {
 
@@ -415,6 +434,19 @@ function initContactForm() {
   });
 }
 
+function selectPayment(element) {
+  document.querySelectorAll('.payment-box').forEach(box => {
+    box.classList.remove('active');
+  });
+  element.classList.add('active');
+
+  const valeur = element.dataset.valeur;
+  const inputPaiement = document.getElementById('cmd-paiement');
+  if (inputPaiement && valeur) {
+    inputPaiement.value = valeur;
+  }
+}
+
 
 /* ================================================================
    POINT D'ENTRÉE — DOMContentLoaded
@@ -439,7 +471,11 @@ document.addEventListener('DOMContentLoaded', function () {
   chargerProduitsPhotocopieuses();
   chargerProduitsImprimantesHpLaser();
   chargerProduitsScanneurs();
-    chargerFicheProduit();
+  chargerFicheProduit();
+  afficherPanier();
+  initCartIconLink();
+  initFormCommande();
+  initToggleLivraison();
 
 });
 
@@ -753,4 +789,194 @@ async function chargerFicheProduit() {
     console.error('Erreur lors du chargement du produit :', erreur);
     nomEl.textContent = 'Erreur de chargement';
   }
+}
+
+/* ================================================================
+   13. PAGE PANIER
+================================================================ */
+
+function afficherPanier() {
+
+  const listeEl = document.getElementById('listeArticles');
+  if (!listeEl) return;
+
+  const panierVideEl = document.getElementById('panierVide');
+  const panierContenuEl = document.getElementById('panierContenu');
+  const totalEl = document.getElementById('totalCommande');
+
+  const panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
+
+  if (panier.length === 0) {
+    panierVideEl.style.display = 'block';
+    panierContenuEl.style.display = 'none';
+    return;
+  }
+
+  panierVideEl.style.display = 'none';
+  panierContenuEl.style.display = 'grid';
+
+  listeEl.innerHTML = '';
+  let total = 0;
+
+  panier.forEach((item, index) => {
+    total += item.prix * item.quantite;
+
+    const ligne = document.createElement('div');
+    ligne.style.cssText = 'display:flex; gap:12px; align-items:center; padding:14px 0; border-bottom:1px solid #eee;';
+
+    ligne.innerHTML = `
+      <img src="${item.image}" alt="${item.nom}" style="width:64px; height:64px; object-fit:contain; border-radius:8px; background:#f5f5f5;" />
+      <div style="flex:1;">
+        <div style="font-weight:600; font-size:14px;">${item.nom}</div>
+        <div style="color: var(--color-primary); font-weight:700; font-size:14px;">${item.prix.toLocaleString('fr-FR')} F CFA</div>
+      </div>
+      <div class="qty-selector" style="transform:scale(0.85);">
+        <button class="qty-btn" data-action="moins" data-index="${index}">−</button>
+        <span class="qty-value">${item.quantite}</span>
+        <button class="qty-btn" data-action="plus" data-index="${index}">+</button>
+      </div>
+      <button data-action="supprimer" data-index="${index}" style="background:none; border:none; color:#EF4444; cursor:pointer; font-size:18px;">
+        <i class="ti ti-trash"></i>
+      </button>
+    `;
+
+    listeEl.appendChild(ligne);
+  });
+
+  totalEl.textContent = `${total.toLocaleString('fr-FR')} F CFA`;
+}
+
+document.addEventListener('click', function (e) {
+  const btn = e.target.closest('[data-action]');
+  if (!btn) return;
+
+  const action = btn.dataset.action;
+  const index = parseInt(btn.dataset.index);
+  if (isNaN(index)) return;
+
+  let panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
+
+  if (action === 'plus') {
+    panier[index].quantite += 1;
+  } else if (action === 'moins') {
+    panier[index].quantite -= 1;
+    if (panier[index].quantite <= 0) panier.splice(index, 1);
+  } else if (action === 'supprimer') {
+    panier.splice(index, 1);
+  } else {
+    return;
+  }
+
+  localStorage.setItem('panierOBW', JSON.stringify(panier));
+  mettreAJourBadgePanier();
+  afficherPanier();
+});
+
+function initToggleLivraison() {
+  const btnExpedier = document.getElementById('btnExpedier');
+  const btnRetrait = document.getElementById('btnRetrait');
+  const blocAdresse = document.getElementById('blocAdresse');
+  const blocRetrait = document.getElementById('blocRetrait');
+  const inputType = document.getElementById('cmd-type-livraison');
+  const inputAdresse = document.getElementById('cmd-adresse');
+
+  if (!btnExpedier) return;
+
+  function activerExpedier() {
+    inputType.value = 'Expédier';
+    blocAdresse.style.display = 'block';
+    blocRetrait.style.display = 'none';
+    inputAdresse.required = true;
+
+    btnExpedier.style.background = 'var(--color-primary)';
+    btnExpedier.style.color = '#fff';
+    btnRetrait.style.background = '';
+    btnRetrait.style.color = '';
+  }
+
+  function activerRetrait() {
+    inputType.value = 'Retrait';
+    blocAdresse.style.display = 'none';
+    blocRetrait.style.display = 'block';
+    inputAdresse.required = false;
+
+    btnRetrait.style.background = 'var(--color-primary)';
+    btnRetrait.style.color = '#fff';
+    btnExpedier.style.background = '';
+    btnExpedier.style.color = '';
+  }
+
+  btnExpedier.addEventListener('click', activerExpedier);
+  btnRetrait.addEventListener('click', activerRetrait);
+
+  activerExpedier(); // état initial par défaut
+}
+
+function initFormCommande() {
+  const form = document.getElementById('formCommande');
+  if (!form) return;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
+
+    if (panier.length === 0) {
+      alert('Votre panier est vide.');
+      return;
+    }
+
+    const articlesInvalides = panier.some(item => !item.produitId);
+    if (articlesInvalides) {
+      alert('Un ou plusieurs articles ne peuvent pas être commandés pour le moment. Merci de les retirer et de les rajouter depuis une fiche produit.');
+      return;
+    }
+
+        const donnees = {
+      nom: document.getElementById('cmd-nom').value,
+      telephone: document.getElementById('cmd-telephone').value,
+      email: document.getElementById('cmd-email').value,
+      typeLivraison: document.getElementById('cmd-type-livraison').value,
+      adresse: document.getElementById('cmd-adresse').value,
+      ville: document.getElementById('cmd-ville').value,
+      modePaiement: document.getElementById('cmd-paiement').value,
+      articles: panier.map(item => ({
+        produitId: parseInt(item.produitId),
+        quantite: item.quantite,
+        prix: item.prix,
+      })),
+    };
+
+    const btnSubmit = form.querySelector('.contact-submit-btn');
+    const original = btnSubmit.innerHTML;
+    btnSubmit.disabled = true;
+    btnSubmit.innerHTML = 'Envoi en cours...';
+
+    try {
+      const reponse = await fetch('http://localhost:3000/api/commandes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(donnees),
+      });
+
+      if (!reponse.ok) throw new Error('Erreur serveur');
+
+      const commande = await reponse.json();
+
+      localStorage.removeItem('panierOBW');
+      mettreAJourBadgePanier();
+
+      document.getElementById('panierContenu').style.display = 'none';
+      document.querySelector('.page-hero').innerHTML = `
+        <h1 class="page-hero-title">Merci, ${commande.nom} !</h1>
+        <p class="page-hero-text">Votre commande n°${commande.id} a bien été reçue. Nous vous contacterons au ${commande.telephone} pour confirmer.</p>
+      `;
+
+    } catch (erreur) {
+      console.error(erreur);
+      alert('Une erreur est survenue. Merci de réessayer ou de nous contacter sur WhatsApp.');
+      btnSubmit.disabled = false;
+      btnSubmit.innerHTML = original;
+    }
+  });
 }
