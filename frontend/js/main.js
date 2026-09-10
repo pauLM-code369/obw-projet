@@ -912,6 +912,32 @@ function initToggleLivraison() {
   activerExpedier(); // état initial par défaut
 }
 
+function afficherErreurChamp(champId, message) {
+  const champ = document.getElementById(champId);
+  if (!champ) return;
+
+  champ.style.borderColor = '#EF4444';
+
+  let erreurEl = champ.parentElement.querySelector('.champ-erreur');
+  if (!erreurEl) {
+    erreurEl = document.createElement('div');
+    erreurEl.className = 'champ-erreur';
+    erreurEl.style.cssText = 'color:#EF4444; font-size:12px; margin-top:4px;';
+    champ.insertAdjacentElement('afterend', erreurEl);
+  }
+  erreurEl.textContent = message;
+}
+
+function effacerErreurChamp(champId) {
+  const champ = document.getElementById(champId);
+  if (!champ) return;
+
+  champ.style.borderColor = '';
+
+  const erreurEl = champ.parentElement.querySelector('.champ-erreur');
+  if (erreurEl) erreurEl.remove();
+}
+
 function initFormCommande() {
   const form = document.getElementById('formCommande');
   if (!form) return;
@@ -923,6 +949,29 @@ function initFormCommande() {
 
     if (panier.length === 0) {
       alert('Votre panier est vide.');
+      return;
+    }
+
+        effacerErreurChamp('cmd-telephone');
+
+    const telephone = document.getElementById('cmd-telephone').value.trim();
+    const regexTelephone = /^(\+225[0-9]{10}|0[0-9]{9})$/;
+
+    if (!regexTelephone.test(telephone)) {
+      afficherErreurChamp('cmd-telephone', 'Numéro invalide. Exemple : 0101020304 ou +2250101020304');
+      return;
+    }
+
+        effacerErreurChamp('cmd-nom');
+
+    const nom = document.getElementById('cmd-nom').value.trim();
+    const mots = nom.split(/\s+/).filter(mot => mot.length > 0);
+    const regexMot = /^[a-zA-ZÀ-ÿ'-]{2,}$/;
+
+    const nomValide = mots.length >= 2 && mots.every(mot => regexMot.test(mot));
+
+    if (!nomValide) {
+      afficherErreurChamp('cmd-nom', 'Merci de saisir votre prénom et nom complets (ex: Paul Martin).');
       return;
     }
 
@@ -963,13 +1012,58 @@ function initFormCommande() {
 
       const commande = await reponse.json();
 
-      localStorage.removeItem('panierOBW');
+         localStorage.removeItem('panierOBW');
       mettreAJourBadgePanier();
 
-      document.getElementById('panierContenu').style.display = 'none';
-      document.querySelector('.page-hero').innerHTML = `
-        <h1 class="page-hero-title">Merci, ${commande.nom} !</h1>
-        <p class="page-hero-text">Votre commande n°${commande.id} a bien été reçue. Nous vous contacterons au ${commande.telephone} pour confirmer.</p>
+            const lignesHtml = commande.lignes.map(l => `
+        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #eee; font-size:14px;">
+          <span>${l.quantite} × ${l.produit.nom}</span>
+          <span>${(l.prixUnitaire * l.quantite).toLocaleString('fr-FR')} F CFA</span>
+        </div>
+      `).join('');
+
+      const adresseHtml = commande.typeLivraison === 'Retrait'
+        ? `<strong>Point de retrait :</strong><br />Plateau, Immeuble Mali, Abidjan`
+        : `<strong>Adresse de livraison :</strong><br />${commande.adresse}${commande.ville ? ', ' + commande.ville : ''}`;
+
+      document.getElementById('panierContenu').innerHTML = `
+        <div class="contact-info-card" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto;">
+
+          <div style="text-align:center; margin-bottom:20px;">
+            <i class="ti ti-circle-check" style="font-size:48px; color:#22C55E;"></i>
+            <h2 style="margin:8px 0 4px;">Merci, ${commande.nom} !</h2>
+            <p style="color:#666;">Confirmation n° <strong>${commande.codeConfirmation}</strong></p>
+          </div>
+
+          <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:14px; margin-bottom:20px;">
+            <strong>Votre commande est confirmée</strong><br />
+            <span style="font-size:14px; color:#555;">Nous allons vous contacter au ${commande.telephone} pour confirmer les détails et organiser ${commande.typeLivraison === 'Retrait' ? 'le retrait' : 'la livraison'}.</span>
+          </div>
+
+          <h3 class="contact-card-title">Détails de la commande</h3>
+
+          <div style="margin-bottom:16px; font-size:14px;">
+            ${adresseHtml}
+          </div>
+
+          <div style="margin-bottom:16px; font-size:14px;">
+            <strong>Mode de paiement :</strong><br />${commande.modePaiement}
+          </div>
+
+          <div style="margin-bottom:8px; font-size:14px;">
+            <strong>Articles :</strong>
+          </div>
+          ${lignesHtml}
+
+          <div style="display:flex; justify-content:space-between; padding:12px 0; font-size:18px; font-weight:700; color:var(--color-primary);">
+            <span>Total</span>
+            <span>${commande.total.toLocaleString('fr-FR')} F CFA</span>
+          </div>
+
+          <a href="../boutique.html" class="contact-submit-btn" style="display:block; text-align:center; text-decoration:none; margin-top:16px;">
+            Retour à la boutique
+          </a>
+        </div>
       `;
 
     } catch (erreur) {

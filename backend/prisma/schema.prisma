@@ -32,6 +32,7 @@ model Produit {
 
 model Commande {
   id             Int             @id @default(autoincrement())
+  codeConfirmation String   @unique
   nom            String
   email          String?
   telephone      String

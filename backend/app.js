@@ -60,6 +60,17 @@ app.post('/api/commandes', async (req, res) => {
   try {
     const total = articles.reduce((somme, a) => somme + (a.prix * a.quantite), 0);
 
+    function genererCodeConfirmation() {
+  const caracteres = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  let code = '';
+  for (let i = 0; i < 8; i++) {
+    code += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+  }
+  return code;
+}
+
+        const codeConfirmation = genererCodeConfirmation();
+
     const commande = await prisma.commande.create({
       data: {
         nom,
@@ -70,6 +81,7 @@ app.post('/api/commandes', async (req, res) => {
         ville,
         modePaiement,
         total,
+        codeConfirmation,
         lignes: {
           create: articles.map(a => ({
             produitId: a.produitId,
@@ -78,7 +90,11 @@ app.post('/api/commandes', async (req, res) => {
           })),
         },
       },
-      include: { lignes: true },
+      include: {
+        lignes: {
+          include: { produit: true },
+        },
+      },
     });
 
     res.status(201).json(commande);
