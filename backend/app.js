@@ -12,6 +12,24 @@ const prisma = new PrismaClient({ adapter });
 const app = express();
 app.use(cors());
 
+function verifierAdmin(req, res, next) {
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return res.status(401).json({ erreur: 'Authentification requise' });
+  }
+
+  const token = authHeader.split(' ')[1];
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.admin = decoded;
+    next();
+  } catch (erreur) {
+    return res.status(401).json({ erreur: 'Token invalide ou expiré' });
+  }
+}
+
 app.get('/', (req, res) => {
   res.send('Le serveur OBW fonctionne !');
 });
@@ -161,6 +179,10 @@ app.post('/api/admin/login', async (req, res) => {
     console.error(erreur);
     res.status(500).json({ erreur: 'Erreur lors de la connexion' });
   }
+});
+
+app.get('/api/admin/verification', verifierAdmin, (req, res) => {
+  res.json({ message: 'Accès autorisé', admin: req.admin });
 });
 
 module.exports = app;

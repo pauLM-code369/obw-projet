@@ -524,6 +524,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initCartIconLink();
   initFormCommande();
   initToggleLivraison();
+  initAdminLogin();
 
 });
 
@@ -1119,6 +1120,57 @@ function initFormCommande() {
       alert('Une erreur est survenue. Merci de réessayer ou de nous contacter sur WhatsApp.');
       btnSubmit.disabled = false;
       btnSubmit.innerHTML = original;
+    }
+  });
+}
+
+function initAdminLogin() {
+  const form = document.getElementById('formLogin');
+  if (!form) return;
+
+  const errorEl = document.getElementById('loginError');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    errorEl.style.display = 'none';
+
+    const email = document.getElementById('admin-email').value.trim();
+    const motDePasse = document.getElementById('admin-password').value;
+
+    const btn = form.querySelector('button[type="submit"]');
+    const original = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = 'Connexion...';
+
+    try {
+      const reponse = await fetch('http://localhost:3000/api/admin/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, motDePasse }),
+      });
+
+      const data = await reponse.json();
+
+      if (!reponse.ok) {
+        errorEl.textContent = data.erreur || 'Erreur de connexion';
+        errorEl.style.display = 'block';
+        btn.disabled = false;
+        btn.innerHTML = original;
+        return;
+      }
+
+      localStorage.setItem('adminToken', data.token);
+      localStorage.setItem('adminNom', data.nom);
+
+      window.location.href = 'admin-dashboard.html';
+
+    } catch (erreur) {
+      console.error(erreur);
+      errorEl.textContent = 'Erreur de connexion au serveur.';
+      errorEl.style.display = 'block';
+      btn.disabled = false;
+      btn.innerHTML = original;
     }
   });
 }
