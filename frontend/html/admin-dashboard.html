@@ -27,7 +27,12 @@
 
   <main style="max-width:1100px; margin:24px auto; padding:0 24px;">
 
-    <h1 style="font-size:22px; margin-bottom:20px;">Gestion des produits</h1>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+      <h1 style="font-size:22px;">Gestion des produits</h1>
+      <button id="btnAjouterProduit" class="contact-submit-btn" style="width:auto; padding:10px 20px;">
+        <i class="ti ti-plus" aria-hidden="true"></i> Ajouter un produit
+      </button>
+    </div>
 
     <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
       <table style="width:100%; border-collapse:collapse;">
@@ -82,6 +87,48 @@
       <div style="display:flex; gap:10px; margin-top:20px;">
         <button id="btnAnnulerEdition" class="qty-btn" style="flex:1;">Annuler</button>
         <button id="btnSauvegarderEdition" class="contact-submit-btn" style="flex:1;">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modale d'ajout -->
+  <div id="modaleAjout" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:1000;">
+    <div style="background:#fff; border-radius:8px; padding:24px; width:100%; max-width:420px;">
+      <h3 style="margin-bottom:16px;">Ajouter un produit</h3>
+
+      <div class="form-group">
+        <label for="add-nom">Nom</label>
+        <input type="text" id="add-nom" />
+      </div>
+
+      <div class="form-group">
+        <label for="add-description">Description</label>
+        <input type="text" id="add-description" />
+      </div>
+
+      <div class="form-group">
+        <label for="add-prix">Prix (F CFA)</label>
+        <input type="number" id="add-prix" />
+      </div>
+
+      <div class="form-group">
+        <label for="add-categorie">Catégorie</label>
+        <select id="add-categorie" style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd;"></select>
+      </div>
+
+      <div class="form-group">
+        <label for="add-image">Nom du fichier image principale</label>
+        <input type="text" id="add-image" placeholder="ex: nouveau-produit.webp" />
+      </div>
+
+      <div class="form-group">
+        <label for="add-image-hover">Nom du fichier image au survol</label>
+        <input type="text" id="add-image-hover" placeholder="ex: nouveau-produit-2.webp" />
+      </div>
+
+      <div style="display:flex; gap:10px; margin-top:20px;">
+        <button id="btnAnnulerAjout" class="qty-btn" style="flex:1;">Annuler</button>
+        <button id="btnConfirmerAjout" class="contact-submit-btn" style="flex:1;">Créer</button>
       </div>
     </div>
   </div>

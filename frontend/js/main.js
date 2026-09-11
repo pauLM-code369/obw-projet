@@ -1219,9 +1219,8 @@ function initAdminDashboard() {
           <td style="padding:12px 16px; font-size:14px;">${p.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.categorie.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.prix.toLocaleString('fr-FR')} F CFA</td>
-                   <td style="padding:12px 16px; display:flex; gap:6px;">
-    <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" style="padding:6px 12px; font-size:13px;">
-    <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" style="padding:6px 12px; font-size:13px;">
+          <td style="padding:12px 16px; display:flex; gap:6px;">
+            <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" style="padding:6px 12px; font-size:13px;">
               <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
             </button>
             <button class="qty-btn btn-toggle" data-id="${p.id}" style="padding:6px 12px; font-size:13px; ${p.actif ? '' : 'background:#FEE2E2; border-color:#FCA5A5;'}">
@@ -1245,7 +1244,17 @@ function initAdminDashboard() {
     const btn = e.target.closest('.btn-modifier');
     if (!btn) return;
 
-      tableau.addEventListener('click', async (e) => {
+    document.getElementById('edit-id').value = btn.dataset.id;
+    document.getElementById('edit-nom').value = btn.dataset.nom;
+    document.getElementById('edit-description').value = btn.dataset.description;
+    document.getElementById('edit-prix').value = btn.dataset.prix;
+    document.getElementById('edit-image').value = btn.dataset.image;
+    document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
+
+    modale.style.display = 'flex';
+  });
+
+  tableau.addEventListener('click', async (e) => {
     const btnToggle = e.target.closest('.btn-toggle');
     if (!btnToggle) return;
 
@@ -1267,16 +1276,6 @@ function initAdminDashboard() {
     }
   });
 
-    document.getElementById('edit-id').value = btn.dataset.id;
-    document.getElementById('edit-nom').value = btn.dataset.nom;
-    document.getElementById('edit-description').value = btn.dataset.description;
-        document.getElementById('edit-prix').value = btn.dataset.prix;
-        document.getElementById('edit-image').value = btn.dataset.image;
-    document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
-
-    modale.style.display = 'flex';
-  });
-
   document.getElementById('btnAnnulerEdition').addEventListener('click', () => {
     modale.style.display = 'none';
   });
@@ -1285,8 +1284,8 @@ function initAdminDashboard() {
     const id = document.getElementById('edit-id').value;
     const nom = document.getElementById('edit-nom').value;
     const description = document.getElementById('edit-description').value;
-       const prix = parseInt(document.getElementById('edit-prix').value);
-           const imagePrincipale = document.getElementById('edit-image').value;
+    const prix = parseInt(document.getElementById('edit-prix').value);
+    const imagePrincipale = document.getElementById('edit-image').value;
     const imageHover = document.getElementById('edit-image-hover').value;
 
     try {
@@ -1307,6 +1306,72 @@ function initAdminDashboard() {
     } catch (erreur) {
       console.error(erreur);
       alert('Erreur lors de la sauvegarde.');
+    }
+  });
+
+  async function chargerCategories() {
+    try {
+      const reponse = await fetch('http://localhost:3000/api/admin/categories', {
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+      const categories = await reponse.json();
+
+      const select = document.getElementById('add-categorie');
+      select.innerHTML = categories.map(c => `<option value="${c.id}">${c.nom}</option>`).join('');
+
+    } catch (erreur) {
+      console.error(erreur);
+    }
+  }
+
+  const modaleAjout = document.getElementById('modaleAjout');
+
+  document.getElementById('btnAjouterProduit').addEventListener('click', () => {
+    document.getElementById('add-nom').value = '';
+    document.getElementById('add-description').value = '';
+    document.getElementById('add-prix').value = '';
+    document.getElementById('add-image').value = '';
+    document.getElementById('add-image-hover').value = '';
+
+    chargerCategories();
+    modaleAjout.style.display = 'flex';
+  });
+
+  document.getElementById('btnAnnulerAjout').addEventListener('click', () => {
+    modaleAjout.style.display = 'none';
+  });
+
+  document.getElementById('btnConfirmerAjout').addEventListener('click', async () => {
+    const nom = document.getElementById('add-nom').value.trim();
+    const description = document.getElementById('add-description').value.trim();
+    const prix = document.getElementById('add-prix').value;
+    const categorieId = document.getElementById('add-categorie').value;
+    const imagePrincipale = document.getElementById('add-image').value.trim();
+    const imageHover = document.getElementById('add-image-hover').value.trim();
+
+    if (!nom || !prix || !imagePrincipale || !categorieId) {
+      alert('Merci de remplir au moins le nom, le prix, la categorie et l\'image principale.');
+      return;
+    }
+
+    try {
+      const reponse = await fetch('http://localhost:3000/api/admin/produits', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + token
+        },
+        body: JSON.stringify({ nom, description, prix, categorieId, imagePrincipale, imageHover }),
+      });
+
+      if (!reponse.ok) throw new Error('Erreur');
+
+      modaleAjout.style.display = 'none';
+      chargerProduits();
+
+    } catch (erreur) {
+      console.error(erreur);
+      alert('Erreur lors de la creation du produit.');
     }
   });
 }

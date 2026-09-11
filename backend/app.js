@@ -234,4 +234,38 @@ app.patch('/api/admin/produits/:id/toggle', verifierAdmin, async (req, res) => {
   }
 });
 
+app.post('/api/admin/produits', verifierAdmin, async (req, res) => {
+  const { nom, description, prix, imagePrincipale, imageHover, categorieId } = req.body;
+
+  if (!nom || !prix || !imagePrincipale || !categorieId) {
+    return res.status(400).json({ erreur: 'Informations manquantes' });
+  }
+
+  try {
+    const produit = await prisma.produit.create({
+      data: {
+        nom,
+        description,
+        prix: parseInt(prix),
+        imagePrincipale,
+        imageHover,
+        categorieId: parseInt(categorieId),
+      },
+    });
+
+    res.status(201).json(produit);
+
+  } catch (erreur) {
+    console.error(erreur);
+    res.status(500).json({ erreur: 'Erreur lors de la creation du produit' });
+  }
+});
+
+app.get('/api/admin/categories', verifierAdmin, async (req, res) => {
+  const categories = await prisma.categorie.findMany({
+    orderBy: { nom: 'asc' },
+  });
+  res.json(categories);
+});
+
 module.exports = app;
