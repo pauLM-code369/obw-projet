@@ -1219,9 +1219,12 @@ function initAdminDashboard() {
           <td style="padding:12px 16px; font-size:14px;">${p.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.categorie.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.prix.toLocaleString('fr-FR')} F CFA</td>
-          <td style="padding:12px 16px;">
+                   <td style="padding:12px 16px; display:flex; gap:6px;">
             <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" style="padding:6px 12px; font-size:13px;">
               <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
+            </button>
+            <button class="qty-btn btn-toggle" data-id="${p.id}" style="padding:6px 12px; font-size:13px; ${p.actif ? '' : 'background:#FEE2E2; border-color:#FCA5A5;'}">
+              <i class="ti ti-${p.actif ? 'eye-off' : 'eye'}" aria-hidden="true"></i> ${p.actif ? 'Desactiver' : 'Reactiver'}
             </button>
           </td>
         `;
@@ -1240,6 +1243,28 @@ function initAdminDashboard() {
   tableau.addEventListener('click', (e) => {
     const btn = e.target.closest('.btn-modifier');
     if (!btn) return;
+
+      tableau.addEventListener('click', async (e) => {
+    const btnToggle = e.target.closest('.btn-toggle');
+    if (!btnToggle) return;
+
+    const id = btnToggle.dataset.id;
+
+    try {
+      const reponse = await fetch(`http://localhost:3000/api/admin/produits/${id}/toggle`, {
+        method: 'PATCH',
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+
+      if (!reponse.ok) throw new Error('Erreur');
+
+      chargerProduits();
+
+    } catch (erreur) {
+      console.error(erreur);
+      alert('Erreur lors du changement de statut.');
+    }
+  });
 
     document.getElementById('edit-id').value = btn.dataset.id;
     document.getElementById('edit-nom').value = btn.dataset.nom;

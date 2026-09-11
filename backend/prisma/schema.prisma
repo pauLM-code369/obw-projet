@@ -26,6 +26,7 @@ model Produit {
   imageHover      String?
   categorie   Categorie @relation(fields: [categorieId], references: [id])
   categorieId Int
+  actif       Boolean   @default(true)
   lignesCommande LigneCommande[]
   createdAt   DateTime  @default(now())
 }

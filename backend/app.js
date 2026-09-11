@@ -59,6 +59,7 @@ app.get('/api/produits/categorie/:nomCategorie', async (req, res) => {
       categorie: {
         nom: req.params.nomCategorie,
       },
+      actif: true,
     },
   });
   res.json(produits);
@@ -207,6 +208,29 @@ app.put('/api/admin/produits/:id', verifierAdmin, async (req, res) => {
   } catch (erreur) {
     console.error(erreur);
     res.status(500).json({ erreur: 'Erreur lors de la modification' });
+  }
+});
+
+app.patch('/api/admin/produits/:id/toggle', verifierAdmin, async (req, res) => {
+  try {
+    const produit = await prisma.produit.findUnique({
+      where: { id: parseInt(req.params.id) },
+    });
+
+    if (!produit) {
+      return res.status(404).json({ erreur: 'Produit non trouve' });
+    }
+
+    const produitMisAJour = await prisma.produit.update({
+      where: { id: parseInt(req.params.id) },
+      data: { actif: !produit.actif },
+    });
+
+    res.json(produitMisAJour);
+
+  } catch (erreur) {
+    console.error(erreur);
+    res.status(500).json({ erreur: 'Erreur lors du changement de statut' });
   }
 });
 
