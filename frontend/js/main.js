@@ -526,6 +526,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initToggleLivraison();
   initAdminLogin();
   initAdminDashboard();
+  initAdminCommandes();
 
 });
 
@@ -1374,4 +1375,112 @@ function initAdminDashboard() {
       alert('Erreur lors de la creation du produit.');
     }
   });
+}
+
+
+
+function initAdminCommandes() {
+  const listeCommandes = document.getElementById('listeCommandes');
+  if (!listeCommandes) return;
+
+  const token = localStorage.getItem('adminToken');
+
+  if (!token) {
+    window.location.href = 'admin-login.html';
+    return;
+  }
+
+  document.getElementById('adminNomAffiche').textContent = localStorage.getItem('adminNom') || '';
+
+  document.getElementById('btnDeconnexion').addEventListener('click', () => {
+    localStorage.removeItem('adminToken');
+    localStorage.removeItem('adminNom');
+    window.location.href = 'admin-login.html';
+  });
+
+  async function chargerCommandes() {
+    try {
+      const reponse = await fetch('http://localhost:3000/api/admin/commandes', {
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+
+      if (reponse.status === 401) {
+        localStorage.removeItem('adminToken');
+        window.location.href = 'admin-login.html';
+        return;
+      }
+
+      const commandes = await reponse.json();
+
+      listeCommandes.innerHTML = '';
+
+      if (commandes.length === 0) {
+        listeCommandes.innerHTML = '<p style="color:#999;">Aucune commande pour le moment.</p>';
+        return;
+      }
+
+      commandes.forEach(c => {
+        const articlesTexte = c.lignes.map(l => `${l.quantite}× ${l.produit.nom}`).join(', ');
+        const date = new Date(c.createdAt).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+        const carte = document.createElement('div');
+        carte.style.cssText = 'background:#fff; border-radius:8px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,0.06);';
+        carte.innerHTML = `
+          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+            <div>
+              <strong>${c.nom}</strong> — ${c.telephone}
+              <div style="font-size:12px; color:#999;">${date} · Code: ${c.codeConfirmation}</div>
+            </div>
+            <span style="background:#EFF6FF; color:var(--color-primary); padding:4px 10px; border-radius:12px; font-size:12px; font-weight:600;">${c.typeLivraison}</span>
+          </div>
+          <div style="font-size:14px; color:#555; margin-bottom:8px;">${articlesTexte}</div>
+          <div style="font-weight:700; color:var(--color-primary);">${c.total.toLocaleString('fr-FR')} F CFA</div>
+        `;
+        listeCommandes.appendChild(carte);
+      });
+
+    } catch (erreur) {
+      console.error(erreur);
+    }
+  }
+
+  async function chargerMessages() {
+    const listeMessages = document.getElementById('listeMessages');
+
+    try {
+      const reponse = await fetch('http://localhost:3000/api/admin/messages', {
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+
+      const messages = await reponse.json();
+
+      listeMessages.innerHTML = '';
+
+      if (messages.length === 0) {
+        listeMessages.innerHTML = '<p style="color:#999;">Aucun message pour le moment.</p>';
+        return;
+      }
+
+      messages.forEach(m => {
+        const date = new Date(m.createdAt).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+        const carte = document.createElement('div');
+        carte.style.cssText = 'background:#fff; border-radius:8px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,0.06);';
+        carte.innerHTML = `
+          <div style="margin-bottom:8px;">
+            <strong>${m.nom}</strong> — ${m.telephone} · ${m.email}
+            <div style="font-size:12px; color:#999;">${date}</div>
+          </div>
+          <div style="font-size:14px; color:#555;">${m.message}</div>
+        `;
+        listeMessages.appendChild(carte);
+      });
+
+    } catch (erreur) {
+      console.error(erreur);
+    }
+  }
+
+  chargerCommandes();
+  chargerMessages();
 }

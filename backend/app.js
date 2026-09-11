@@ -268,4 +268,19 @@ app.get('/api/admin/categories', verifierAdmin, async (req, res) => {
   res.json(categories);
 });
 
+app.get('/api/admin/commandes', verifierAdmin, async (req, res) => {
+  const commandes = await prisma.commande.findMany({
+    include: { lignes: { include: { produit: true } } },
+    orderBy: { createdAt: 'desc' },
+  });
+  res.json(commandes);
+});
+
+app.get('/api/admin/messages', verifierAdmin, async (req, res) => {
+  const messages = await prisma.messageContact.findMany({
+    orderBy: { createdAt: 'desc' },
+  });
+  res.json(messages);
+});
+
 module.exports = app;
