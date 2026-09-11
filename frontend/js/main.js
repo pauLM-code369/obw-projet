@@ -1220,7 +1220,8 @@ function initAdminDashboard() {
           <td style="padding:12px 16px; font-size:14px;">${p.categorie.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.prix.toLocaleString('fr-FR')} F CFA</td>
                    <td style="padding:12px 16px; display:flex; gap:6px;">
-            <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" style="padding:6px 12px; font-size:13px;">
+    <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" style="padding:6px 12px; font-size:13px;">
+    <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" style="padding:6px 12px; font-size:13px;">
               <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
             </button>
             <button class="qty-btn btn-toggle" data-id="${p.id}" style="padding:6px 12px; font-size:13px; ${p.actif ? '' : 'background:#FEE2E2; border-color:#FCA5A5;'}">
@@ -1269,7 +1270,9 @@ function initAdminDashboard() {
     document.getElementById('edit-id').value = btn.dataset.id;
     document.getElementById('edit-nom').value = btn.dataset.nom;
     document.getElementById('edit-description').value = btn.dataset.description;
-    document.getElementById('edit-prix').value = btn.dataset.prix;
+        document.getElementById('edit-prix').value = btn.dataset.prix;
+        document.getElementById('edit-image').value = btn.dataset.image;
+    document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
 
     modale.style.display = 'flex';
   });
@@ -1282,7 +1285,9 @@ function initAdminDashboard() {
     const id = document.getElementById('edit-id').value;
     const nom = document.getElementById('edit-nom').value;
     const description = document.getElementById('edit-description').value;
-    const prix = parseInt(document.getElementById('edit-prix').value);
+       const prix = parseInt(document.getElementById('edit-prix').value);
+           const imagePrincipale = document.getElementById('edit-image').value;
+    const imageHover = document.getElementById('edit-image-hover').value;
 
     try {
       const reponse = await fetch(`http://localhost:3000/api/admin/produits/${id}`, {
@@ -1291,7 +1296,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-        body: JSON.stringify({ nom, description, prix }),
+        body: JSON.stringify({ nom, description, prix, imagePrincipale, imageHover }),
       });
 
       if (!reponse.ok) throw new Error('Erreur');
