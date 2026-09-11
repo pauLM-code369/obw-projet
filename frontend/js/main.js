@@ -525,6 +525,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initFormCommande();
   initToggleLivraison();
   initAdminLogin();
+  initAdminDashboard();
 
 });
 
@@ -1171,6 +1172,111 @@ function initAdminLogin() {
       errorEl.style.display = 'block';
       btn.disabled = false;
       btn.innerHTML = original;
+    }
+  });
+}
+
+function initAdminDashboard() {
+  const tableau = document.getElementById('tableauProduits');
+  if (!tableau) return;
+
+  const token = localStorage.getItem('adminToken');
+
+  if (!token) {
+    window.location.href = 'admin-login.html';
+    return;
+  }
+
+  document.getElementById('adminNomAffiche').textContent = localStorage.getItem('adminNom') || '';
+
+  document.getElementById('btnDeconnexion').addEventListener('click', () => {
+    localStorage.removeItem('adminToken');
+    localStorage.removeItem('adminNom');
+    window.location.href = 'admin-login.html';
+  });
+
+  async function chargerProduits() {
+    try {
+      const reponse = await fetch('http://localhost:3000/api/admin/produits', {
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+
+      if (reponse.status === 401) {
+        localStorage.removeItem('adminToken');
+        window.location.href = 'admin-login.html';
+        return;
+      }
+
+      const produits = await reponse.json();
+
+      tableau.innerHTML = '';
+
+      produits.forEach(p => {
+        const tr = document.createElement('tr');
+        tr.style.borderTop = '1px solid #eee';
+        tr.innerHTML = `
+          <td style="padding:12px 16px; font-size:14px;">${p.id}</td>
+          <td style="padding:12px 16px; font-size:14px;">${p.nom}</td>
+          <td style="padding:12px 16px; font-size:14px;">${p.categorie.nom}</td>
+          <td style="padding:12px 16px; font-size:14px;">${p.prix.toLocaleString('fr-FR')} F CFA</td>
+          <td style="padding:12px 16px;">
+            <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" style="padding:6px 12px; font-size:13px;">
+              <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
+            </button>
+          </td>
+        `;
+        tableau.appendChild(tr);
+      });
+
+    } catch (erreur) {
+      console.error(erreur);
+    }
+  }
+
+  chargerProduits();
+
+  const modale = document.getElementById('modaleEdition');
+
+  tableau.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-modifier');
+    if (!btn) return;
+
+    document.getElementById('edit-id').value = btn.dataset.id;
+    document.getElementById('edit-nom').value = btn.dataset.nom;
+    document.getElementById('edit-description').value = btn.dataset.description;
+    document.getElementById('edit-prix').value = btn.dataset.prix;
+
+    modale.style.display = 'flex';
+  });
+
+  document.getElementById('btnAnnulerEdition').addEventListener('click', () => {
+    modale.style.display = 'none';
+  });
+
+  document.getElementById('btnSauvegarderEdition').addEventListener('click', async () => {
+    const id = document.getElementById('edit-id').value;
+    const nom = document.getElementById('edit-nom').value;
+    const description = document.getElementById('edit-description').value;
+    const prix = parseInt(document.getElementById('edit-prix').value);
+
+    try {
+      const reponse = await fetch(`http://localhost:3000/api/admin/produits/${id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + token
+        },
+        body: JSON.stringify({ nom, description, prix }),
+      });
+
+      if (!reponse.ok) throw new Error('Erreur');
+
+      modale.style.display = 'none';
+      chargerProduits();
+
+    } catch (erreur) {
+      console.error(erreur);
+      alert('Erreur lors de la sauvegarde.');
     }
   });
 }

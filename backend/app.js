@@ -185,4 +185,29 @@ app.get('/api/admin/verification', verifierAdmin, (req, res) => {
   res.json({ message: 'Accès autorisé', admin: req.admin });
 });
 
+app.get('/api/admin/produits', verifierAdmin, async (req, res) => {
+  const produits = await prisma.produit.findMany({
+    include: { categorie: true },
+    orderBy: { id: 'asc' },
+  });
+  res.json(produits);
+});
+
+app.put('/api/admin/produits/:id', verifierAdmin, async (req, res) => {
+  const { nom, description, prix, imagePrincipale, imageHover } = req.body;
+
+  try {
+    const produit = await prisma.produit.update({
+      where: { id: parseInt(req.params.id) },
+      data: { nom, description, prix, imagePrincipale, imageHover },
+    });
+
+    res.json(produit);
+
+  } catch (erreur) {
+    console.error(erreur);
+    res.status(500).json({ erreur: 'Erreur lors de la modification' });
+  }
+});
+
 module.exports = app;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPEN Business World — Administration</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+
+<body style="background:#f5f5f5;">
+
+  <header style="background:#fff; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #eee;">
+    <div style="display:flex; align-items:center; gap:12px;">
+      <img src="../images/logo.webp" alt="OPEN Business World" style="height:36px;" />
+      <span style="font-weight:600;">Administration</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:16px;">
+      <span id="adminNomAffiche" style="color:#666; font-size:14px;"></span>
+      <button id="btnDeconnexion" class="qty-btn" style="padding:8px 16px;">
+        <i class="ti ti-logout" aria-hidden="true"></i> Déconnexion
+      </button>
+    </div>
+  </header>
+
+  <main style="max-width:1100px; margin:24px auto; padding:0 24px;">
+
+    <h1 style="font-size:22px; margin-bottom:20px;">Gestion des produits</h1>
+
+    <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="background:#f9fafb; text-align:left;">
+            <th style="padding:12px 16px; font-size:13px; color:#666;">ID</th>
+            <th style="padding:12px 16px; font-size:13px; color:#666;">Nom</th>
+            <th style="padding:12px 16px; font-size:13px; color:#666;">Catégorie</th>
+            <th style="padding:12px 16px; font-size:13px; color:#666;">Prix</th>
+            <th style="padding:12px 16px; font-size:13px; color:#666;">Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableauProduits">
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <!-- Modale d'édition -->
+  <div id="modaleEdition" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:1000;">
+    <div style="background:#fff; border-radius:8px; padding:24px; width:100%; max-width:420px;">
+      <h3 style="margin-bottom:16px;">Modifier le produit</h3>
+
+      <input type="hidden" id="edit-id" />
+
+      <div class="form-group">
+        <label for="edit-nom">Nom</label>
+        <input type="text" id="edit-nom" />
+      </div>
+
+      <div class="form-group">
+        <label for="edit-description">Description</label>
+        <input type="text" id="edit-description" />
+      </div>
+
+      <div class="form-group">
+        <label for="edit-prix">Prix (F CFA)</label>
+        <input type="number" id="edit-prix" />
+      </div>
+
+      <div style="display:flex; gap:10px; margin-top:20px;">
+        <button id="btnAnnulerEdition" class="qty-btn" style="flex:1;">Annuler</button>
+        <button id="btnSauvegarderEdition" class="contact-submit-btn" style="flex:1;">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
