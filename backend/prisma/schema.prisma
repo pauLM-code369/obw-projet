@@ -22,6 +22,7 @@ model Produit {
   nom         String
   description String?
   descriptionLongue String?
+  badgeConnectivite String?
   prix        Int
   imagePrincipale String
   imageHover      String?

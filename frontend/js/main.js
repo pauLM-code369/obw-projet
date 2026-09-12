@@ -657,6 +657,23 @@ function initProductDetail() {
 }
 
 /* ================================================================
+   Afficher le badge sur les cartes produits
+   jai placé n'importe ou
+================================================================ */
+
+function iconeBadgeConnectivite(texte) {
+  if (!texte) return '';
+  const t = texte.toLowerCase();
+
+  let icone = 'ti-antenna-bars-5';
+  if (t.includes('wifi')) icone = 'ti-wifi';
+  else if (t.includes('bluetooth')) icone = 'ti-bluetooth';
+  else if (t.includes('usb')) icone = 'ti-usb';
+
+  return `<span class="badge-connectivite"><i class="ti ${icone}" aria-hidden="true"></i> ${texte}</span>`;
+}
+
+/* ================================================================
    11. CHARGEMENT DYNAMIQUE DES PRODUITS DEPUIS L'API
 ================================================================ */
 
@@ -684,7 +701,9 @@ async function chargerProduitsImprimantes() {
         <div class="product-img">
           <img src="../images/produits/imprimantes/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
           <img src="../images/produits/imprimantes/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
+        
         <div class="product-info">
           <div class="product-name">${produit.nom}</div>
           <div class="product-spec">${produit.description || ''}</div>
@@ -1277,8 +1296,8 @@ function initAdminDashboard() {
           <td style="padding:12px 16px; font-size:14px;">${p.categorie.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.prix.toLocaleString('fr-FR')} F CFA</td>
           <td style="padding:12px 16px; display:flex; gap:6px;">
-    <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-description-longue="${p.descriptionLongue || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" style="padding:6px 12px; font-size:13px;">
-              <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
+          <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-description-longue="${p.descriptionLongue || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" data-badge="${p.badgeConnectivite || ''}" style="padding:6px 12px; font-size:13px;">
+           <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
             </button>
             <button class="qty-btn btn-toggle" data-id="${p.id}" style="padding:6px 12px; font-size:13px; ${p.actif ? '' : 'background:#FEE2E2; border-color:#FCA5A5;'}">
               <i class="ti ti-${p.actif ? 'eye-off' : 'eye'}" aria-hidden="true"></i> ${p.actif ? 'Desactiver' : 'Reactiver'}
@@ -1305,6 +1324,7 @@ function initAdminDashboard() {
     document.getElementById('edit-nom').value = btn.dataset.nom;
     document.getElementById('edit-description').value = btn.dataset.description;
     document.getElementById('edit-description-longue').value = btn.dataset.descriptionLongue;
+    document.getElementById('edit-badge').value = btn.dataset.badge;
     document.getElementById('edit-prix').value = btn.dataset.prix;
     document.getElementById('edit-image').value = btn.dataset.image;
     document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
@@ -1343,6 +1363,7 @@ function initAdminDashboard() {
     const nom = document.getElementById('edit-nom').value;
     const description = document.getElementById('edit-description').value;
     const descriptionLongue = document.getElementById('edit-description-longue').value;
+    const badgeConnectivite = document.getElementById('edit-badge').value.trim();
     const prix = parseInt(document.getElementById('edit-prix').value);
     const imagePrincipale = document.getElementById('edit-image').value;
     const imageHover = document.getElementById('edit-image-hover').value;
@@ -1354,7 +1375,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-       body: JSON.stringify({ nom, description, descriptionLongue, prix, imagePrincipale, imageHover }),
+        body: JSON.stringify({ nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite }),
       });
 
       if (!reponse.ok) throw new Error('Erreur');
@@ -1404,6 +1425,7 @@ function initAdminDashboard() {
     const nom = document.getElementById('add-nom').value.trim();
     const description = document.getElementById('add-description').value.trim();
     const descriptionLongue = document.getElementById('add-description-longue').value.trim();
+    const badgeConnectivite = document.getElementById('add-badge').value.trim();
     const prix = document.getElementById('add-prix').value;
     const categorieId = document.getElementById('add-categorie').value;
     const imagePrincipale = document.getElementById('add-image').value.trim();
@@ -1421,7 +1443,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-        body: JSON.stringify({ nom, description, descriptionLongue, prix, categorieId, imagePrincipale, imageHover }),
+       body: JSON.stringify({ nom, description, descriptionLongue, prix, categorieId, imagePrincipale, imageHover, badgeConnectivite }), 
       });
 
       if (!reponse.ok) throw new Error('Erreur');
