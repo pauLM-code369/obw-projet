@@ -8,59 +8,392 @@
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body.admin-body {
+      background: #F4F6F9;
+      margin: 0;
+      font-family: inherit;
+    }
+
+    .admin-topbar {
+      height: 4px;
+      background: var(--color-primary);
+    }
+
+    .admin-header {
+      background: #fff;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid #EAECEF;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .admin-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .admin-brand img { height: 32px; }
+
+    .admin-brand span {
+      font-weight: 700;
+      font-size: 14px;
+      color: #333;
+      border-left: 1px solid #ddd;
+      padding-left: 10px;
+    }
+
+    .admin-nav {
+      display: flex;
+      gap: 6px;
+      background: #F4F6F9;
+      padding: 4px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+    }
+
+    .admin-nav a {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: #666;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .admin-nav a.active {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    .admin-nav a:not(.active):hover {
+      background: #E9ECF2;
+    }
+
+    .admin-user {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .admin-user-name {
+      font-size: 13px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .admin-user-name strong { color: #333; }
+
+    .btn-deconnexion {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff;
+      border: 1px solid #E5484D;
+      color: #E5484D;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .btn-deconnexion:hover {
+      background: #E5484D;
+      color: #fff;
+    }
+
+    .admin-main {
+      max-width: 1150px;
+      margin: 28px auto;
+      padding: 0 20px;
+    }
+
+    .admin-page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .admin-page-title {
+      font-size: 21px;
+      font-weight: 700;
+      color: #222;
+      margin: 0;
+    }
+
+    .admin-page-title span {
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      color: #888;
+      margin-top: 2px;
+    }
+
+    .btn-ajouter {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 11px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.15s ease;
+    }
+
+    .btn-ajouter:hover { transform: translateY(-1px); }
+
+    .admin-table-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      border: 1px solid #EFEFEF;
+    }
+
+    .admin-table-scroll {
+      overflow-x: auto;
+    }
+
+    table.admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+    }
+
+    table.admin-table thead tr {
+      background: #FAFBFC;
+      text-align: left;
+    }
+
+    table.admin-table th {
+      padding: 13px 16px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #888;
+      font-weight: 600;
+      border-bottom: 1px solid #EFEFEF;
+    }
+
+    table.admin-table td {
+      padding: 14px 16px;
+      font-size: 14px;
+      color: #333;
+      border-top: 1px solid #F2F2F2;
+    }
+
+    table.admin-table tbody tr {
+      transition: background 0.1s ease;
+    }
+
+    table.admin-table tbody tr:hover {
+      background: #FAFBFF;
+    }
+
+    .prix-badge {
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    .action-cell {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border-radius: 7px;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 7px 12px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+
+    .btn-action.modifier {
+      background: #EFF6FF;
+      color: var(--color-primary);
+    }
+
+    .btn-action.modifier:hover { background: #DCEBFF; }
+
+    .btn-action.actif {
+      background: #FEF2F2;
+      color: #DC2626;
+    }
+
+    .btn-action.actif:hover { background: #FEE2E2; }
+
+    .btn-action.inactif {
+      background: #F0FDF4;
+      color: #16A34A;
+    }
+
+    .btn-action.inactif:hover { background: #DCFCE7; }
+
+    /* Modales */
+    .admin-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 24, 32, 0.55);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 16px;
+    }
+
+    .admin-modal-box {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      width: 100%;
+      max-width: 440px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    }
+
+    .admin-modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #222;
+      margin: 0 0 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .admin-modal-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .btn-annuler {
+      flex: 1;
+      background: #F4F6F9;
+      border: 1px solid #E5E7EB;
+      color: #555;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 11px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-annuler:hover { background: #EBEDF0; }
+
+    .btn-confirmer {
+      flex: 1;
+      background: var(--color-primary);
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 11px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 640px) {
+      .admin-header { padding: 12px 16px; }
+      .admin-brand span { display: none; }
+      .admin-main { padding: 0 14px; }
+      table.admin-table { min-width: 560px; }
+    }
+  </style>
 </head>
 
-<body style="background:#f5f5f5;">
+<body class="admin-body">
 
-   <header style="background:#fff; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #eee; flex-wrap:wrap; gap:12px;">
-    <div style="display:flex; align-items:center; gap:12px;">
-      <img src="../images/logo.webp" alt="OPEN Business World" style="height:36px;" />
-      <span style="font-weight:600;">Administration</span>
+  <div class="admin-topbar"></div>
+
+  <header class="admin-header">
+    <div class="admin-brand">
+      <img src="../images/logo.webp" alt="OPEN Business World" />
+      <span>Administration</span>
     </div>
-    <nav style="display:flex; gap:16px;">
-      <a href="admin-dashboard.html" style="text-decoration:none; color:var(--color-primary); font-weight:600; font-size:14px;">Produits</a>
-      <a href="admin-commandes.html" style="text-decoration:none; color:#666; font-size:14px;">Commandes & Messages</a>
+
+    <nav class="admin-nav">
+      <a href="admin-dashboard.html" class="active">Produits</a>
+      <a href="admin-commandes.html">Commandes &amp; Messages</a>
     </nav>
-    <div style="display:flex; align-items:center; gap:16px;">
-      
-      <span id="adminNomAffiche" style="color:#666; font-size:14px;"></span>
-      <button id="btnDeconnexion" class="qty-btn" style="padding:8px 16px;">
+
+    <div class="admin-user">
+      <span class="admin-user-name">Bonjour, <strong id="adminNomAffiche"></strong></span>
+      <button id="btnDeconnexion" class="btn-deconnexion">
         <i class="ti ti-logout" aria-hidden="true"></i> Déconnexion
       </button>
     </div>
   </header>
 
-  <main style="max-width:1100px; margin:24px auto; padding:0 24px;">
+  <main class="admin-main">
 
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-      <h1 style="font-size:22px;">Gestion des produits</h1>
-      <button id="btnAjouterProduit" class="contact-submit-btn" style="width:auto; padding:10px 20px;">
+    <div class="admin-page-header">
+      <h1 class="admin-page-title">
+        Gestion des produits
+        <span>Modifier, activer/désactiver ou ajouter des produits au catalogue</span>
+      </h1>
+      <button id="btnAjouterProduit" class="btn-ajouter">
         <i class="ti ti-plus" aria-hidden="true"></i> Ajouter un produit
       </button>
     </div>
 
-    <div style="background:#fff; border-radius:8px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-      <table style="width:100%; border-collapse:collapse;">
-        <thead>
-          <tr style="background:#f9fafb; text-align:left;">
-            <th style="padding:12px 16px; font-size:13px; color:#666;">ID</th>
-            <th style="padding:12px 16px; font-size:13px; color:#666;">Nom</th>
-            <th style="padding:12px 16px; font-size:13px; color:#666;">Catégorie</th>
-            <th style="padding:12px 16px; font-size:13px; color:#666;">Prix</th>
-            <th style="padding:12px 16px; font-size:13px; color:#666;">Action</th>
-          </tr>
-        </thead>
-        <tbody id="tableauProduits">
-        </tbody>
-      </table>
+    <div class="admin-table-card">
+      <div class="admin-table-scroll">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Catégorie</th>
+              <th>Prix</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableauProduits">
+          </tbody>
+        </table>
+      </div>
     </div>
 
   </main>
 
   <!-- Modale d'édition -->
-  <div id="modaleEdition" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:1000;">
-    <div style="background:#fff; border-radius:8px; padding:24px; width:100%; max-width:420px;">
-      <h3 style="margin-bottom:16px;">Modifier le produit</h3>
+  <div id="modaleEdition" class="admin-modal-overlay">
+    <div class="admin-modal-box">
+      <h3 class="admin-modal-title"><i class="ti ti-pencil" aria-hidden="true" style="color:var(--color-primary);"></i> Modifier le produit</h3>
 
       <input type="hidden" id="edit-id" />
 
@@ -69,9 +402,14 @@
         <input type="text" id="edit-nom" />
       </div>
 
+            <div class="form-group">
+        <label for="edit-description">Description courte</label>
+        <input type="text" id="edit-description" placeholder="Ex: Imprimante laser monochrome, réseau" />
+      </div>
+
       <div class="form-group">
-        <label for="edit-description">Description</label>
-        <input type="text" id="edit-description" />
+        <label for="edit-description-longue">Description longue</label>
+        <textarea id="edit-description-longue" rows="4" style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; font-family:inherit; resize:vertical;" placeholder="Description détaillée affichée en bas de la fiche produit"></textarea>
       </div>
 
       <div class="form-group">
@@ -79,36 +417,41 @@
         <input type="number" id="edit-prix" />
       </div>
 
-            <div class="form-group">
+      <div class="form-group">
         <label for="edit-image">Nom du fichier image principale</label>
         <input type="text" id="edit-image" placeholder="ex: hp-laserjet-pro-4003dn.webp" />
       </div>
 
-       <div class="form-group">
+      <div class="form-group">
         <label for="edit-image-hover">Nom du fichier image au survol</label>
         <input type="text" id="edit-image-hover" placeholder="ex: hp-laserjet-pro-4003dn-2.webp" />
       </div>
 
-      <div style="display:flex; gap:10px; margin-top:20px;">
-        <button id="btnAnnulerEdition" class="qty-btn" style="flex:1;">Annuler</button>
-        <button id="btnSauvegarderEdition" class="contact-submit-btn" style="flex:1;">Enregistrer</button>
+      <div class="admin-modal-actions">
+        <button id="btnAnnulerEdition" class="btn-annuler">Annuler</button>
+        <button id="btnSauvegarderEdition" class="btn-confirmer">Enregistrer</button>
       </div>
     </div>
   </div>
 
-    <!-- Modale d'ajout -->
-  <div id="modaleAjout" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:1000;">
-    <div style="background:#fff; border-radius:8px; padding:24px; width:100%; max-width:420px;">
-      <h3 style="margin-bottom:16px;">Ajouter un produit</h3>
+  <!-- Modale d'ajout -->
+  <div id="modaleAjout" class="admin-modal-overlay">
+    <div class="admin-modal-box">
+      <h3 class="admin-modal-title"><i class="ti ti-plus" aria-hidden="true" style="color:var(--color-primary);"></i> Ajouter un produit</h3>
 
       <div class="form-group">
         <label for="add-nom">Nom</label>
         <input type="text" id="add-nom" />
       </div>
 
+        <div class="form-group">
+        <label for="add-description">Description courte</label>
+        <input type="text" id="add-description" placeholder="Ex: Imprimante laser monochrome, réseau" />
+      </div>
+
       <div class="form-group">
-        <label for="add-description">Description</label>
-        <input type="text" id="add-description" />
+        <label for="add-description-longue">Description longue</label>
+        <textarea id="add-description-longue" rows="4" style="width:100%; padding:12px; border-radius:8px; border:1px solid #ddd; font-family:inherit; resize:vertical;" placeholder="Description détaillée affichée en bas de la fiche produit"></textarea>
       </div>
 
       <div class="form-group">
@@ -131,9 +474,9 @@
         <input type="text" id="add-image-hover" placeholder="ex: nouveau-produit-2.webp" />
       </div>
 
-      <div style="display:flex; gap:10px; margin-top:20px;">
-        <button id="btnAnnulerAjout" class="qty-btn" style="flex:1;">Annuler</button>
-        <button id="btnConfirmerAjout" class="contact-submit-btn" style="flex:1;">Créer</button>
+      <div class="admin-modal-actions">
+        <button id="btnAnnulerAjout" class="btn-annuler">Annuler</button>
+        <button id="btnConfirmerAjout" class="btn-confirmer">Créer</button>
       </div>
     </div>
   </div>

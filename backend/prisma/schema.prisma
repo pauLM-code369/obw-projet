@@ -21,6 +21,7 @@ model Produit {
   id          Int       @id @default(autoincrement())
   nom         String
   description String?
+  descriptionLongue String?
   prix        Int
   imagePrincipale String
   imageHover      String?

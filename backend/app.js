@@ -195,12 +195,12 @@ app.get('/api/admin/produits', verifierAdmin, async (req, res) => {
 });
 
 app.put('/api/admin/produits/:id', verifierAdmin, async (req, res) => {
-  const { nom, description, prix, imagePrincipale, imageHover } = req.body;
+  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover } = req.body;
 
   try {
     const produit = await prisma.produit.update({
       where: { id: parseInt(req.params.id) },
-      data: { nom, description, prix, imagePrincipale, imageHover },
+      data: { nom, description, descriptionLongue, prix, imagePrincipale, imageHover },
     });
 
     res.json(produit);
@@ -235,7 +235,7 @@ app.patch('/api/admin/produits/:id/toggle', verifierAdmin, async (req, res) => {
 });
 
 app.post('/api/admin/produits', verifierAdmin, async (req, res) => {
-  const { nom, description, prix, imagePrincipale, imageHover, categorieId } = req.body;
+  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, categorieId } = req.body;
 
   if (!nom || !prix || !imagePrincipale || !categorieId) {
     return res.status(400).json({ erreur: 'Informations manquantes' });
@@ -246,6 +246,7 @@ app.post('/api/admin/produits', verifierAdmin, async (req, res) => {
       data: {
         nom,
         description,
+        descriptionLongue,
         prix: parseInt(prix),
         imagePrincipale,
         imageHover,

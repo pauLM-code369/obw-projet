@@ -337,6 +337,59 @@ function initCartIconLink() {
   });
 }
 
+let promoBarDefaultHTML = null;
+let promoBarFlashTimer = null;
+
+function bloquerBoutonsPanier() {
+  const boutons = document.querySelectorAll('.add-to-cart');
+
+  boutons.forEach(b => {
+    b.disabled = true;
+    b.style.opacity = '0.5';
+    b.style.cursor = 'not-allowed';
+  });
+
+  setTimeout(() => {
+    boutons.forEach(b => {
+      b.disabled = false;
+      b.style.opacity = '';
+      b.style.cursor = '';
+    });
+  }, 2500);
+}
+
+function flashPromoBar(message) {
+  const bar = document.querySelector('.promo-bar');
+  if (!bar) return;
+
+  if (promoBarDefaultHTML === null) {
+    promoBarDefaultHTML = bar.innerHTML;
+  }
+
+  if (promoBarFlashTimer) {
+    clearTimeout(promoBarFlashTimer);
+  }
+
+  bar.style.background = '#22C55E';
+  bar.style.position = 'fixed';
+  bar.style.top = '0';
+  bar.style.left = '0';
+  bar.style.right = '0';
+  bar.style.zIndex = '9999';
+  bar.innerHTML = `<i class="ti ti-circle-check" aria-hidden="true"></i> <strong>${message}</strong>`;
+
+  promoBarFlashTimer = setTimeout(() => {
+    bar.style.background = '';
+    bar.style.position = '';
+    bar.style.top = '';
+    bar.style.left = '';
+    bar.style.right = '';
+    bar.style.zIndex = '';
+    bar.innerHTML = promoBarDefaultHTML;
+    promoBarFlashTimer = null;
+  }, 2500);
+}
+
 
 function initCartButtons() {
 
@@ -359,7 +412,9 @@ function initCartButtons() {
     const image = imgEl ? imgEl.src : '';
     const produitId = btn.dataset.produitId || null;
 
-    ajouterAuPanier(produitId, nom, prix, image);
+   ajouterAuPanier(produitId, nom, prix, image);
+    flashPromoBar('Produit ajouté au panier !');
+    bloquerBoutonsPanier();
 
     const original = btn.innerHTML;
     btn.innerHTML         = '<i class="ti ti-check" aria-hidden="true"></i> Ajouté !';
@@ -460,6 +515,7 @@ function initContactForm() {
 
       btn.innerHTML = '<i class="ti ti-check" aria-hidden="true"></i> Message envoyé !';
       btn.style.background = '#22C55E';
+      flashPromoBar('Votre message a bien été envoyé !');
 
       setTimeout(() => {
         btn.innerHTML = original;
@@ -822,7 +878,7 @@ async function chargerFicheProduit() {
     document.getElementById('breadcrumbProduit').textContent = produit.nom;
     document.getElementById('productName').textContent = produit.nom;
     document.getElementById('productSpec').textContent = produit.description || '';
-    document.getElementById('productDescription').textContent = produit.description || '';
+    document.getElementById('productDescription').textContent = produit.descriptionLongue || produit.description || '';
     document.getElementById('productPrice').textContent = `${produit.prix.toLocaleString('fr-FR')} F CFA`;
     document.querySelector('.product-detail-cta').dataset.produitId = produit.id;
 
@@ -1221,7 +1277,7 @@ function initAdminDashboard() {
           <td style="padding:12px 16px; font-size:14px;">${p.categorie.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.prix.toLocaleString('fr-FR')} F CFA</td>
           <td style="padding:12px 16px; display:flex; gap:6px;">
-            <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" style="padding:6px 12px; font-size:13px;">
+    <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-description-longue="${p.descriptionLongue || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" style="padding:6px 12px; font-size:13px;">
               <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
             </button>
             <button class="qty-btn btn-toggle" data-id="${p.id}" style="padding:6px 12px; font-size:13px; ${p.actif ? '' : 'background:#FEE2E2; border-color:#FCA5A5;'}">
@@ -1248,6 +1304,7 @@ function initAdminDashboard() {
     document.getElementById('edit-id').value = btn.dataset.id;
     document.getElementById('edit-nom').value = btn.dataset.nom;
     document.getElementById('edit-description').value = btn.dataset.description;
+    document.getElementById('edit-description-longue').value = btn.dataset.descriptionLongue;
     document.getElementById('edit-prix').value = btn.dataset.prix;
     document.getElementById('edit-image').value = btn.dataset.image;
     document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
@@ -1285,6 +1342,7 @@ function initAdminDashboard() {
     const id = document.getElementById('edit-id').value;
     const nom = document.getElementById('edit-nom').value;
     const description = document.getElementById('edit-description').value;
+    const descriptionLongue = document.getElementById('edit-description-longue').value;
     const prix = parseInt(document.getElementById('edit-prix').value);
     const imagePrincipale = document.getElementById('edit-image').value;
     const imageHover = document.getElementById('edit-image-hover').value;
@@ -1296,7 +1354,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-        body: JSON.stringify({ nom, description, prix, imagePrincipale, imageHover }),
+       body: JSON.stringify({ nom, description, descriptionLongue, prix, imagePrincipale, imageHover }),
       });
 
       if (!reponse.ok) throw new Error('Erreur');
@@ -1345,6 +1403,7 @@ function initAdminDashboard() {
   document.getElementById('btnConfirmerAjout').addEventListener('click', async () => {
     const nom = document.getElementById('add-nom').value.trim();
     const description = document.getElementById('add-description').value.trim();
+    const descriptionLongue = document.getElementById('add-description-longue').value.trim();
     const prix = document.getElementById('add-prix').value;
     const categorieId = document.getElementById('add-categorie').value;
     const imagePrincipale = document.getElementById('add-image').value.trim();
@@ -1362,7 +1421,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-        body: JSON.stringify({ nom, description, prix, categorieId, imagePrincipale, imageHover }),
+        body: JSON.stringify({ nom, description, descriptionLongue, prix, categorieId, imagePrincipale, imageHover }),
       });
 
       if (!reponse.ok) throw new Error('Erreur');
@@ -1415,26 +1474,27 @@ function initAdminCommandes() {
       listeCommandes.innerHTML = '';
 
       if (commandes.length === 0) {
-        listeCommandes.innerHTML = '<p style="color:#999;">Aucune commande pour le moment.</p>';
+        listeCommandes.innerHTML = '<div class="admin-empty">Aucune commande pour le moment.</div>';
         return;
       }
 
       commandes.forEach(c => {
         const articlesTexte = c.lignes.map(l => `${l.quantite}× ${l.produit.nom}`).join(', ');
         const date = new Date(c.createdAt).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+        const classeLivraison = c.typeLivraison === 'Retrait' ? 'badge-livraison retrait' : 'badge-livraison';
 
         const carte = document.createElement('div');
-        carte.style.cssText = 'background:#fff; border-radius:8px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,0.06);';
+        carte.className = 'commande-card';
         carte.innerHTML = `
-          <div style="display:flex; justify-content:space-between; align-items:start; margin-bottom:8px;">
+          <div class="commande-top">
             <div>
-              <strong>${c.nom}</strong> — ${c.telephone}
-              <div style="font-size:12px; color:#999;">${date} · Code: ${c.codeConfirmation}</div>
+              <div class="commande-client">${c.nom} — ${c.telephone}</div>
+              <div class="commande-meta">${date} · Code: ${c.codeConfirmation}</div>
             </div>
-            <span style="background:#EFF6FF; color:var(--color-primary); padding:4px 10px; border-radius:12px; font-size:12px; font-weight:600;">${c.typeLivraison}</span>
+            <span class="${classeLivraison}">${c.typeLivraison}</span>
           </div>
-          <div style="font-size:14px; color:#555; margin-bottom:8px;">${articlesTexte}</div>
-          <div style="font-weight:700; color:var(--color-primary);">${c.total.toLocaleString('fr-FR')} F CFA</div>
+          <div class="commande-articles">${articlesTexte}</div>
+          <div class="commande-total">${c.total.toLocaleString('fr-FR')} F CFA</div>
         `;
         listeCommandes.appendChild(carte);
       });
@@ -1457,7 +1517,7 @@ function initAdminCommandes() {
       listeMessages.innerHTML = '';
 
       if (messages.length === 0) {
-        listeMessages.innerHTML = '<p style="color:#999;">Aucun message pour le moment.</p>';
+        listeMessages.innerHTML = '<div class="admin-empty">Aucun message pour le moment.</div>';
         return;
       }
 
@@ -1465,13 +1525,14 @@ function initAdminCommandes() {
         const date = new Date(m.createdAt).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
 
         const carte = document.createElement('div');
-        carte.style.cssText = 'background:#fff; border-radius:8px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,0.06);';
+        carte.className = 'message-card';
         carte.innerHTML = `
-          <div style="margin-bottom:8px;">
-            <strong>${m.nom}</strong> — ${m.telephone} · ${m.email}
-            <div style="font-size:12px; color:#999;">${date}</div>
+          <div class="message-top">
+            <div class="message-client">${m.nom}</div>
+            <div class="message-coords">${m.telephone} · ${m.email}</div>
+            <div class="message-meta">${date}</div>
           </div>
-          <div style="font-size:14px; color:#555;">${m.message}</div>
+          <div class="message-body">${m.message}</div>
         `;
         listeMessages.appendChild(carte);
       });

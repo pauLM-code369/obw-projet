@@ -8,36 +8,294 @@
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body.admin-body {
+      background: #F4F6F9;
+      margin: 0;
+      font-family: inherit;
+    }
+
+    .admin-topbar {
+      height: 4px;
+      background: var(--color-primary);
+    }
+
+    .admin-header {
+      background: #fff;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid #EAECEF;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .admin-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .admin-brand img { height: 32px; }
+
+    .admin-brand span {
+      font-weight: 700;
+      font-size: 14px;
+      color: #333;
+      border-left: 1px solid #ddd;
+      padding-left: 10px;
+    }
+
+    .admin-nav {
+      display: flex;
+      gap: 6px;
+      background: #F4F6F9;
+      padding: 4px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+    }
+
+    .admin-nav a {
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: #666;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .admin-nav a.active {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    .admin-nav a:not(.active):hover {
+      background: #E9ECF2;
+    }
+
+    .admin-user {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .admin-user-name {
+      font-size: 13px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .admin-user-name strong { color: #333; }
+
+    .btn-deconnexion {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff;
+      border: 1px solid #E5484D;
+      color: #E5484D;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .btn-deconnexion:hover {
+      background: #E5484D;
+      color: #fff;
+    }
+
+    .admin-main {
+      max-width: 1100px;
+      margin: 28px auto;
+      padding: 0 20px 40px;
+    }
+
+    .admin-section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 19px;
+      font-weight: 700;
+      color: #222;
+      margin: 0 0 16px;
+    }
+
+    .admin-section-title .count-pill {
+      background: #EFF6FF;
+      color: var(--color-primary);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .admin-empty {
+      background: #fff;
+      border: 1px dashed #E0E3E8;
+      border-radius: 10px;
+      padding: 24px;
+      text-align: center;
+      color: #999;
+      font-size: 14px;
+    }
+
+    .commande-card, .message-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border: 1px solid #F0F0F0;
+    }
+
+    .commande-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .commande-client {
+      font-weight: 700;
+      color: #222;
+      font-size: 14.5px;
+    }
+
+    .commande-meta {
+      font-size: 12px;
+      color: #999;
+      margin-top: 2px;
+    }
+
+    .badge-livraison {
+      background: #EFF6FF;
+      color: var(--color-primary);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .badge-livraison.retrait {
+      background: #FFF7ED;
+      color: #C2410C;
+    }
+
+    .commande-articles {
+      font-size: 13.5px;
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .commande-total {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--color-primary);
+      padding-top: 10px;
+      border-top: 1px solid #F2F2F2;
+    }
+
+    .message-top {
+      margin-bottom: 8px;
+    }
+
+    .message-client {
+      font-weight: 700;
+      color: #222;
+      font-size: 14.5px;
+    }
+
+    .message-coords {
+      font-size: 12.5px;
+      color: #888;
+    }
+
+    .message-meta {
+      font-size: 12px;
+      color: #bbb;
+      margin-top: 2px;
+    }
+
+    .message-body {
+      font-size: 13.5px;
+      color: #444;
+      line-height: 1.5;
+      background: #FAFBFC;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-top: 6px;
+    }
+
+    .admin-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .admin-header { padding: 12px 16px; }
+      .admin-brand span { display: none; }
+      .admin-main { padding: 0 14px 32px; }
+    }
+  </style>
 </head>
 
-<body style="background:#f5f5f5;">
+<body class="admin-body">
 
-  <header style="background:#fff; padding:16px 24px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #eee; flex-wrap:wrap; gap:12px;">
-    <div style="display:flex; align-items:center; gap:12px;">
-      <img src="../images/logo.webp" alt="OPEN Business World" style="height:36px;" />
-      <span style="font-weight:600;">Administration</span>
+  <div class="admin-topbar"></div>
+
+  <header class="admin-header">
+    <div class="admin-brand">
+      <img src="../images/logo.webp" alt="OPEN Business World" />
+      <span>Administration</span>
     </div>
-    <nav style="display:flex; gap:16px;">
-      <a href="admin-dashboard.html" style="text-decoration:none; color:#666; font-size:14px;">Produits</a>
-      <a href="admin-commandes.html" style="text-decoration:none; color:var(--color-primary); font-weight:600; font-size:14px;">Commandes & Messages</a>
+
+    <nav class="admin-nav">
+      <a href="admin-dashboard.html">Produits</a>
+      <a href="admin-commandes.html" class="active">Commandes &amp; Messages</a>
     </nav>
-    <div style="display:flex; align-items:center; gap:16px;">
-      <span id="adminNomAffiche" style="color:#666; font-size:14px;"></span>
-      <button id="btnDeconnexion" class="qty-btn" style="padding:8px 16px;">
+
+    <div class="admin-user">
+      <span class="admin-user-name">Bonjour, <strong id="adminNomAffiche"></strong></span>
+      <button id="btnDeconnexion" class="btn-deconnexion">
         <i class="ti ti-logout" aria-hidden="true"></i> Déconnexion
       </button>
     </div>
   </header>
 
-  <main style="max-width:1100px; margin:24px auto; padding:0 24px;">
+  <main class="admin-main">
 
-    <h1 style="font-size:22px; margin-bottom:20px;">Commandes récentes</h1>
+    <h1 class="admin-section-title">
+      <i class="ti ti-shopping-cart" aria-hidden="true" style="color:var(--color-primary);"></i>
+      Commandes récentes
+    </h1>
 
-    <div id="listeCommandes" style="display:flex; flex-direction:column; gap:12px; margin-bottom:40px;"></div>
+    <div id="listeCommandes" class="admin-list" style="margin-bottom:44px;"></div>
 
-    <h1 style="font-size:22px; margin-bottom:20px;">Messages de contact</h1>
+    <h1 class="admin-section-title">
+      <i class="ti ti-message" aria-hidden="true" style="color:var(--color-primary);"></i>
+      Messages de contact
+    </h1>
 
-    <div id="listeMessages" style="display:flex; flex-direction:column; gap:12px;"></div>
+    <div id="listeMessages" class="admin-list"></div>
 
   </main>
 
