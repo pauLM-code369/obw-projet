@@ -218,11 +218,20 @@ ul     { list-style: none; }
 
 .dot-badge {
   position: absolute;
-  top: 5px; right: 7px;
-  width: 8px; height: 8px;
-  background: #EF4444;
+  top: -6px; right: -8px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  background: #8bf6e9;
   border-radius: 50%;
-  border: 2px solid #FFF;
+  border: 2px solid #3d85ce;
+  color: #2d2c2c;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .divider-v {
