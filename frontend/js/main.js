@@ -299,15 +299,15 @@ function initMobileMenu() {
    4. BOUTONS "AJOUTER AU PANIER"
 ================================================================ */
 
-function ajouterAuPanier(produitId, nom, prix, image) {
+function ajouterAuPanier(produitId, nom, prix, image, quantite = 1) {
   let panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
 
   const existant = panier.find(item => item.produitId === produitId);
 
   if (existant) {
-    existant.quantite += 1;
+    existant.quantite += quantite;
   } else {
-    panier.push({ produitId, nom, prix, image, quantite: 1 });
+    panier.push({ produitId, nom, prix, image, quantite });
   }
 
   localStorage.setItem('panierOBW', JSON.stringify(panier));
@@ -414,7 +414,10 @@ function initCartButtons() {
     const image = imgEl ? imgEl.src : '';
     const produitId = btn.dataset.produitId || null;
 
-   ajouterAuPanier(produitId, nom, prix, image);
+    const qtyEl = document.getElementById('qtyValue');
+    const quantite = qtyEl ? (parseInt(qtyEl.textContent) || 1) : 1;
+
+   ajouterAuPanier(produitId, nom, prix, image, quantite);
     flashPromoBar('Produit ajouté au panier !');
     bloquerBoutonsPanier();
 
