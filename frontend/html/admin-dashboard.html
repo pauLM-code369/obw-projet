@@ -427,9 +427,20 @@
         <input type="text" id="edit-image-hover" placeholder="ex: hp-laserjet-pro-4003dn-2.webp" />
       </div>
 
-      <div class="form-group">
+        <div class="form-group">
         <label for="edit-badge">Badge connectivité (optionnel)</label>
         <input type="text" id="edit-badge" placeholder="ex: WiFi, Bluetooth, Sans fil, USB" />
+      </div>
+
+      <div class="form-group">
+        <label>Photos supplémentaires (galerie)</label>
+        <div id="listeImagesSupp" style="display:flex; flex-direction:column; gap:6px; margin-bottom:10px;"></div>
+        <div style="display:flex; gap:8px;">
+          <input type="text" id="nouvelle-image-nom" placeholder="ex: produit-vue3.webp" style="flex:1; padding:10px; border-radius:8px; border:1px solid #ddd;" />
+          <button id="btnAjouterImageSupp" type="button" class="btn-annuler" style="flex:none; padding:10px 16px;">
+            <i class="ti ti-plus" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
 
       <div class="admin-modal-actions">

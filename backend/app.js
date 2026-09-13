@@ -42,7 +42,10 @@ app.get('/api/produits', async (req, res) => {
 app.get('/api/produits/:id', async (req, res) => {
   const produit = await prisma.produit.findUnique({
     where: { id: parseInt(req.params.id) },
-    include: { categorie: true },
+    include: {
+      categorie: true,
+      images: { orderBy: { ordre: 'asc' } },
+    },
   });
 
   if (!produit) {
@@ -188,7 +191,10 @@ app.get('/api/admin/verification', verifierAdmin, (req, res) => {
 
 app.get('/api/admin/produits', verifierAdmin, async (req, res) => {
   const produits = await prisma.produit.findMany({
-    include: { categorie: true },
+    include: {
+      categorie: true,
+      images: { orderBy: { ordre: 'asc' } },
+    },
     orderBy: { id: 'asc' },
   });
   res.json(produits);
@@ -284,5 +290,48 @@ app.get('/api/admin/messages', verifierAdmin, async (req, res) => {
   });
   res.json(messages);
 });
+
+app.post('/api/admin/produits/:id/images', verifierAdmin, async (req, res) => {
+  const { nomFichier } = req.body;
+
+  if (!nomFichier) {
+    return res.status(400).json({ erreur: 'Nom de fichier requis' });
+  }
+
+  try {
+    const dernierOrdre = await prisma.imageProduit.count({
+      where: { produitId: parseInt(req.params.id) },
+    });
+
+    const image = await prisma.imageProduit.create({
+      data: {
+        nomFichier,
+        ordre: dernierOrdre,
+        produitId: parseInt(req.params.id),
+      },
+    });
+
+    res.status(201).json(image);
+
+  } catch (erreur) {
+    console.error(erreur);
+    res.status(500).json({ erreur: 'Erreur lors de l\'ajout de l\'image' });
+  }
+});
+
+app.delete('/api/admin/images/:id', verifierAdmin, async (req, res) => {
+  try {
+    await prisma.imageProduit.delete({
+      where: { id: parseInt(req.params.id) },
+    });
+
+    res.json({ succes: true });
+
+  } catch (erreur) {
+    console.error(erreur);
+    res.status(500).json({ erreur: 'Erreur lors de la suppression' });
+  }
+});
+
 
 module.exports = app;

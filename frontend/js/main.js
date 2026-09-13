@@ -13,26 +13,30 @@
    1. BARRE D'ANNONCE DYNAMIQUE
 ================================================================ */
 
-function initPromoBar() {
+const promoBarMessages = [
+  'Bienvenue sur OPEN Business World, votre partenaire High-Tech',
+  'Livraison rapide, chap chap !',
+  'Ouverture du point Plateau — Commandez et retirez en 48h',
+  '<a href="https://wa.me/2250501692626" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Appelez le 05 01 69 26 26 pour commander — Livraison rapide avec reçu et garantie</a>'
+];
 
+let promoBarIndex = 0;
+let promoBarPaused = false;
+
+function afficherMessagePromoBar() {
+  const bar = document.querySelector('.promo-bar');
+  if (!bar || promoBarPaused) return;
+
+  bar.innerHTML = `<i class="ti ti-tag" aria-hidden="true"></i> <span>${promoBarMessages[promoBarIndex]}</span>`;
+  promoBarIndex = (promoBarIndex + 1) % promoBarMessages.length;
+}
+
+function initPromoBar() {
   const bar = document.querySelector('.promo-bar');
   if (!bar) return;
 
-  const product = bar.dataset.product || 'Offre spéciale';
-  const price   = bar.dataset.price   || '';
-  const date    = bar.dataset.date    || '';
-  const link    = bar.dataset.link    || '#';
-  const cta     = bar.dataset.cta     || "Profiter de l'offre";
-
-  bar.innerHTML = `
-    <i class="ti ti-tag" aria-hidden="true"></i>
-    <strong>${product}</strong>
-    ${price ? `<span>— ${price}</span>` : ''}
-    ${date  ? `<span>· Offre valable avant le ${date}</span>` : ''}
-        <a href="${link}" class="promo-pill">
-      <i class="ti ti-bolt" aria-hidden="true"></i> ${cta}
-    </a>
-  `;
+  afficherMessagePromoBar();
+  setInterval(afficherMessagePromoBar, 6000);
 }
 
 
@@ -337,7 +341,6 @@ function initCartIconLink() {
   });
 }
 
-let promoBarDefaultHTML = null;
 let promoBarFlashTimer = null;
 
 function bloquerBoutonsPanier() {
@@ -362,9 +365,7 @@ function flashPromoBar(message) {
   const bar = document.querySelector('.promo-bar');
   if (!bar) return;
 
-  if (promoBarDefaultHTML === null) {
-    promoBarDefaultHTML = bar.innerHTML;
-  }
+  promoBarPaused = true;
 
   if (promoBarFlashTimer) {
     clearTimeout(promoBarFlashTimer);
@@ -385,7 +386,8 @@ function flashPromoBar(message) {
     bar.style.left = '';
     bar.style.right = '';
     bar.style.zIndex = '';
-    bar.innerHTML = promoBarDefaultHTML;
+    promoBarPaused = false;
+    afficherMessagePromoBar();
     promoBarFlashTimer = null;
   }, 2500);
 }
@@ -628,15 +630,17 @@ function initSubcatTabs() {
 
 function initProductDetail() {
 
-  const mainImg = document.getElementById('galleryMainImg');
-  const thumbs  = document.querySelectorAll('.thumb');
+  const conteneurThumbs = document.getElementById('galleryThumbsContainer');
+  if (!conteneurThumbs) return;
 
-  thumbs.forEach(thumb => {
-    thumb.addEventListener('click', () => {
-      thumbs.forEach(t => t.classList.remove('active'));
-      thumb.classList.add('active');
-      if (mainImg) mainImg.src = thumb.src;
-    });
+  conteneurThumbs.addEventListener('click', (e) => {
+    const thumb = e.target.closest('.thumb');
+    if (!thumb) return;
+
+    const mainImg = document.getElementById('galleryMainImg');
+    conteneurThumbs.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
+    if (mainImg) mainImg.src = thumb.src;
   });
 
   const qtyValue = document.getElementById('qtyValue');
@@ -703,7 +707,7 @@ async function chargerProduitsImprimantes() {
           <img src="../images/produits/imprimantes/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
           ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
-        
+
         <div class="product-info">
           <div class="product-name">${produit.nom}</div>
           <div class="product-spec">${produit.description || ''}</div>
@@ -904,12 +908,27 @@ async function chargerFicheProduit() {
     const imgPrincipale = `../images/produits/${dossier}/${produit.imagePrincipale}`;
     const imgHover = `../images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}`;
 
-    document.getElementById('galleryMainImg').src = imgPrincipale;
+    const toutesLesImages = [imgPrincipale];
+    if (produit.imageHover) toutesLesImages.push(imgHover);
+    if (produit.images && produit.images.length > 0) {
+      produit.images.forEach(img => {
+        toutesLesImages.push(`../images/produits/${dossier}/${img.nomFichier}`);
+      });
+    }
+
+    document.getElementById('galleryMainImg').src = toutesLesImages[0];
     document.getElementById('galleryMainImg').alt = produit.nom;
-    document.getElementById('thumbImg1').src = imgPrincipale;
-    document.getElementById('thumbImg1').alt = produit.nom;
-    document.getElementById('thumbImg2').src = imgHover;
-    document.getElementById('thumbImg2').alt = produit.nom;
+
+    const conteneurThumbs = document.getElementById('galleryThumbsContainer');
+    conteneurThumbs.innerHTML = '';
+
+    toutesLesImages.forEach((src, index) => {
+      const thumb = document.createElement('img');
+      thumb.src = src;
+      thumb.alt = produit.nom;
+      thumb.className = index === 0 ? 'thumb active' : 'thumb';
+      conteneurThumbs.appendChild(thumb);
+    });
 
   } catch (erreur) {
     console.error('Erreur lors du chargement du produit :', erreur);
@@ -1312,6 +1331,96 @@ function initAdminDashboard() {
     }
   }
 
+  async function chargerImagesSupp(produitId) {
+    const conteneur = document.getElementById('listeImagesSupp');
+    conteneur.innerHTML = 'Chargement...';
+    conteneur.dataset.produitId = produitId;
+
+    try {
+      const reponse = await fetch(`http://localhost:3000/api/admin/produits`, {
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+      const produits = await reponse.json();
+      const produit = produits.find(p => p.id === parseInt(produitId));
+
+      conteneur.innerHTML = '';
+
+      if (!produit || !produit.images || produit.images.length === 0) {
+        conteneur.innerHTML = '<div style="color:#999; font-size:13px;">Aucune photo supplémentaire.</div>';
+        return;
+      }
+
+      produit.images.forEach(img => {
+        const ligne = document.createElement('div');
+        ligne.style.cssText = 'display:flex; justify-content:space-between; align-items:center; background:#F9FAFB; padding:8px 10px; border-radius:6px; font-size:13px;';
+        ligne.innerHTML = `
+          <span>${img.nomFichier}</span>
+          <button type="button" class="btn-supprimer-image" data-image-id="${img.id}" style="background:none; border:none; color:#EF4444; cursor:pointer;">
+            <i class="ti ti-trash" aria-hidden="true"></i>
+          </button>
+        `;
+        conteneur.appendChild(ligne);
+      });
+
+    } catch (erreur) {
+      console.error(erreur);
+      conteneur.innerHTML = '<div style="color:#EF4444; font-size:13px;">Erreur de chargement.</div>';
+    }
+  }
+
+  document.getElementById('btnAjouterImageSupp').addEventListener('click', async () => {
+    const conteneur = document.getElementById('listeImagesSupp');
+    const produitId = conteneur.dataset.produitId;
+    const nomFichierInput = document.getElementById('nouvelle-image-nom');
+    const nomFichier = nomFichierInput.value.trim();
+
+    if (!nomFichier || !produitId) return;
+
+    try {
+      const reponse = await fetch(`http://localhost:3000/api/admin/produits/${produitId}/images`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + token
+        },
+        body: JSON.stringify({ nomFichier }),
+      });
+
+      if (!reponse.ok) throw new Error('Erreur');
+
+      nomFichierInput.value = '';
+      chargerImagesSupp(produitId);
+
+    } catch (erreur) {
+      console.error(erreur);
+      alert('Erreur lors de l\'ajout de l\'image.');
+    }
+  });
+
+  document.getElementById('listeImagesSupp').addEventListener('click', async (e) => {
+    const btn = e.target.closest('.btn-supprimer-image');
+    if (!btn) return;
+
+    const imageId = btn.dataset.imageId;
+    const conteneur = document.getElementById('listeImagesSupp');
+    const produitId = conteneur.dataset.produitId;
+
+    try {
+      const reponse = await fetch(`http://localhost:3000/api/admin/images/${imageId}`, {
+        method: 'DELETE',
+        headers: { 'Authorization': 'Bearer ' + token }
+      });
+
+      if (!reponse.ok) throw new Error('Erreur');
+
+      chargerImagesSupp(produitId);
+
+    } catch (erreur) {
+      console.error(erreur);
+      alert('Erreur lors de la suppression.');
+    }
+  });
+
   chargerProduits();
 
   const modale = document.getElementById('modaleEdition');
@@ -1329,6 +1438,7 @@ function initAdminDashboard() {
     document.getElementById('edit-image').value = btn.dataset.image;
     document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
 
+    chargerImagesSupp(btn.dataset.id);
     modale.style.display = 'flex';
   });
 

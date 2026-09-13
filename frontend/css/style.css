@@ -2921,3 +2921,4 @@ ul     { list-style: none; }
 @media (max-width: 800px) {
   .product-detail-main { grid-template-columns: 1fr; }
 }
+

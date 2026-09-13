@@ -30,6 +30,7 @@ model Produit {
   categorieId Int
   actif       Boolean   @default(true)
   lignesCommande LigneCommande[]
+  images ImageProduit[]
   createdAt   DateTime  @default(now())
 }
 
@@ -74,4 +75,12 @@ model Admin {
   email    String @unique
   motDePasse String
   nom      String
+}
+
+model ImageProduit {
+  id         Int      @id @default(autoincrement())
+  nomFichier String
+  ordre      Int      @default(0)
+  produit    Produit  @relation(fields: [produitId], references: [id])
+  produitId  Int
 }
