@@ -585,6 +585,8 @@ document.addEventListener('DOMContentLoaded', function () {
   initAdminLogin();
   initAdminDashboard();
   initAdminCommandes();
+  chargerNouveauxArrivages();
+  chargerProduitsPopulaires();
 
 });
 
@@ -860,6 +862,103 @@ async function chargerProduitsScanneurs() {
     console.error('Erreur lors du chargement des produits :', erreur);
   }
 }
+
+/* ================================================================
+   fonction pour la gris nouvelle arrivage et l'autre , jai pas envie
+   de mettre le nom 
+================================================================ */
+
+async function chargerNouveauxArrivages() {
+
+  const grille = document.getElementById('grilleNouveauxArrivages');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/nouveaux-arrivages');
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const dossier = dossiersImages[produit.categorie.nom] || 'imprimantes';
+
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `html/product.html?id=${produit.id}`;
+        }
+      });
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <span class="product-badge badge-new">Nouveau</span>
+          <img src="images/produits/${dossier}/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des nouveaux arrivages :', erreur);
+  }
+}
+
+async function chargerProduitsPopulaires() {
+
+  const grille = document.getElementById('grillePopulaires');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/populaires');
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const dossier = dossiersImages[produit.categorie.nom] || 'imprimantes';
+
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `html/product.html?id=${produit.id}`;
+        }
+      });
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="images/produits/${dossier}/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des produits populaires :', erreur);
+  }
+}
+
 
 /* ================================================================
    12. FICHE PRODUIT DYNAMIQUE (product.html?id=X)
@@ -1315,7 +1414,7 @@ function initAdminDashboard() {
           <td style="padding:12px 16px; font-size:14px;">${p.categorie.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.prix.toLocaleString('fr-FR')} F CFA</td>
           <td style="padding:12px 16px; display:flex; gap:6px;">
-          <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-description-longue="${p.descriptionLongue || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" data-badge="${p.badgeConnectivite || ''}" style="padding:6px 12px; font-size:13px;">
+          <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-description-longue="${p.descriptionLongue || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" data-badge="${p.badgeConnectivite || ''}" data-nouveau-arrivage="${p.estNouveauArrivage}" data-populaire="${p.estPopulaire}" style="padding:6px 12px; font-size:13px;">
            <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
             </button>
             <button class="qty-btn btn-toggle" data-id="${p.id}" style="padding:6px 12px; font-size:13px; ${p.actif ? '' : 'background:#FEE2E2; border-color:#FCA5A5;'}">
@@ -1434,6 +1533,8 @@ function initAdminDashboard() {
     document.getElementById('edit-description').value = btn.dataset.description;
     document.getElementById('edit-description-longue').value = btn.dataset.descriptionLongue;
     document.getElementById('edit-badge').value = btn.dataset.badge;
+    document.getElementById('edit-nouveau-arrivage').checked = btn.dataset.nouveauArrivage === 'true';
+    document.getElementById('edit-populaire').checked = btn.dataset.populaire === 'true';
     document.getElementById('edit-prix').value = btn.dataset.prix;
     document.getElementById('edit-image').value = btn.dataset.image;
     document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
@@ -1474,6 +1575,8 @@ function initAdminDashboard() {
     const description = document.getElementById('edit-description').value;
     const descriptionLongue = document.getElementById('edit-description-longue').value;
     const badgeConnectivite = document.getElementById('edit-badge').value.trim();
+    const estNouveauArrivage = document.getElementById('edit-nouveau-arrivage').checked;
+    const estPopulaire = document.getElementById('edit-populaire').checked;
     const prix = parseInt(document.getElementById('edit-prix').value);
     const imagePrincipale = document.getElementById('edit-image').value;
     const imageHover = document.getElementById('edit-image-hover').value;
@@ -1485,7 +1588,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-        body: JSON.stringify({ nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite }),
+        body: JSON.stringify({ nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire }),
       });
 
       if (!reponse.ok) throw new Error('Erreur');
@@ -1522,6 +1625,8 @@ function initAdminDashboard() {
     document.getElementById('add-prix').value = '';
     document.getElementById('add-image').value = '';
     document.getElementById('add-image-hover').value = '';
+    document.getElementById('add-nouveau-arrivage').checked = false;
+    document.getElementById('add-populaire').checked = false;
 
     chargerCategories();
     modaleAjout.style.display = 'flex';
@@ -1536,6 +1641,8 @@ function initAdminDashboard() {
     const description = document.getElementById('add-description').value.trim();
     const descriptionLongue = document.getElementById('add-description-longue').value.trim();
     const badgeConnectivite = document.getElementById('add-badge').value.trim();
+    const estNouveauArrivage = document.getElementById('add-nouveau-arrivage').checked;
+    const estPopulaire = document.getElementById('add-populaire').checked;
     const prix = document.getElementById('add-prix').value;
     const categorieId = document.getElementById('add-categorie').value;
     const imagePrincipale = document.getElementById('add-image').value.trim();
@@ -1553,7 +1660,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-       body: JSON.stringify({ nom, description, descriptionLongue, prix, categorieId, imagePrincipale, imageHover, badgeConnectivite }), 
+       body: JSON.stringify({ nom, description, descriptionLongue, prix, categorieId, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire }), 
       });
 
       if (!reponse.ok) throw new Error('Erreur');

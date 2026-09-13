@@ -34,6 +34,22 @@ app.get('/', (req, res) => {
   res.send('Le serveur OBW fonctionne !');
 });
 
+app.get('/api/produits/nouveaux-arrivages', async (req, res) => {
+  const produits = await prisma.produit.findMany({
+    where: { estNouveauArrivage: true, actif: true },
+    include: { categorie: true },
+  });
+  res.json(produits);
+});
+
+app.get('/api/produits/populaires', async (req, res) => {
+  const produits = await prisma.produit.findMany({
+    where: { estPopulaire: true, actif: true },
+    include: { categorie: true },
+  });
+  res.json(produits);
+});
+
 app.get('/api/produits', async (req, res) => {
   const produits = await prisma.produit.findMany();
   res.json(produits);
@@ -201,12 +217,12 @@ app.get('/api/admin/produits', verifierAdmin, async (req, res) => {
 });
 
 app.put('/api/admin/produits/:id', verifierAdmin, async (req, res) => {
-  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite } = req.body;
+  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire } = req.body;
 
   try {
     const produit = await prisma.produit.update({
       where: { id: parseInt(req.params.id) },
-      data: { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite },
+      data: { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire },
     });
 
     res.json(produit);
@@ -241,7 +257,7 @@ app.patch('/api/admin/produits/:id/toggle', verifierAdmin, async (req, res) => {
 });
 
 app.post('/api/admin/produits', verifierAdmin, async (req, res) => {
-  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, categorieId, badgeConnectivite } = req.body;
+  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, categorieId, badgeConnectivite, estNouveauArrivage, estPopulaire } = req.body;
 
   if (!nom || !prix || !imagePrincipale || !categorieId) {
     return res.status(400).json({ erreur: 'Informations manquantes' });
@@ -258,6 +274,8 @@ app.post('/api/admin/produits', verifierAdmin, async (req, res) => {
         imageHover,
         categorieId: parseInt(categorieId),
         badgeConnectivite,
+        estNouveauArrivage: estNouveauArrivage || false,
+        estPopulaire: estPopulaire || false,
       },
     });
 

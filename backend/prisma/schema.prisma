@@ -23,6 +23,8 @@ model Produit {
   description String?
   descriptionLongue String?
   badgeConnectivite String?
+  estNouveauArrivage Boolean @default(false)
+  estPopulaire       Boolean @default(false)
   prix        Int
   imagePrincipale String
   imageHover      String?
