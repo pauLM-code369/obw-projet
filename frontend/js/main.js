@@ -998,6 +998,8 @@ async function chargerFicheProduit() {
     }
 
     const produit = await reponse.json();
+    enregistrerProduitRecent(produit);
+    
     const dossierGalerie = dossiersImages[produit.categorie.nom] || 'imprimantes';
 
     document.title = `OPEN Business World — ${produit.nom}`;
@@ -1037,6 +1039,24 @@ async function chargerFicheProduit() {
     console.error('Erreur lors du chargement du produit :', erreur);
     nomEl.textContent = 'Erreur de chargement';
   }
+}
+
+
+function enregistrerProduitRecent(produit) {
+  let recents = JSON.parse(localStorage.getItem('recentsOBW')) || [];
+
+  recents = recents.filter(p => p.id !== produit.id);
+
+  recents.unshift({
+    id: produit.id,
+    nom: produit.nom,
+    prix: produit.prix,
+    image: `../images/produits/${produit.imagePrincipale}`,
+  });
+
+  recents = recents.slice(0, 10);
+
+  localStorage.setItem('recentsOBW', JSON.stringify(recents));
 }
 
 /* ================================================================
