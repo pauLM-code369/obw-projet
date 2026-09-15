@@ -1,0 +1,520 @@
+{
+  "Imprimantes": [
+    {
+      "nom": "Copieur RISO SF-5350EII",
+      "description": "Duplicateur RISO",
+      "imagePrincipale": "riso-sf5350eii.webp",
+      "imageHover": "riso-sf5350eii.webp"
+    },
+    {
+      "nom": "Chargeur automatique ADF Canon",
+      "description": "Accessoire photocopieuse",
+      "imagePrincipale": "adf-photocopieuse-canon.webp",
+      "imageHover": "adf-photocopieuse-canon.webp"
+    },
+    {
+      "nom": "Epson EcoTank L18050",
+      "description": "Réservoir d'encre",
+      "imagePrincipale": "epson-ecotank-l18050.webp",
+      "imageHover": "epson-ecotank-l18050-2.webp"
+    },
+    {
+      "nom": "Epson matricielle LQ-590",
+      "description": "Imprimante matricielle",
+      "imagePrincipale": "epson-matricielle-lq590.webp",
+      "imageHover": "epson-matricielle-lq590-2.webp"
+    },
+    {
+      "nom": "Epson L8050 Réservoir Wi-Fi 6 Couleurs",
+      "description": "Imprimante photo réservoir",
+      "imagePrincipale": "epson-l8050-reservoir-wifi6.webp",
+      "imageHover": "epson-l8050-reservoir-wifi6-2.webp"
+    },
+    {
+      "nom": "Epson WorkForce Pro WF-C5890DWF",
+      "description": "Multifonction jet d'encre",
+      "imagePrincipale": "epson-workforce-wf-c5890dwf.webp",
+      "imageHover": "epson-workforce-wf-c5890dwf-2.webp"
+    },
+    {
+      "nom": "HP Laser MFP 178NW",
+      "description": "Multifonction laser couleur",
+      "imagePrincipale": "hp-laser-mfp-178nw.webp",
+      "imageHover": "hp-laser-mfp-178nw-2.webp"
+    },
+    {
+      "nom": "HP LaserJet Enterprise M612dn",
+      "description": "Laser monochrome professionnel",
+      "imagePrincipale": "hp-laserjet-enterprise-m612dn.webp",
+      "imageHover": "hp-laserjet-enterprise-m612dn-2.webp"
+    },
+    {
+      "nom": "HP Color LaserJet CP5225dn",
+      "description": "Laser couleur · Format A3",
+      "imagePrincipale": "hp-color-laserjet-cp5225dn.webp",
+      "imageHover": "hp-color-laserjet-cp5225dn-2.webp"
+    },
+    {
+      "nom": "Canon 633 CDW",
+      "description": "Imprimante Canon",
+      "imagePrincipale": "canon-633cdw.webp",
+      "imageHover": "canon-633cdw-2.webp"
+    },
+    {
+      "nom": "Canon 657 CDW",
+      "description": "Imprimante Canon",
+      "imagePrincipale": "canon-657cdw.webp",
+      "imageHover": "canon-657cdw-2.webp"
+    },
+    {
+      "nom": "Canon i-SENSYS MF463DW",
+      "description": "Multifonction laser",
+      "imagePrincipale": "canon-isensys-mf463dw.webp",
+      "imageHover": "canon-isensys-mf463dw-2.webp"
+    },
+    {
+      "nom": "Canon MF275dw",
+      "description": "Multifonction laser",
+      "imagePrincipale": "canon-mf275dw.webp",
+      "imageHover": "canon-mf275dw-2.webp"
+    },
+    {
+      "nom": "Canon PIXMA G3410 — sans Wi-Fi",
+      "description": "Réservoir d'encre",
+      "imagePrincipale": "canon-pixma-g3410.webp",
+      "imageHover": "canon-pixma-g3410.webp"
+    },
+    {
+      "nom": "Canon PIXMA G3410 — Wi-Fi",
+      "description": "Réservoir d'encre",
+      "imagePrincipale": "canon-pixma-g3410.webp",
+      "imageHover": "canon-pixma-g3410.webp"
+    },
+    {
+      "nom": "Canon PIXMA TS3640",
+      "description": "Imprimante jet d'encre",
+      "imagePrincipale": "canon-pixma-ts3640.webp",
+      "imageHover": "canon-pixma-ts3640-2.webp"
+    },
+    {
+      "nom": "Epson EcoTank L3250",
+      "description": "Réservoir d'encre",
+      "imagePrincipale": "epson-ecotank-l3250.webp",
+      "imageHover": "epson-ecotank-l3250-2.webp"
+    },
+    {
+      "nom": "HP Smart Tank 581 Couleur",
+      "description": "Réservoir d'encre",
+      "imagePrincipale": "hp-smarttank-581.webp",
+      "imageHover": "hp-smarttank-581-2.webp"
+    },
+    {
+      "nom": "HP LaserJet Enterprise M806dn",
+      "description": "Laser monochrome professionnel",
+      "imagePrincipale": "hp-laserjet-enterprise-m806dn.webp",
+      "imageHover": "hp-laserjet-enterprise-m806dn-2.webp"
+    },
+    {
+      "nom": "HP OfficeJet Pro 9730 Grand Format A3",
+      "description": "Multifonction Wi-Fi · Recto-verso",
+      "imagePrincipale": "hp-officejet-pro-9730-a3.webp",
+      "imageHover": "hp-officejet-pro-9730-a3-2.webp"
+    },
+    {
+      "nom": "HP LaserJet Enterprise M611dn",
+      "description": "Laser monochrome professionnel",
+      "imagePrincipale": "hp-laserjet-enterprise-m611dn.webp",
+      "imageHover": "hp-laserjet-enterprise-m611dn-2.webp"
+    },
+    {
+      "nom": "Epson matricielle LQ-690",
+      "description": "Imprimante à impact",
+      "imagePrincipale": "epson-matricielle-lq690.webp",
+      "imageHover": "epson-matricielle-lq690-2.webp"
+    },
+    {
+      "nom": "Epson matricielle LQ-2190",
+      "description": "Imprimante à impact",
+      "imagePrincipale": "epson-matricielle-lq2190.webp",
+      "imageHover": "epson-matricielle-lq2190-2.webp"
+    },
+    {
+      "nom": "Epson matricielle LX-350",
+      "description": "Imprimante à impact",
+      "imagePrincipale": "epson-matricielle-lx350.webp",
+      "imageHover": "epson-matricielle-lx350-2.webp"
+    },
+    {
+      "nom": "HP LaserJet 236 — sans Wi-Fi",
+      "description": "Multifonction laser",
+      "imagePrincipale": "hp-laserjet-236.webp",
+      "imageHover": "hp-laserjet-236.webp"
+    },
+    {
+      "nom": "HP LaserJet 236 — Wi-Fi",
+      "description": "Multifonction laser",
+      "imagePrincipale": "hp-laserjet-236.webp",
+      "imageHover": "hp-laserjet-236.webp"
+    },
+    {
+      "nom": "HP LaserJet Pro M179fnw",
+      "description": "Multifonction laser couleur · Wi-Fi",
+      "imagePrincipale": "hp-laserjet-pro-m179fnw.webp",
+      "imageHover": "hp-laserjet-pro-m179fnw-2.webp"
+    },
+    {
+      "nom": "HP LaserJet Pro M182n",
+      "description": "Multifonction laser couleur · Wi-Fi",
+      "imagePrincipale": "hp-laserjet-pro-m182n.webp",
+      "imageHover": "hp-laserjet-pro-m182n-2.webp"
+    },
+    {
+      "nom": "Canon i-SENSYS MF3010",
+      "description": "Multifonction laser monochrome",
+      "imagePrincipale": "canon-isensys-mf3010.webp",
+      "imageHover": "canon-isensys-mf3010-2.webp"
+    },
+    {
+      "nom": "Imprimante thermique caisse Epson TM-T88v",
+      "description": "Imprimante ticket de caisse",
+      "imagePrincipale": "thermique-caisse-epson-tmt88v.webp",
+      "imageHover": "thermique-caisse-epson-tmt88v-2.webp"
+    },
+    {
+      "nom": "Imprimante thermique caisse ZKTeco 8005",
+      "description": "Imprimante ticket de caisse",
+      "imagePrincipale": "thermique-caisse-zkteco-8005.webp",
+      "imageHover": "thermique-caisse-zkteco-8005-2.webp"
+    },
+    {
+      "nom": "Imprimante thermique code-barres Zebra ZD888",
+      "description": "Impression étiquettes",
+      "imagePrincipale": "thermique-codebarres-zebra-zd888.webp",
+      "imageHover": "thermique-codebarres-zebra-zd888-2.webp"
+    },
+    {
+      "nom": "Traceur Canon PROGRAF",
+      "description": "Traceur grand format",
+      "imagePrincipale": "traceur-canon-prograf.webp",
+      "imageHover": "traceur-canon-prograf-2.webp"
+    },
+    {
+      "nom": "Traceur HP DesignJet 850",
+      "description": "Traceur grand format",
+      "imagePrincipale": "traceur-hp-designjet850.webp",
+      "imageHover": "traceur-hp-designjet850-2.webp"
+    },
+    {
+      "nom": "Traceur HP T630",
+      "description": "Traceur grand format",
+      "imagePrincipale": "traceur-hp-t630.webp",
+      "imageHover": "traceur-hp-t630-2.webp"
+    },
+    {
+      "nom": "Papier A4 Canon Photo VP-101",
+      "description": "Consommable · Papier photo",
+      "imagePrincipale": "papier-a4-canon-vp101.webp",
+      "imageHover": "papier-a4-canon-vp101-2.webp"
+    },
+    {
+      "nom": "Premax Ticket de Caisse PM-RP80",
+      "description": "Imprimante ticket de caisse",
+      "imagePrincipale": "premax-ticket-caisse-pm-rp80.webp",
+      "imageHover": "premax-ticket-caisse-pm-rp80-2.webp"
+    },
+    {
+      "nom": "Evolis Primacy 2",
+      "description": "Imprimante à cartes",
+      "imagePrincipale": "evolis-primacy2.webp",
+      "imageHover": "evolis-primacy2-2.webp"
+    },
+    {
+      "nom": "Socle Canon Type-Q3",
+      "description": "Accessoire photocopieuse",
+      "imagePrincipale": "socle-canon-pedestal-typeq3.webp",
+      "imageHover": "socle-canon-pedestal-typeq3.webp"
+    }
+  ],
+  "Imprimantes HP Laser": [
+    {
+      "nom": "HP LaserJet Pro 4003dn",
+      "description": "Laser monochrome · Réseau · Recto-verso auto",
+      "imagePrincipale": "hp-laserjet-pro-4003dn.webp",
+      "imageHover": "hp-laserjet-pro-4003dn-2.webp"
+    },
+    {
+      "nom": "HP Multifonction Laser 137fnw",
+      "description": "Scan, photocopie, fax, RJ45, Wi-Fi",
+      "imagePrincipale": "hp-multifonction-137fnw.webp",
+      "imageHover": "hp-multifonction-137fnw-2.webp"
+    },
+    {
+      "nom": "HP LaserJet Pro MFP M227 fdw",
+      "description": "Multifonction laser",
+      "imagePrincipale": "hp-laserjet-pro-mfp-m227fdw.webp",
+      "imageHover": "hp-laserjet-pro-mfp-m227fdw-2.webp"
+    },
+    {
+      "nom": "HP Laser 107 — sans Wi-Fi",
+      "description": "Imprimante laser monochrome",
+      "imagePrincipale": "hp-laser-107.webp",
+      "imageHover": "hp-laser-107-2.webp"
+    },
+    {
+      "nom": "HP Laser 107 — Wi-Fi",
+      "description": "Imprimante laser monochrome",
+      "imagePrincipale": "hp-laser-107.webp",
+      "imageHover": "hp-laser-107-2.webp"
+    },
+    {
+      "nom": "HP Laser 111 — sans Wi-Fi",
+      "description": "Imprimante laser monochrome",
+      "imagePrincipale": "hp-laser-111.webp",
+      "imageHover": "hp-laser-111-2.webp"
+    },
+    {
+      "nom": "HP Laser 111 — Wi-Fi",
+      "description": "Imprimante laser monochrome",
+      "imagePrincipale": "hp-laser-111.webp",
+      "imageHover": "hp-laser-111-2.webp"
+    },
+    {
+      "nom": "HP Laser 3303",
+      "description": "Imprimante laser",
+      "imagePrincipale": "hp-laser-3303.webp",
+      "imageHover": "hp-laser-3303.webp"
+    },
+    {
+      "nom": "HP Laser Couleur 4303",
+      "description": "Laser couleur · Multifonction · Wi-Fi",
+      "imagePrincipale": "hp-laser-couleur-4303.webp",
+      "imageHover": "hp-laser-couleur-4303-2.webp"
+    },
+    {
+      "nom": "HP LaserJet 135 — sans Wi-Fi",
+      "description": "Tout-en-un · Blanc et noir",
+      "imagePrincipale": "hp-laserjet-135.webp",
+      "imageHover": "hp-laserjet-135-2.webp"
+    },
+    {
+      "nom": "HP LaserJet 135 — Wi-Fi",
+      "description": "Tout-en-un · Blanc et noir",
+      "imagePrincipale": "hp-laserjet-135.webp",
+      "imageHover": "hp-laserjet-135-2.webp"
+    },
+    {
+      "nom": "HP LaserJet MFP 141 — sans Wi-Fi",
+      "description": "Multifonction · Imprime, scanne, copie",
+      "imagePrincipale": "hp-laserjet-mfp-141.webp",
+      "imageHover": "hp-laserjet-mfp-141-2.webp"
+    },
+    {
+      "nom": "HP LaserJet MFP 141 — Wi-Fi",
+      "description": "Multifonction · Imprime, scanne, copie",
+      "imagePrincipale": "hp-laserjet-mfp-141.webp",
+      "imageHover": "hp-laserjet-mfp-141-2.webp"
+    },
+    {
+      "nom": "HP Officejet 9013",
+      "description": "Multifonction jet d'encre",
+      "imagePrincipale": "hp-officejet-9013.webp",
+      "imageHover": "hp-officejet-9013-2.webp"
+    },
+    {
+      "nom": "HP Laser Monochrome 4103 FDN",
+      "description": "Laser monochrome · Multifonction",
+      "imagePrincipale": "hp-laser-monochrome-4103-fdn.webp",
+      "imageHover": "hp-laser-monochrome-4103-fdn-2.webp"
+    }
+  ],
+  "Photocopieuses": [
+    {
+      "nom": "Photocopieuse Canon 3326i",
+      "description": "Multi fonction Canon",
+      "imagePrincipale": "canon-3326i.webp",
+      "imageHover": "canon-3326i-2.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon 3830i",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-3830i.webp",
+      "imageHover": "canon-3830i-2.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon 3930i",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-3930i.webp",
+      "imageHover": "canon-3930i-2.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon 5840i",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-5840i.webp",
+      "imageHover": "canon-5840i-2.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon 5860i",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-5860i.webp",
+      "imageHover": "canon-5860i-2.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon Copier 1643i",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-copier-1643i.webp",
+      "imageHover": "canon-copier-1643i-2.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon 2930i",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-2930i.webp",
+      "imageHover": "canon-2930i.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon Copier DX 4945i",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-copier-dx4945i.webp",
+      "imageHover": "canon-copier-dx4945i-2.webp"
+    },
+    {
+      "nom": "Copieur RISO SF-5350EII",
+      "description": "Duplicateur RISO",
+      "imagePrincipale": "riso-sf5350eii.webp",
+      "imageHover": "riso-sf5350eii.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon 2425i",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-2425i.webp",
+      "imageHover": "canon-2425i.webp"
+    },
+    {
+      "nom": "Photocopieuse Canon imageRUNNER 224N",
+      "description": "Multifonction Canon",
+      "imagePrincipale": "canon-imagerunner-224n.webp",
+      "imageHover": "canon-imagerunner-224n.webp"
+    }
+  ],
+  "Scanneurs & lecteurs": [
+    {
+      "nom": "Lecteur de code-barres ZKTeco B201",
+      "description": "Lecteur code-barres",
+      "imagePrincipale": "zkteco-b201.webp",
+      "imageHover": "zkteco-b201.webp"
+    },
+    {
+      "nom": "Lecteur de code-barres ZKTeco ZKB101",
+      "description": "Lecteur code-barres",
+      "imagePrincipale": "zkteco-zkb101.webp",
+      "imageHover": "zkteco-zkb101.webp"
+    },
+    {
+      "nom": "Lecteur de code-barres ZKTeco ZKB103",
+      "description": "Sans fil et avec fil",
+      "imagePrincipale": "zkteco-zkb103.webp",
+      "imageHover": "zkteco-zkb103.webp"
+    },
+    {
+      "nom": "Lecteur de code-barres PREMAX PM-BR72",
+      "description": "Lecteur code-barres",
+      "imagePrincipale": "premax-pm-br72.webp",
+      "imageHover": "premax-pm-br72.webp"
+    },
+    {
+      "nom": "Lecteur de code-barres Zebra DS2208",
+      "description": "Filaire · 1D et 2D",
+      "imagePrincipale": "zebra-ds2208.webp",
+      "imageHover": "zebra-ds2208.webp"
+    },
+    {
+      "nom": "Lecteur de code-barres OCOM fixe",
+      "description": "1D et 2D",
+      "imagePrincipale": "ocom-fixe-1d2d.webp",
+      "imageHover": "ocom-fixe-1d2d.webp"
+    },
+    {
+      "nom": "Lecteur de code-barres Haixun 2D S20-W",
+      "description": "2D · Sans fil",
+      "imagePrincipale": "lecteur-haixun-2d-s20w.webp",
+      "imageHover": "lecteur-haixun-2d-s20w.webp"
+    },
+    {
+      "nom": "Bobines papier thermique 50x80x40",
+      "description": "Consommable imprimante thermique",
+      "imagePrincipale": "bobines-papier-thermique-50x80x40.webp",
+      "imageHover": "bobines-papier-thermique-50x80x40.webp"
+    },
+    {
+      "nom": "Scanner HP ScanJet Pro 3000 s4",
+      "description": "Scanner de documents",
+      "imagePrincipale": "hp-scanjet-pro-3000-s4.webp",
+      "imageHover": "hp-scanjet-pro-3000-s4-2.webp"
+    },
+    {
+      "nom": "Scanner Kodak Alaris S2080W",
+      "description": "A4 · Wi-Fi",
+      "imagePrincipale": "kodak-alaris-s2080w.webp",
+      "imageHover": "kodak-alaris-s2080w.webp"
+    },
+    {
+      "nom": "Scanner Epson WorkForce DS-1630",
+      "description": "Scanner de documents",
+      "imagePrincipale": "epson-workforce-ds1630.webp",
+      "imageHover": "epson-workforce-ds1630-2.webp"
+    },
+    {
+      "nom": "Scanner Canon LiDE 300",
+      "description": "Scanner à plat",
+      "imagePrincipale": "canon-lide-300.webp",
+      "imageHover": "canon-lide-300-2.webp"
+    },
+    {
+      "nom": "Scanner Canon CanoScan LiDE 400",
+      "description": "Scanner à plat",
+      "imagePrincipale": "canon-canoscan-lide-400.webp",
+      "imageHover": "canon-canoscan-lide-400-2.webp"
+    },
+    {
+      "nom": "Scanner Canon imageFORMULA DR-G2110",
+      "description": "Scanner de documents",
+      "imagePrincipale": "canon-imageformula-dr-g2110.webp",
+      "imageHover": "canon-imageformula-dr-g2110-2.webp"
+    },
+    {
+      "nom": "Scanner HP ScanJet Enterprise Flow 5000 s5",
+      "description": "Scanner de documents",
+      "imagePrincipale": "hp-scanjet-enterprise-flow-5000-s5.webp",
+      "imageHover": "hp-scanjet-enterprise-flow-5000-s5-2.webp"
+    },
+    {
+      "nom": "Scanner HP ScanJet Enterprise Flow 7000",
+      "description": "Scanner de documents",
+      "imagePrincipale": "scanner-hp-enterprise-flow-7000.webp",
+      "imageHover": "scanner-hp-enterprise-flow-7000-2.webp"
+    },
+    {
+      "nom": "Scanner HP ScanJet Pro 4500 fn1",
+      "description": "Scanner de documents",
+      "imagePrincipale": "hp-scanjet-pro-4500-fn1.webp",
+      "imageHover": "hp-scanjet-pro-4500-fn1-2.webp"
+    },
+    {
+      "nom": "Scanner HP ScanJet Pro 3600 fn1",
+      "description": "Scanner professionnel",
+      "imagePrincipale": "hp-scanjet-pro-3600-fn1.webp",
+      "imageHover": "hp-scanjet-pro-3600-fn1-2.webp"
+    },
+    {
+      "nom": "Scanner HP ScanJet Pro 2600 f1",
+      "description": "Scanner à plat",
+      "imagePrincipale": "hp-scanjet-pro-2600-f1.webp",
+      "imageHover": "hp-scanjet-pro-2600-f1-2.webp"
+    },
+    {
+      "nom": "Scanner HP ScanJet Enterprise Flow N9120 fn2",
+      "description": "Scanner professionnel",
+      "imagePrincipale": "hp-scanjet-enterprise-flow-n9120-fn2.webp",
+      "imageHover": "hp-scanjet-enterprise-flow-n9120-fn2-2.webp"
+    }
+  ]
+}
