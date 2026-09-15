@@ -757,6 +757,7 @@ async function chargerProduitsPhotocopieuses() {
         <div class="product-img">
           <img src="../images/produits/photocopieuses/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
           <img src="../images/produits/photocopieuses/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
           <div class="product-name">${produit.nom}</div>
@@ -802,6 +803,7 @@ async function chargerProduitsImprimantesHpLaser() {
         <div class="product-img">
           <img src="../images/produits/imprimantes/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
           <img src="../images/produits/imprimantes/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
           <div class="product-name">${produit.nom}</div>
@@ -847,6 +849,7 @@ async function chargerProduitsScanneurs() {
         <div class="product-img">
           <img src="../images/produits/scanneurs-lecteurs/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
           <img src="../images/produits/scanneurs-lecteurs/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
           <div class="product-name">${produit.nom}</div>
@@ -898,6 +901,7 @@ async function chargerNouveauxArrivages() {
           <span class="product-badge badge-new">Nouveau</span>
           <img src="images/produits/${dossier}/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
           <img src="images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
           <div class="product-name">${produit.nom}</div>
@@ -943,6 +947,7 @@ async function chargerProduitsPopulaires() {
         <div class="product-img">
           <img src="images/produits/${dossier}/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
           <img src="images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
           <div class="product-name">${produit.nom}</div>
