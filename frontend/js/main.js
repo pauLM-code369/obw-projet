@@ -14,7 +14,7 @@
 ================================================================ */
 
 const promoBarMessages = [
-  'Bienvenue sur OPEN Business World, votre partenaire High-Tech',
+  'Bienvenue sur OPEN Business World, votre partenaire High-Tech', 
   'Livraison rapide, chap chap !',
   'Ouverture du point Plateau — Commandez et retirez en 48h',
   '<a href="https://wa.me/2250501692626" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">Appelez le 05 01 69 26 26 pour commander — Livraison rapide avec reçu et garantie</a>'
@@ -708,8 +708,8 @@ async function chargerProduitsImprimantes() {
       
       carte.innerHTML = `
         <div class="product-img">
-          <img src="../images/produits/imprimantes/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
-          <img src="../images/produits/imprimantes/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
           ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
 
@@ -755,8 +755,8 @@ async function chargerProduitsPhotocopieuses() {
 
       carte.innerHTML = `
         <div class="product-img">
-          <img src="../images/produits/photocopieuses/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
-          <img src="../images/produits/photocopieuses/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
           ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
@@ -801,8 +801,8 @@ async function chargerProduitsImprimantesHpLaser() {
 
       carte.innerHTML = `
         <div class="product-img">
-          <img src="../images/produits/imprimantes/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
-          <img src="../images/produits/imprimantes/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
           ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
@@ -847,8 +847,8 @@ async function chargerProduitsScanneurs() {
 
       carte.innerHTML = `
         <div class="product-img">
-          <img src="../images/produits/scanneurs-lecteurs/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
-          <img src="../images/produits/scanneurs-lecteurs/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
           ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
@@ -884,8 +884,6 @@ async function chargerNouveauxArrivages() {
     const produits = await reponse.json();
 
     produits.forEach(produit => {
-      const dossier = dossiersImages[produit.categorie.nom] || 'imprimantes';
-
       const carte = document.createElement('div');
       carte.className = 'product-card';
 
@@ -899,8 +897,8 @@ async function chargerNouveauxArrivages() {
       carte.innerHTML = `
         <div class="product-img">
           <span class="product-badge badge-new">Nouveau</span>
-          <img src="images/produits/${dossier}/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
-          <img src="images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          <img src="images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
           ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
@@ -931,8 +929,6 @@ async function chargerProduitsPopulaires() {
     const produits = await reponse.json();
 
     produits.forEach(produit => {
-      const dossier = dossiersImages[produit.categorie.nom] || 'imprimantes';
-
       const carte = document.createElement('div');
       carte.className = 'product-card';
 
@@ -945,8 +941,8 @@ async function chargerProduitsPopulaires() {
 
       carte.innerHTML = `
         <div class="product-img">
-          <img src="images/produits/${dossier}/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
-          <img src="images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          <img src="images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
           ${iconeBadgeConnectivite(produit.badgeConnectivite)}
         </div>
         <div class="product-info">
@@ -1002,7 +998,7 @@ async function chargerFicheProduit() {
     }
 
     const produit = await reponse.json();
-    const dossier = dossiersImages[produit.categorie.nom] || 'imprimantes';
+    const dossierGalerie = dossiersImages[produit.categorie.nom] || 'imprimantes';
 
     document.title = `OPEN Business World — ${produit.nom}`;
     document.getElementById('breadcrumbProduit').textContent = produit.nom;
@@ -1012,14 +1008,14 @@ async function chargerFicheProduit() {
     document.getElementById('productPrice').textContent = `${produit.prix.toLocaleString('fr-FR')} F CFA`;
     document.querySelector('.product-detail-cta').dataset.produitId = produit.id;
 
-    const imgPrincipale = `../images/produits/${dossier}/${produit.imagePrincipale}`;
-    const imgHover = `../images/produits/${dossier}/${produit.imageHover || produit.imagePrincipale}`;
+    const imgPrincipale = `../images/produits/${produit.imagePrincipale}`;
+    const imgHover = `../images/produits/${produit.imageHover || produit.imagePrincipale}`;
 
     const toutesLesImages = [imgPrincipale];
     if (produit.imageHover) toutesLesImages.push(imgHover);
     if (produit.images && produit.images.length > 0) {
       produit.images.forEach(img => {
-        toutesLesImages.push(`../images/produits/${dossier}/${img.nomFichier}`);
+        toutesLesImages.push(`../images/produits/${dossierGalerie}/${img.nomFichier}`);
       });
     }
 
@@ -1422,7 +1418,7 @@ function initAdminDashboard() {
           <td style="padding:12px 16px; font-size:14px;">${p.categorie.nom}</td>
           <td style="padding:12px 16px; font-size:14px;">${p.prix.toLocaleString('fr-FR')} F CFA</td>
           <td style="padding:12px 16px; display:flex; gap:6px;">
-          <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-description-longue="${p.descriptionLongue || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" data-badge="${p.badgeConnectivite || ''}" data-nouveau-arrivage="${p.estNouveauArrivage}" data-populaire="${p.estPopulaire}" style="padding:6px 12px; font-size:13px;">
+          <button class="qty-btn btn-modifier" data-id="${p.id}" data-nom="${p.nom}" data-description="${p.description || ''}" data-description-longue="${p.descriptionLongue || ''}" data-prix="${p.prix}" data-image="${p.imagePrincipale}" data-image-hover="${p.imageHover || ''}" data-badge="${p.badgeConnectivite || ''}" data-nouveau-arrivage="${p.estNouveauArrivage}" data-populaire="${p.estPopulaire}" data-categorie-id="${p.categorieId}" style="padding:6px 12px; font-size:13px;">
            <i class="ti ti-pencil" aria-hidden="true"></i> Modifier
             </button>
             <button class="qty-btn btn-toggle" data-id="${p.id}" style="padding:6px 12px; font-size:13px; ${p.actif ? '' : 'background:#FEE2E2; border-color:#FCA5A5;'}">
@@ -1532,7 +1528,7 @@ function initAdminDashboard() {
 
   const modale = document.getElementById('modaleEdition');
 
-  tableau.addEventListener('click', (e) => {
+  tableau.addEventListener('click', async (e) => {
     const btn = e.target.closest('.btn-modifier');
     if (!btn) return;
 
@@ -1546,6 +1542,9 @@ function initAdminDashboard() {
     document.getElementById('edit-prix').value = btn.dataset.prix;
     document.getElementById('edit-image').value = btn.dataset.image;
     document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
+
+    await chargerCategories('edit-categorie');
+    document.getElementById('edit-categorie').value = btn.dataset.categorieId;
 
     chargerImagesSupp(btn.dataset.id);
     modale.style.display = 'flex';
@@ -1588,6 +1587,7 @@ function initAdminDashboard() {
     const prix = parseInt(document.getElementById('edit-prix').value);
     const imagePrincipale = document.getElementById('edit-image').value;
     const imageHover = document.getElementById('edit-image-hover').value;
+    const categorieId = parseInt(document.getElementById('edit-categorie').value);
 
     try {
       const reponse = await fetch(`http://localhost:3000/api/admin/produits/${id}`, {
@@ -1596,7 +1596,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-        body: JSON.stringify({ nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire }),
+        body: JSON.stringify({ nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire, categorieId }),
       });
 
       if (!reponse.ok) throw new Error('Erreur');
@@ -1610,14 +1610,14 @@ function initAdminDashboard() {
     }
   });
 
-  async function chargerCategories() {
+  async function chargerCategories(idSelect = 'add-categorie') {
     try {
       const reponse = await fetch('http://localhost:3000/api/admin/categories', {
         headers: { 'Authorization': 'Bearer ' + token }
       });
       const categories = await reponse.json();
 
-      const select = document.getElementById('add-categorie');
+      const select = document.getElementById(idSelect);
       select.innerHTML = categories.map(c => `<option value="${c.id}">${c.nom}</option>`).join('');
 
     } catch (erreur) {

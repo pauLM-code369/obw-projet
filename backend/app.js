@@ -221,12 +221,12 @@ app.get('/api/admin/produits', verifierAdmin, async (req, res) => {
 });
 
 app.put('/api/admin/produits/:id', verifierAdmin, async (req, res) => {
-  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire } = req.body;
+  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire, categorieId } = req.body;
 
   try {
     const produit = await prisma.produit.update({
       where: { id: parseInt(req.params.id) },
-      data: { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire },
+      data: { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire, categorieId },
     });
 
     res.json(produit);
