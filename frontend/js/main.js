@@ -1540,8 +1540,12 @@ function initAdminDashboard() {
     document.getElementById('edit-nouveau-arrivage').checked = btn.dataset.nouveauArrivage === 'true';
     document.getElementById('edit-populaire').checked = btn.dataset.populaire === 'true';
     document.getElementById('edit-prix').value = btn.dataset.prix;
-    document.getElementById('edit-image').value = btn.dataset.image;
-    document.getElementById('edit-image-hover').value = btn.dataset.imageHover;
+
+    const partiesImage = (btn.dataset.image || '').split('/');
+    const partiesImageHover = (btn.dataset.imageHover || '').split('/');
+    document.getElementById('edit-dossier-image').value = partiesImage[0] || 'imprimantes';
+    document.getElementById('edit-image').value = partiesImage[1] || partiesImage[0] || '';
+    document.getElementById('edit-image-hover').value = partiesImageHover[1] || partiesImageHover[0] || '';
 
     await chargerCategories('edit-categorie');
     document.getElementById('edit-categorie').value = btn.dataset.categorieId;
@@ -1585,8 +1589,9 @@ function initAdminDashboard() {
     const estNouveauArrivage = document.getElementById('edit-nouveau-arrivage').checked;
     const estPopulaire = document.getElementById('edit-populaire').checked;
     const prix = parseInt(document.getElementById('edit-prix').value);
-    const imagePrincipale = document.getElementById('edit-image').value;
-    const imageHover = document.getElementById('edit-image-hover').value;
+    const dossierImage = document.getElementById('edit-dossier-image').value;
+    const imagePrincipaleFichier = document.getElementById('edit-image').value.trim();
+    const imageHoverFichier = document.getElementById('edit-image-hover').value.trim();
     const categorieId = parseInt(document.getElementById('edit-categorie').value);
 
     try {
@@ -1596,7 +1601,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-        body: JSON.stringify({ nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire, categorieId }),
+        body: JSON.stringify({ nom, description, descriptionLongue, prix, dossierImage, imagePrincipaleFichier, imageHoverFichier, badgeConnectivite, estNouveauArrivage, estPopulaire, categorieId }),
       });
 
       if (!reponse.ok) throw new Error('Erreur');
@@ -1653,10 +1658,11 @@ function initAdminDashboard() {
     const estPopulaire = document.getElementById('add-populaire').checked;
     const prix = document.getElementById('add-prix').value;
     const categorieId = document.getElementById('add-categorie').value;
-    const imagePrincipale = document.getElementById('add-image').value.trim();
-    const imageHover = document.getElementById('add-image-hover').value.trim();
+    const dossierImage = document.getElementById('add-dossier-image').value;
+    const imagePrincipaleFichier = document.getElementById('add-image').value.trim();
+    const imageHoverFichier = document.getElementById('add-image-hover').value.trim();
 
-    if (!nom || !prix || !imagePrincipale || !categorieId) {
+    if (!nom || !prix || !imagePrincipaleFichier || !categorieId) {
       alert('Merci de remplir au moins le nom, le prix, la categorie et l\'image principale.');
       return;
     }
@@ -1668,7 +1674,7 @@ function initAdminDashboard() {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
         },
-       body: JSON.stringify({ nom, description, descriptionLongue, prix, categorieId, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire }), 
+       body: JSON.stringify({ nom, description, descriptionLongue, prix, categorieId, dossierImage, imagePrincipaleFichier, imageHoverFichier, badgeConnectivite, estNouveauArrivage, estPopulaire }), 
       });
 
       if (!reponse.ok) throw new Error('Erreur');

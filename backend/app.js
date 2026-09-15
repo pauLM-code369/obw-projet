@@ -221,7 +221,10 @@ app.get('/api/admin/produits', verifierAdmin, async (req, res) => {
 });
 
 app.put('/api/admin/produits/:id', verifierAdmin, async (req, res) => {
-  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, badgeConnectivite, estNouveauArrivage, estPopulaire, categorieId } = req.body;
+  const { nom, description, descriptionLongue, prix, dossierImage, imagePrincipaleFichier, imageHoverFichier, badgeConnectivite, estNouveauArrivage, estPopulaire, categorieId } = req.body;
+
+  const imagePrincipale = dossierImage && imagePrincipaleFichier ? `${dossierImage}/${imagePrincipaleFichier}` : undefined;
+  const imageHover = dossierImage && imageHoverFichier ? `${dossierImage}/${imageHoverFichier}` : null;
 
   try {
     const produit = await prisma.produit.update({
@@ -261,11 +264,14 @@ app.patch('/api/admin/produits/:id/toggle', verifierAdmin, async (req, res) => {
 });
 
 app.post('/api/admin/produits', verifierAdmin, async (req, res) => {
-  const { nom, description, descriptionLongue, prix, imagePrincipale, imageHover, categorieId, badgeConnectivite, estNouveauArrivage, estPopulaire } = req.body;
+  const { nom, description, descriptionLongue, prix, dossierImage, imagePrincipaleFichier, imageHoverFichier, categorieId, badgeConnectivite, estNouveauArrivage, estPopulaire } = req.body;
 
-  if (!nom || !prix || !imagePrincipale || !categorieId) {
+  if (!nom || !prix || !dossierImage || !imagePrincipaleFichier || !categorieId) {
     return res.status(400).json({ erreur: 'Informations manquantes' });
   }
+
+  const imagePrincipale = `${dossierImage}/${imagePrincipaleFichier}`;
+  const imageHover = imageHoverFichier ? `${dossierImage}/${imageHoverFichier}` : null;
 
   try {
     const produit = await prisma.produit.create({
