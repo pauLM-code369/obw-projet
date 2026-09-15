@@ -38,7 +38,9 @@ app.get('/api/produits/nouveaux-arrivages', async (req, res) => {
   const produits = await prisma.produit.findMany({
     where: { estNouveauArrivage: true, actif: true },
     include: { categorie: true },
+    orderBy: { nom: 'asc' },
   });
+
   res.json(produits);
 });
 
@@ -46,6 +48,7 @@ app.get('/api/produits/populaires', async (req, res) => {
   const produits = await prisma.produit.findMany({
     where: { estPopulaire: true, actif: true },
     include: { categorie: true },
+    orderBy: { nom: 'asc' }, 
   });
   res.json(produits);
 });
@@ -75,12 +78,13 @@ app.get('/api/produits/:id', async (req, res) => {
 app.get('/api/produits/categorie/:nomCategorie', async (req, res) => {
   const produits = await prisma.produit.findMany({
     where: {
-      categorie: {
-        nom: req.params.nomCategorie,
-      },
+      categorie: { nom: req.params.nomCategorie },
       actif: true,
     },
+    orderBy: { nom: 'asc' },
   });
+
+
   res.json(produits);
 });
 
