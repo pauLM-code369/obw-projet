@@ -7,7 +7,9 @@ const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL });
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
-  const donnees = JSON.parse(fs.readFileSync('./produits-import.json', 'utf-8'));
+  const cheminFichier = process.argv[2] || './produits-import.json';
+  console.log(`Lecture du fichier : ${cheminFichier}`);
+  const donnees = JSON.parse(fs.readFileSync(cheminFichier, 'utf-8'));
 
   let totalCrees = 0;
 
