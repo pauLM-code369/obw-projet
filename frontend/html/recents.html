@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPEN Business World — Récemment consultés</title>
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="../images/android-chrome-512x512.png" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <style>
+    .recents-hero {
+      background: linear-gradient(135deg, #0B5FCC 0%, var(--color-primary) 55%, #58A6FF 100%);
+      border-radius: 16px;
+      padding: 40px 32px;
+      color: #fff;
+      margin-bottom: 32px;
+    }
+
+    .recents-hero-title {
+      font-size: 26px;
+      font-weight: 800;
+      margin: 0 0 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .recents-hero-text {
+      font-size: 14px;
+      color: #E4F0FF;
+      margin: 0;
+    }
+
+    .recents-empty {
+      text-align: center;
+      padding: 60px 20px;
+      background: #F0F7FF;
+      border: 1px dashed #B9D9FF;
+      border-radius: 12px;
+    }
+
+    .recents-empty i {
+      font-size: 40px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="promo-bar"
+     data-product="OPEN Business World — Votre partenaire tech de confiance à Abidjan"
+     data-link="../boutique.html"
+     data-cta="Découvrir la boutique">
+  </div>
+
+  <header class="header">
+    <a href="../index.html" class="logo">
+      <img src="../images/logo.webp" alt="OPEN Business World" class="logo-img" />
+    </a>
+    <div class="search">
+      <input type="text" placeholder="Rechercher un PC, smartphone, GPU..." aria-label="Recherche" />
+      <button class="search-btn" aria-label="Lancer la recherche">
+        <i class="ti ti-search" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="header-right">
+      <button class="icon-btn" aria-label="Produits récemment consultés">
+        <i class="ti ti-history" aria-hidden="true"></i>
+        <span>Récents</span>
+      </button>
+      <button class="icon-btn" aria-label="Mon panier">
+        <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+        <span>Panier</span>
+        <span class="dot-badge"></span>
+      </button>
+      <div class="divider-v"></div>
+      <a href="https://www.facebook.com/OBWINFORMATIQUE" class="icon-btn" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="ti ti-brand-facebook" aria-hidden="true" style="color:#1877F2;"></i>
+        <span>Facebook</span>
+      </a>
+      <a href="https://www.tiktok.com/@obw.informatique" class="icon-btn" target="_blank" rel="noopener" aria-label="TikTok">
+        <i class="ti ti-brand-tiktok" aria-hidden="true" style="color:#000000;"></i>
+        <span>TikTok</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <nav class="nav" id="mainNav">
+    <button class="nav-close" id="navCloseBtn" aria-label="Fermer le menu">
+      <i class="ti ti-x" aria-hidden="true"></i>
+    </button>
+    <a href="../index.html" class="nav-link">Accueil</a>
+    <a href="../boutique.html" class="nav-link">Boutique</a>
+    <a href="ordinateurs.html" class="nav-link">Ordinateurs & Tablettes</a>
+    <a href="moniteurs.html" class="nav-link">Moniteurs</a>
+    <a href="peripheriques.html" class="nav-link">Périphériques</a>
+    <a href="pc-gamer.html" class="nav-link">PC Gamer</a>
+    <a href="imprimantes.html" class="nav-link">Imprimantes</a>
+    <a href="smartphones.html" class="nav-link">Smartphones</a>
+  </nav>
+
+  <main class="page-body">
+
+    <div class="breadcrumb">
+      <a href="../index.html">Accueil</a>
+      <i class="ti ti-chevron-right" aria-hidden="true"></i>
+      <span>Récemment consultés</span>
+    </div>
+
+    <div class="recents-hero">
+      <h1 class="recents-hero-title"><i class="ti ti-history" aria-hidden="true"></i> Récemment consultés</h1>
+      <p class="recents-hero-text">Retrouvez ici les produits que vous avez consultés récemment.</p>
+    </div>
+
+    <div id="recentsVide" class="recents-empty" style="display:none;">
+      <i class="ti ti-history" aria-hidden="true"></i>
+      <p style="font-size:16px; color:#555; margin-bottom:16px;">Vous n'avez pas encore consulté de produit.</p>
+      <a href="../boutique.html" class="prestation-link">Découvrir la boutique <i class="ti ti-arrow-right"></i></a>
+    </div>
+
+    <div id="grilleRecents" class="products-grid"></div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/logos.webp" alt="OPEN Business World" class="footer-logo-img" />
+        </div>
+        <p class="footer-desc">
+          OPEN Business World est un magasin informatique spécialisé dans
+          l'achat et la vente de matériel informatique.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/OBWINFORMATIQUE" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/open-business-world" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+          <a href="https://wa.me/2252720286555" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.tiktok.com/@obw.informatique" target="_blank" rel="noopener" aria-label="TikTok"><i class="ti ti-brand-tiktok" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Liens rapides</h4>
+        <ul class="footer-links">
+          <li><a href="ordinateurs.html">Ordinateurs & Tablettes</a></li>
+          <li><a href="pc-gamer.html">PC Gamer</a></li>
+          <li><a href="smartphones.html">Smartphones</a></li>
+          <li><a href="moniteurs.html">Moniteurs</a></li>
+          <li><a href="peripheriques.html">Périphériques</a></li>
+          <li><a href="imprimantes.html">Imprimantes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Nous contacter</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="ti ti-map-pin" aria-hidden="true"></i>
+            Plateau, Immeuble Mali, Abidjan
+          </li>
+          <li>
+            <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+            <a href="tel:+2250501692626">05 01 69 26 26 (WhatsApp)</a>
+          </li>
+          <li>
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            <a href="tel:+2250778004034">07 78 00 40 34</a>
+          </li>
+          <li>
+            <i class="ti ti-phone" aria-hidden="true"></i>
+            <a href="tel:+2252720286555">+225 27 20 28 65 55</a>
+          </li>
+          <li>
+            <i class="ti ti-mail" aria-hidden="true"></i>
+            <a href="mailto:contact@openbusiness.ci">contact@openbusiness.ci</a>
+          </li>
+          <li>
+            <i class="ti ti-clock" aria-hidden="true"></i>
+            Lun – Sam : 8h00 – 18h00
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 OPEN Business World. Tous droits réservés.</span>
+      <a href="politique-confidentialite.html" style="color:inherit; margin-left:12px;">Politique de confidentialité</a>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

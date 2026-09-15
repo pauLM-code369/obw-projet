@@ -341,6 +341,18 @@ function initCartIconLink() {
   });
 }
 
+function initRecentsIconLink() {
+  const enSousDossier = window.location.pathname.includes('/html/');
+  const lienRecents = enSousDossier ? 'recents.html' : 'html/recents.html';
+
+  document.querySelectorAll('.icon-btn[aria-label="Produits récemment consultés"]').forEach(btn => {
+    btn.style.cursor = 'pointer';
+    btn.addEventListener('click', () => {
+      window.location.href = lienRecents;
+    });
+  });
+}
+
 let promoBarFlashTimer = null;
 
 function bloquerBoutonsPanier() {
@@ -590,6 +602,8 @@ document.addEventListener('DOMContentLoaded', function () {
   initAdminCommandes();
   chargerNouveauxArrivages();
   chargerProduitsPopulaires();
+  afficherRecents();
+  initRecentsIconLink();
 
 });
 
@@ -999,7 +1013,7 @@ async function chargerFicheProduit() {
 
     const produit = await reponse.json();
     enregistrerProduitRecent(produit);
-    
+
     const dossierGalerie = dossiersImages[produit.categorie.nom] || 'imprimantes';
 
     document.title = `OPEN Business World — ${produit.nom}`;
@@ -1057,6 +1071,52 @@ function enregistrerProduitRecent(produit) {
   recents = recents.slice(0, 10);
 
   localStorage.setItem('recentsOBW', JSON.stringify(recents));
+}
+
+function afficherRecents() {
+
+  const grille = document.getElementById('grilleRecents');
+  if (!grille) return;
+
+  const videEl = document.getElementById('recentsVide');
+  const recents = JSON.parse(localStorage.getItem('recentsOBW')) || [];
+
+  if (recents.length === 0) {
+    videEl.style.display = 'block';
+    grille.style.display = 'none';
+    return;
+  }
+
+  videEl.style.display = 'none';
+  grille.style.display = 'grid';
+  grille.innerHTML = '';
+
+  recents.forEach(produit => {
+    const carte = document.createElement('div');
+    carte.className = 'product-card';
+
+    carte.style.cursor = 'pointer';
+    carte.addEventListener('click', (e) => {
+      if (!e.target.closest('.add-to-cart')) {
+        window.location.href = `product.html?id=${produit.id}`;
+      }
+    });
+
+    carte.innerHTML = `
+      <div class="product-img">
+        <img src="${produit.image}" alt="${produit.nom}" class="product-photo img-main" />
+      </div>
+      <div class="product-info">
+        <div class="product-name">${produit.nom}</div>
+        <div class="product-footer">
+          <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+          <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+        </div>
+      </div>
+    `;
+
+    grille.appendChild(carte);
+  });
 }
 
 /* ================================================================
