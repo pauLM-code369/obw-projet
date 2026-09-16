@@ -1,0 +1,1012 @@
+{
+  "PC de bureau": [
+    {
+      "nom": "Dell Inspiron 24 5415 — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-inspiron-5430.webp",
+      "imageHover": "ordinateurs/dell-inspiron-5430-2.webp"
+    },
+    {
+      "nom": "Dell Inspiron 5415 — 16 Go / 1 To",
+      "description": "All-in-one · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/dell-inspiron-5430.webp",
+      "imageHover": "ordinateurs/dell-inspiron-5430-2.webp"
+    },
+    {
+      "nom": "HP 200 G4 — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-200-g4.webp",
+      "imageHover": "ordinateurs/hp-200-g4-2.webp"
+    },
+    {
+      "nom": "HP 200 G4 — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-200-g4.webp",
+      "imageHover": "ordinateurs/hp-200-g4-2.webp"
+    },
+    {
+      "nom": "HP CR0008i — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0008i.webp",
+      "imageHover": "ordinateurs/hp-cr0008i-2.webp"
+    },
+    {
+      "nom": "HP CR0008i — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0008i.webp",
+      "imageHover": "ordinateurs/hp-cr0008i-2.webp"
+    },
+    {
+      "nom": "HP CR0029 NH — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0029-nh.webp",
+      "imageHover": "ordinateurs/hp-cr0029-nh-2.webp"
+    },
+    {
+      "nom": "HP CR0029 NH — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0029-nh.webp",
+      "imageHover": "ordinateurs/hp-cr0029-nh-2.webp"
+    },
+    {
+      "nom": "HP CR0307 NH — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0307-nh.webp",
+      "imageHover": "ordinateurs/hp-cr0307-nh-2.webp"
+    },
+    {
+      "nom": "HP CR0307 NH — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0307-nh.webp",
+      "imageHover": "ordinateurs/hp-cr0307-nh-2.webp"
+    },
+    {
+      "nom": "HP CR0321 — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0321.webp",
+      "imageHover": "ordinateurs/hp-cr0321-2.webp"
+    },
+    {
+      "nom": "HP CR0321 — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0321.webp",
+      "imageHover": "ordinateurs/hp-cr0321-2.webp"
+    },
+    {
+      "nom": "HP CR0342 — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0342.webp",
+      "imageHover": "ordinateurs/hp-cr0342-2.webp"
+    },
+    {
+      "nom": "HP CR0342 — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-cr0342.webp",
+      "imageHover": "ordinateurs/hp-cr0342-2.webp"
+    },
+    {
+      "nom": "HP dg0012 — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-dg0012.webp",
+      "imageHover": "ordinateurs/hp-dg0012-2.webp"
+    },
+    {
+      "nom": "HP dg0012 — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-dg0012.webp",
+      "imageHover": "ordinateurs/hp-dg0012-2.webp"
+    },
+    {
+      "nom": "HP Pavilion CA2023NY — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-pavilion-ca2023ny.webp",
+      "imageHover": "ordinateurs/hp-pavilion-ca2023ny-2.webp"
+    },
+    {
+      "nom": "HP Pavilion CA2023NY — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-pavilion-ca2023ny.webp",
+      "imageHover": "ordinateurs/hp-pavilion-ca2023ny-2.webp"
+    },
+    {
+      "nom": "Lenovo Center 27HB — 16 Go / 512 Go",
+      "description": "All-in-one · 27\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-center-27hb.webp",
+      "imageHover": "ordinateurs/lenovo-center-27hb-2.webp"
+    },
+    {
+      "nom": "Lenovo Center 27HB — 16 Go / 1 To",
+      "description": "All-in-one · 27\" · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/lenovo-center-27hb.webp",
+      "imageHover": "ordinateurs/lenovo-center-27hb-2.webp"
+    },
+    {
+      "nom": "Lenovo ThinkCentre Neo AIO — 8 Go / 256 Go",
+      "description": "All-in-one · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkcentre-neo-aio.webp",
+      "imageHover": "ordinateurs/lenovo-thinkcentre-neo-aio.webp"
+    },
+    {
+      "nom": "Lenovo ThinkCentre Neo AIO — 16 Go / 512 Go",
+      "description": "All-in-one · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkcentre-neo-aio.webp",
+      "imageHover": "ordinateurs/lenovo-thinkcentre-neo-aio.webp"
+    },
+    {
+      "nom": "Dell OptiPlex 3910 — 8 Go / 256 Go",
+      "description": "PC de bureau · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-optiplex-3910.webp",
+      "imageHover": "ordinateurs/dell-optiplex-3910-2.webp"
+    },
+    {
+      "nom": "Dell OptiPlex 3910 — 16 Go / 512 Go",
+      "description": "PC de bureau · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-optiplex-3910.webp",
+      "imageHover": "ordinateurs/dell-optiplex-3910-2.webp"
+    },
+    {
+      "nom": "Dell OptiPlex 7020 — 16 Go / 512 Go",
+      "description": "PC de bureau · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-optiplex-7020.webp",
+      "imageHover": "ordinateurs/dell-optiplex-7020-2.webp"
+    },
+    {
+      "nom": "Dell OptiPlex 7020 — 16 Go / 1 To",
+      "description": "PC de bureau · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/dell-optiplex-7020.webp",
+      "imageHover": "ordinateurs/dell-optiplex-7020-2.webp"
+    },
+    {
+      "nom": "Dell Vostro 3030MT — 8 Go / 256 Go",
+      "description": "PC de bureau · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-vostro-3030mt.webp",
+      "imageHover": "ordinateurs/dell-vostro-3030mt-2.webp"
+    },
+    {
+      "nom": "Dell Vostro 3030MT — 16 Go / 512 Go",
+      "description": "PC de bureau · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-vostro-3030mt.webp",
+      "imageHover": "ordinateurs/dell-vostro-3030mt-2.webp"
+    },
+    {
+      "nom": "Lenovo ThinkCentre Neo 50t Gen5 — 8 Go / 256 Go",
+      "description": "PC de bureau · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkcentre-neo-50t.webp",
+      "imageHover": "ordinateurs/lenovo-thinkcentre-neo-50t-2.webp"
+    },
+    {
+      "nom": "Lenovo ThinkCentre Neo 50t Gen5 — 16 Go / 512 Go",
+      "description": "PC de bureau · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkcentre-neo-50t.webp",
+      "imageHover": "ordinateurs/lenovo-thinkcentre-neo-50t-2.webp"
+    },
+    {
+      "nom": "HP ProDesk 290 G9 — 8 Go / 256 Go",
+      "description": "PC de bureau · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-prodesk-290-g9.webp",
+      "imageHover": "ordinateurs/hp-prodesk-290-g9-2.webp"
+    },
+    {
+      "nom": "HP ProDesk 290 G9 — 16 Go / 512 Go",
+      "description": "PC de bureau · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-prodesk-290-g9.webp",
+      "imageHover": "ordinateurs/hp-prodesk-290-g9-2.webp"
+    },
+    {
+      "nom": "HP ProDesk 400 G4 — 8 Go / 256 Go",
+      "description": "PC de bureau · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-prodesk-400-g4.webp",
+      "imageHover": "ordinateurs/hp-prodesk-400-g4-2.webp"
+    },
+    {
+      "nom": "HP ProDesk 400 G4 — 16 Go / 512 Go",
+      "description": "PC de bureau · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-prodesk-400-g4.webp",
+      "imageHover": "ordinateurs/hp-prodesk-400-g4-2.webp"
+    },
+    {
+      "nom": "HP ProDesk 400 G7 — 16 Go / 512 Go",
+      "description": "PC de bureau · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-prodesk-400-g7.webp",
+      "imageHover": "ordinateurs/hp-prodesk-400-g7-2.webp"
+    },
+    {
+      "nom": "HP ProDesk 400 G7 — 16 Go / 1 To",
+      "description": "PC de bureau · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-prodesk-400-g7.webp",
+      "imageHover": "ordinateurs/hp-prodesk-400-g7-2.webp"
+    }
+  ],
+  "PC portables": [
+    {
+      "nom": "HP EliteBook 840 G10 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-elitebook-840-g10.webp",
+      "imageHover": "ordinateurs/hp-elitebook-840-g10-2.webp"
+    },
+    {
+      "nom": "HP EliteBook 840 G10 — 16 Go / 1 To",
+      "description": "14\" · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-elitebook-840-g10.webp",
+      "imageHover": "ordinateurs/hp-elitebook-840-g10-2.webp"
+    },
+    {
+      "nom": "HP EliteBook 840 G11 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-elitebook-840-g11.webp",
+      "imageHover": "ordinateurs/hp-elitebook-840-g11-2.webp"
+    },
+    {
+      "nom": "HP EliteBook 840 G11 — 16 Go / 1 To",
+      "description": "14\" · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-elitebook-840-g11.webp",
+      "imageHover": "ordinateurs/hp-elitebook-840-g11-2.webp"
+    },
+    {
+      "nom": "HP EliteBook 840 G7 — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-elitebook-840-g7.webp",
+      "imageHover": "ordinateurs/hp-elitebook-840-g7-2.webp"
+    },
+    {
+      "nom": "HP EliteBook 840 G7 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-elitebook-840-g7.webp",
+      "imageHover": "ordinateurs/hp-elitebook-840-g7-3.webp"
+    },
+    {
+      "nom": "HP EliteBook 840 G8 — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-elitebook-840-g8.webp",
+      "imageHover": "ordinateurs/hp-elitebook-840-g8-2.webp"
+    },
+    {
+      "nom": "HP EliteBook 840 G8 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-elitebook-840-g8.webp",
+      "imageHover": "ordinateurs/hp-elitebook-840-g8-3.webp"
+    },
+    {
+      "nom": "HP OmniBook 16 AS0043 Ultra7 — 16 Go / 512 Go",
+      "description": "16\" · Intel Core Ultra7 · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-16-as0043-ultra7.webp",
+      "imageHover": "ordinateurs/hp-omnibook-16-as0043-ultra7-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 16 AS0043 Ultra7 — 16 Go / 1 To",
+      "description": "16\" · Intel Core Ultra7 · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-16-as0043-ultra7.webp",
+      "imageHover": "ordinateurs/hp-omnibook-16-as0043-ultra7-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 16 AS0043 Ultra9 — 16 Go / 512 Go",
+      "description": "16\" · Intel Core Ultra9 · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-16-as0043-ultra9.webp",
+      "imageHover": "ordinateurs/hp-omnibook-16-as0043-ultra9-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 16 AS0043 Ultra9 — 16 Go / 1 To",
+      "description": "16\" · Intel Core Ultra9 · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-16-as0043-ultra9.webp",
+      "imageHover": "ordinateurs/hp-omnibook-16-as0043-ultra9-2.webp"
+    },
+    {
+      "nom": "HP ZBook Firefly 14 G10 — 16 Go / 512 Go",
+      "description": "14\" · Station de travail · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-zbook-firefly-14-g10.webp",
+      "imageHover": "ordinateurs/hp-zbook-firefly-14-g10-2.webp"
+    },
+    {
+      "nom": "HP ZBook Firefly 14 G10 — 16 Go / 1 To",
+      "description": "14\" · Station de travail · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-zbook-firefly-14-g10.webp",
+      "imageHover": "ordinateurs/hp-zbook-firefly-14-g10-3.webp"
+    },
+    {
+      "nom": "HP ZBook Firefly 14 G11 — 16 Go / 512 Go",
+      "description": "14\" · Station de travail · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-zbook-firefly-14-g11.webp",
+      "imageHover": "ordinateurs/hp-zbook-firefly-14-g11-2.webp"
+    },
+    {
+      "nom": "HP ZBook Firefly 14 G11 — 16 Go / 1 To",
+      "description": "14\" · Station de travail · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-zbook-firefly-14-g11.webp",
+      "imageHover": "ordinateurs/hp-zbook-firefly-14-g11-2.webp"
+    },
+    {
+      "nom": "HP Laptop 15-FD0460 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-15-fd0460.webp",
+      "imageHover": "ordinateurs/hp-laptop-15-fd0460-2.webp"
+    },
+    {
+      "nom": "HP Laptop 15-FD0460 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-15-fd0460.webp",
+      "imageHover": "ordinateurs/hp-laptop-15-fd0460-3.webp"
+    },
+    {
+      "nom": "HP Envy x360 — 8 Go / 256 Go",
+      "description": "Convertible tactile · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-envy-x360.webp",
+      "imageHover": "ordinateurs/hp-envy-x360-2.webp"
+    },
+    {
+      "nom": "HP Envy x360 — 16 Go / 512 Go",
+      "description": "Convertible tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-envy-x360.webp",
+      "imageHover": "ordinateurs/hp-envy-x360-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 14 FH0039 Ultra7 — 16 Go / 512 Go",
+      "description": "14\" · Intel Core Ultra7 · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-14-fh0039-ultra7.webp",
+      "imageHover": "ordinateurs/hp-omnibook-14-fh0039-ultra7-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 14 FH0039 Ultra7 — 16 Go / 1 To",
+      "description": "14\" · Intel Core Ultra7 · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-14-fh0039-ultra7.webp",
+      "imageHover": "ordinateurs/hp-omnibook-14-fh0039-ultra7-3.webp"
+    },
+    {
+      "nom": "HP OmniBook 14 FH0039 Ultra9 — 16 Go / 512 Go",
+      "description": "14\" · Intel Core Ultra9 · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-14-fh0039-ultra9.webp",
+      "imageHover": "ordinateurs/hp-omnibook-14-fh0039-ultra9-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 14 FH0039 Ultra9 — 16 Go / 1 To",
+      "description": "14\" · Intel Core Ultra9 · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-14-fh0039-ultra9.webp",
+      "imageHover": "ordinateurs/hp-omnibook-14-fh0039-ultra9-3.webp"
+    },
+    {
+      "nom": "HP OmniBook 14 FM0023 x360 — 8 Go / 256 Go",
+      "description": "14\" · Convertible tactile · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-14-fm0023-x360-3.webp",
+      "imageHover": "ordinateurs/hp-omnibook-14-fm0023-x360-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 14 FM0023 x360 — 16 Go / 512 Go",
+      "description": "14\" · Convertible tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-14-fm0023-x360-3.webp",
+      "imageHover": "ordinateurs/hp-omnibook-14-fm0023-x360.webp"
+    },
+    {
+      "nom": "HP Pavilion 14 x360 EK1010 — 8 Go / 256 Go",
+      "description": "14\" · Convertible tactile · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-pavilion-14-x360-ek1010.webp",
+      "imageHover": "ordinateurs/hp-pavilion-14-x360-ek1010-2.webp"
+    },
+    {
+      "nom": "HP Pavilion 14 x360 EK1010 — 16 Go / 512 Go",
+      "description": "14\" · Convertible tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-pavilion-14-x360-ek1010.webp",
+      "imageHover": "ordinateurs/hp-pavilion-14-x360-ek1010-3.webp"
+    },
+    {
+      "nom": "HP Pavilion 16 AF0063 — 8 Go / 256 Go",
+      "description": "16\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-pavilion-16-af0063.webp",
+      "imageHover": "ordinateurs/hp-pavilion-16-af0063-2.webp"
+    },
+    {
+      "nom": "HP Pavilion 16 AF0063 — 16 Go / 512 Go",
+      "description": "16\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-pavilion-16-af0063.webp",
+      "imageHover": "ordinateurs/hp-pavilion-16-af0063-2.webp"
+    },
+    {
+      "nom": "HP Pavilion 14 x360 — 8 Go / 256 Go",
+      "description": "14\" · Convertible tactile · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-pavilion-14-x360.webp",
+      "imageHover": "ordinateurs/hp-pavilion-14-x360-3.webp"
+    },
+    {
+      "nom": "HP Pavilion 14 x360 — 16 Go / 512 Go",
+      "description": "14\" · Convertible tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-pavilion-14-x360.webp",
+      "imageHover": "ordinateurs/hp-pavilion-14-x360-3.webp"
+    },
+    {
+      "nom": "HP ProBook 440 G10 — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-probook-440-g10.webp",
+      "imageHover": "ordinateurs/hp-probook-440-g10-2.webp"
+    },
+    {
+      "nom": "HP ProBook 440 G10 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-probook-440-g10.webp",
+      "imageHover": "ordinateurs/hp-probook-440-g10-3.webp"
+    },
+    {
+      "nom": "HP ProBook 440 G11 — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-probook-440-g11.webp",
+      "imageHover": "ordinateurs/hp-probook-440-g11-2.webp"
+    },
+    {
+      "nom": "HP ProBook 440 G11 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-probook-440-g11.webp",
+      "imageHover": "ordinateurs/hp-probook-440-g11-2.webp"
+    },
+    {
+      "nom": "HP Spectre 14 EU0008 — 16 Go / 512 Go",
+      "description": "14\" · Premium · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-spectre-14-eu0008.webp",
+      "imageHover": "ordinateurs/hp-spectre-14-eu0008-2.webp"
+    },
+    {
+      "nom": "HP Spectre 14 EU0008 — 16 Go / 1 To",
+      "description": "14\" · Premium · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-spectre-14-eu0008.webp",
+      "imageHover": "ordinateurs/hp-spectre-14-eu0008-3.webp"
+    },
+    {
+      "nom": "HP ZBook Power 16 G11 — 16 Go / 512 Go",
+      "description": "16\" · Station de travail · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-zbook-power16-g11.webp",
+      "imageHover": "ordinateurs/hp-zbook-power16-g11-2.webp"
+    },
+    {
+      "nom": "HP ZBook Power 16 G11 — 16 Go / 1 To",
+      "description": "16\" · Station de travail · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/hp-zbook-power16-g11.webp",
+      "imageHover": "ordinateurs/hp-zbook-power16-g11-2.webp"
+    },
+    {
+      "nom": "HP 14s EP0063CL — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-14s-ep0063cl-2.webp",
+      "imageHover": "ordinateurs/hp-14s-ep0063cl-2.webp"
+    },
+    {
+      "nom": "HP 14s EP0063CL — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-14s-ep0063cl-2.webp",
+      "imageHover": "ordinateurs/hp-14s-ep0063cl-2.webp"
+    },
+    {
+      "nom": "HP Laptop 15 FD0447 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-15-fd0447.webp",
+      "imageHover": "ordinateurs/hp-laptop-15-fd0447-2.webp"
+    },
+    {
+      "nom": "HP Laptop 15 FD0447 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-15-fd0447.webp",
+      "imageHover": "ordinateurs/hp-laptop-15-fd0447-3.webp"
+    },
+    {
+      "nom": "HP OmniBook 14 FP0023 x360 — 8 Go / 256 Go",
+      "description": "14\" · Convertible tactile · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-14-fp0023-x360.webp",
+      "imageHover": "ordinateurs/hp-omnibook-14-fp0023-x360-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 14 FP0023 x360 — 16 Go / 512 Go",
+      "description": "14\" · Convertible tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-14-fp0023-x360.webp",
+      "imageHover": "ordinateurs/hp-omnibook-14-fp0023-x360-4.webp"
+    },
+    {
+      "nom": "HP Envy 14 1013DX x360 — 8 Go / 256 Go",
+      "description": "14\" · Convertible tactile · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-envy-14-1013dx-x360-2.webp",
+      "imageHover": "ordinateurs/hp-envy-14-1013dx-x360.webp"
+    },
+    {
+      "nom": "HP Envy 14 1013DX x360 — 16 Go / 512 Go",
+      "description": "14\" · Convertible tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-envy-14-1013dx-x360-2.webp",
+      "imageHover": "ordinateurs/hp-envy-14-1013dx-x360-3.webp"
+    },
+    {
+      "nom": "HP Laptop 15 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-15.webp",
+      "imageHover": "ordinateurs/hp-laptop-15-2.webp"
+    },
+    {
+      "nom": "HP Laptop 15 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-15.webp",
+      "imageHover": "ordinateurs/hp-laptop-15-3.webp"
+    },
+    {
+      "nom": "HP Laptop 250 G9 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-250-g9.webp",
+      "imageHover": "ordinateurs/hp-laptop-250-g9-2.webp"
+    },
+    {
+      "nom": "HP Laptop 250 G9 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-250-g9.webp",
+      "imageHover": "ordinateurs/hp-laptop-250-g9-2.webp"
+    },
+    {
+      "nom": "HP Laptop 250 G10 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-250-g10.webp",
+      "imageHover": "ordinateurs/hp-laptop-250-g10-2.webp"
+    },
+    {
+      "nom": "HP Laptop 250 G10 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-laptop-250-g10.webp",
+      "imageHover": "ordinateurs/hp-laptop-250-g10-3.webp"
+    },
+    {
+      "nom": "HP OmniBook 16-as0023 x360 — 8 Go / 256 Go",
+      "description": "16\" · Convertible tactile · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-16-as0023-x360.webp",
+      "imageHover": "ordinateurs/hp-omnibook-16-as0023-x360-2.webp"
+    },
+    {
+      "nom": "HP OmniBook 16-as0023 x360 — 16 Go / 512 Go",
+      "description": "16\" · Convertible tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-omnibook-16-as0023-x360.webp",
+      "imageHover": "ordinateurs/hp-omnibook-16-as0023-x360-3.webp"
+    },
+    {
+      "nom": "HP ProBook 430 G8 — 8 Go / 256 Go",
+      "description": "13.3\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-probook-430-g8.webp",
+      "imageHover": "ordinateurs/hp-probook-430-g8-2.webp"
+    },
+    {
+      "nom": "HP ProBook 430 G8 — 16 Go / 512 Go",
+      "description": "13.3\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-probook-430-g8.webp",
+      "imageHover": "ordinateurs/hp-probook-430-g8-4.webp"
+    },
+    {
+      "nom": "HP ProBook 450 G10 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-probook-450-g10.webp",
+      "imageHover": "ordinateurs/hp-probook-450-g10-2.webp"
+    },
+    {
+      "nom": "HP ProBook 450 G10 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/hp-probook-450-g10.webp",
+      "imageHover": "ordinateurs/hp-probook-450-g10-3.webp"
+    },
+    {
+      "nom": "ASUS 14 X1404V — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/asus-14-x1404v.webp",
+      "imageHover": "ordinateurs/asus-14-x1404v-2.webp"
+    },
+    {
+      "nom": "ASUS 14 X1404V — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/asus-14-x1404v.webp",
+      "imageHover": "ordinateurs/asus-14-x1404v-3.webp"
+    },
+    {
+      "nom": "ASUS Vivobook — 8 Go / 256 Go",
+      "description": "8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/asus-vivobook.webp",
+      "imageHover": "ordinateurs/asus-vivobook-2.webp"
+    },
+    {
+      "nom": "ASUS Vivobook — 16 Go / 512 Go",
+      "description": "16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/asus-vivobook.webp",
+      "imageHover": "ordinateurs/asus-vivobook-2.webp"
+    },
+    {
+      "nom": "Dell Latitude 3440 — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-latitude-3440.webp",
+      "imageHover": "ordinateurs/dell-latitude-3440-2.webp"
+    },
+    {
+      "nom": "Dell Latitude 3440 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-latitude-3440.webp",
+      "imageHover": "ordinateurs/dell-latitude-3440-4.webp"
+    },
+    {
+      "nom": "Dell Pro 14 PC14250 — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-pro-14-pc14250.webp",
+      "imageHover": "ordinateurs/dell-pro-14-pc14250-2.webp"
+    },
+    {
+      "nom": "Dell Pro 14 PC14250 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-pro-14-pc14250.webp",
+      "imageHover": "ordinateurs/dell-pro-14-pc14250-3.webp"
+    },
+    {
+      "nom": "Dell Latitude 7320 — 16 Go / 512 Go",
+      "description": "13.3\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-latitude-7320.webp",
+      "imageHover": "ordinateurs/dell-latitude-7320-2.webp"
+    },
+    {
+      "nom": "Dell Latitude 7320 — 16 Go / 1 To",
+      "description": "13.3\" · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/dell-latitude-7320.webp",
+      "imageHover": "ordinateurs/dell-latitude-7320-4.webp"
+    },
+    {
+      "nom": "Dell XPS 13 (9315) — 16 Go / 512 Go",
+      "description": "13.4\" · Premium · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-xps-13-9315.webp",
+      "imageHover": "ordinateurs/dell-xps-13-9315-3.webp"
+    },
+    {
+      "nom": "Dell XPS 13 (9315) — 16 Go / 1 To",
+      "description": "13.4\" · Premium · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/dell-xps-13-9315.webp",
+      "imageHover": "ordinateurs/dell-xps-13-9315-3.webp"
+    },
+    {
+      "nom": "Dell XPS 13 (9320) — 16 Go / 512 Go",
+      "description": "13.4\" · Premium · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-xps-13-9320-3.webp",
+      "imageHover": "ordinateurs/dell-xps-13-9320.webp"
+    },
+    {
+      "nom": "Dell XPS 13 (9320) — 16 Go / 1 To",
+      "description": "13.4\" · Premium · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/dell-xps-13-9320-3.webp",
+      "imageHover": "ordinateurs/dell-xps-13-9320.webp"
+    },
+    {
+      "nom": "Dell Vostro 3520 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-vostro-3520.webp",
+      "imageHover": "ordinateurs/dell-vostro-3520.webp"
+    },
+    {
+      "nom": "Dell Vostro 3520 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-vostro-3520.webp",
+      "imageHover": "ordinateurs/dell-vostro-3520.webp"
+    },
+    {
+      "nom": "Dell Vostro 3530 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-vostro-3530.webp",
+      "imageHover": "ordinateurs/dell-vostro-3530-2.webp"
+    },
+    {
+      "nom": "Dell Vostro 3530 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/dell-vostro-3530.webp",
+      "imageHover": "ordinateurs/dell-vostro-3530-3.webp"
+    },
+    {
+      "nom": "Lenovo IdeaPad Slim3 N305 — 8 Go / 256 Go",
+      "description": "Intel N305 · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-ideapad-slim3-n305.webp",
+      "imageHover": "ordinateurs/lenovo-ideapad-slim3-n305-2.webp"
+    },
+    {
+      "nom": "Lenovo IdeaPad Slim3 N305 — 16 Go / 512 Go",
+      "description": "Intel N305 · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-ideapad-slim3-n305.webp",
+      "imageHover": "ordinateurs/lenovo-ideapad-slim3-n305-3.webp"
+    },
+    {
+      "nom": "Lenovo IdeaPad 5 — 8 Go / 256 Go",
+      "description": "8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-ideapad-5.webp",
+      "imageHover": "ordinateurs/lenovo-ideapad-5-2.webp"
+    },
+    {
+      "nom": "Lenovo IdeaPad 5 — 16 Go / 512 Go",
+      "description": "16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-ideapad-5.webp",
+      "imageHover": "ordinateurs/lenovo-ideapad-5-4.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad X1 Carbon Gen 12 — 16 Go / 512 Go",
+      "description": "14\" · Premium · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-x1-carbon-gen12.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-x1-carbon-gen12-2.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad X1 Carbon Gen 12 — 16 Go / 1 To",
+      "description": "14\" · Premium · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-x1-carbon-gen12.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-x1-carbon-gen12-3.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad E14 G6 — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-e14-g6.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-e14-g6-2.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad E14 G6 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-e14-g6.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-e14-g6-3.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad T14 G5 — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-t14-g5.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-t14-g5-3.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad T14 G5 — 16 Go / 1 To",
+      "description": "14\" · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-t14-g5.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-t14-g5-2.webp"
+    },
+    {
+      "nom": "Lenovo V15 ADA — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-v15-ada.webp",
+      "imageHover": "ordinateurs/lenovo-v15-ada-2.webp"
+    },
+    {
+      "nom": "Lenovo V15 ADA — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-v15-ada.webp",
+      "imageHover": "ordinateurs/lenovo-v15-ada-4.webp"
+    },
+    {
+      "nom": "Lenovo V15 — 8 Go / 256 Go",
+      "description": "15.6\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-v15.webp",
+      "imageHover": "ordinateurs/lenovo-v15-2.webp"
+    },
+    {
+      "nom": "Lenovo V15 — 16 Go / 512 Go",
+      "description": "15.6\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-v15.webp",
+      "imageHover": "ordinateurs/lenovo-v15-3.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad E16 — 8 Go / 256 Go",
+      "description": "16\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-e16.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-e16-3.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad E16 — 16 Go / 512 Go",
+      "description": "16\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-e16.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-e16-4.webp"
+    },
+    {
+      "nom": "Lenovo V14 IGL — 8 Go / 256 Go",
+      "description": "14\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-v14-igl-2.webp",
+      "imageHover": "ordinateurs/lenovo-v14-igl-3.webp"
+    },
+    {
+      "nom": "Lenovo V14 IGL — 16 Go / 512 Go",
+      "description": "14\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-v14-igl.webp",
+      "imageHover": "ordinateurs/lenovo-v14-igl-3.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad P16v G2 — 16 Go / 512 Go",
+      "description": "16\" · Station de travail · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-p16v-g2.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-p16v-g2-2.webp"
+    },
+    {
+      "nom": "Lenovo ThinkPad P16v G2 — 16 Go / 1 To",
+      "description": "16\" · Station de travail · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/lenovo-thinkpad-p16v-g2.webp",
+      "imageHover": "ordinateurs/lenovo-thinkpad-p16v-g2-3.webp"
+    },
+    {
+      "nom": "Lenovo Yoga 7 — 16 Go / 512 Go",
+      "description": "Convertible tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/lenovo-yoga-7.webp",
+      "imageHover": "ordinateurs/lenovo-yoga-7-2.webp"
+    },
+    {
+      "nom": "Lenovo Yoga 7 — 16 Go / 1 To",
+      "description": "Convertible tactile · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/lenovo-yoga-7.webp",
+      "imageHover": "ordinateurs/lenovo-yoga-7-4.webp"
+    },
+    {
+      "nom": "Microsoft Surface Pro 9 — 16 Go / 512 Go",
+      "description": "13\" · 2-en-1 tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/microsoft-surface-pro-9.webp",
+      "imageHover": "ordinateurs/microsoft-surface-pro-9-2.webp"
+    },
+    {
+      "nom": "Microsoft Surface Pro 9 — 16 Go / 1 To",
+      "description": "13\" · 2-en-1 tactile · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/microsoft-surface-pro-9.webp",
+      "imageHover": "ordinateurs/microsoft-surface-pro-9-3.webp"
+    },
+    {
+      "nom": "Microsoft Surface Pro 10 — 16 Go / 512 Go",
+      "description": "13\" · 2-en-1 tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/microsoft-surface-pro-10.webp",
+      "imageHover": "ordinateurs/microsoft-surface-pro-10-2.webp"
+    },
+    {
+      "nom": "Microsoft Surface Pro 10 — 16 Go / 1 To",
+      "description": "13\" · 2-en-1 tactile · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/microsoft-surface-pro-10.webp",
+      "imageHover": "ordinateurs/microsoft-surface-pro-10-2.webp"
+    },
+    {
+      "nom": "Microsoft Surface Pro 11 — 16 Go / 512 Go",
+      "description": "13\" · 2-en-1 tactile · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/microsoft-surface-pro-11.webp",
+      "imageHover": "ordinateurs/microsoft-surface-pro-11-2.webp"
+    },
+    {
+      "nom": "Microsoft Surface Pro 11 — 16 Go / 1 To",
+      "description": "13\" · 2-en-1 tactile · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/microsoft-surface-pro-11.webp",
+      "imageHover": "ordinateurs/microsoft-surface-pro-11-4.webp"
+    },
+    {
+      "nom": "Avita Essentiel Celeron — 4 Go / 128 Go",
+      "description": "Intel Celeron · 4 Go RAM · 128 Go SSD",
+      "imagePrincipale": "ordinateurs/avita-essentiel-celeron.webp",
+      "imageHover": "ordinateurs/avita-essentiel-celeron-2.webp"
+    },
+    {
+      "nom": "Avita Essentiel Celeron — 8 Go / 256 Go",
+      "description": "Intel Celeron · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/avita-essentiel-celeron.webp",
+      "imageHover": "ordinateurs/avita-essentiel-celeron-3.webp"
+    }
+  ],
+  "Mac": [
+    {
+      "nom": "Apple iMac 27\" (2020) — 8 Go / 256 Go",
+      "description": "27\" · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-imac-27-2020.webp",
+      "imageHover": "ordinateurs/apple-imac-27-2020-2.webp"
+    },
+    {
+      "nom": "Apple iMac 27\" (2020) — 16 Go / 512 Go",
+      "description": "27\" · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-imac-27-2020.webp",
+      "imageHover": "ordinateurs/apple-imac-27-2020-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Air M1 — 8 Go / 256 Go",
+      "description": "Puce M1 · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-macbook-air-m1.webp",
+      "imageHover": "ordinateurs/apple-macbook-air-m1-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Air M1 — 16 Go / 512 Go",
+      "description": "Puce M1 · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-macbook-air-m1.webp",
+      "imageHover": "ordinateurs/apple-macbook-air-m1-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Air M2 — 8 Go / 256 Go",
+      "description": "Puce M2 · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-macbook-air-m2.webp",
+      "imageHover": "ordinateurs/apple-macbook-air-m2-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Air M2 — 16 Go / 512 Go",
+      "description": "Puce M2 · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-macbook-air-m2.webp",
+      "imageHover": "ordinateurs/apple-macbook-air-m2-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Air M3 — 8 Go / 256 Go",
+      "description": "Puce M3 · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-macbook-air-m3.webp",
+      "imageHover": "ordinateurs/apple-macbook-air-m3-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Air M3 — 16 Go / 512 Go",
+      "description": "Puce M3 · 16 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-macbook-air-m3.webp",
+      "imageHover": "ordinateurs/apple-macbook-air-m3-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Neo — 8 Go / 256 Go",
+      "description": "Puce A18 Pro · 8 Go RAM · 256 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-neo.webp",
+      "imageHover": "ordinateurs/apple-neo-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Neo — 8 Go / 512 Go",
+      "description": "Puce A18 Pro · 8 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-neo.webp",
+      "imageHover": "ordinateurs/apple-neo-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Pro — 8 Go / 512 Go",
+      "description": "MacBook Pro · 8 Go RAM · 512 Go SSD",
+      "imagePrincipale": "ordinateurs/apple-macbook-pro.webp",
+      "imageHover": "ordinateurs/apple-macbook-pro-2.webp"
+    },
+    {
+      "nom": "Apple MacBook Pro — 16 Go / 1 To",
+      "description": "MacBook Pro · 16 Go RAM · 1 To SSD",
+      "imagePrincipale": "ordinateurs/apple-macbook-pro.webp",
+      "imageHover": "ordinateurs/apple-macbook-pro-2.webp"
+    }
+  ],
+  "Tablettes": [
+    {
+      "nom": "Samsung Galaxy Tab A8 — 64 Go",
+      "description": "64 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-a8.webp",
+      "imageHover": "ordinateurs/samsung-tab-a8-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab A8 — 128 Go",
+      "description": "128 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-a8.webp",
+      "imageHover": "ordinateurs/samsung-tab-a8-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab A9 — 64 Go",
+      "description": "64 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-a9.webp",
+      "imageHover": "ordinateurs/samsung-tab-a9-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab A9 — 128 Go",
+      "description": "128 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-a9.webp",
+      "imageHover": "ordinateurs/samsung-tab-a9-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab S8",
+      "description": "8 Go RAM · 128 Go · Batterie 10 900 mAh",
+      "imagePrincipale": "ordinateurs/samsung-tab-s8.webp",
+      "imageHover": "ordinateurs/samsung-tab-s8-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab S9 — 128 Go",
+      "description": "128 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-s9.webp",
+      "imageHover": "ordinateurs/samsung-tab-s9-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab S9 — 256 Go",
+      "description": "256 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-s9.webp",
+      "imageHover": "ordinateurs/samsung-tab-s9-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab S10 FE — 128 Go",
+      "description": "128 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-s10fe.webp",
+      "imageHover": "ordinateurs/samsung-tab-s10fe-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab S10 FE — 256 Go",
+      "description": "256 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-s10fe.webp",
+      "imageHover": "ordinateurs/samsung-tab-s10fe-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab S11 — 128 Go",
+      "description": "128 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-s11.webp",
+      "imageHover": "ordinateurs/samsung-tab-s11-2.webp"
+    },
+    {
+      "nom": "Samsung Galaxy Tab S11 — 256 Go",
+      "description": "256 Go · Wi-Fi",
+      "imagePrincipale": "ordinateurs/samsung-tab-s11.webp",
+      "imageHover": "ordinateurs/samsung-tab-s11-2.webp"
+    }
+  ]
+}
