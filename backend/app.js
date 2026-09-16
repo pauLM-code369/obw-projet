@@ -5,6 +5,7 @@ require('dotenv').config();
 const express = require('express');
 const { PrismaClient } = require('@prisma/client');
 const { PrismaPg } = require('@prisma/adapter-pg');
+const { envoyerEmailContact, envoyerEmailConfirmationCommande } = require('./email');
 
 const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL });
 const prisma = new PrismaClient({ adapter });
@@ -141,6 +142,8 @@ app.post('/api/commandes', async (req, res) => {
       },
     });
 
+    envoyerEmailConfirmationCommande(commande);
+
     res.status(201).json(commande);
 
   } catch (erreur) {
@@ -160,6 +163,8 @@ app.post('/api/contact', async (req, res) => {
     const messageContact = await prisma.messageContact.create({
       data: { nom, email, telephone, message },
     });
+
+    envoyerEmailContact(nom, email, telephone, message);
 
     res.status(201).json({ succes: true, id: messageContact.id });
 
