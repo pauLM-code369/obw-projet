@@ -606,6 +606,10 @@ document.addEventListener('DOMContentLoaded', function () {
   initRecentsIconLink();
   chargerPcGamerLaptop();
   chargerPcGamerDesktop();
+  chargerPcBureau();
+  chargerPcPortables();
+  chargerMac();
+  chargerTablettes();
 
 });
 
@@ -971,6 +975,182 @@ async function chargerPcGamerDesktop() {
 
   } catch (erreur) {
     console.error('Erreur lors du chargement des PC Gamer Desktop :', erreur);
+  }
+}
+
+async function chargerPcBureau() {
+
+  const grille = document.getElementById('grillePcBureau');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('PC de bureau'));
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des PC de bureau :', erreur);
+  }
+}
+
+async function chargerPcPortables() {
+
+  const grille = document.getElementById('grillePcPortables');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('PC portables'));
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des PC portables :', erreur);
+  }
+}
+
+async function chargerMac() {
+
+  const grille = document.getElementById('grilleMac');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Mac');
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des Mac :', erreur);
+  }
+}
+
+async function chargerTablettes() {
+
+  const grille = document.getElementById('grilleTablettes');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Tablettes');
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des Tablettes :', erreur);
   }
 }
 
