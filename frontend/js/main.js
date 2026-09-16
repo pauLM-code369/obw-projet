@@ -604,6 +604,8 @@ document.addEventListener('DOMContentLoaded', function () {
   chargerProduitsPopulaires();
   afficherRecents();
   initRecentsIconLink();
+  chargerPcGamerLaptop();
+  chargerPcGamerDesktop();
 
 });
 
@@ -880,6 +882,95 @@ async function chargerProduitsScanneurs() {
 
   } catch (erreur) {
     console.error('Erreur lors du chargement des produits :', erreur);
+  }
+}
+
+
+async function chargerPcGamerLaptop() {
+
+  const grille = document.getElementById('grillePcGamerLaptop');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('PC Gamer Laptop'));
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des PC Gamer Laptop :', erreur);
+  }
+}
+
+async function chargerPcGamerDesktop() {
+
+  const grille = document.getElementById('grillePcGamerDesktop');
+  if (!grille) return;
+
+  try {
+    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('PC Gamer Desktop'));
+    const produits = await reponse.json();
+
+    produits.forEach(produit => {
+      const carte = document.createElement('div');
+      carte.className = 'product-card';
+
+      carte.style.cursor = 'pointer';
+      carte.addEventListener('click', (e) => {
+        if (!e.target.closest('.add-to-cart')) {
+          window.location.href = `product.html?id=${produit.id}`;
+        }
+      });
+
+      carte.innerHTML = `
+        <div class="product-img">
+          <img src="../images/produits/${produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-main" />
+          <img src="../images/produits/${produit.imageHover || produit.imagePrincipale}" alt="${produit.nom}" class="product-photo img-hover" />
+          ${iconeBadgeConnectivite(produit.badgeConnectivite)}
+        </div>
+        <div class="product-info">
+          <div class="product-name">${produit.nom}</div>
+          <div class="product-spec">${produit.description || ''}</div>
+          <div class="product-footer">
+            <span class="product-price">${produit.prix.toLocaleString('fr-FR')} F CFA</span>
+            <button class="add-to-cart" data-produit-id="${produit.id}"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Ajouter</button>
+          </div>
+        </div>
+      `;
+
+      grille.appendChild(carte);
+    });
+
+  } catch (erreur) {
+    console.error('Erreur lors du chargement des PC Gamer Desktop :', erreur);
   }
 }
 
