@@ -1,0 +1,1360 @@
+{
+  "Accessoires PC": [
+    {
+      "nom": "Clavier filaire AZERTY HP K1600",
+      "description": "Clavier filaire · USB · AZERTY",
+      "imagePrincipale": "peripheriques/hp-k1600.jpg",
+      "imageHover": "peripheriques/hp-k1600.jpg"
+    },
+    {
+      "nom": "Clavier filaire multimédia Dell KB216",
+      "description": "Clavier filaire · USB · Touches multimédia",
+      "imagePrincipale": "peripheriques/dell-kb216.jpg",
+      "imageHover": "peripheriques/dell-kb216-2.jpg"
+    },
+    {
+      "nom": "Souris sans fil Logitech M187",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/logitech-m187.jpg",
+      "imageHover": "peripheriques/logitech-m187.jpg"
+    },
+    {
+      "nom": "Souris filaire HP M10",
+      "description": "Souris filaire · USB",
+      "imagePrincipale": "peripheriques/hp-m10.jpg",
+      "imageHover": "peripheriques/hp-m10-2.jpg"
+    },
+    {
+      "nom": "Souris filaire HP X500",
+      "description": "Souris filaire · USB",
+      "imagePrincipale": "peripheriques/hp-x500.jpg",
+      "imageHover": "peripheriques/hp-x500-2.webp"
+    },
+    {
+      "nom": "Souris sans fil HP S9000",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/hp-s9000.jpg",
+      "imageHover": "peripheriques/hp-s9000-2.jpg"
+    },
+    {
+      "nom": "Souris sans fil HP W10",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/hp-w10.jpg",
+      "imageHover": "peripheriques/hp-w10.jpg"
+    },
+    {
+      "nom": "Souris filaire Dell MS116",
+      "description": "Souris filaire · USB",
+      "imagePrincipale": "peripheriques/dell-ms116.jpg",
+      "imageHover": "peripheriques/dell-ms116-2.jpg"
+    },
+    {
+      "nom": "Souris sans fil Dell WM126",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/dell-wm126.webp",
+      "imageHover": "peripheriques/dell-wm126-2.webp"
+    },
+    {
+      "nom": "Souris filaire Logitech M90",
+      "description": "Souris filaire · USB",
+      "imagePrincipale": "peripheriques/logitech-m90.jpg",
+      "imageHover": "peripheriques/logitech-m90.jpg"
+    },
+    {
+      "nom": "Souris filaire Logitech M100",
+      "description": "Souris filaire · USB",
+      "imagePrincipale": "peripheriques/logitech-m100.jpg",
+      "imageHover": "peripheriques/logitech-m100-2.jpg"
+    },
+    {
+      "nom": "Souris sans fil Logitech M170",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/logitech-m170.jpg",
+      "imageHover": "peripheriques/logitech-m170-2.jpg"
+    },
+    {
+      "nom": "Souris sans fil Logitech M171",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/logitech-m171.webp",
+      "imageHover": "peripheriques/logitech-m171.webp"
+    },
+    {
+      "nom": "Souris sans fil Logitech M185",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/logitech-m185.jpg",
+      "imageHover": "peripheriques/logitech-m185-2.png"
+    },
+    {
+      "nom": "Souris sans fil Logitech M190",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/logitech-m190.jpg",
+      "imageHover": "peripheriques/logitech-m190-2.jpg"
+    },
+    {
+      "nom": "Souris Bluetooth Logitech M196",
+      "description": "Souris sans fil · Bluetooth",
+      "imagePrincipale": "peripheriques/logitech-m196.jpg",
+      "imageHover": "peripheriques/logitech-m196-2.jpg"
+    },
+    {
+      "nom": "Souris sans fil Logitech M350",
+      "description": "Souris sans fil · Silencieuse",
+      "imagePrincipale": "peripheriques/logitech-m350.jpg",
+      "imageHover": "peripheriques/logitech-m350-2.jpg"
+    },
+    {
+      "nom": "Souris Apple Magic Mouse",
+      "description": "Souris sans fil · Bluetooth · Rechargeable",
+      "imagePrincipale": "peripheriques/apple-magic-mouse.jpg",
+      "imageHover": "peripheriques/apple-magic-mouse-2.jpg"
+    },
+    {
+      "nom": "Souris sans fil Premax M4",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/premax-m4.jpg",
+      "imageHover": "peripheriques/premax-m4.jpg"
+    },
+    {
+      "nom": "Souris sans fil Premax MW8",
+      "description": "Souris sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/premax-mw8.jpg",
+      "imageHover": "peripheriques/premax-mw8.jpg"
+    },
+    {
+      "nom": "Pack clavier + souris sans fil Logitech Mk235",
+      "description": "Sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/logitech-h390.webp",
+      "imageHover": "peripheriques/logitech-h390-2.webp"
+    },
+    {
+      "nom": "Pack clavier + souris sans fil Dell KM3322W",
+      "description": "Sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/dell-km3322w.avif",
+      "imageHover": "peripheriques/dell-km3322w-2.avif"
+    },
+    {
+      "nom": "Pack clavier + souris sans fil Logitech MK270",
+      "description": "Sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/logitech-mk270.webp",
+      "imageHover": "peripheriques/logitech-mk270-2.webp"
+    },
+    {
+      "nom": "Pack clavier + souris sans fil HP CS10 (Noir)",
+      "description": "Sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/hp-cs10-noir.jpg",
+      "imageHover": "peripheriques/hp-cs10-noir-2.jpg"
+    },
+    {
+      "nom": "Pack clavier + souris sans fil HP CS10 (Blanc)",
+      "description": "Sans fil · USB nano-récepteur",
+      "imagePrincipale": "peripheriques/hp-cs10-blanc.jpg",
+      "imageHover": "peripheriques/hp-cs10-blanc.jpg"
+    },
+    {
+      "nom": "Barrette RAM DDR4 4 Go — 3200 MHz (Portable)",
+      "description": "DDR4 · 4 Go · 3200 MHz · SODIMM",
+      "imagePrincipale": "peripheriques/ram-ddr4-3200-4go-portable.jpg",
+      "imageHover": "peripheriques/ram-ddr4-3200-4go-portable.jpg"
+    },
+    {
+      "nom": "Barrette RAM DDR4 16 Go — 3200 MHz",
+      "description": "DDR4 · 16 Go · 3200 MHz",
+      "imagePrincipale": "peripheriques/ram-ddr4-3200-16go.jpg",
+      "imageHover": "peripheriques/ram-ddr4-3200-16go.jpg"
+    },
+    {
+      "nom": "Barrette RAM DDR4 32 Go — 3200 MHz",
+      "description": "DDR4 · 32 Go · 3200 MHz",
+      "imagePrincipale": "peripheriques/ram-ddr4-3200-32go.webp",
+      "imageHover": "peripheriques/ram-ddr4-3200-32go.webp"
+    },
+    {
+      "nom": "Barrette RAM DDR3L 4 Go — 1600 MHz (Bureau)",
+      "description": "DDR3L · 4 Go · 1600 MHz",
+      "imagePrincipale": "peripheriques/ram-ddr3l-1600-4go-bureau.webp",
+      "imageHover": "peripheriques/ram-ddr3l-1600-4go-bureau.webp"
+    },
+    {
+      "nom": "Barrette RAM Crucial DDR4 8 Go — 2133 MHz SODIMM",
+      "description": "DDR4 · 8 Go · 2133 MHz · SODIMM",
+      "imagePrincipale": "peripheriques/ram-crucial-ddr4-2133-8go-sodimm.jpg",
+      "imageHover": "peripheriques/ram-crucial-ddr4-2133-8go-sodimm.jpg"
+    },
+    {
+      "nom": "Barrette RAM DDR5 4800 MHz SODIMM",
+      "description": "DDR5 · 4800 MHz · SODIMM",
+      "imagePrincipale": "peripheriques/ram-ddr5-4800-sodimm.webp",
+      "imageHover": "peripheriques/ram-ddr5-4800-sodimm.webp"
+    },
+    {
+      "nom": "Barrette RAM Crucial DDR4 16 Go ECC — Serveur HP ProLiant DL380",
+      "description": "DDR4 · 16 Go · ECC · Serveur",
+      "imagePrincipale": "peripheriques/ram-crucial-ddr4-16go-ecc-serveur.webp",
+      "imageHover": "peripheriques/ram-crucial-ddr4-16go-ecc-serveur.webp"
+    },
+    {
+      "nom": "Barrette RAM Crucial DDR4 16 Go — 2400 MHz",
+      "description": "DDR4 · 16 Go · 2400 MHz",
+      "imagePrincipale": "peripheriques/ram-crucial-ddr4-2400-16go.webp",
+      "imageHover": "peripheriques/ram-crucial-ddr4-2400-16go.webp"
+    },
+    {
+      "nom": "Barrette RAM Crucial DDR4 4 Go — 3200 MHz (Bureau)",
+      "description": "DDR4 · 4 Go · 3200 MHz",
+      "imagePrincipale": "peripheriques/ram-crucial-ddr4-3200-4go-bureau.jpg",
+      "imageHover": "peripheriques/ram-crucial-ddr4-3200-4go-bureau.jpg"
+    },
+    {
+      "nom": "Barrette RAM Crucial DDR4 8 Go — 2666 MHz (Bureau)",
+      "description": "DDR4 · 8 Go · 2666 MHz",
+      "imagePrincipale": "peripheriques/ram-crucial-ddr4-2666-8go-bureau.jpg",
+      "imageHover": "peripheriques/ram-crucial-ddr4-2666-8go-bureau.jpg"
+    },
+    {
+      "nom": "Barrette RAM Crucial DDR4 32 Go — 3200 MHz (Bureau)",
+      "description": "DDR4 · 32 Go · 3200 MHz",
+      "imagePrincipale": "peripheriques/ram-crucial-ddr4-3200-32go-bureau.jpg",
+      "imageHover": "peripheriques/ram-crucial-ddr4-3200-32go-bureau.jpg"
+    },
+    {
+      "nom": "Barrette RAM Crucial DDR4 32 Go — 3200 MHz (Portable)",
+      "description": "DDR4 · 32 Go · 3200 MHz · SODIMM",
+      "imagePrincipale": "peripheriques/ram-crucial-ddr4-3200-32go-portable.jpg",
+      "imageHover": "peripheriques/ram-crucial-ddr4-3200-32go-portable.jpg"
+    },
+    {
+      "nom": "Barrette RAM Crucial DDR3L 8 Go — 1600 MHz (Bureau)",
+      "description": "DDR3L · 8 Go · 1600 MHz",
+      "imagePrincipale": "peripheriques/ram-crucial-ddr3l-1600-8go-bureau.jpg",
+      "imageHover": "peripheriques/ram-crucial-ddr3l-1600-8go-bureau.jpg"
+    },
+    {
+      "nom": "Barrette RAM Lexar DDR4 16 Go — 3200 MHz (Bureau)",
+      "description": "DDR4 · 16 Go · 3200 MHz",
+      "imagePrincipale": "peripheriques/ram-lexar-ddr4-3200-16go-bureau.jpg",
+      "imageHover": "peripheriques/ram-lexar-ddr4-3200-16go-bureau.jpg"
+    },
+    {
+      "nom": "Barrette RAM Kingston FURY DDR5 8 Go — 4800 MHz",
+      "description": "DDR5 · 8 Go · 4800 MHz",
+      "imagePrincipale": "peripheriques/ram-kingston-fury-ddr5-4800-8go.webp",
+      "imageHover": "peripheriques/ram-kingston-fury-ddr5-4800-8go.webp"
+    },
+    {
+      "nom": "Barrette RAM Kingston FURY DDR5 16 Go — 4800 MHz",
+      "description": "DDR5 · 16 Go · 4800 MHz",
+      "imagePrincipale": "peripheriques/ram-kingston-fury-ddr5-4800-16go.webp",
+      "imageHover": "peripheriques/ram-kingston-fury-ddr5-4800-16go.webp"
+    },
+    {
+      "nom": "Barrette RAM Kingston FURY DDR5 32 Go — 5600 MHz",
+      "description": "DDR5 · 32 Go · 5600 MHz",
+      "imagePrincipale": "peripheriques/ram-kingston-fury-ddr5-5600-32go.jpg",
+      "imageHover": "peripheriques/ram-kingston-fury-ddr5-5600-32go-2.jpg"
+    },
+    {
+      "nom": "RAM Serveur HP 32 Go — PC4-2933Y",
+      "description": "DDR4 · 32 Go · PC4-2933Y · Serveur",
+      "imagePrincipale": "peripheriques/ram-hp-serveur-32go-pc4-2933y.jpg",
+      "imageHover": "peripheriques/ram-hp-serveur-32go-pc4-2933y.jpg"
+    },
+    {
+      "nom": "Adaptateur OTG intelligent pour Android",
+      "description": "Micro USB vers USB",
+      "imagePrincipale": "peripheriques/adaptateur-otg-android.jpg",
+      "imageHover": "peripheriques/adaptateur-otg-android.jpg"
+    },
+    {
+      "nom": "Hub ANTHO USB-C 11 en 1",
+      "description": "HDMI 4K · VGA · LAN RJ45 · 4x USB",
+      "imagePrincipale": "peripheriques/hub-antho-usb-c-11en1.jpg",
+      "imageHover": "peripheriques/hub-antho-usb-c-11en1.jpg"
+    },
+    {
+      "nom": "Hub USB-C Multiport 6 en 1",
+      "description": "HDMI · USB 3.0 · USB 2.0 · Rallonge USB-C",
+      "imagePrincipale": "peripheriques/hub-usb-c-6en1.jpg",
+      "imageHover": "peripheriques/hub-usb-c-6en1.jpg"
+    },
+    {
+      "nom": "Hub USB 3.0 TSUPY",
+      "description": "Câble 1,2 m · Aluminium ultra-fin",
+      "imagePrincipale": "peripheriques/hub-usb-3-tsupy.jpg",
+      "imageHover": "peripheriques/hub-usb-3-tsupy-2.jpg"
+    },
+    {
+      "nom": "Mini station d'accueil HP USB-C",
+      "description": "Station d'accueil USB-C",
+      "imagePrincipale": "peripheriques/station-accueil-hp-usb-c.jpg",
+      "imageHover": "peripheriques/station-accueil-hp-usb-c-2.jpg"
+    },
+    {
+      "nom": "Adaptateur mini dock station HP Hub Type C — 8 sorties",
+      "description": "USB · HDMI · VGA · Multiport",
+      "imagePrincipale": "peripheriques/adaptateur-dock-hp-hub-8-en-1.avif",
+      "imageHover": "peripheriques/adaptateur-dock-hp-hub-8-en-1.avif"
+    },
+    {
+      "nom": "Station d'accueil Surface Pro",
+      "description": "Station d'accueil",
+      "imagePrincipale": "peripheriques/station-accueil-surface-pro.jpg",
+      "imageHover": "peripheriques/station-accueil-surface-pro-2.jpg"
+    },
+    {
+      "nom": "Logitech Group — Système de Webcam",
+      "description": "Webcam salle de réunion",
+      "imagePrincipale": "peripheriques/webcam-logitech-group.jpg",
+      "imageHover": "peripheriques/webcam-logitech-group-2.jpg"
+    },
+    {
+      "nom": "Logitech HD Webcam C920 Pro",
+      "description": "Full HD 1080p",
+      "imagePrincipale": "peripheriques/webcam-logitech-c920pro.jpg",
+      "imageHover": "peripheriques/webcam-logitech-c920pro-2.jpg"
+    },
+    {
+      "nom": "Logitech Webcam C270",
+      "description": "HD 720p",
+      "imagePrincipale": "peripheriques/webcam-logitech-c270.jpg",
+      "imageHover": "peripheriques/webcam-logitech-c270.jpg"
+    },
+    {
+      "nom": "Webcam GF 1200",
+      "description": "Webcam USB",
+      "imagePrincipale": "peripheriques/webcam-gf-1200.jpg",
+      "imageHover": "peripheriques/webcam-gf-1200.jpg"
+    },
+    {
+      "nom": "Webcam Hikvision",
+      "description": "Webcam USB",
+      "imagePrincipale": "peripheriques/webcam-hikvision.jpg",
+      "imageHover": "peripheriques/webcam-hikvision-2.jpg"
+    },
+    {
+      "nom": "Graveur — Lecteur DVD Externe HP USB",
+      "description": "Pour ordinateur portable · USB",
+      "imagePrincipale": "peripheriques/graveur-dvd-hp-externe.jpg",
+      "imageHover": "peripheriques/graveur-dvd-hp-externe-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI 4K — 3 mètres",
+      "description": "HDMI · 4K · 3 m",
+      "imagePrincipale": "peripheriques/cable-hdmi-4k.jpg",
+      "imageHover": "peripheriques/cable-hdmi-4k-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI 4K — 5 mètres",
+      "description": "HDMI · 4K · 5 m",
+      "imagePrincipale": "peripheriques/cable-hdmi-4k.jpg",
+      "imageHover": "peripheriques/cable-hdmi-4k-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI 4K — 10 mètres",
+      "description": "HDMI · 4K · 10 m",
+      "imagePrincipale": "peripheriques/cable-hdmi-4k.jpg",
+      "imageHover": "peripheriques/cable-hdmi-4k-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI 4K — 15 mètres",
+      "description": "HDMI · 4K · 15 m",
+      "imagePrincipale": "peripheriques/cable-hdmi-4k.jpg",
+      "imageHover": "peripheriques/cable-hdmi-4k-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI 4K — 20 mètres",
+      "description": "HDMI · 4K · 20 m",
+      "imagePrincipale": "peripheriques/cable-hdmi-4k.jpg",
+      "imageHover": "peripheriques/cable-hdmi-4k-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI 4K — 30 mètres",
+      "description": "HDMI · 4K · 30 m",
+      "imagePrincipale": "peripheriques/cable-hdmi-4k.jpg",
+      "imageHover": "peripheriques/cable-hdmi-4k-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI 4K — 30 mètres (Pro)",
+      "description": "HDMI · 4K · 30 m",
+      "imagePrincipale": "peripheriques/cable-hdmi-30m-4k.jpg",
+      "imageHover": "peripheriques/cable-hdmi-30m-4k-2.jpg"
+    },
+    {
+      "nom": "Câble Display Port vers HDMI — 1.8 m",
+      "description": "DisplayPort → HDMI · 4K",
+      "imagePrincipale": "peripheriques/cable-dp-hdmi-1-8m.jpg",
+      "imageHover": "peripheriques/cable-dp-hdmi-1-8m-2.jpg"
+    },
+    {
+      "nom": "Câble USB Imprimante TOPLINK — 1.5 m",
+      "description": "USB · Imprimante",
+      "imagePrincipale": "peripheriques/cable-usb-imprimante-toplink.jpg",
+      "imageHover": "peripheriques/cable-usb-imprimante-toplink-2.jpg"
+    },
+    {
+      "nom": "Câble USB Imprimante TOPLINK — 3 m",
+      "description": "USB · Imprimante",
+      "imagePrincipale": "peripheriques/cable-usb-imprimante-toplink.jpg",
+      "imageHover": "peripheriques/cable-usb-imprimante-toplink-2.jpg"
+    },
+    {
+      "nom": "Câble USB Imprimante TOPLINK — 5 m",
+      "description": "USB · Imprimante",
+      "imagePrincipale": "peripheriques/cable-usb-imprimante-toplink.jpg",
+      "imageHover": "peripheriques/cable-usb-imprimante-toplink-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI TOPLINK — 1 m",
+      "description": "HDMI · 1080p 3D · M-M",
+      "imagePrincipale": "peripheriques/cable-hdmi-toplink.jpg",
+      "imageHover": "peripheriques/cable-hdmi-toplink.jpg"
+    },
+    {
+      "nom": "Câble HDMI TOPLINK — 1.5 m",
+      "description": "HDMI · 1080p 3D · M-M",
+      "imagePrincipale": "peripheriques/cable-hdmi-toplink.jpg",
+      "imageHover": "peripheriques/cable-hdmi-toplink.jpg"
+    },
+    {
+      "nom": "Câble HDMI TOPLINK — 2 m",
+      "description": "HDMI · 1080p 3D · M-M",
+      "imagePrincipale": "peripheriques/cable-hdmi-toplink.jpg",
+      "imageHover": "peripheriques/cable-hdmi-toplink.jpg"
+    },
+    {
+      "nom": "Câble HDMI TOPLINK — 3 m",
+      "description": "HDMI · 1080p 3D · M-M",
+      "imagePrincipale": "peripheriques/cable-hdmi-toplink.jpg",
+      "imageHover": "peripheriques/cable-hdmi-toplink.jpg"
+    },
+    {
+      "nom": "Câble HDMI TOPLINK — 5 m",
+      "description": "HDMI · 1080p 3D · M-M",
+      "imagePrincipale": "peripheriques/cable-hdmi-toplink.jpg",
+      "imageHover": "peripheriques/cable-hdmi-toplink.jpg"
+    },
+    {
+      "nom": "Câble HDMI TOPLINK — 10 m",
+      "description": "HDMI · 1080p 3D · M-M",
+      "imagePrincipale": "peripheriques/cable-hdmi-toplink-2.jpg",
+      "imageHover": "peripheriques/cable-hdmi-toplink-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI TOPLINK — 15 m",
+      "description": "HDMI · 1080p 3D · M-M",
+      "imagePrincipale": "peripheriques/cable-hdmi-toplink-2.jpg",
+      "imageHover": "peripheriques/cable-hdmi-toplink-2.jpg"
+    },
+    {
+      "nom": "Câble HDMI TOPLINK — 20 m",
+      "description": "HDMI · 1080p 3D · M-M",
+      "imagePrincipale": "peripheriques/cable-hdmi-toplink-2.jpg",
+      "imageHover": "peripheriques/cable-hdmi-toplink-2.jpg"
+    },
+    {
+      "nom": "Câble VGA — 1.5 m",
+      "description": "VGA",
+      "imagePrincipale": "peripheriques/cable-vga.jpg",
+      "imageHover": "peripheriques/cable-vga.jpg"
+    },
+    {
+      "nom": "Câble VGA — 2 m",
+      "description": "VGA",
+      "imagePrincipale": "peripheriques/cable-vga.jpg",
+      "imageHover": "peripheriques/cable-vga.jpg"
+    },
+    {
+      "nom": "Câble VGA — 3 m",
+      "description": "VGA",
+      "imagePrincipale": "peripheriques/cable-vga.jpg",
+      "imageHover": "peripheriques/cable-vga.jpg"
+    },
+    {
+      "nom": "Câble VGA — 5 m",
+      "description": "VGA",
+      "imagePrincipale": "peripheriques/cable-vga.jpg",
+      "imageHover": "peripheriques/cable-vga.jpg"
+    },
+    {
+      "nom": "Câble d'alimentation PC Bureau / Moniteur",
+      "description": "Noir · Standard",
+      "imagePrincipale": "peripheriques/cable-alim-pc-bureau.jpg",
+      "imageHover": "peripheriques/cable-alim-pc-bureau-2.jpg"
+    },
+    {
+      "nom": "Câble d'alimentation pour chargeur PC portable",
+      "description": "Standard",
+      "imagePrincipale": "peripheriques/cable-alim-chargeur-portable.jpg",
+      "imageHover": "peripheriques/cable-alim-chargeur-portable.jpg"
+    }
+  ],
+  "Audio": [
+    {
+      "nom": "Casque HP USB H100",
+      "description": "Casque filaire · USB",
+      "imagePrincipale": "peripheriques/casque-hp-h100.jpg",
+      "imageHover": "peripheriques/casque-hp-h100.jpg"
+    },
+    {
+      "nom": "Casque HP USB H120 G",
+      "description": "Casque filaire · USB",
+      "imagePrincipale": "peripheriques/casque-hp-h120g.webp",
+      "imageHover": "peripheriques/casque-hp-h120g-2.jpg"
+    },
+    {
+      "nom": "Casque HP USB H200",
+      "description": "Casque filaire · USB",
+      "imagePrincipale": "peripheriques/casque-hp-h200.jpg",
+      "imageHover": "peripheriques/casque-hp-h200-2.jpg"
+    },
+    {
+      "nom": "Casque HP USB H220",
+      "description": "Casque filaire · USB",
+      "imagePrincipale": "peripheriques/casque-hp-h220.jpg",
+      "imageHover": "peripheriques/casque-hp-h220-2.jpg"
+    },
+    {
+      "nom": "Casque Logitech H540",
+      "description": "Casque filaire · USB",
+      "imagePrincipale": "peripheriques/casque-logitech-h540.png",
+      "imageHover": "peripheriques/casque-logitech-h540-2.png"
+    },
+    {
+      "nom": "Casque Logitech H390",
+      "description": "Casque filaire · USB",
+      "imagePrincipale": "peripheriques/casque-logitech-h390.jpg",
+      "imageHover": "peripheriques/casque-logitech-h390-2.jpg"
+    },
+    {
+      "nom": "Casque Logitech H340",
+      "description": "Casque filaire · USB",
+      "imagePrincipale": "peripheriques/casque-logitech-h340.jpg",
+      "imageHover": "peripheriques/casque-logitech-h340-2.jpg"
+    },
+    {
+      "nom": "Casque Logitech H960",
+      "description": "Casque sans fil",
+      "imagePrincipale": "peripheriques/casque-logitech-h960.webp",
+      "imageHover": "peripheriques/casque-logitech-h960-2.webp"
+    },
+    {
+      "nom": "Casque Logitech H111 Filaire",
+      "description": "Casque filaire · Jack 3.5mm",
+      "imagePrincipale": "peripheriques/casque-logitech-h111.jpg",
+      "imageHover": "peripheriques/casque-logitech-h111-2.jpg"
+    },
+    {
+      "nom": "Casque Logitech H110 Filaire",
+      "description": "Casque filaire · Jack 3.5mm",
+      "imagePrincipale": "peripheriques/casque-logitech-h110.webp",
+      "imageHover": "peripheriques/casque-logitech-h110-2.webp"
+    },
+    {
+      "nom": "Casque Logitech H151",
+      "description": "Casque filaire · Jack 3.5mm",
+      "imagePrincipale": "peripheriques/casque-logitech-h151.jpg",
+      "imageHover": "peripheriques/casque-logitech-h151-2.jpg"
+    },
+    {
+      "nom": "Haut-parleur Music FD-Y5",
+      "description": "Enceinte portable",
+      "imagePrincipale": "peripheriques/enceinte-fd-y5.jpg",
+      "imageHover": "peripheriques/enceinte-fd-y5-2.jpg"
+    },
+    {
+      "nom": "Haut-parleur Musique FD-Y3",
+      "description": "Enceinte portable",
+      "imagePrincipale": "peripheriques/enceinte-fd-y3.png",
+      "imageHover": "peripheriques/enceinte-fd-y3-2.png"
+    },
+    {
+      "nom": "Haut-parleur S33 Giga 360",
+      "description": "Enceinte Bluetooth 360°",
+      "imagePrincipale": "peripheriques/enceinte-s33-giga-360.webp",
+      "imageHover": "peripheriques/enceinte-s33-giga-360-2.png"
+    },
+    {
+      "nom": "Enceinte Bluetooth HiFuture Ripple",
+      "description": "Bluetooth · Portable",
+      "imagePrincipale": "peripheriques/enceinte-hifuture-ripple.jpg",
+      "imageHover": "peripheriques/enceinte-hifuture-ripple-2.jpg"
+    },
+    {
+      "nom": "Jabra Speak 510 — Haut-parleur",
+      "description": "Enceinte conférence · USB/Bluetooth",
+      "imagePrincipale": "peripheriques/enceinte-jabra-speak-510.jpg",
+      "imageHover": "peripheriques/enceinte-jabra-speak-510-2.jpg"
+    },
+    {
+      "nom": "Jabra Speak 710 — Enceinte",
+      "description": "Enceinte conférence · USB/Bluetooth",
+      "imagePrincipale": "peripheriques/enceinte-jabra-speak-710.jpg",
+      "imageHover": "peripheriques/enceinte-jabra-speak-710-2.jpg"
+    },
+    {
+      "nom": "Jabra Speak 810 — Haut-parleur",
+      "description": "Enceinte conférence · USB/Bluetooth",
+      "imagePrincipale": "peripheriques/enceinte-jabra-speak-810.jpg",
+      "imageHover": "peripheriques/enceinte-jabra-speak-810-2.jpg"
+    }
+  ],
+  "Consommables & logiciels": [
+    {
+      "nom": "Toner Canon 725 — Noir (1600 pages)",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-canon-725-noir.webp",
+      "imageHover": "peripheriques/toner-canon-725-noir.webp"
+    },
+    {
+      "nom": "Toner HP 59A",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-59a.png",
+      "imageHover": "peripheriques/toner-hp-59a.png"
+    },
+    {
+      "nom": "Toner HP 59X (CF259X) — 10 000 pages",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-59x-cf259x.webp",
+      "imageHover": "peripheriques/toner-hp-59x-cf259x.webp"
+    },
+    {
+      "nom": "Toner HP 107A",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-107a.png",
+      "imageHover": "peripheriques/toner-hp-107a.png"
+    },
+    {
+      "nom": "Toner HP 207A — Noir",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-207a-noir.png",
+      "imageHover": "peripheriques/toner-hp-207a-noir-2.png"
+    },
+    {
+      "nom": "Toner HP 17A (CF217A) — Compatible",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-17a-cf217a.webp",
+      "imageHover": "peripheriques/toner-hp-17a-cf217a.webp"
+    },
+    {
+      "nom": "Toner HP 207X — Jaune (W2212X) Haute capacité",
+      "description": "Toner laser · Original",
+      "imagePrincipale": "peripheriques/toner-hp-207x-jaune-w2212x.png",
+      "imageHover": "peripheriques/toner-hp-207x-jaune-w2212x.png"
+    },
+    {
+      "nom": "Ensemble Toner HP 205A — 4 couleurs (CF530-533A)",
+      "description": "Toner laser · Compatible",
+      "imagePrincipale": "peripheriques/toner-hp-205a-pack4.jpg",
+      "imageHover": "peripheriques/toner-hp-205a-pack4.jpg"
+    },
+    {
+      "nom": "Toner HP 117A",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-117a.jpg",
+      "imageHover": "peripheriques/toner-hp-117a.jpg"
+    },
+    {
+      "nom": "Toner HP 307A — Noir (CE740A)",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-307a-ce740a.webp",
+      "imageHover": "peripheriques/toner-hp-307a-ce740a.webp"
+    },
+    {
+      "nom": "Toner HP 410A — Noir Original (CF410A)",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-410a-cf410a.png",
+      "imageHover": "peripheriques/toner-hp-410a-cf410a.png"
+    },
+    {
+      "nom": "Toner HP 216A — Magenta (W2413A) — 850 pages",
+      "description": "Toner laser · Magenta",
+      "imagePrincipale": "peripheriques/toner-hp-216a-w2413a-magenta.jpg",
+      "imageHover": "peripheriques/toner-hp-216a-w2413a-magenta.jpg"
+    },
+    {
+      "nom": "Toner HP 106A — Black (W1106A) — 1000 pages",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-106a-w1106a.jpg",
+      "imageHover": "peripheriques/toner-hp-106a-w1106a-2.jpg"
+    },
+    {
+      "nom": "Toner HP LaserJet 130A — Magenta",
+      "description": "Toner laser · Magenta",
+      "imagePrincipale": "peripheriques/toner-hp-130a-magenta.jpg",
+      "imageHover": "peripheriques/toner-hp-130a-magenta-2.jpg"
+    },
+    {
+      "nom": "Kit Toner HP 130A — 4 couleurs",
+      "description": "Toner laser · Pack 4 couleurs",
+      "imagePrincipale": "peripheriques/toner-hp-130a-kit4.jpg",
+      "imageHover": "peripheriques/toner-hp-130a-kit4.jpg"
+    },
+    {
+      "nom": "Pack 4 Cartouches Toner HP 207A — BCYM",
+      "description": "Toner laser · Pack 4 couleurs",
+      "imagePrincipale": "peripheriques/toner-hp-207a-pack4.jpg",
+      "imageHover": "peripheriques/toner-hp-207a-pack4.jpg"
+    },
+    {
+      "nom": "Pack 4 Cartouches Toner HP 216A — BCYM",
+      "description": "Toner laser · Pack 4 couleurs",
+      "imagePrincipale": "peripheriques/toner-hp-216a-pack4.webp",
+      "imageHover": "peripheriques/toner-hp-216a-pack4.webp"
+    },
+    {
+      "nom": "Toner Premax 83A",
+      "description": "Toner laser · Compatible",
+      "imagePrincipale": "peripheriques/toner-premax-83a.webp",
+      "imageHover": "peripheriques/toner-premax-83a.webp"
+    },
+    {
+      "nom": "Toner Canon C-EXV 66 — Noir",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-canon-cexv66.jpg",
+      "imageHover": "peripheriques/toner-canon-cexv66.jpg"
+    },
+    {
+      "nom": "Pack Toner Canon C-EXV 54",
+      "description": "Toner laser",
+      "imagePrincipale": "peripheriques/toner-canon-cexv54.jpg",
+      "imageHover": "peripheriques/toner-canon-cexv54.jpg"
+    },
+    {
+      "nom": "Toner HP 85A — Compatible (CE285A)",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-85a-ce285a.jpg",
+      "imageHover": "peripheriques/toner-hp-85a-ce285a.jpg"
+    },
+    {
+      "nom": "Toner Canon C-EXV 49 — Pack 4 couleurs",
+      "description": "Toner laser · Pack 4 couleurs",
+      "imagePrincipale": "peripheriques/toner-canon-cexv49-pack-couleurs.webp",
+      "imageHover": "peripheriques/toner-canon-cexv49-pack-couleurs.webp"
+    },
+    {
+      "nom": "Toner HP 415A — Noir (W2030A) — 2400 pages",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-415a-w2030a.jpg",
+      "imageHover": "peripheriques/toner-hp-415a-w2030a-2.jpg"
+    },
+    {
+      "nom": "Toner HP 79A — Original Noir (CF279A)",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-79a-cf279a.webp",
+      "imageHover": "peripheriques/toner-hp-79a-cf279a.webp"
+    },
+    {
+      "nom": "Toner HP 206A — Original Noir",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-206a.webp",
+      "imageHover": "peripheriques/toner-hp-206a.webp"
+    },
+    {
+      "nom": "Toner HP 26A — Compatible Noir (CF226A)",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-26a-cf226a.jpg",
+      "imageHover": "peripheriques/toner-hp-26a-cf226a-2.jpg"
+    },
+    {
+      "nom": "Toner HP 106A — Original Noir",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-hp-106a-original.png",
+      "imageHover": "peripheriques/toner-hp-106a-original.png"
+    },
+    {
+      "nom": "Toner HP 410A — Original Couleur",
+      "description": "Toner laser · Couleur",
+      "imagePrincipale": "peripheriques/toner-hp-410a-original-couleur.png",
+      "imageHover": "peripheriques/toner-hp-410a-original-couleur.png"
+    },
+    {
+      "nom": "Cartouche Laser Premax 17A — Compatible",
+      "description": "Toner laser · Compatible",
+      "imagePrincipale": "peripheriques/toner-premax-17a.png",
+      "imageHover": "peripheriques/toner-premax-17a.png"
+    },
+    {
+      "nom": "Cartouche Laser Premax 30A — Compatible",
+      "description": "Toner laser · Compatible",
+      "imagePrincipale": "peripheriques/toner-premax-30a.jpg",
+      "imageHover": "peripheriques/toner-premax-30a-2.jpg"
+    },
+    {
+      "nom": "Cartouche Laser Premax 59A",
+      "description": "Toner laser · Compatible",
+      "imagePrincipale": "peripheriques/toner-premax-59a.webp",
+      "imageHover": "peripheriques/toner-premax-59a.webp"
+    },
+    {
+      "nom": "Cartouche Laser Premax 230A",
+      "description": "Toner laser · Compatible",
+      "imagePrincipale": "peripheriques/toner-premax-230a.jpg",
+      "imageHover": "peripheriques/toner-premax-230a.jpg"
+    },
+    {
+      "nom": "Cartouche Laser Premax 305A — Pack 4 (CF410-413)",
+      "description": "Toner laser · Pack 4 couleurs",
+      "imagePrincipale": "peripheriques/toner-premax-305a-pack4.jpg",
+      "imageHover": "peripheriques/toner-premax-305a-pack4.jpg"
+    },
+    {
+      "nom": "Toner Canon 069 — Noir",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-canon-069.jpg",
+      "imageHover": "peripheriques/toner-canon-069.jpg"
+    },
+    {
+      "nom": "Toner Canon C-EXV 49 — Noir",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-canon-cexv49-noir.jpg",
+      "imageHover": "peripheriques/toner-canon-cexv49-noir.jpg"
+    },
+    {
+      "nom": "Toner Canon C-EXV 65 — Noir",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-canon-cexv65.jpg",
+      "imageHover": "peripheriques/toner-canon-cexv65.jpg"
+    },
+    {
+      "nom": "Toner Canon C-EXV 67 — Noir",
+      "description": "Toner laser · Noir",
+      "imagePrincipale": "peripheriques/toner-canon-cexv67.jpg",
+      "imageHover": "peripheriques/toner-canon-cexv67.jpg"
+    },
+    {
+      "nom": "Cartouche d'encre HP 650 — Noir",
+      "description": "Cartouche jet d'encre · Noir",
+      "imagePrincipale": "peripheriques/encre-hp-650-noir.jpg",
+      "imageHover": "peripheriques/encre-hp-650-noir.jpg"
+    },
+    {
+      "nom": "Cartouche d'encre HP 650 — Couleur",
+      "description": "Cartouche jet d'encre · Couleur",
+      "imagePrincipale": "peripheriques/encre-hp-650-couleur.webp",
+      "imageHover": "peripheriques/encre-hp-650-couleur.webp"
+    },
+    {
+      "nom": "Bouteille d'encre Epson 108 — Noir",
+      "description": "Encre EcoTank · Noir",
+      "imagePrincipale": "peripheriques/encre-epson-108-noir.jpg",
+      "imageHover": "peripheriques/encre-epson-108-noir.jpg"
+    },
+    {
+      "nom": "HP 21-22 — Pack de 2 (Noir + Couleurs, SD367AE)",
+      "description": "Cartouche jet d'encre originale",
+      "imagePrincipale": "peripheriques/encre-hp-21-22-pack.webp",
+      "imageHover": "peripheriques/encre-hp-21-22-pack.webp"
+    },
+    {
+      "nom": "Cartouche HP 564 — Jaune (CB320WN)",
+      "description": "Cartouche jet d'encre originale",
+      "imagePrincipale": "peripheriques/encre-hp-564-jaune.jpg",
+      "imageHover": "peripheriques/encre-hp-564-jaune.jpg"
+    },
+    {
+      "nom": "Cartouche HP 652 — Couleur (Advantage)",
+      "description": "Cartouche jet d'encre · Couleur",
+      "imagePrincipale": "peripheriques/encre-hp-652-couleur.jpg",
+      "imageHover": "peripheriques/encre-hp-652-couleur-2.jpg"
+    },
+    {
+      "nom": "HP 953XL — Pack de 4 Cartouches",
+      "description": "Cartouche jet d'encre · Pack 4",
+      "imagePrincipale": "peripheriques/encre-hp-953xl-pack4.jpg",
+      "imageHover": "peripheriques/encre-hp-953xl-pack4.jpg"
+    },
+    {
+      "nom": "Cartouche HP 953XL — Jaune",
+      "description": "Cartouche jet d'encre · Jaune",
+      "imagePrincipale": "peripheriques/encre-hp-953xl-jaune.jpg",
+      "imageHover": "peripheriques/encre-hp-953xl-jaune.jpg"
+    },
+    {
+      "nom": "Cartouche HP 653 — Ink Advantage Noire",
+      "description": "Cartouche jet d'encre · Noir · Authentique",
+      "imagePrincipale": "peripheriques/encre-hp-653.webp",
+      "imageHover": "peripheriques/encre-hp-653.webp"
+    },
+    {
+      "nom": "Cartouche HP 953XL — Noir",
+      "description": "Cartouche jet d'encre · Noir",
+      "imagePrincipale": "peripheriques/encre-hp-953xl-noir.jpg",
+      "imageHover": "peripheriques/encre-hp-953xl-noir.jpg"
+    },
+    {
+      "nom": "Pack Cartouche HP 63 — Noir + Couleur",
+      "description": "Cartouche jet d'encre · Pack 2",
+      "imagePrincipale": "peripheriques/encre-hp-63-pack.jpg",
+      "imageHover": "peripheriques/encre-hp-63-pack.jpg"
+    },
+    {
+      "nom": "Cartouche HP 305 — Noir",
+      "description": "Cartouche jet d'encre · Noir",
+      "imagePrincipale": "peripheriques/encre-hp-305-noir.webp",
+      "imageHover": "peripheriques/encre-hp-305-noir.webp"
+    },
+    {
+      "nom": "Bouteille d'encre Epson EcoTank 103 — Noire",
+      "description": "Encre EcoTank · Noir",
+      "imagePrincipale": "peripheriques/encre-epson-ecotank-103.jpg",
+      "imageHover": "peripheriques/encre-epson-ecotank-103-2.jpg"
+    },
+    {
+      "nom": "Cartouche HP 177 — Magenta",
+      "description": "Cartouche jet d'encre · Magenta",
+      "imagePrincipale": "peripheriques/encre-hp-177-magenta.jpg",
+      "imageHover": "peripheriques/encre-hp-177-magenta.jpg"
+    },
+    {
+      "nom": "Encre liquide Dye Ink — 1 litre",
+      "description": "Encre liquide · 1L",
+      "imagePrincipale": "peripheriques/encre-liquide-dye-ink-1l.webp",
+      "imageHover": "peripheriques/encre-liquide-dye-ink-1l.webp"
+    },
+    {
+      "nom": "Cartouche HP 21 — Noir (C9351AE)",
+      "description": "Cartouche jet d'encre · Noir",
+      "imagePrincipale": "peripheriques/encre-hp-21-noir.jpg",
+      "imageHover": "peripheriques/encre-hp-21-noir.jpg"
+    },
+    {
+      "nom": "Cartouche HP 63 — Tricolore",
+      "description": "Cartouche jet d'encre · Tricolore",
+      "imagePrincipale": "peripheriques/encre-hp-63-tricolore.webp",
+      "imageHover": "peripheriques/encre-hp-63-tricolore.webp"
+    },
+    {
+      "nom": "Cartouche HP 305 — Couleur (3YM60AE)",
+      "description": "Cartouche jet d'encre · Couleur",
+      "imagePrincipale": "peripheriques/encre-hp-305-couleur.webp",
+      "imageHover": "peripheriques/encre-hp-305-couleur.webp"
+    },
+    {
+      "nom": "Cartouche HP 123 — Tricolor",
+      "description": "Cartouche jet d'encre · Tricolore",
+      "imagePrincipale": "peripheriques/encre-hp-123-tricolor.jpg",
+      "imageHover": "peripheriques/encre-hp-123-tricolor-2.jpg"
+    },
+    {
+      "nom": "Cartouche HP 177 — Noir",
+      "description": "Cartouche jet d'encre · Noir",
+      "imagePrincipale": "peripheriques/encre-hp-177-noir.jpg",
+      "imageHover": "peripheriques/encre-hp-177-noir.jpg"
+    },
+    {
+      "nom": "Cartouche HP 61 — Noir",
+      "description": "Cartouche jet d'encre · Noir",
+      "imagePrincipale": "peripheriques/encre-hp-61-noir.webp",
+      "imageHover": "peripheriques/encre-hp-61-noir.webp"
+    },
+    {
+      "nom": "Cartouche HP 61 — Couleur (CH562WM)",
+      "description": "Cartouche jet d'encre · Couleur",
+      "imagePrincipale": "peripheriques/encre-hp-61-couleur.jpg",
+      "imageHover": "peripheriques/encre-hp-61-couleur.jpg"
+    },
+    {
+      "nom": "Windows 10 Pro 64 bits — DVD avec licence",
+      "description": "Licence logicielle",
+      "imagePrincipale": "peripheriques/windows-10-pro-dvd.webp",
+      "imageHover": "peripheriques/windows-10-pro-dvd-2.webp"
+    },
+    {
+      "nom": "Windows Server Standard 2019 — Licence & Clé",
+      "description": "Licence logicielle · Serveur",
+      "imagePrincipale": "peripheriques/windows-server-2019.jpg",
+      "imageHover": "peripheriques/windows-server-2019-2.jpg"
+    },
+    {
+      "nom": "Office 2021 Professionnel Plus — Clé d'activation Globale",
+      "description": "Licence logicielle",
+      "imagePrincipale": "peripheriques/office-2021-pro-plus.jpg",
+      "imageHover": "peripheriques/office-2021-pro-plus.jpg"
+    },
+    {
+      "nom": "Clé USB Bootable + Licence Windows 10 Professionnel",
+      "description": "Licence logicielle · Support USB",
+      "imagePrincipale": "peripheriques/cle-usb-windows-10-pro.jpg",
+      "imageHover": "peripheriques/cle-usb-windows-10-pro.jpg"
+    },
+    {
+      "nom": "Kaspersky Internet Security — 3 Postes + 1 Offert (1 an)",
+      "description": "Licence antivirus",
+      "imagePrincipale": "peripheriques/kaspersky-internet-security-3postes.webp",
+      "imageHover": "peripheriques/kaspersky-internet-security-3postes.webp"
+    },
+    {
+      "nom": "Kaspersky Small Office Security — 1 Serveur + 10 PC",
+      "description": "Licence antivirus",
+      "imagePrincipale": "peripheriques/kaspersky-small-office.jpg",
+      "imageHover": "peripheriques/kaspersky-small-office.jpg"
+    },
+    {
+      "nom": "Office Professionnel Plus 2019 — Coffret + USB (1 PC)",
+      "description": "Licence logicielle",
+      "imagePrincipale": "peripheriques/office-2019-pro-plus-coffret.webp",
+      "imageHover": "peripheriques/office-2019-pro-plus-coffret.webp"
+    },
+    {
+      "nom": "Visio Professionnel 2021 — Coffret (1 PC)",
+      "description": "Licence logicielle",
+      "imagePrincipale": "peripheriques/visio-2021-pro-coffret.webp",
+      "imageHover": "peripheriques/visio-2021-pro-coffret.webp"
+    },
+    {
+      "nom": "Office 2019 Professionnel Plus",
+      "description": "Licence logicielle",
+      "imagePrincipale": "peripheriques/office-2019-pro-plus.jpg",
+      "imageHover": "peripheriques/office-2019-pro-plus.jpg"
+    },
+    {
+      "nom": "Licence Windows 11 — Sticker",
+      "description": "Licence logicielle",
+      "imagePrincipale": "peripheriques/windows-11-sticker.jpg",
+      "imageHover": "peripheriques/windows-11-sticker.jpg"
+    },
+    {
+      "nom": "Microsoft 365 Professional Plus — Licence 5 PC",
+      "description": "Licence logicielle",
+      "imagePrincipale": "peripheriques/microsoft-365-pro-plus-5pc.jpg",
+      "imageHover": "peripheriques/microsoft-365-pro-plus-5pc-2.webp"
+    },
+    {
+      "nom": "Coffret Windows 11 — USB + Clé",
+      "description": "Licence logicielle · Support USB",
+      "imagePrincipale": "peripheriques/windows-11-coffret-usb.jpg",
+      "imageHover": "peripheriques/windows-11-coffret-usb.jpg"
+    },
+    {
+      "nom": "Carte PVC Clemsys",
+      "description": "Carte vierge · Impression badge",
+      "imagePrincipale": "peripheriques/carte-pvc-clemsys.jpg",
+      "imageHover": "peripheriques/carte-pvc-clemsys.jpg"
+    },
+    {
+      "nom": "Ruban PVC Evolis Primacy 2 — YMCKO (r5f208m100)",
+      "description": "Ruban couleur · Imprimante badge",
+      "imagePrincipale": "peripheriques/ruban-pvc-evolis-primacy2.jpg",
+      "imageHover": "peripheriques/ruban-pvc-evolis-primacy2-2.jpg"
+    },
+    {
+      "nom": "Ruban PVC Evolis Primacy — YMCKO",
+      "description": "Ruban couleur · Imprimante badge",
+      "imagePrincipale": "peripheriques/ruban-pvc-evolis-primacy.png",
+      "imageHover": "peripheriques/ruban-pvc-evolis-primacy-2.png"
+    }
+  ],
+  "Équipements bureau": [
+    {
+      "nom": "Batterie onduleur UPS Premax — 12V 7Ah",
+      "description": "Batterie de remplacement",
+      "imagePrincipale": "peripheriques/batterie-onduleur-premax-12v-7ah.jpg",
+      "imageHover": "peripheriques/batterie-onduleur-premax-12v-7ah.jpg"
+    },
+    {
+      "nom": "Onduleur Back-UPS APC 800 VA — 230V, AVR, prises CEI",
+      "description": "Onduleur · 800 VA",
+      "imagePrincipale": "peripheriques/onduleur-apc-800va.jpg",
+      "imageHover": "peripheriques/onduleur-apc-800va.jpg"
+    },
+    {
+      "nom": "Onduleur APC 750VA Line-Interactive — BX750MI",
+      "description": "Onduleur · 750 VA",
+      "imagePrincipale": "peripheriques/onduleur-apc-750va-bx750mi.jpg",
+      "imageHover": "peripheriques/onduleur-apc-750va-bx750mi.jpg"
+    },
+    {
+      "nom": "Onduleur 1500 VA",
+      "description": "Onduleur · 1500 VA",
+      "imagePrincipale": "peripheriques/onduleur-1500va.jpg",
+      "imageHover": "peripheriques/onduleur-1500va-2.jpg"
+    },
+    {
+      "nom": "Onduleur APC Easy UPS — 650VA, Prises Universelles",
+      "description": "Onduleur · 650 VA",
+      "imagePrincipale": "peripheriques/onduleur-apc-easy-ups-650va.jpg",
+      "imageHover": "peripheriques/onduleur-apc-easy-ups-650va-2.jpg"
+    },
+    {
+      "nom": "Onduleur APC Back-UPS Pro — BR1600MI, 960W/1600VA",
+      "description": "Onduleur Line-interactive · 1600 VA",
+      "imagePrincipale": "peripheriques/onduleur-apc-back-ups-pro-br1600mi.webp",
+      "imageHover": "peripheriques/onduleur-apc-back-ups-pro-br1600mi-2.webp"
+    },
+    {
+      "nom": "Onduleur Premax 10kVA — Monophasé (PM-UPS10KVA)",
+      "description": "Onduleur · 10 kVA",
+      "imagePrincipale": "peripheriques/onduleur-premax-10kva.jpg",
+      "imageHover": "peripheriques/onduleur-premax-10kva.jpg"
+    },
+    {
+      "nom": "Onduleur Premax 900VA — PM-UPS900",
+      "description": "Onduleur · 900 VA",
+      "imagePrincipale": "peripheriques/onduleur-premax-900va.jpg",
+      "imageHover": "peripheriques/onduleur-premax-900va.jpg"
+    },
+    {
+      "nom": "Onduleur Premax 2250VA",
+      "description": "Onduleur · 2250 VA",
+      "imagePrincipale": "peripheriques/onduleur-premax-2250va.jpg",
+      "imageHover": "peripheriques/onduleur-premax-2250va.jpg"
+    },
+    {
+      "nom": "Onduleur APC 1000VA — SMC1000ic Online",
+      "description": "Onduleur Online · 1000 VA",
+      "imagePrincipale": "peripheriques/onduleur-apc-1000va-smc1000ic.gif",
+      "imageHover": "peripheriques/onduleur-apc-1000va-smc1000ic-2.gif"
+    },
+    {
+      "nom": "Onduleur APC 6000VA — SRTG6KXLI (6 kVA)",
+      "description": "Onduleur · 6 kVA",
+      "imagePrincipale": "peripheriques/onduleur-apc-6000va-srtg6kxli.jpg",
+      "imageHover": "peripheriques/onduleur-apc-6000va-srtg6kxli.jpg"
+    },
+    {
+      "nom": "Onduleur Lightwave 3KVA — Online",
+      "description": "Onduleur Online · 3 kVA",
+      "imagePrincipale": "peripheriques/onduleur-lightwave-3kva.webp",
+      "imageHover": "peripheriques/onduleur-lightwave-3kva.webp"
+    },
+    {
+      "nom": "Onduleur Premax 3KVA — Écran Input/Output",
+      "description": "Onduleur · 3 kVA",
+      "imagePrincipale": "peripheriques/onduleur-premax-3kva-ecran.webp",
+      "imageHover": "peripheriques/onduleur-premax-3kva-ecran-2.webp"
+    },
+    {
+      "nom": "Onduleur Premax 6KVA — Monophasé Online (PM-UPS6KVA)",
+      "description": "Onduleur Online · 6 kVA",
+      "imagePrincipale": "peripheriques/onduleur-premax-6kva.jpg",
+      "imageHover": "peripheriques/onduleur-premax-6kva-2.jpg"
+    },
+    {
+      "nom": "Onduleur Eaton 5S 1500i — 900W / 1500VA",
+      "description": "Onduleur · 1500 VA",
+      "imagePrincipale": "peripheriques/onduleur-eaton-5s-1500i.jpg",
+      "imageHover": "peripheriques/onduleur-eaton-5s-1500i-2.jpg"
+    },
+    {
+      "nom": "Régulateur de tension Premax 1000VA — PM-SDG1000",
+      "description": "Régulateur de tension",
+      "imagePrincipale": "peripheriques/regulateur-tension-premax-1000va.jpg",
+      "imageHover": "peripheriques/regulateur-tension-premax-1000va-2.jpg"
+    },
+    {
+      "nom": "Groupe électrogène diesel silencieux 6,5 KVA — HDG5500SE Industrie",
+      "description": "Démarrage électrique · Diesel",
+      "imagePrincipale": "peripheriques/groupe-electrogene-diesel-6-5kva.webp",
+      "imageHover": "peripheriques/groupe-electrogene-diesel-6-5kva-2.webp"
+    },
+    {
+      "nom": "Groupe électrogène Kisan K2",
+      "description": "Groupe électrogène",
+      "imagePrincipale": "peripheriques/groupe-electrogene-kisan-k2.jpg",
+      "imageHover": "peripheriques/groupe-electrogene-kisan-k2-2.jpg"
+    },
+    {
+      "nom": "Climatiseur Split Premax 18000 BTU — 2CV (PM-SAC18T1)",
+      "description": "Climatiseur split · 18000 BTU",
+      "imagePrincipale": "peripheriques/clim-premax-18000btu.webp",
+      "imageHover": "peripheriques/clim-premax-18000btu-2.webp"
+    },
+    {
+      "nom": "Climatiseur Premax Split 12000 BTU — 1,5CH (PM-SAC12T1)",
+      "description": "Climatiseur split · 12000 BTU",
+      "imagePrincipale": "peripheriques/clim-premax-12000btu.webp",
+      "imageHover": "peripheriques/clim-premax-12000btu-2.png"
+    },
+    {
+      "nom": "Climatiseur Split Premax 9000 BTU — 1CH (PM-SAC09T1)",
+      "description": "Climatiseur split · 9000 BTU",
+      "imagePrincipale": "peripheriques/clim-premax-9000btu.jpg",
+      "imageHover": "peripheriques/clim-premax-9000btu-2.jpg"
+    },
+    {
+      "nom": "Caisse enregistreuse POS Golden Side",
+      "description": "Caisse enregistreuse",
+      "imagePrincipale": "peripheriques/caisse-pos-golden-side.jpg",
+      "imageHover": "peripheriques/caisse-pos-golden-side-2.jpg"
+    },
+    {
+      "nom": "Caisse Tactile POS — Double écran + Tiroir de caisse",
+      "description": "Caisse tactile POS",
+      "imagePrincipale": "peripheriques/caisse-pos-tactile-double-ecran.jpg",
+      "imageHover": "peripheriques/caisse-pos-tactile-double-ecran-2.jpg"
+    },
+    {
+      "nom": "Tiroir-Caisse Premax",
+      "description": "Tiroir-caisse",
+      "imagePrincipale": "peripheriques/tiroir-caisse-premax.jpg",
+      "imageHover": "peripheriques/tiroir-caisse-premax-2.jpg"
+    },
+    {
+      "nom": "Compteuse de billets Premax — PM-VC110T",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-premax-vc110t.webp",
+      "imageHover": "peripheriques/compteuse-billets-premax-vc110t-2.webp"
+    },
+    {
+      "nom": "Compteuse de billets — Avec détecteur de faux billets",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-detecteur-faux.jpg",
+      "imageHover": "peripheriques/compteuse-billets-detecteur-faux-2.jpg"
+    },
+    {
+      "nom": "Compteuse de Billets Électronique",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-electronique.jpg",
+      "imageHover": "peripheriques/compteuse-billets-electronique-2.jpg"
+    },
+    {
+      "nom": "Compteuse de billets Golden Gate — Apollo",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-golden-gate-apollo.jpg",
+      "imageHover": "peripheriques/compteuse-billets-golden-gate-apollo-2.jpg"
+    },
+    {
+      "nom": "Compteuse de billets Golden Gate — BC-900",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-golden-gate-bc900.jpg",
+      "imageHover": "peripheriques/compteuse-billets-golden-gate-bc900-2.jpg"
+    },
+    {
+      "nom": "Compteuse de billets manuelle Golden Gate — BC1000",
+      "description": "Compteuse manuelle",
+      "imagePrincipale": "peripheriques/compteuse-billets-manuelle-golden-gate-bc1000.jpg",
+      "imageHover": "peripheriques/compteuse-billets-manuelle-golden-gate-bc1000-2.jpg"
+    },
+    {
+      "nom": "Compteuse de billets Premax — PM CC90D",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-premax-cc90d.jpg",
+      "imageHover": "peripheriques/compteuse-billets-premax-cc90d.jpg"
+    },
+    {
+      "nom": "Machine à compter Premax — CC85A",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-premax-cc85a.jpg",
+      "imageHover": "peripheriques/compteuse-billets-premax-cc85a-2.jpg"
+    },
+    {
+      "nom": "Machine à compter Premax — CC100",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-premax-cc100.webp",
+      "imageHover": "peripheriques/compteuse-billets-premax-cc100-2.webp"
+    },
+    {
+      "nom": "Compteuse de billets Premax — CC35",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-premax-cc35.jpg",
+      "imageHover": "peripheriques/compteuse-billets-premax-cc35-2.jpg"
+    },
+    {
+      "nom": "Compteuse de billets Premax — PM VC210",
+      "description": "Compteuse de billets",
+      "imagePrincipale": "peripheriques/compteuse-billets-premax-vc210.jpg",
+      "imageHover": "peripheriques/compteuse-billets-premax-vc210-2.jpg"
+    },
+    {
+      "nom": "Kit d'outils de réparation informatique S-Tek — 145 pièces",
+      "description": "Kit outillage · 145 pièces",
+      "imagePrincipale": "peripheriques/kit-outils-s-tek-145pcs.jpg",
+      "imageHover": "peripheriques/kit-outils-s-tek-145pcs.jpg"
+    },
+    {
+      "nom": "Kit outillage Jakemy — JM-8146, 47 pièces",
+      "description": "Kit outillage · 47 pièces",
+      "imagePrincipale": "peripheriques/kit-outillage-jakemy-jm8146-47pcs.webp",
+      "imageHover": "peripheriques/kit-outillage-jakemy-jm8146-47pcs.webp"
+    },
+    {
+      "nom": "Kit Outillage Pince à sertir + Testeur + Accessoires",
+      "description": "Kit outillage réseau",
+      "imagePrincipale": "peripheriques/kit-pince-sertir-testeur-accessoires.jpg",
+      "imageHover": "peripheriques/kit-pince-sertir-testeur-accessoires.jpg"
+    },
+    {
+      "nom": "Kit Outillage Réseau Jakemy — JM-8183",
+      "description": "Kit outillage réseau",
+      "imagePrincipale": "peripheriques/kit-outillage-reseau-jakemy-jm8183.jpg",
+      "imageHover": "peripheriques/kit-outillage-reseau-jakemy-jm8183-2.jpg"
+    },
+    {
+      "nom": "Kit Outillage S-Tek — 18 pièces",
+      "description": "Kit outillage · 18 pièces",
+      "imagePrincipale": "peripheriques/kit-outillage-s-tek-18pcs.jpg",
+      "imageHover": "peripheriques/kit-outillage-s-tek-18pcs-2.jpg"
+    },
+    {
+      "nom": "Trousse d'outils de précision — 56 pièces",
+      "description": "Pour ordinateurs, téléphones portables",
+      "imagePrincipale": "peripheriques/trousse-outils-precision-56pcs.webp",
+      "imageHover": "peripheriques/trousse-outils-precision-56pcs-2.webp"
+    },
+    {
+      "nom": "Pince à Sertir 0.25-35mm² — 8 Embouts et Sacoche",
+      "description": "Outillage électrique",
+      "imagePrincipale": "peripheriques/pince-sertir-8embouts-sacoche.jpg",
+      "imageHover": "peripheriques/pince-sertir-8embouts-sacoche-2.jpg"
+    },
+    {
+      "nom": "Pince à Sertir Professionnelle — RJ45",
+      "description": "Outillage réseau",
+      "imagePrincipale": "peripheriques/pince-sertir-pro-rj45.jpg",
+      "imageHover": "peripheriques/pince-sertir-pro-rj45-2.jpg"
+    },
+    {
+      "nom": "Visseuse Électrique Puissante 36V — 60 pièces + 2 batteries",
+      "description": "Outillage électrique",
+      "imagePrincipale": "peripheriques/visseuse-electrique-36v-60pcs.jpg",
+      "imageHover": "peripheriques/visseuse-electrique-36v-60pcs.jpg"
+    },
+    {
+      "nom": "Outil ménager multifonctionnel",
+      "description": "Outillage ménager",
+      "imagePrincipale": "peripheriques/outil-menager-multifonctionnel.jpg",
+      "imageHover": "peripheriques/outil-menager-multifonctionnel-2.jpg"
+    },
+    {
+      "nom": "Souffleur / Aspirateur Électrique",
+      "description": "Outillage électrique",
+      "imagePrincipale": "peripheriques/souffleur-aspirateur-electrique.jpg",
+      "imageHover": "peripheriques/souffleur-aspirateur-electrique-2.jpg"
+    },
+    {
+      "nom": "Smart TV LED Mart Technology — 75\" UHD 4K, Wi-Fi",
+      "description": "75 pouces · UHD 4K · Wi-Fi",
+      "imagePrincipale": "peripheriques/tv-mart-technology-75pouces.jpg",
+      "imageHover": "peripheriques/tv-mart-technology-75pouces.jpg"
+    },
+    {
+      "nom": "Télévision LED LG Smart — 86\" UT801, 4K",
+      "description": "86 pouces · 4K",
+      "imagePrincipale": "peripheriques/tv-lg-smart-86-ut801.jpg",
+      "imageHover": "peripheriques/tv-lg-smart-86-ut801-2.jpg"
+    },
+    {
+      "nom": "Télévision LED Premax Smart Android — 65\" UHD 4K (PM65UHD4KBT)",
+      "description": "65 pouces · UHD 4K · Android",
+      "imagePrincipale": "peripheriques/tv-premax-65-pm65uhd4kbt.webp",
+      "imageHover": "peripheriques/tv-premax-65-pm65uhd4kbt-2.webp"
+    },
+    {
+      "nom": "TV Smart Premax — 43\" Full HD (PM43SM9000BT)",
+      "description": "43 pouces · Full HD",
+      "imagePrincipale": "peripheriques/tv-premax-43-pm43sm9000bt.webp",
+      "imageHover": "peripheriques/tv-premax-43-pm43sm9000bt-2.webp"
+    },
+    {
+      "nom": "TV Smart Premax — 55\" Ultra HD 4K, Android 14, Wi-Fi, Bluetooth, Sans Bord (PM55UHD4KBT)",
+      "description": "55 pouces · Ultra HD 4K · Android 14",
+      "imagePrincipale": "peripheriques/tv-premax-55-pm55uhd4kbt.jpg",
+      "imageHover": "peripheriques/tv-premax-55-pm55uhd4kbt-2.jpg"
+    },
+    {
+      "nom": "Smart TV LED Premax — 32\" HD, Android 14, Sans Bord, 1 Go RAM/68 Go, DVB T2/S2 (PM32SM9000BT)",
+      "description": "32 pouces · HD · Android 14",
+      "imagePrincipale": "peripheriques/tv-premax-32-pm32sm9000bt.jpg",
+      "imageHover": "peripheriques/tv-premax-32-pm32sm9000bt.jpg"
+    }
+  ]
+}
