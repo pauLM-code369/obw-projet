@@ -1578,7 +1578,7 @@ function afficherRecents() {
    13. PAGE PANIER
 ================================================================ */
 
-function afficherPanier() {
+async function afficherPanier() {
 
   const listeEl = document.getElementById('listeArticles');
   if (!listeEl) return;
@@ -1587,12 +1587,36 @@ function afficherPanier() {
   const panierContenuEl = document.getElementById('panierContenu');
   const totalEl = document.getElementById('totalCommande');
 
-  const panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
+  let panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
 
   if (panier.length === 0) {
     panierVideEl.style.display = 'block';
     panierContenuEl.style.display = 'none';
     return;
+  }
+
+  let panierModifie = false;
+
+  for (const item of panier) {
+    if (!item.produitId) continue;
+
+    try {
+      const reponse = await fetch(`http://localhost:3000/api/produits/${item.produitId}`);
+      if (!reponse.ok) continue;
+
+      const produitActuel = await reponse.json();
+
+      if (item.prix !== produitActuel.prix) {
+        item.prix = produitActuel.prix;
+        panierModifie = true;
+      }
+    } catch (erreur) {
+      console.error('Erreur lors de la verification du prix :', erreur);
+    }
+  }
+
+  if (panierModifie) {
+    localStorage.setItem('panierOBW', JSON.stringify(panier));
   }
 
   panierVideEl.style.display = 'none';
