@@ -429,9 +429,11 @@ function initCartButtons() {
     const qtyEl = document.getElementById('qtyValue');
     const quantite = qtyEl ? (parseInt(qtyEl.textContent) || 1) : 1;
 
-   ajouterAuPanier(produitId, nom, prix, image, quantite);
+    ajouterAuPanier(produitId, nom, prix, image, quantite);
     flashPromoBar('Produit ajouté au panier !');
     bloquerBoutonsPanier();
+
+    if (qtyEl) qtyEl.textContent = '1';
 
     const original = btn.innerHTML;
     btn.innerHTML         = '<i class="ti ti-check" aria-hidden="true"></i> Ajouté !';
@@ -677,12 +679,13 @@ function initProductDetail() {
   const qtyPlus  = document.getElementById('qtyPlus');
 
   if (qtyValue && qtyMinus && qtyPlus) {
-    let qty = 1;
     qtyMinus.addEventListener('click', () => {
+      let qty = parseInt(qtyValue.textContent) || 1;
       if (qty > 1) qty--;
       qtyValue.textContent = qty;
     });
     qtyPlus.addEventListener('click', () => {
+      let qty = parseInt(qtyValue.textContent) || 1;
       qty++;
       qtyValue.textContent = qty;
     });
@@ -1725,14 +1728,15 @@ function initFormCommande() {
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
+    effacerErreurChamp('cmd-telephone');
+    effacerErreurChamp('cmd-nom');
+
     const panier = JSON.parse(localStorage.getItem('panierOBW')) || [];
 
     if (panier.length === 0) {
       alert('Votre panier est vide.');
       return;
     }
-
-        effacerErreurChamp('cmd-telephone');
 
     const telephone = document.getElementById('cmd-telephone').value.trim();
     const regexTelephone = /^(\+225[0-9]{10}|0[0-9]{9})$/;
