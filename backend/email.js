@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 async function envoyerEmailContact(nom, email, telephone, message) {
   try {
-    await resend.emails.send({
+    const resultat = await resend.emails.send({
       from: 'OPEN Business World <onboarding@resend.dev>',
       to: 'infos@obwstore.ci',
       subject: `Nouveau message de contact — ${nom}`,
@@ -18,7 +18,12 @@ async function envoyerEmailContact(nom, email, telephone, message) {
         <p>${message}</p>
       `,
     });
-    console.log('Email de contact envoye avec succes');
+
+    if (resultat.error) {
+      console.error('Email de contact NON envoye :', resultat.error.message);
+    } else {
+      console.log('Email de contact envoye avec succes');
+    }
   } catch (erreur) {
     console.error('Erreur envoi email contact :', erreur);
   }
@@ -43,10 +48,10 @@ async function envoyerEmailConfirmationCommande(commande) {
       ? `<strong>Point de retrait</strong><br />Plateau, Immeuble Mali, Abidjan`
       : `<strong>Adresse de livraison</strong><br />${commande.nom}<br />${commande.adresse}${commande.ville ? ', ' + commande.ville : ''}<br />Côte d'Ivoire`;
 
-    await resend.emails.send({
+    const resultat = await resend.emails.send({
       from: 'OPEN Business World <onboarding@resend.dev>',
       to: commande.email,
-      subject: `Confirmation de votre commande n°${commande.id} — OBW`,
+      subject: `Confirmation de votre commande n°${commande.codeConfirmation} — OBW`,
       html: `
         <div style="max-width:600px; margin:0 auto; font-family:Arial, sans-serif; color:#222;">
 
@@ -108,7 +113,12 @@ async function envoyerEmailConfirmationCommande(commande) {
         </div>
       `,
     });
-    console.log('Email de confirmation commande envoye avec succes');
+
+    if (resultat.error) {
+      console.error('Email de confirmation NON envoye :', resultat.error.message);
+    } else {
+      console.log('Email de confirmation commande envoye avec succes');
+    }
   } catch (erreur) {
     console.error('Erreur envoi email confirmation :', erreur);
   }

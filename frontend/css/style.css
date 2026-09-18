@@ -2922,3 +2922,6 @@ ul     { list-style: none; }
   .product-detail-main { grid-template-columns: 1fr; }
 }
 
+#productDescription {
+  white-space: pre-line;
+}
