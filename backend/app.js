@@ -103,7 +103,24 @@ app.post('/api/commandes', async (req, res) => {
   }
 
   try {
-    const total = articles.reduce((somme, a) => somme + (a.prix * a.quantite), 0);
+    const produitsIds = articles.map(a => a.produitId);
+    const produitsEnBase = await prisma.produit.findMany({
+      where: { id: { in: produitsIds } },
+    });
+
+    const articlesVerifies = articles.map(a => {
+      const produit = produitsEnBase.find(p => p.id === a.produitId);
+      if (!produit) {
+        throw new Error(`Produit introuvable : ${a.produitId}`);
+      }
+      return {
+        produitId: produit.id,
+        quantite: a.quantite,
+        prix: produit.prix,
+      };
+    });
+
+    const total = articlesVerifies.reduce((somme, a) => somme + (a.prix * a.quantite), 0);
 
     function genererCodeConfirmation() {
   const caracteres = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
@@ -128,7 +145,7 @@ app.post('/api/commandes', async (req, res) => {
         total,
         codeConfirmation,
         lignes: {
-          create: articles.map(a => ({
+          create: articlesVerifies.map(a => ({
             produitId: a.produitId,
             quantite: a.quantite,
             prixUnitaire: a.prix,
