@@ -1,3 +1,5 @@
+const API_URL = 'http://192.168.1.84:3000';
+
 /* ================================================================
    OPEN BUSINESS WORLD — main.js
    ----------------------------------------------------------------
@@ -524,7 +526,7 @@ function initContactForm() {
     btn.innerHTML = 'Envoi en cours...';
 
     try {
-      const reponse = await fetch('http://localhost:3000/api/contact', {
+      const reponse = await fetch(`${API_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nom, email, telephone, message }),
@@ -719,7 +721,7 @@ async function chargerProduitsImprimantes() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Imprimantes');
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/Imprimantes`);
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -766,7 +768,7 @@ async function chargerProduitsPhotocopieuses() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Photocopieuses');
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/Photocopieuses`);
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -812,7 +814,7 @@ async function chargerProduitsImprimantesHpLaser() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Imprimantes HP Laser');
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/Imprimantes HP Laser`);
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -858,7 +860,7 @@ async function chargerProduitsScanneurs() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('Scanneurs & lecteurs'));
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/` + encodeURIComponent('Scanneurs & lecteurs'));
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -903,7 +905,7 @@ async function chargerPcGamerLaptop() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('PC Gamer Laptop'));
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/` + encodeURIComponent('PC Gamer Laptop'));
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -947,7 +949,7 @@ async function chargerPcGamerDesktop() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('PC Gamer Desktop'));
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/` + encodeURIComponent('PC Gamer Desktop'));
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -991,7 +993,7 @@ async function chargerPcBureau() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('PC de bureau'));
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/` + encodeURIComponent('PC de bureau'));
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1035,7 +1037,7 @@ async function chargerPcPortables() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('PC portables'));
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/` + encodeURIComponent('PC portables'));
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1079,7 +1081,7 @@ async function chargerMac() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Mac');
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/Mac`);
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1123,7 +1125,7 @@ async function chargerTablettes() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Tablettes');
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/Tablettes`);
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1168,7 +1170,7 @@ async function chargerAccessoires() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('Accessoires PC'));
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/` + encodeURIComponent('Accessoires PC'));
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1212,7 +1214,7 @@ async function chargerAudio() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/Audio');
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/Audio`);
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1256,7 +1258,7 @@ async function chargerConsommables() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('Consommables & logiciels'));
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/` + encodeURIComponent('Consommables & logiciels'));
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1300,7 +1302,7 @@ async function chargerEquipementsBureau() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/categorie/' + encodeURIComponent('Équipements bureau'));
+    const reponse = await fetch(`${API_URL}/api/produits/categorie/` + encodeURIComponent('Équipements bureau'));
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1349,7 +1351,7 @@ async function chargerNouveauxArrivages() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/nouveaux-arrivages');
+    const reponse = await fetch(`${API_URL}/api/produits/nouveaux-arrivages`);
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1394,7 +1396,7 @@ async function chargerProduitsPopulaires() {
   if (!grille) return;
 
   try {
-    const reponse = await fetch('http://localhost:3000/api/produits/populaires');
+    const reponse = await fetch(`${API_URL}/api/produits/populaires`);
     const produits = await reponse.json();
 
     produits.forEach(produit => {
@@ -1459,7 +1461,7 @@ async function chargerFicheProduit() {
   }
 
   try {
-    const reponse = await fetch(`http://localhost:3000/api/produits/${id}`);
+    const reponse = await fetch(`${API_URL}/api/produits/${id}`);
 
     if (!reponse.ok) {
       nomEl.textContent = 'Produit introuvable';
@@ -1601,7 +1603,7 @@ async function afficherPanier() {
     if (!item.produitId) continue;
 
     try {
-      const reponse = await fetch(`http://localhost:3000/api/produits/${item.produitId}`);
+      const reponse = await fetch(`${API_URL}/api/produits/${item.produitId}`);
       if (!reponse.ok) continue;
 
       const produitActuel = await reponse.json();
@@ -1810,7 +1812,7 @@ function initFormCommande() {
     btnSubmit.innerHTML = 'Envoi en cours...';
 
     try {
-      const reponse = await fetch('http://localhost:3000/api/commandes', {
+      const reponse = await fetch(`${API_URL}/api/commandes`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(donnees),
@@ -1903,7 +1905,7 @@ function initAdminLogin() {
     btn.innerHTML = 'Connexion...';
 
     try {
-      const reponse = await fetch('http://localhost:3000/api/admin/login', {
+      const reponse = await fetch(`${API_URL}/api/admin/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, motDePasse }),
@@ -1955,7 +1957,7 @@ function initAdminDashboard() {
 
   async function chargerProduits() {
     try {
-      const reponse = await fetch('http://localhost:3000/api/admin/produits', {
+      const reponse = await fetch(`${API_URL}/api/admin/produits`, {
         headers: { 'Authorization': 'Bearer ' + token }
       });
 
@@ -2000,7 +2002,7 @@ function initAdminDashboard() {
     conteneur.dataset.produitId = produitId;
 
     try {
-      const reponse = await fetch(`http://localhost:3000/api/admin/produits`, {
+      const reponse = await fetch(`${API_URL}/api/admin/produits`, {
         headers: { 'Authorization': 'Bearer ' + token }
       });
       const produits = await reponse.json();
@@ -2040,7 +2042,7 @@ function initAdminDashboard() {
     if (!nomFichier || !produitId) return;
 
     try {
-      const reponse = await fetch(`http://localhost:3000/api/admin/produits/${produitId}/images`, {
+      const reponse = await fetch(`${API_URL}/api/admin/produits/${produitId}/images`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -2069,7 +2071,7 @@ function initAdminDashboard() {
     const produitId = conteneur.dataset.produitId;
 
     try {
-      const reponse = await fetch(`http://localhost:3000/api/admin/images/${imageId}`, {
+      const reponse = await fetch(`${API_URL}/api/admin/images/${imageId}`, {
         method: 'DELETE',
         headers: { 'Authorization': 'Bearer ' + token }
       });
@@ -2121,7 +2123,7 @@ function initAdminDashboard() {
     const id = btnToggle.dataset.id;
 
     try {
-      const reponse = await fetch(`http://localhost:3000/api/admin/produits/${id}/toggle`, {
+      const reponse = await fetch(`${API_URL}/api/admin/produits/${id}/toggle`, {
         method: 'PATCH',
         headers: { 'Authorization': 'Bearer ' + token }
       });
@@ -2155,7 +2157,7 @@ function initAdminDashboard() {
     const categorieId = parseInt(document.getElementById('edit-categorie').value);
 
     try {
-      const reponse = await fetch(`http://localhost:3000/api/admin/produits/${id}`, {
+      const reponse = await fetch(`${API_URL}/api/admin/produits/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -2177,7 +2179,7 @@ function initAdminDashboard() {
 
   async function chargerCategories(idSelect = 'add-categorie') {
     try {
-      const reponse = await fetch('http://localhost:3000/api/admin/categories', {
+      const reponse = await fetch(`${API_URL}/api/admin/categories`, {
         headers: { 'Authorization': 'Bearer ' + token }
       });
       const categories = await reponse.json();
@@ -2228,7 +2230,7 @@ function initAdminDashboard() {
     }
 
     try {
-      const reponse = await fetch('http://localhost:3000/api/admin/produits', {
+      const reponse = await fetch(`${API_URL}/api/admin/produits`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -2272,7 +2274,7 @@ function initAdminCommandes() {
 
   async function chargerCommandes() {
     try {
-      const reponse = await fetch('http://localhost:3000/api/admin/commandes', {
+      const reponse = await fetch(`${API_URL}/api/admin/commandes`, {
         headers: { 'Authorization': 'Bearer ' + token }
       });
 
@@ -2321,7 +2323,7 @@ function initAdminCommandes() {
     const listeMessages = document.getElementById('listeMessages');
 
     try {
-      const reponse = await fetch('http://localhost:3000/api/admin/messages', {
+      const reponse = await fetch(`${API_URL}/api/admin/messages`, {
         headers: { 'Authorization': 'Bearer ' + token }
       });
 

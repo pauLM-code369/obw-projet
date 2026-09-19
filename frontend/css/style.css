@@ -1574,6 +1574,12 @@ ul     { list-style: none; }
   .hamburger                   { display: flex; }
   .divider-v                   { display: none; }
 
+  .logo         { min-width: 0; }
+  .logo-img     { height: 38px; }
+  .search       { margin: 0 8px; }
+  .icon-btn[aria-label="Facebook"],
+  .icon-btn[aria-label="TikTok"]  { display: none; }
+
   .nav {
     position: fixed;
     top: 0;
@@ -1610,7 +1616,7 @@ ul     { list-style: none; }
   .cat-item      { width: 110px; }
   .cat-img-wrap  { width: 100px; height: 100px; }
 
-  .footer-grid   { grid-template-columns: 1fr; gap: 20px; padding: 32px var(--gap-lg); }
+  .footer-grid   { padding: 32px var(--gap-lg); }
   .footer-bottom { flex-direction: column; gap: 6px; text-align: center; }
 
   .page-body     { padding: var(--gap-md); }
@@ -1618,9 +1624,16 @@ ul     { list-style: none; }
 
 /* Petit mobile (≤ 480px) */
 @media (max-width: 480px) {
-  .header        { padding: 10px var(--gap-md); gap: 10px; }
+  .header        { padding: 10px var(--gap-md); gap: 6px; }
+  .logo-img      { height: 32px; }
+  .search        { margin: 0 4px; height: 40px; }
+  .search input  { font-size: 12.5px; padding: 0 10px; }
+  .search-btn    { padding: 0 12px; }
+  .icon-btn      { padding: 4px 6px; }
+  .icon-btn i    { font-size: 19px; }
   .products-grid { grid-template-columns: 1fr; }
   .stats-strip   { grid-template-columns: 1fr; }
+  .footer-grid   { grid-template-columns: 1fr !important; gap: 20px; }
 }
 
 
